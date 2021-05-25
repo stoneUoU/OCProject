@@ -35,6 +35,11 @@
 		8E4243CE265CF22400E5A4A5 /* YLZImageExtent.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E4243BF265CF22400E5A4A5 /* YLZImageExtent.m */; };
 		8E4243CF265CF22400E5A4A5 /* YLZJson.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E4243C3265CF22400E5A4A5 /* YLZJson.m */; };
 		8E4243D1265CF22400E5A4A5 /* YLZFont.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E4243C7265CF22400E5A4A5 /* YLZFont.m */; };
+		8E4243D8265CF75B00E5A4A5 /* YLZViewFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E4243D7265CF75B00E5A4A5 /* YLZViewFactory.m */; };
+		8E4243DD265CF78400E5A4A5 /* YLZPageFunction.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E4243DC265CF78400E5A4A5 /* YLZPageFunction.m */; };
+		8E4243E1265CF7BF00E5A4A5 /* YLZFormat.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E4243E0265CF7BF00E5A4A5 /* YLZFormat.m */; };
+		8E4243E5265CF83100E5A4A5 /* YLZValidated.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E4243E4265CF83100E5A4A5 /* YLZValidated.m */; };
+		8E4243EB265CF8F500E5A4A5 /* YLZNetWork.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E4243EA265CF8F500E5A4A5 /* YLZNetWork.m */; };
 		8EFB12B6265BB44F007D9FE1 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EFB12B5265BB44F007D9FE1 /* AppDelegate.m */; };
 		8EFB12BC265BB44F007D9FE1 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EFB12BB265BB44F007D9FE1 /* ViewController.m */; };
 		8EFB12C1265BB450007D9FE1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8EFB12C0265BB450007D9FE1 /* Assets.xcassets */; };
@@ -105,6 +110,16 @@
 		8E4243C6265CF22400E5A4A5 /* YLZFont.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YLZFont.h; sourceTree = "<group>"; };
 		8E4243C7265CF22400E5A4A5 /* YLZFont.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YLZFont.m; sourceTree = "<group>"; };
 		8E4243C9265CF22400E5A4A5 /* YLZKitCategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YLZKitCategory.h; sourceTree = "<group>"; };
+		8E4243D6265CF75B00E5A4A5 /* YLZViewFactory.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YLZViewFactory.h; sourceTree = "<group>"; };
+		8E4243D7265CF75B00E5A4A5 /* YLZViewFactory.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YLZViewFactory.m; sourceTree = "<group>"; };
+		8E4243DB265CF78400E5A4A5 /* YLZPageFunction.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YLZPageFunction.h; sourceTree = "<group>"; };
+		8E4243DC265CF78400E5A4A5 /* YLZPageFunction.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YLZPageFunction.m; sourceTree = "<group>"; };
+		8E4243DF265CF7BF00E5A4A5 /* YLZFormat.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YLZFormat.h; sourceTree = "<group>"; };
+		8E4243E0265CF7BF00E5A4A5 /* YLZFormat.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YLZFormat.m; sourceTree = "<group>"; };
+		8E4243E3265CF83100E5A4A5 /* YLZValidated.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YLZValidated.h; sourceTree = "<group>"; };
+		8E4243E4265CF83100E5A4A5 /* YLZValidated.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YLZValidated.m; sourceTree = "<group>"; };
+		8E4243E9265CF8F500E5A4A5 /* YLZNetWork.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YLZNetWork.h; sourceTree = "<group>"; };
+		8E4243EA265CF8F500E5A4A5 /* YLZNetWork.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YLZNetWork.m; sourceTree = "<group>"; };
 		8EFB12B1265BB44F007D9FE1 /* OCProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OCProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8EFB12B4265BB44F007D9FE1 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		8EFB12B5265BB44F007D9FE1 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -139,6 +154,7 @@
 		8E4242EF265C9AE800E5A4A5 /* Base */ = {
 			isa = PBXGroup;
 			children = (
+				8E4243D5265CF73A00E5A4A5 /* Public */,
 				8E424362265CF04600E5A4A5 /* Category */,
 				8E424320265CA32800E5A4A5 /* Extent */,
 				8E424319265CA2C900E5A4A5 /* View */,
@@ -174,6 +190,7 @@
 		8E424319265CA2C900E5A4A5 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				8E4243E8265CF8E000E5A4A5 /* Toast */,
 				8E42431A265CA2CE00E5A4A5 /* Tabbar */,
 			);
 			path = View;
@@ -405,6 +422,30 @@
 			path = YLZFont;
 			sourceTree = "<group>";
 		};
+		8E4243D5265CF73A00E5A4A5 /* Public */ = {
+			isa = PBXGroup;
+			children = (
+				8E4243D6265CF75B00E5A4A5 /* YLZViewFactory.h */,
+				8E4243D7265CF75B00E5A4A5 /* YLZViewFactory.m */,
+				8E4243DB265CF78400E5A4A5 /* YLZPageFunction.h */,
+				8E4243DC265CF78400E5A4A5 /* YLZPageFunction.m */,
+				8E4243DF265CF7BF00E5A4A5 /* YLZFormat.h */,
+				8E4243E0265CF7BF00E5A4A5 /* YLZFormat.m */,
+				8E4243E3265CF83100E5A4A5 /* YLZValidated.h */,
+				8E4243E4265CF83100E5A4A5 /* YLZValidated.m */,
+				8E4243E9265CF8F500E5A4A5 /* YLZNetWork.h */,
+				8E4243EA265CF8F500E5A4A5 /* YLZNetWork.m */,
+			);
+			path = Public;
+			sourceTree = "<group>";
+		};
+		8E4243E8265CF8E000E5A4A5 /* Toast */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Toast;
+			sourceTree = "<group>";
+		};
 		8EFB12A8265BB44F007D9FE1 = {
 			isa = PBXGroup;
 			children = (
@@ -576,7 +617,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				8E4243CB265CF22400E5A4A5 /* YLZEnlargeButton.m in Sources */,
+				8E4243E1265CF7BF00E5A4A5 /* YLZFormat.m in Sources */,
+				8E4243D8265CF75B00E5A4A5 /* YLZViewFactory.m in Sources */,
 				8E42439A265CF04600E5A4A5 /* UIImage+YLZChange.m in Sources */,
+				8E4243E5265CF83100E5A4A5 /* YLZValidated.m in Sources */,
 				8E4243A8265CF04600E5A4A5 /* UITextField+YLZExtension.m in Sources */,
 				8E4243A4265CF04600E5A4A5 /* UIView+YLZChange.m in Sources */,
 				8EFB12BC265BB44F007D9FE1 /* ViewController.m in Sources */,
@@ -585,9 +629,11 @@
 				8E4243CA265CF22400E5A4A5 /* YLZProgressHUDExtent.m in Sources */,
 				8E4243A2265CF04600E5A4A5 /* UIButton+YLZFitSize.m in Sources */,
 				8E424358265CEA1F00E5A4A5 /* YLZMSTabBarController.m in Sources */,
+				8E4243EB265CF8F500E5A4A5 /* YLZNetWork.m in Sources */,
 				8E42439F265CF04600E5A4A5 /* UIButton+YLZCountDown.m in Sources */,
 				8E4243A1265CF04600E5A4A5 /* UIButton+YLZFixMultiClick.m in Sources */,
 				8E424399265CF04600E5A4A5 /* UIImage+YLZCompress.m in Sources */,
+				8E4243DD265CF78400E5A4A5 /* YLZPageFunction.m in Sources */,
 				8E4243A7265CF04600E5A4A5 /* UIViewController+YLZChange.m in Sources */,
 				8E4243CF265CF22400E5A4A5 /* YLZJson.m in Sources */,
 				8E4243CC265CF22400E5A4A5 /* YLZPaddingLabel.m in Sources */,
