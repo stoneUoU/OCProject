@@ -53,11 +53,11 @@
 - (void)swizzlingViewWillAppear:(BOOL)animated {
     
     [self swizzlingViewWillAppear:animated];
-    NSString *str = [NSString stringWithFormat:@"%@", self.class];
-    // 我们在这里加一个判断，将系统的UIViewController的对象剔除掉
-    if(![str containsString:@"UI"]){
-        STLog(@"统计打点 : %@", self.class);
-    }
+//    NSString *str = [NSString stringWithFormat:@"%@", self.class];
+//    // 我们在这里加一个判断，将系统的UIViewController的对象剔除掉
+//    if(![str containsString:@"UI"]){
+//        YLZLOG(@"统计打点 : %@", self.class);
+//    }
 }
 
 @end

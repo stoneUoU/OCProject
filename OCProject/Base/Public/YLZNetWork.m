@@ -6,10 +6,19 @@
 //
 
 #import "YLZNetWork.h"
+#import "YLZLoadingView.h"
+#import <Toast/Toast.h>
+
+static NSString *kAPPBaseRequestUrl = @"https://mgapp.appearoo.top/api.php";
+
+@interface YLZNetWork()
+
+@property (nonatomic, strong) YLZLoadingView *loadingView;
+
+
+@end
 
 @implementation YLZNetWork
-
-
 
 #pragma mark - shareManager
 /**
@@ -25,13 +34,11 @@
     static dispatch_once_t onceToken;
 
     dispatch_once(&onceToken, ^{
-
-        manager = [[self alloc] initWithBaseURL:[NSURL URLWithString:@""]];
+        manager = [[self alloc] initWithBaseURL:[NSURL URLWithString:kAPPBaseRequestUrl]];
     });
 
     return manager;
 }
-
 
 #pragma mark - 重写initWithBaseURL
 /**
@@ -82,47 +89,83 @@
  *  @param failureBlock 请求失败的回调
  */
 
-+(void)requestWithType:(YLZHttpRequestType)type withUrlString:(NSString *)urlString withParaments:(id)paraments Authos:(NSString *)Authos withSuccessBlock:(requestSuccess)successBlock withFailureBlock:(requestFailure)failureBlock
++ (void)requestWithType:(YLZHttpRequestType)type withUrlString:(NSString *)urlString withParaments:(id)paraments  withShowLoading:(BOOL)showLoading withShowError:(BOOL)showError withSuccessBlock:(YLZRequestSuccess)successBlock withFailureBlock:(YLZRequestFailure)failureBlock
 {
-
+    //设置请求头
+//    [[YLZNetWork shareManager].requestSerializer setValue:@"" forHTTPHeaderField:@"token"];
+    /**设置请求超时时间*/
+    [[YLZNetWork shareManager].requestSerializer setTimeoutInterval:30];
     switch (type) {
-
         case YLZHttpRequestTypeGet:
         {
-            //设置请求头
-            [[YLZNetWork shareManager].requestSerializer setValue:Authos forHTTPHeaderField:@"token"];
-            /**设置请求超时时间*/
-            [[YLZNetWork shareManager].requestSerializer setTimeoutInterval:30];
-            [[YLZNetWork shareManager] GET:urlString parameters:paraments headers:nil progress:^(NSProgress * _Nonnull downloadProgress) {
-            } success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
-                if([responseObject isKindOfClass:[NSData class]]){   //根据后台返回的数据类型进行判断，若为NSData，则转成NSDict
-                    successBlock([NSJSONSerialization JSONObjectWithData:responseObject options:NSJSONReadingAllowFragments error:nil]);
-                }else{
-                    successBlock(responseObject);
-                }
-            } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
-                failureBlock(error);
-            }];
+            [[YLZNetWork shareManager] getWithUrlString:urlString withParaments:paraments withShowLoading:showLoading withShowError:showError withSuccessBlock:successBlock withFailureBlock:failureBlock];
             break;
         }
         case YLZHttpRequestTypePost: {
-            //设置请求头
-            [[YLZNetWork shareManager].requestSerializer setValue:Authos forHTTPHeaderField:@"token"];
-            /**设置请求超时时间*/
-            [[YLZNetWork shareManager].requestSerializer setTimeoutInterval:30];
-            [[YLZNetWork shareManager] POST:urlString parameters:paraments headers:nil progress:^(NSProgress * _Nonnull uploadProgress) {
-                
-            } success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
-                if([responseObject isKindOfClass:[NSData class]]){   //根据后台返回的数据类型进行判断，若为NSData，则转成NSDict
-                    successBlock([NSJSONSerialization JSONObjectWithData:responseObject options:NSJSONReadingAllowFragments error:nil]);
-                }else{
-                    successBlock(responseObject);
-                }
-            } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
-                failureBlock(error);
-            }];
+            [[YLZNetWork shareManager] postWithUrlString:urlString withParaments:paraments withShowLoading:showLoading withShowError:showError withSuccessBlock:successBlock withFailureBlock:failureBlock];
         }
     }
 }
+
+- (void)getWithUrlString:(NSString *)urlString withParaments:(id)paraments  withShowLoading:(BOOL)showLoading withShowError:(BOOL)showError withSuccessBlock:(YLZRequestSuccess)successBlock withFailureBlock:(YLZRequestFailure)failureBlock {
+    if (showLoading) {
+        [self.loadingView showLoadingWithRequest];
+    }
+    [[YLZNetWork shareManager] GET:[NSString stringWithFormat:@"%@%@",kAPPBaseRequestUrl,urlString] parameters:paraments headers:nil progress:^(NSProgress * _Nonnull downloadProgress) {
+    } success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
+        if (showLoading) {
+            [self.loadingView hiddenLoadingWithRequest];
+        }
+        if ([responseObject isKindOfClass:[NSData class]]) {   //根据后台返回的数据类型进行判断，若为NSData，则转成NSDict
+            successBlock([NSJSONSerialization JSONObjectWithData:responseObject options:NSJSONReadingAllowFragments error:nil]);
+        } else {
+            successBlock(responseObject);
+        }
+    } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
+        if (showLoading) {
+            [self.loadingView hiddenLoadingWithRequest];
+        }
+        if (showError) {
+            UIView *superView = [UIApplication sharedApplication].delegate.window;
+            [superView makeToast:@"AAA" duration:1.0 position:CSToastPositionCenter];
+        }
+        failureBlock(error);
+    }];
+};
+
+- (void)postWithUrlString:(NSString *)urlString withParaments:(id)paraments  withShowLoading:(BOOL)showLoading withShowError:(BOOL)showError withSuccessBlock:(YLZRequestSuccess)successBlock withFailureBlock:(YLZRequestFailure)failureBlock {
+    if (showLoading) {
+        [self.loadingView showLoadingWithRequest];
+    }
+    [[YLZNetWork shareManager] POST:[NSString stringWithFormat:@"%@%@",kAPPBaseRequestUrl,urlString] parameters:paraments headers:nil progress:^(NSProgress * _Nonnull uploadProgress) {
+    } success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
+        if (showLoading) {
+            [self.loadingView hiddenLoadingWithRequest];
+        }
+        if ([responseObject isKindOfClass:[NSData class]]) {   //根据后台返回的数据类型进行判断，若为NSData，则转成NSDict
+            successBlock([NSJSONSerialization JSONObjectWithData:responseObject options:NSJSONReadingAllowFragments error:nil]);
+        } else {
+            successBlock(responseObject);
+        }
+    } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
+        if (showLoading) {
+            [self.loadingView hiddenLoadingWithRequest];
+        }
+        if (showError) {
+            UIView *superView = [UIApplication sharedApplication].delegate.window;
+            [superView makeToast:@"AAA" duration:1.0 position:CSToastPositionCenter];
+        }
+        failureBlock(error);
+    }];
+};
+
+- (YLZLoadingView *)loadingView
+{
+    if (!_loadingView) {
+        _loadingView = [[YLZLoadingView alloc] init];
+    }
+    return _loadingView;
+}
+
 
 @end

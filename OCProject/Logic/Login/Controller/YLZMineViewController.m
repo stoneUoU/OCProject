@@ -1,14 +1,14 @@
 //
-//  ViewController.m
+//  YLZMineViewController.m
 //  OCProject
 //
-//  Created by stone on 2021/5/24.
+//  Created by stone on 2021/7/2.
 //
 
-#import "ViewController.h"
+#import "YLZMineViewController.h"
 #import "YLZKitCategory.h"
 
-@interface ViewController ()
+@interface YLZMineViewController ()
 
 @property (nonatomic, strong) NSMutableArray *homeModelArrays;
 
@@ -16,7 +16,7 @@
 
 @end
 
-@implementation ViewController
+@implementation YLZMineViewController
 
 #pragma mark - LifeCycle
 #pragma mark -
@@ -36,15 +36,13 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.view.backgroundColor = [UIColor whiteColor];
-    [self setBaseUI:YLZColorRed withTitleString:@"首页" withTitleColor:YLZColorWhite withLeftImageViewString:@"" withRightString:@"" withRightColor:YLZColorWhite];
+    [self setBaseUI:YLZColorRed withTitleString:@"个人中心" withTitleColor:YLZColorWhite withLeftImageViewString:@"" withRightString:@"" withRightColor:YLZColorWhite];
     
     [self setUI];
 }
 
 - (void)viewWillAppear:(BOOL)animated {
     [super viewWillAppear:animated];
-    [self.navigationController setNavigationBarHidden:true];
-    self.navigationController.navigationBarHidden = true;
 }
 
 - (void)viewDidDisappear:(BOOL)animated {
@@ -102,14 +100,13 @@
 {
     if (!_btnOk) {
         _btnOk = [UIButton buttonWithType:UIButtonTypeCustom];
-        [_btnOk setTitle:@"我知道" forState:UIControlStateNormal];
+        [_btnOk setTitle:@"个人中心" forState:UIControlStateNormal];
         [_btnOk setTitleColor:YLZColorTitleOne forState:UIControlStateNormal];
         _btnOk.titleLabel.font = [YLZFont medium:16.f];
         _btnOk.layer.cornerRadius = 20.f;
         _btnOk.layer.masksToBounds = YES;
         _btnOk.layer.borderColor = [YLZColorBlue CGColor];
         _btnOk.layer.borderWidth = 0.5;
-//        _btnOk.userInteractionEnabled = NO;
         [_btnOk addTarget:self action:@selector(btnOKClick) forControlEvents:UIControlEventTouchUpInside];
     }
     return _btnOk;

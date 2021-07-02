@@ -1,14 +1,16 @@
 //
-//  ViewController.m
+//  YLZHomeViewController.m
 //  OCProject
 //
-//  Created by stone on 2021/5/24.
+//  Created by stone on 2021/7/2.
 //
 
-#import "ViewController.h"
+#import "YLZHomeViewController.h"
 #import "YLZKitCategory.h"
 
-@interface ViewController ()
+#import "YLZNetWork.h"
+
+@interface YLZHomeViewController ()
 
 @property (nonatomic, strong) NSMutableArray *homeModelArrays;
 
@@ -16,7 +18,7 @@
 
 @end
 
-@implementation ViewController
+@implementation YLZHomeViewController
 
 #pragma mark - LifeCycle
 #pragma mark -
@@ -36,15 +38,13 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.view.backgroundColor = [UIColor whiteColor];
-    [self setBaseUI:YLZColorRed withTitleString:@"首页" withTitleColor:YLZColorWhite withLeftImageViewString:@"" withRightString:@"" withRightColor:YLZColorWhite];
+    [self setBaseUI:YLZColorBlue withTitleString:@"首页" withTitleColor:YLZColorWhite withLeftImageViewString:@"" withRightString:@"" withRightColor:YLZColorWhite];
     
     [self setUI];
 }
 
 - (void)viewWillAppear:(BOOL)animated {
     [super viewWillAppear:animated];
-    [self.navigationController setNavigationBarHidden:true];
-    self.navigationController.navigationBarHidden = true;
 }
 
 - (void)viewDidDisappear:(BOOL)animated {
@@ -75,6 +75,11 @@
 - (void)btnOKClick {
 //    YLZLOG(@"YYYYYYYYY");
 //    self.view.backgroundColor = [UIColor redColor];
+    [YLZNetWork requestWithType:YLZHttpRequestTypeGet withUrlString:@"/provide/home_data" withParaments:@{} withShowLoading:YES withShowError:YES withSuccessBlock:^(NSDictionary * _Nonnull object) {
+        YLZLOG(@"object______%@",[object modelToJSONString]);
+    } withFailureBlock:^(NSError * _Nonnull error) {
+//        YLZLOG();
+    }];
 }
 
 - (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
@@ -102,14 +107,13 @@
 {
     if (!_btnOk) {
         _btnOk = [UIButton buttonWithType:UIButtonTypeCustom];
-        [_btnOk setTitle:@"我知道" forState:UIControlStateNormal];
+        [_btnOk setTitle:@"首页" forState:UIControlStateNormal];
         [_btnOk setTitleColor:YLZColorTitleOne forState:UIControlStateNormal];
         _btnOk.titleLabel.font = [YLZFont medium:16.f];
         _btnOk.layer.cornerRadius = 20.f;
         _btnOk.layer.masksToBounds = YES;
         _btnOk.layer.borderColor = [YLZColorBlue CGColor];
         _btnOk.layer.borderWidth = 0.5;
-//        _btnOk.userInteractionEnabled = NO;
         [_btnOk addTarget:self action:@selector(btnOKClick) forControlEvents:UIControlEventTouchUpInside];
     }
     return _btnOk;

@@ -6,9 +6,12 @@
 //
 
 #import "AppDelegate+Tarbar.h"
+#import "YLZHomeViewController.h"
+#import "YLZMineViewController.h"
 #import "ViewController.h"
 
 #import <YYKit/YYKit.h>
+#import "YLZPageExtent.h"
 
 @interface AppDelegate () <YLZMSTabBarControllerDelegate>
 
@@ -44,8 +47,8 @@
     self.tabbarVC = [[YLZMSTabBarController alloc] init];
     self.tabbarVC.tabbarDelegate = self;
     
-    UIViewController *homeVC =  [[ViewController alloc] init];
-    UIViewController *mineVC = [[ViewController alloc] init];
+    UIViewController *homeVC =  [[YLZHomeViewController alloc] init];
+    UIViewController *mineVC = [[YLZMineViewController alloc] init];
     
     NSArray *vcArr = @[homeVC, mineVC];
     NSArray *titleArr = @[@"首页", @"我的"];
@@ -63,7 +66,8 @@
 #pragma mark -
 
 - (void)toRouterWithExsitTopController {
-    
+    ViewController *vc = [[ViewController alloc] init];
+    [[YLZPageExtent sharedInstance] pushExistingViewController:vc];
 }
 
 #pragma mark - Delegate
@@ -80,7 +84,7 @@
         [self toRouterWithExsitTopController];
         return NO;
     }
-    return NO;
+    return YES;
 }
 
 - (void)ylzTabBarController:(YLZMSTabBarController *)tabBarController didSelectViewController:(UIViewController *)viewController {

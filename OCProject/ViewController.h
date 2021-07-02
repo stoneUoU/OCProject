@@ -6,8 +6,9 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "YLZBaseViewController.h"
 
-@interface ViewController : UIViewController
+@interface ViewController : YLZBaseViewController
 
 
 @end

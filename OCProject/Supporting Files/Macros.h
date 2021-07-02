@@ -8,9 +8,9 @@
 #import <Foundation/Foundation.h>
 //自定义Log输入日志+显示行号
 #ifdef DEBUG
-#define STLog(FORMAT, ...) fprintf(stderr,"%s:%d\t%s\n",[[[NSString stringWithUTF8String:__FILE__] lastPathComponent] UTF8String], __LINE__, [[NSString stringWithFormat:FORMAT, ##__VA_ARGS__] UTF8String]);
+#define YLZLOG(FORMAT, ...) fprintf(stderr,"%s:%d\t%s\n",[[[NSString stringWithUTF8String:__FILE__] lastPathComponent] UTF8String], __LINE__, [[NSString stringWithFormat:FORMAT, ##__VA_ARGS__] UTF8String]);
 #else
-#define STLog(...)
+#define YLZLOG(...)
 #endif
 
 //URL宏,建议使用

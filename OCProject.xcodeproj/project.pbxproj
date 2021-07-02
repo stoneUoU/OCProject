@@ -40,6 +40,18 @@
 		8E4243E1265CF7BF00E5A4A5 /* YLZFormat.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E4243E0265CF7BF00E5A4A5 /* YLZFormat.m */; };
 		8E4243E5265CF83100E5A4A5 /* YLZValidated.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E4243E4265CF83100E5A4A5 /* YLZValidated.m */; };
 		8E4243EB265CF8F500E5A4A5 /* YLZNetWork.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E4243EA265CF8F500E5A4A5 /* YLZNetWork.m */; };
+		8E79CDD9268EE5CF00E71F17 /* YLZBaseDefaults.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E79CDD8268EE5CF00E71F17 /* YLZBaseDefaults.m */; };
+		8E79CDDF268EE67E00E71F17 /* YLZLocalData.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E79CDDE268EE67E00E71F17 /* YLZLocalData.m */; };
+		8E79CDE3268EE71D00E71F17 /* YLZLocalData+ylz.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E79CDE2268EE71D00E71F17 /* YLZLocalData+ylz.m */; };
+		8E79CDE7268EE84000E71F17 /* YLZUserBaseInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E79CDE6268EE84000E71F17 /* YLZUserBaseInfo.m */; };
+		8E79CDED268EE97000E71F17 /* YLZBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E79CDEC268EE97000E71F17 /* YLZBaseViewController.m */; };
+		8E79CDF2268EF1A500E71F17 /* YLZPageExtent.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E79CDF1268EF1A500E71F17 /* YLZPageExtent.m */; };
+		8E79CDF7268EF21B00E71F17 /* YLZMediator.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E79CDF6268EF21B00E71F17 /* YLZMediator.m */; };
+		8E79CDFF268EF34300E71F17 /* UIViewController+YLZMediator.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E79CDFE268EF34300E71F17 /* UIViewController+YLZMediator.m */; };
+		8E79CE0B268EF57000E71F17 /* YLZMineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E79CE0A268EF57000E71F17 /* YLZMineViewController.m */; };
+		8E79CE0F268EF57E00E71F17 /* YLZHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E79CE0E268EF57E00E71F17 /* YLZHomeViewController.m */; };
+		8E79CE14268EF6E700E71F17 /* YLZLoadingView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E79CE13268EF6E700E71F17 /* YLZLoadingView.m */; };
+		8E79CE27268EF7E700E71F17 /* YLZLoading.json in Resources */ = {isa = PBXBuildFile; fileRef = 8E79CE26268EF7E700E71F17 /* YLZLoading.json */; };
 		8EFB12B6265BB44F007D9FE1 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EFB12B5265BB44F007D9FE1 /* AppDelegate.m */; };
 		8EFB12BC265BB44F007D9FE1 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EFB12BB265BB44F007D9FE1 /* ViewController.m */; };
 		8EFB12C1265BB450007D9FE1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8EFB12C0265BB450007D9FE1 /* Assets.xcassets */; };
@@ -120,6 +132,29 @@
 		8E4243E4265CF83100E5A4A5 /* YLZValidated.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YLZValidated.m; sourceTree = "<group>"; };
 		8E4243E9265CF8F500E5A4A5 /* YLZNetWork.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YLZNetWork.h; sourceTree = "<group>"; };
 		8E4243EA265CF8F500E5A4A5 /* YLZNetWork.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YLZNetWork.m; sourceTree = "<group>"; };
+		8E79CDD7268EE5CF00E71F17 /* YLZBaseDefaults.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YLZBaseDefaults.h; sourceTree = "<group>"; };
+		8E79CDD8268EE5CF00E71F17 /* YLZBaseDefaults.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YLZBaseDefaults.m; sourceTree = "<group>"; };
+		8E79CDDD268EE67E00E71F17 /* YLZLocalData.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YLZLocalData.h; sourceTree = "<group>"; };
+		8E79CDDE268EE67E00E71F17 /* YLZLocalData.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YLZLocalData.m; sourceTree = "<group>"; };
+		8E79CDE1268EE71D00E71F17 /* YLZLocalData+ylz.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "YLZLocalData+ylz.h"; sourceTree = "<group>"; };
+		8E79CDE2268EE71D00E71F17 /* YLZLocalData+ylz.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "YLZLocalData+ylz.m"; sourceTree = "<group>"; };
+		8E79CDE5268EE84000E71F17 /* YLZUserBaseInfo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YLZUserBaseInfo.h; sourceTree = "<group>"; };
+		8E79CDE6268EE84000E71F17 /* YLZUserBaseInfo.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YLZUserBaseInfo.m; sourceTree = "<group>"; };
+		8E79CDEB268EE97000E71F17 /* YLZBaseViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YLZBaseViewController.h; sourceTree = "<group>"; };
+		8E79CDEC268EE97000E71F17 /* YLZBaseViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YLZBaseViewController.m; sourceTree = "<group>"; };
+		8E79CDF0268EF1A500E71F17 /* YLZPageExtent.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YLZPageExtent.h; sourceTree = "<group>"; };
+		8E79CDF1268EF1A500E71F17 /* YLZPageExtent.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YLZPageExtent.m; sourceTree = "<group>"; };
+		8E79CDF5268EF21B00E71F17 /* YLZMediator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YLZMediator.h; sourceTree = "<group>"; };
+		8E79CDF6268EF21B00E71F17 /* YLZMediator.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YLZMediator.m; sourceTree = "<group>"; };
+		8E79CDFD268EF34300E71F17 /* UIViewController+YLZMediator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIViewController+YLZMediator.h"; sourceTree = "<group>"; };
+		8E79CDFE268EF34300E71F17 /* UIViewController+YLZMediator.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+YLZMediator.m"; sourceTree = "<group>"; };
+		8E79CE09268EF57000E71F17 /* YLZMineViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YLZMineViewController.h; sourceTree = "<group>"; };
+		8E79CE0A268EF57000E71F17 /* YLZMineViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YLZMineViewController.m; sourceTree = "<group>"; };
+		8E79CE0D268EF57E00E71F17 /* YLZHomeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YLZHomeViewController.h; sourceTree = "<group>"; };
+		8E79CE0E268EF57E00E71F17 /* YLZHomeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YLZHomeViewController.m; sourceTree = "<group>"; };
+		8E79CE12268EF6E700E71F17 /* YLZLoadingView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YLZLoadingView.h; sourceTree = "<group>"; };
+		8E79CE13268EF6E700E71F17 /* YLZLoadingView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YLZLoadingView.m; sourceTree = "<group>"; };
+		8E79CE26268EF7E700E71F17 /* YLZLoading.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = YLZLoading.json; sourceTree = "<group>"; };
 		8EFB12B1265BB44F007D9FE1 /* OCProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OCProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8EFB12B4265BB44F007D9FE1 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		8EFB12B5265BB44F007D9FE1 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -183,6 +218,8 @@
 			children = (
 				8E424356265CEA1F00E5A4A5 /* YLZMSTabBarController.h */,
 				8E424357265CEA1F00E5A4A5 /* YLZMSTabBarController.m */,
+				8E79CDEB268EE97000E71F17 /* YLZBaseViewController.h */,
+				8E79CDEC268EE97000E71F17 /* YLZBaseViewController.m */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -190,6 +227,7 @@
 		8E424319265CA2C900E5A4A5 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				8E79CE11268EF6CD00E71F17 /* Loading */,
 				8E4243E8265CF8E000E5A4A5 /* Toast */,
 				8E42431A265CA2CE00E5A4A5 /* Tabbar */,
 			);
@@ -208,6 +246,8 @@
 		8E424320265CA32800E5A4A5 /* Extent */ = {
 			isa = PBXGroup;
 			children = (
+				8E79CDEF268EF17F00E71F17 /* YLZPage */,
+				8E79CDD6268EE59F00E71F17 /* YLZStore */,
 				8E4243C9265CF22400E5A4A5 /* YLZKitCategory.h */,
 				8E4243B5265CF22400E5A4A5 /* YLZButton */,
 				8E4243C4265CF22400E5A4A5 /* YLZFont */,
@@ -216,17 +256,17 @@
 				8E4243C1265CF22400E5A4A5 /* YLZJson */,
 				8E4243B8265CF22400E5A4A5 /* YLZLabel */,
 				8E4243BB265CF22400E5A4A5 /* YLZView */,
-				8E42434B265CE8FE00E5A4A5 /* UIColor */,
+				8E42434B265CE8FE00E5A4A5 /* YLZColor */,
 			);
 			path = Extent;
 			sourceTree = "<group>";
 		};
-		8E42434B265CE8FE00E5A4A5 /* UIColor */ = {
+		8E42434B265CE8FE00E5A4A5 /* YLZColor */ = {
 			isa = PBXGroup;
 			children = (
 				8E424351265CE9AA00E5A4A5 /* YLZColor.h */,
 			);
-			path = UIColor;
+			path = YLZColor;
 			sourceTree = "<group>";
 		};
 		8E424362265CF04600E5A4A5 /* Category */ = {
@@ -307,6 +347,8 @@
 			children = (
 				8E424388265CF04600E5A4A5 /* UIViewController+YLZChange.h */,
 				8E424387265CF04600E5A4A5 /* UIViewController+YLZChange.m */,
+				8E79CDFD268EF34300E71F17 /* UIViewController+YLZMediator.h */,
+				8E79CDFE268EF34300E71F17 /* UIViewController+YLZMediator.m */,
 			);
 			path = UIViewController;
 			sourceTree = "<group>";
@@ -446,6 +488,149 @@
 			path = Toast;
 			sourceTree = "<group>";
 		};
+		8E79CDC1268ED12B00E71F17 /* Logic */ = {
+			isa = PBXGroup;
+			children = (
+				8E79CE02268EF51D00E71F17 /* Home */,
+				8E79CDC3268ED13D00E71F17 /* Mine */,
+				8E79CDC2268ED13600E71F17 /* Login */,
+			);
+			path = Logic;
+			sourceTree = "<group>";
+		};
+		8E79CDC2268ED13600E71F17 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				8E79CDC6268ED15F00E71F17 /* Model */,
+				8E79CDC4268ED14A00E71F17 /* View */,
+				8E79CDC5268ED15400E71F17 /* Controller */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		8E79CDC3268ED13D00E71F17 /* Mine */ = {
+			isa = PBXGroup;
+			children = (
+				8E79CE08268EF54B00E71F17 /* Model */,
+				8E79CE07268EF54700E71F17 /* View */,
+				8E79CE06268EF53E00E71F17 /* Controller */,
+			);
+			path = Mine;
+			sourceTree = "<group>";
+		};
+		8E79CDC4268ED14A00E71F17 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		8E79CDC5268ED15400E71F17 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				8E79CE09268EF57000E71F17 /* YLZMineViewController.h */,
+				8E79CE0A268EF57000E71F17 /* YLZMineViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		8E79CDC6268ED15F00E71F17 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		8E79CDD6268EE59F00E71F17 /* YLZStore */ = {
+			isa = PBXGroup;
+			children = (
+				8E79CDD7268EE5CF00E71F17 /* YLZBaseDefaults.h */,
+				8E79CDD8268EE5CF00E71F17 /* YLZBaseDefaults.m */,
+				8E79CDE5268EE84000E71F17 /* YLZUserBaseInfo.h */,
+				8E79CDE6268EE84000E71F17 /* YLZUserBaseInfo.m */,
+				8E79CDDD268EE67E00E71F17 /* YLZLocalData.h */,
+				8E79CDDE268EE67E00E71F17 /* YLZLocalData.m */,
+				8E79CDE1268EE71D00E71F17 /* YLZLocalData+ylz.h */,
+				8E79CDE2268EE71D00E71F17 /* YLZLocalData+ylz.m */,
+			);
+			path = YLZStore;
+			sourceTree = "<group>";
+		};
+		8E79CDEF268EF17F00E71F17 /* YLZPage */ = {
+			isa = PBXGroup;
+			children = (
+				8E79CDF0268EF1A500E71F17 /* YLZPageExtent.h */,
+				8E79CDF1268EF1A500E71F17 /* YLZPageExtent.m */,
+				8E79CDF5268EF21B00E71F17 /* YLZMediator.h */,
+				8E79CDF6268EF21B00E71F17 /* YLZMediator.m */,
+			);
+			path = YLZPage;
+			sourceTree = "<group>";
+		};
+		8E79CE02268EF51D00E71F17 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				8E79CE05268EF52E00E71F17 /* Model */,
+				8E79CE03268EF52300E71F17 /* View */,
+				8E79CE04268EF52800E71F17 /* Controller */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		8E79CE03268EF52300E71F17 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		8E79CE04268EF52800E71F17 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				8E79CE0D268EF57E00E71F17 /* YLZHomeViewController.h */,
+				8E79CE0E268EF57E00E71F17 /* YLZHomeViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		8E79CE05268EF52E00E71F17 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		8E79CE06268EF53E00E71F17 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		8E79CE07268EF54700E71F17 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		8E79CE08268EF54B00E71F17 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		8E79CE11268EF6CD00E71F17 /* Loading */ = {
+			isa = PBXGroup;
+			children = (
+				8E79CE26268EF7E700E71F17 /* YLZLoading.json */,
+				8E79CE12268EF6E700E71F17 /* YLZLoadingView.h */,
+				8E79CE13268EF6E700E71F17 /* YLZLoadingView.m */,
+			);
+			path = Loading;
+			sourceTree = "<group>";
+		};
 		8EFB12A8265BB44F007D9FE1 = {
 			isa = PBXGroup;
 			children = (
@@ -467,6 +652,7 @@
 		8EFB12B3265BB44F007D9FE1 /* OCProject */ = {
 			isa = PBXGroup;
 			children = (
+				8E79CDC1268ED12B00E71F17 /* Logic */,
 				8E4242EF265C9AE800E5A4A5 /* Base */,
 				8E4242F0265C9AF200E5A4A5 /* Supporting Files */,
 				8EFB12BA265BB44F007D9FE1 /* ViewController.h */,
@@ -545,6 +731,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8E79CE27268EF7E700E71F17 /* YLZLoading.json in Resources */,
 				8EFB12C4265BB450007D9FE1 /* LaunchScreen.storyboard in Resources */,
 				8EFB12C1265BB450007D9FE1 /* Assets.xcassets in Resources */,
 			);
@@ -616,6 +803,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8E79CDD9268EE5CF00E71F17 /* YLZBaseDefaults.m in Sources */,
+				8E79CDFF268EF34300E71F17 /* UIViewController+YLZMediator.m in Sources */,
 				8E4243CB265CF22400E5A4A5 /* YLZEnlargeButton.m in Sources */,
 				8E4243E1265CF7BF00E5A4A5 /* YLZFormat.m in Sources */,
 				8E4243D8265CF75B00E5A4A5 /* YLZViewFactory.m in Sources */,
@@ -623,14 +812,21 @@
 				8E4243E5265CF83100E5A4A5 /* YLZValidated.m in Sources */,
 				8E4243A8265CF04600E5A4A5 /* UITextField+YLZExtension.m in Sources */,
 				8E4243A4265CF04600E5A4A5 /* UIView+YLZChange.m in Sources */,
+				8E79CDDF268EE67E00E71F17 /* YLZLocalData.m in Sources */,
 				8EFB12BC265BB44F007D9FE1 /* ViewController.m in Sources */,
 				8EFB12B6265BB44F007D9FE1 /* AppDelegate.m in Sources */,
 				8E42439B265CF04600E5A4A5 /* UIImage+YLZGif.m in Sources */,
 				8E4243CA265CF22400E5A4A5 /* YLZProgressHUDExtent.m in Sources */,
+				8E79CE0F268EF57E00E71F17 /* YLZHomeViewController.m in Sources */,
 				8E4243A2265CF04600E5A4A5 /* UIButton+YLZFitSize.m in Sources */,
+				8E79CDF7268EF21B00E71F17 /* YLZMediator.m in Sources */,
+				8E79CDE7268EE84000E71F17 /* YLZUserBaseInfo.m in Sources */,
 				8E424358265CEA1F00E5A4A5 /* YLZMSTabBarController.m in Sources */,
 				8E4243EB265CF8F500E5A4A5 /* YLZNetWork.m in Sources */,
 				8E42439F265CF04600E5A4A5 /* UIButton+YLZCountDown.m in Sources */,
+				8E79CDE3268EE71D00E71F17 /* YLZLocalData+ylz.m in Sources */,
+				8E79CE0B268EF57000E71F17 /* YLZMineViewController.m in Sources */,
+				8E79CDF2268EF1A500E71F17 /* YLZPageExtent.m in Sources */,
 				8E4243A1265CF04600E5A4A5 /* UIButton+YLZFixMultiClick.m in Sources */,
 				8E424399265CF04600E5A4A5 /* UIImage+YLZCompress.m in Sources */,
 				8E4243DD265CF78400E5A4A5 /* YLZPageFunction.m in Sources */,
@@ -639,6 +835,7 @@
 				8E4243CC265CF22400E5A4A5 /* YLZPaddingLabel.m in Sources */,
 				8E4243AC265CF04600E5A4A5 /* YLZWeakProxy.m in Sources */,
 				8E4243A5265CF04600E5A4A5 /* UIView+YLZCore.m in Sources */,
+				8E79CDED268EE97000E71F17 /* YLZBaseViewController.m in Sources */,
 				8E4243AA265CF04600E5A4A5 /* NSString+YLZExtension.m in Sources */,
 				8E4243A9265CF04600E5A4A5 /* NSError+YLZMS.m in Sources */,
 				8EFB12C7265BB450007D9FE1 /* main.m in Sources */,
@@ -651,6 +848,7 @@
 				8E4243AB265CF04600E5A4A5 /* NSTimer+YLZPluto.m in Sources */,
 				8E424360265CEB2F00E5A4A5 /* AppDelegate+Tarbar.m in Sources */,
 				8E4243D1265CF22400E5A4A5 /* YLZFont.m in Sources */,
+				8E79CE14268EF6E700E71F17 /* YLZLoadingView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -786,16 +984,19 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 8M6V744TAM;
 				GCC_PREFIX_HEADER = "OCProject/Supporting Files/CommFiles.pch";
 				INFOPLIST_FILE = "OCProject/Supporting Files/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.stone.OCProject;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
@@ -806,16 +1007,19 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 8M6V744TAM;
 				GCC_PREFIX_HEADER = "OCProject/Supporting Files/CommFiles.pch";
 				INFOPLIST_FILE = "OCProject/Supporting Files/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.stone.OCProject;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
