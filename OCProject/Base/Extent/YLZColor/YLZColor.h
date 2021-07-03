@@ -24,6 +24,9 @@
 #define YLZColorRedView         [UIColor colorWithHexString:@"F56C6C"]
 /// 蓝色
 #define YLZColorBlueView        [UIColor colorWithHexString:@"1B65B9"]
+/// 橙色
+#define YLZColorOrangeView        [UIColor colorWithHexString:@"f1985c"]
+
 
 /// 标题、正文、辅助文字颜色
 #define YLZColorTitleOne        [UIColor colorWithHexString:@"303133"]
@@ -83,6 +86,9 @@
 
 /// 灰色模式下Cell背景色
 #define YLZColorSeparator  [UIColor colorWithHexString:@"f0f1f5"]
+
+/// Cell的背景色
+#define YLZColorCellBackGround  [UIColor colorWithHexString:@"fafafc"]
 
 #endif /* YLZColorMacros_h */
 

@@ -92,6 +92,24 @@
 		8E79CEB9268F13F900E71F17 /* JXCategoryBaseView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E79CE91268F13F900E71F17 /* JXCategoryBaseView.m */; };
 		8E79CEBA268F13F900E71F17 /* JXCategoryBaseCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E79CE92268F13F900E71F17 /* JXCategoryBaseCell.m */; };
 		8E79CEBB268F13F900E71F17 /* JXCategoryBaseCellModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E79CE93268F13F900E71F17 /* JXCategoryBaseCellModel.m */; };
+		8E9DD3FE2690359900D13F09 /* YLZSettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E9DD3FD2690359900D13F09 /* YLZSettingViewController.m */; };
+		8E9DD404269035CB00D13F09 /* YLZSettingModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E9DD403269035CB00D13F09 /* YLZSettingModel.m */; };
+		8E9DD4092690381500D13F09 /* YLZSettingTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E9DD4082690381500D13F09 /* YLZSettingTableViewCell.m */; };
+		8E9DD40D26903D1F00D13F09 /* YLZConstTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E9DD40C26903D1F00D13F09 /* YLZConstTableViewCell.m */; };
+		8E9DD4132690434B00D13F09 /* YLZSecretSettingSwitchTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E9DD4122690434B00D13F09 /* YLZSecretSettingSwitchTableViewCell.m */; };
+		8E9DD4172690436100D13F09 /* YLZSecretSettingTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E9DD4162690436100D13F09 /* YLZSecretSettingTableViewCell.m */; };
+		8E9DD41B269044EA00D13F09 /* YLZSecretSettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E9DD41A269044EA00D13F09 /* YLZSecretSettingViewController.m */; };
+		8E9DD41F2690479600D13F09 /* YLZAddMeMethodViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E9DD41E2690479600D13F09 /* YLZAddMeMethodViewController.m */; };
+		8E9DD4232690493500D13F09 /* YLZBlacklistViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E9DD4222690493500D13F09 /* YLZBlacklistViewController.m */; };
+		8E9DD4272690497900D13F09 /* YLZBlacklistTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E9DD4262690497900D13F09 /* YLZBlacklistTableViewCell.m */; };
+		8E9DD42B2690499E00D13F09 /* YLZBlacklistModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E9DD42A2690499E00D13F09 /* YLZBlacklistModel.m */; };
+		8E9DD42F26904DD600D13F09 /* YLZChangePasswordViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E9DD42E26904DD600D13F09 /* YLZChangePasswordViewController.m */; };
+		8E9DD43326904E0200D13F09 /* YLZConstTextFieldView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E9DD43226904E0200D13F09 /* YLZConstTextFieldView.m */; };
+		8E9DD437269056D400D13F09 /* YLZSwitchAccountViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E9DD436269056D400D13F09 /* YLZSwitchAccountViewController.m */; };
+		8E9DD43C269057A500D13F09 /* YLZAccountModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E9DD43B269057A500D13F09 /* YLZAccountModel.m */; };
+		8E9DD4412690580F00D13F09 /* YLZAccountTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E9DD4402690580F00D13F09 /* YLZAccountTableViewCell.m */; };
+		8E9DD44626905B3A00D13F09 /* YLZAddAccountViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E9DD44526905B3A00D13F09 /* YLZAddAccountViewController.m */; };
+		8E9DD44E26905CBA00D13F09 /* YLZSmsCodeTextFieldView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E9DD44D26905CBA00D13F09 /* YLZSmsCodeTextFieldView.m */; };
 		8EFB12B6265BB44F007D9FE1 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EFB12B5265BB44F007D9FE1 /* AppDelegate.m */; };
 		8EFB12BC265BB44F007D9FE1 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EFB12BB265BB44F007D9FE1 /* ViewController.m */; };
 		8EFB12C1265BB450007D9FE1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8EFB12C0265BB450007D9FE1 /* Assets.xcassets */; };
@@ -278,6 +296,42 @@
 		8E79CE91268F13F900E71F17 /* JXCategoryBaseView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JXCategoryBaseView.m; sourceTree = "<group>"; };
 		8E79CE92268F13F900E71F17 /* JXCategoryBaseCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JXCategoryBaseCell.m; sourceTree = "<group>"; };
 		8E79CE93268F13F900E71F17 /* JXCategoryBaseCellModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JXCategoryBaseCellModel.m; sourceTree = "<group>"; };
+		8E9DD3FC2690359900D13F09 /* YLZSettingViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YLZSettingViewController.h; sourceTree = "<group>"; };
+		8E9DD3FD2690359900D13F09 /* YLZSettingViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YLZSettingViewController.m; sourceTree = "<group>"; };
+		8E9DD402269035CB00D13F09 /* YLZSettingModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YLZSettingModel.h; sourceTree = "<group>"; };
+		8E9DD403269035CB00D13F09 /* YLZSettingModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YLZSettingModel.m; sourceTree = "<group>"; };
+		8E9DD4072690381500D13F09 /* YLZSettingTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YLZSettingTableViewCell.h; sourceTree = "<group>"; };
+		8E9DD4082690381500D13F09 /* YLZSettingTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YLZSettingTableViewCell.m; sourceTree = "<group>"; };
+		8E9DD40B26903D1F00D13F09 /* YLZConstTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YLZConstTableViewCell.h; sourceTree = "<group>"; };
+		8E9DD40C26903D1F00D13F09 /* YLZConstTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YLZConstTableViewCell.m; sourceTree = "<group>"; };
+		8E9DD4112690434B00D13F09 /* YLZSecretSettingSwitchTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YLZSecretSettingSwitchTableViewCell.h; sourceTree = "<group>"; };
+		8E9DD4122690434B00D13F09 /* YLZSecretSettingSwitchTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YLZSecretSettingSwitchTableViewCell.m; sourceTree = "<group>"; };
+		8E9DD4152690436000D13F09 /* YLZSecretSettingTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YLZSecretSettingTableViewCell.h; sourceTree = "<group>"; };
+		8E9DD4162690436100D13F09 /* YLZSecretSettingTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YLZSecretSettingTableViewCell.m; sourceTree = "<group>"; };
+		8E9DD419269044EA00D13F09 /* YLZSecretSettingViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YLZSecretSettingViewController.h; sourceTree = "<group>"; };
+		8E9DD41A269044EA00D13F09 /* YLZSecretSettingViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YLZSecretSettingViewController.m; sourceTree = "<group>"; };
+		8E9DD41D2690479600D13F09 /* YLZAddMeMethodViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YLZAddMeMethodViewController.h; sourceTree = "<group>"; };
+		8E9DD41E2690479600D13F09 /* YLZAddMeMethodViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YLZAddMeMethodViewController.m; sourceTree = "<group>"; };
+		8E9DD4212690493500D13F09 /* YLZBlacklistViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YLZBlacklistViewController.h; sourceTree = "<group>"; };
+		8E9DD4222690493500D13F09 /* YLZBlacklistViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YLZBlacklistViewController.m; sourceTree = "<group>"; };
+		8E9DD4252690497900D13F09 /* YLZBlacklistTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YLZBlacklistTableViewCell.h; sourceTree = "<group>"; };
+		8E9DD4262690497900D13F09 /* YLZBlacklistTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YLZBlacklistTableViewCell.m; sourceTree = "<group>"; };
+		8E9DD4292690499E00D13F09 /* YLZBlacklistModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YLZBlacklistModel.h; sourceTree = "<group>"; };
+		8E9DD42A2690499E00D13F09 /* YLZBlacklistModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YLZBlacklistModel.m; sourceTree = "<group>"; };
+		8E9DD42D26904DD600D13F09 /* YLZChangePasswordViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YLZChangePasswordViewController.h; sourceTree = "<group>"; };
+		8E9DD42E26904DD600D13F09 /* YLZChangePasswordViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YLZChangePasswordViewController.m; sourceTree = "<group>"; };
+		8E9DD43126904E0200D13F09 /* YLZConstTextFieldView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YLZConstTextFieldView.h; sourceTree = "<group>"; };
+		8E9DD43226904E0200D13F09 /* YLZConstTextFieldView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YLZConstTextFieldView.m; sourceTree = "<group>"; };
+		8E9DD435269056D400D13F09 /* YLZSwitchAccountViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YLZSwitchAccountViewController.h; sourceTree = "<group>"; };
+		8E9DD436269056D400D13F09 /* YLZSwitchAccountViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YLZSwitchAccountViewController.m; sourceTree = "<group>"; };
+		8E9DD43A269057A500D13F09 /* YLZAccountModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YLZAccountModel.h; sourceTree = "<group>"; };
+		8E9DD43B269057A500D13F09 /* YLZAccountModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YLZAccountModel.m; sourceTree = "<group>"; };
+		8E9DD43F2690580F00D13F09 /* YLZAccountTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YLZAccountTableViewCell.h; sourceTree = "<group>"; };
+		8E9DD4402690580F00D13F09 /* YLZAccountTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YLZAccountTableViewCell.m; sourceTree = "<group>"; };
+		8E9DD44426905B3A00D13F09 /* YLZAddAccountViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YLZAddAccountViewController.h; sourceTree = "<group>"; };
+		8E9DD44526905B3A00D13F09 /* YLZAddAccountViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YLZAddAccountViewController.m; sourceTree = "<group>"; };
+		8E9DD44C26905CBA00D13F09 /* YLZSmsCodeTextFieldView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YLZSmsCodeTextFieldView.h; sourceTree = "<group>"; };
+		8E9DD44D26905CBA00D13F09 /* YLZSmsCodeTextFieldView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YLZSmsCodeTextFieldView.m; sourceTree = "<group>"; };
 		8EFB12B1265BB44F007D9FE1 /* OCProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OCProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8EFB12B4265BB44F007D9FE1 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		8EFB12B5265BB44F007D9FE1 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -312,6 +366,8 @@
 		8E4242EF265C9AE800E5A4A5 /* Base */ = {
 			isa = PBXGroup;
 			children = (
+				8E9DD40F269042CE00D13F09 /* TableViewCell */,
+				8E9DD401269035B100D13F09 /* Model */,
 				8E4243D5265CF73A00E5A4A5 /* Public */,
 				8E424362265CF04600E5A4A5 /* Category */,
 				8E424320265CA32800E5A4A5 /* Extent */,
@@ -350,6 +406,7 @@
 		8E424319265CA2C900E5A4A5 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				8E9DD44A26905C8B00D13F09 /* CustomView */,
 				8E79CE11268EF6CD00E71F17 /* Loading */,
 				8E4243E8265CF8E000E5A4A5 /* Toast */,
 				8E42431A265CA2CE00E5A4A5 /* Tabbar */,
@@ -634,9 +691,7 @@
 		8E79CDC3268ED13D00E71F17 /* Mine */ = {
 			isa = PBXGroup;
 			children = (
-				8E79CE08268EF54B00E71F17 /* Model */,
-				8E79CE07268EF54700E71F17 /* View */,
-				8E79CE06268EF53E00E71F17 /* Controller */,
+				8E9DD3FB2690357700D13F09 /* Setting */,
 			);
 			path = Mine;
 			sourceTree = "<group>";
@@ -726,6 +781,20 @@
 		8E79CE06268EF53E00E71F17 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				8E9DD3FC2690359900D13F09 /* YLZSettingViewController.h */,
+				8E9DD3FD2690359900D13F09 /* YLZSettingViewController.m */,
+				8E9DD419269044EA00D13F09 /* YLZSecretSettingViewController.h */,
+				8E9DD41A269044EA00D13F09 /* YLZSecretSettingViewController.m */,
+				8E9DD41D2690479600D13F09 /* YLZAddMeMethodViewController.h */,
+				8E9DD41E2690479600D13F09 /* YLZAddMeMethodViewController.m */,
+				8E9DD4212690493500D13F09 /* YLZBlacklistViewController.h */,
+				8E9DD4222690493500D13F09 /* YLZBlacklistViewController.m */,
+				8E9DD42D26904DD600D13F09 /* YLZChangePasswordViewController.h */,
+				8E9DD42E26904DD600D13F09 /* YLZChangePasswordViewController.m */,
+				8E9DD435269056D400D13F09 /* YLZSwitchAccountViewController.h */,
+				8E9DD436269056D400D13F09 /* YLZSwitchAccountViewController.m */,
+				8E9DD44426905B3A00D13F09 /* YLZAddAccountViewController.h */,
+				8E9DD44526905B3A00D13F09 /* YLZAddAccountViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -733,6 +802,7 @@
 		8E79CE07268EF54700E71F17 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				8E9DD4392690573200D13F09 /* UITableViewCell */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -740,6 +810,10 @@
 		8E79CE08268EF54B00E71F17 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				8E9DD4292690499E00D13F09 /* YLZBlacklistModel.h */,
+				8E9DD42A2690499E00D13F09 /* YLZBlacklistModel.m */,
+				8E9DD43A269057A500D13F09 /* YLZAccountModel.h */,
+				8E9DD43B269057A500D13F09 /* YLZAccountModel.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -940,6 +1014,62 @@
 			path = Base;
 			sourceTree = "<group>";
 		};
+		8E9DD3FB2690357700D13F09 /* Setting */ = {
+			isa = PBXGroup;
+			children = (
+				8E79CE08268EF54B00E71F17 /* Model */,
+				8E79CE07268EF54700E71F17 /* View */,
+				8E79CE06268EF53E00E71F17 /* Controller */,
+			);
+			path = Setting;
+			sourceTree = "<group>";
+		};
+		8E9DD401269035B100D13F09 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				8E9DD402269035CB00D13F09 /* YLZSettingModel.h */,
+				8E9DD403269035CB00D13F09 /* YLZSettingModel.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		8E9DD40F269042CE00D13F09 /* TableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				8E9DD40B26903D1F00D13F09 /* YLZConstTableViewCell.h */,
+				8E9DD40C26903D1F00D13F09 /* YLZConstTableViewCell.m */,
+			);
+			path = TableViewCell;
+			sourceTree = "<group>";
+		};
+		8E9DD4392690573200D13F09 /* UITableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				8E9DD4072690381500D13F09 /* YLZSettingTableViewCell.h */,
+				8E9DD4082690381500D13F09 /* YLZSettingTableViewCell.m */,
+				8E9DD4112690434B00D13F09 /* YLZSecretSettingSwitchTableViewCell.h */,
+				8E9DD4122690434B00D13F09 /* YLZSecretSettingSwitchTableViewCell.m */,
+				8E9DD4152690436000D13F09 /* YLZSecretSettingTableViewCell.h */,
+				8E9DD4162690436100D13F09 /* YLZSecretSettingTableViewCell.m */,
+				8E9DD4252690497900D13F09 /* YLZBlacklistTableViewCell.h */,
+				8E9DD4262690497900D13F09 /* YLZBlacklistTableViewCell.m */,
+				8E9DD43F2690580F00D13F09 /* YLZAccountTableViewCell.h */,
+				8E9DD4402690580F00D13F09 /* YLZAccountTableViewCell.m */,
+			);
+			path = UITableViewCell;
+			sourceTree = "<group>";
+		};
+		8E9DD44A26905C8B00D13F09 /* CustomView */ = {
+			isa = PBXGroup;
+			children = (
+				8E9DD43126904E0200D13F09 /* YLZConstTextFieldView.h */,
+				8E9DD43226904E0200D13F09 /* YLZConstTextFieldView.m */,
+				8E9DD44C26905CBA00D13F09 /* YLZSmsCodeTextFieldView.h */,
+				8E9DD44D26905CBA00D13F09 /* YLZSmsCodeTextFieldView.m */,
+			);
+			path = CustomView;
+			sourceTree = "<group>";
+		};
 		8EFB12A8265BB44F007D9FE1 = {
 			isa = PBXGroup;
 			children = (
@@ -1113,16 +1243,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8E9DD41B269044EA00D13F09 /* YLZSecretSettingViewController.m in Sources */,
 				8E79CEB1268F13F900E71F17 /* JXCategoryNumberCellModel.m in Sources */,
 				8E79CDD9268EE5CF00E71F17 /* YLZBaseDefaults.m in Sources */,
+				8E9DD40D26903D1F00D13F09 /* YLZConstTableViewCell.m in Sources */,
 				8E79CEB3268F13F900E71F17 /* JXCategoryFactory.m in Sources */,
 				8E79CEA1268F13F900E71F17 /* JXCategoryIndicatorCell.m in Sources */,
 				8E79CDFF268EF34300E71F17 /* UIViewController+YLZMediator.m in Sources */,
 				8E79CE96268F13F900E71F17 /* JXCategoryTitleVerticalZoomView.m in Sources */,
+				8E9DD437269056D400D13F09 /* YLZSwitchAccountViewController.m in Sources */,
 				8E4243CB265CF22400E5A4A5 /* YLZEnlargeButton.m in Sources */,
 				8E4243E1265CF7BF00E5A4A5 /* YLZFormat.m in Sources */,
 				8E4243D8265CF75B00E5A4A5 /* YLZViewFactory.m in Sources */,
 				8E42439A265CF04600E5A4A5 /* UIImage+YLZChange.m in Sources */,
+				8E9DD44E26905CBA00D13F09 /* YLZSmsCodeTextFieldView.m in Sources */,
 				8E79CEB2268F13F900E71F17 /* JXCategoryListContainerView.m in Sources */,
 				8E4243E5265CF83100E5A4A5 /* YLZValidated.m in Sources */,
 				8E4243A8265CF04600E5A4A5 /* UITextField+YLZExtension.m in Sources */,
@@ -1138,11 +1272,16 @@
 				8E79CE9E268F13F900E71F17 /* JXCategoryIndicatorDotLineView.m in Sources */,
 				8E4243CA265CF22400E5A4A5 /* YLZProgressHUDExtent.m in Sources */,
 				8E79CEA0268F13F900E71F17 /* JXCategoryIndicatorCellModel.m in Sources */,
+				8E9DD4232690493500D13F09 /* YLZBlacklistViewController.m in Sources */,
+				8E9DD43C269057A500D13F09 /* YLZAccountModel.m in Sources */,
 				8E79CE0F268EF57E00E71F17 /* YLZHomeViewController.m in Sources */,
 				8E4243A2265CF04600E5A4A5 /* UIButton+YLZFitSize.m in Sources */,
 				8E79CE9A268F13F900E71F17 /* JXCategoryIndicatorRainbowLineView.m in Sources */,
 				8E79CEB8268F13F900E71F17 /* JXCategoryListContainerRTLCell.m in Sources */,
+				8E9DD4132690434B00D13F09 /* YLZSecretSettingSwitchTableViewCell.m in Sources */,
 				8E79CDF7268EF21B00E71F17 /* YLZMediator.m in Sources */,
+				8E9DD4172690436100D13F09 /* YLZSecretSettingTableViewCell.m in Sources */,
+				8E9DD4412690580F00D13F09 /* YLZAccountTableViewCell.m in Sources */,
 				8E79CDE7268EE84000E71F17 /* YLZUserBaseInfo.m in Sources */,
 				8E424358265CEA1F00E5A4A5 /* YLZMSTabBarController.m in Sources */,
 				8E79CE94268F13F900E71F17 /* JXCategoryTitleVerticalZoomCellModel.m in Sources */,
@@ -1157,6 +1296,7 @@
 				8E79CEAB268F13F900E71F17 /* JXCategoryTitleView.m in Sources */,
 				8E79CEA3268F13F900E71F17 /* JXCategoryDotCell.m in Sources */,
 				8E79CEAA268F13F900E71F17 /* JXCategoryTitleCell.m in Sources */,
+				8E9DD4272690497900D13F09 /* YLZBlacklistTableViewCell.m in Sources */,
 				8E79CE0B268EF57000E71F17 /* YLZMineViewController.m in Sources */,
 				8E79CEB5268F13F900E71F17 /* JXCategoryIndicatorParamsModel.m in Sources */,
 				8E79CE9F268F13F900E71F17 /* JXCategoryIndicatorBackgroundView.m in Sources */,
@@ -1175,6 +1315,8 @@
 				8E79CEA4268F13F900E71F17 /* JXCategoryDotView.m in Sources */,
 				8E4243AC265CF04600E5A4A5 /* YLZWeakProxy.m in Sources */,
 				8E4243A5265CF04600E5A4A5 /* UIView+YLZCore.m in Sources */,
+				8E9DD44626905B3A00D13F09 /* YLZAddAccountViewController.m in Sources */,
+				8E9DD3FE2690359900D13F09 /* YLZSettingViewController.m in Sources */,
 				8E79CDED268EE97000E71F17 /* YLZBaseViewController.m in Sources */,
 				8E4243AA265CF04600E5A4A5 /* NSString+YLZExtension.m in Sources */,
 				8E4243A9265CF04600E5A4A5 /* NSError+YLZMS.m in Sources */,
@@ -1182,16 +1324,20 @@
 				8EFB12C7265BB450007D9FE1 /* main.m in Sources */,
 				8E79CEA6268F13F900E71F17 /* JXCategoryTitleImageView.m in Sources */,
 				8E79CE9B268F13F900E71F17 /* JXCategoryIndicatorImageView.m in Sources */,
+				8E9DD4092690381500D13F09 /* YLZSettingTableViewCell.m in Sources */,
 				8E4243A0265CF04600E5A4A5 /* UIButton+YLZExtension.m in Sources */,
 				8E79CEAD268F13F900E71F17 /* JXCategoryImageCell.m in Sources */,
 				8E4243A3265CF04600E5A4A5 /* UIColor+YLZHex.m in Sources */,
 				8E79CEAC268F13F900E71F17 /* JXCategoryImageView.m in Sources */,
+				8E9DD404269035CB00D13F09 /* YLZSettingModel.m in Sources */,
 				8E79CE95268F13F900E71F17 /* JXCategoryTitleVerticalZoomCell.m in Sources */,
 				8E42431D265CA2F800E5A4A5 /* YLZMSTabBar.m in Sources */,
 				8E4243CD265CF22400E5A4A5 /* YLZViewExtent.m in Sources */,
+				8E9DD42B2690499E00D13F09 /* YLZBlacklistModel.m in Sources */,
 				8E42439C265CF04600E5A4A5 /* UIImage+YLZEncoding.m in Sources */,
 				8E79CEA2268F13F900E71F17 /* JXCategoryIndicatorView.m in Sources */,
 				8E79CEB0268F13F900E71F17 /* JXCategoryNumberCell.m in Sources */,
+				8E9DD42F26904DD600D13F09 /* YLZChangePasswordViewController.m in Sources */,
 				8E4243CE265CF22400E5A4A5 /* YLZImageExtent.m in Sources */,
 				8E4243AB265CF04600E5A4A5 /* NSTimer+YLZPluto.m in Sources */,
 				8E424360265CEB2F00E5A4A5 /* AppDelegate+Tarbar.m in Sources */,
@@ -1199,6 +1345,8 @@
 				8E4243D1265CF22400E5A4A5 /* YLZFont.m in Sources */,
 				8E79CEBB268F13F900E71F17 /* JXCategoryBaseCellModel.m in Sources */,
 				8E79CE14268EF6E700E71F17 /* YLZLoadingView.m in Sources */,
+				8E9DD43326904E0200D13F09 /* YLZConstTextFieldView.m in Sources */,
+				8E9DD41F2690479600D13F09 /* YLZAddMeMethodViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

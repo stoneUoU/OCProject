@@ -19,18 +19,11 @@
 //UIColor:
 #import "UIColor+YLZHex.h"
 
-//UIFont:
-#import "UIFont+YLZSize.h"
-
 //UIImage:
 #import "UIImage+YLZChange.h"
 #import "UIImage+YLZCompress.h"
 #import "UIImage+YLZEncoding.h"
 #import "UIImage+YLZGif.h"
-
-//UILabel:
-#import "UILabel+YLZChange.h"
-#import "UILabel+YLZSize.h"
 
 //UITextField:
 #import "UITextField+YLZExtension.h"

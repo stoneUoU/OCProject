@@ -6,9 +6,18 @@
 //
 
 #import "YLZHomeViewController.h"
-#import "YLZKitCategory.h"
 
+#import "YLZSettingViewController.h"
+#import "YLZSecretSettingViewController.h"
+#import "YLZAddMeMethodViewController.h"
+#import "YLZBlacklistViewController.h"
+#import "YLZChangePasswordViewController.h"
+#import "YLZSwitchAccountViewController.h"
+#import "YLZAddAccountViewController.h"
+
+#import "YLZKitCategory.h"
 #import "YLZNetWork.h"
+#import "YLZPageExtent.h"
 
 @interface YLZHomeViewController ()
 
@@ -75,11 +84,40 @@
 - (void)btnOKClick {
 //    YLZLOG(@"YYYYYYYYY");
 //    self.view.backgroundColor = [UIColor redColor];
-    [YLZNetWork requestWithType:YLZHttpRequestTypeGet withUrlString:@"/provide/home_data" withParaments:@{} withShowLoading:YES withShowError:YES withSuccessBlock:^(NSDictionary * _Nonnull object) {
-        YLZLOG(@"object______%@",[object modelToJSONString]);
-    } withFailureBlock:^(NSError * _Nonnull error) {
-//        YLZLOG();
-    }];
+//    [YLZNetWork requestWithType:YLZHttpRequestTypeGet withUrlString:@"/provide/home_data" withParaments:@{} withShowLoading:YES withShowError:YES withSuccessBlock:^(NSDictionary * _Nonnull object) {
+//        YLZLOG(@"object______%@",[object modelToJSONString]);
+//    } withFailureBlock:^(NSError * _Nonnull error) {
+////        YLZLOG();
+//    }];
+    
+    //设置：
+//    YLZSettingViewController *vc = [[YLZSettingViewController alloc] init];
+//    [[YLZPageExtent sharedInstance] pushExistingViewController:vc];
+    
+//    //隐私设置：
+//    YLZSecretSettingViewController *vc = [[YLZSecretSettingViewController alloc] init];
+//    [[YLZPageExtent sharedInstance] pushExistingViewController:vc];
+    
+    //添加我的方式：
+//    YLZAddMeMethodViewController *vc = [[YLZAddMeMethodViewController alloc] init];
+//    [[YLZPageExtent sharedInstance] pushExistingViewController:vc];
+    
+    //黑名单：
+//    YLZBlacklistViewController *vc = [[YLZBlacklistViewController alloc] init];
+//    [[YLZPageExtent sharedInstance] pushExistingViewController:vc];
+    
+    //密码修改：
+//    YLZChangePasswordViewController *vc = [[YLZChangePasswordViewController alloc] init];
+//    [[YLZPageExtent sharedInstance] pushExistingViewController:vc];
+    
+    //切换帐号：
+//    YLZSwitchAccountViewController *vc = [[YLZSwitchAccountViewController alloc] init];
+//    [[YLZPageExtent sharedInstance] pushExistingViewController:vc];
+    
+    //添加帐号：
+    YLZAddAccountViewController *vc = [[YLZAddAccountViewController alloc] init];
+    [[YLZPageExtent sharedInstance] pushExistingViewController:vc];
+    
 }
 
 - (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {

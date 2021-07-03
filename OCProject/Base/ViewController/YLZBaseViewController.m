@@ -103,7 +103,7 @@
     }];
     [self.leftButton mas_makeConstraints:^(MASConstraintMaker *make) {
         make.centerY.equalTo(self.navigationView);
-        make.left.equalTo(self.navigationView.mas_left);
+        make.left.equalTo(self.navigationView.mas_left).offset(16);
         make.height.mas_equalTo(NavBarHeight);
     }];
     [self.rightButton mas_makeConstraints:^(MASConstraintMaker *make) {
