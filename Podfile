@@ -25,6 +25,5 @@ target 'OCProject' do
   
   #打正式包得把下面三个库给注释：  若adhoc包中包含Reveal-SDK，则不要勾选Rebuild from Bitcode
   pod 'Reveal-SDK','~>4', :configurations => ['Debug']
-#  pod 'Mediator', '1.3.3'
   
 end
