@@ -9,6 +9,10 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
+typedef void (^YLZSmsCodeTextFieldViewSmsHandle)(UIButton *sender);
+
+typedef void (^YLZSmsCodeTextFieldViewHandle)(UITextField *textField);
+
 @interface YLZSmsCodeTextFieldView : UIView
 
 @property (nonatomic, strong) NSString *nameString;
@@ -22,6 +26,10 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, strong) UITextField *textField;
 
 @property (nonatomic, strong) UIButton *codeButton;
+
+@property (nonatomic, copy) YLZSmsCodeTextFieldViewHandle textFieldHandle;
+
+@property (nonatomic, strong) YLZSmsCodeTextFieldViewSmsHandle smsHandle;
 
 @end
 

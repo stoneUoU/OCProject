@@ -69,7 +69,7 @@
     [self.nameLabel mas_makeConstraints:^(MASConstraintMaker *make) {
         make.left.equalTo(self.mas_left).offset(16);
         make.centerY.equalTo(self);
-        make.size.equalTo(@(CGSizeMake(120, 44)));
+        make.size.equalTo(@(CGSizeMake(100, 44)));
     }];
     [self.codeButton mas_makeConstraints:^(MASConstraintMaker *make) {
         make.right.equalTo(self.mas_right).offset(-16);
@@ -77,9 +77,9 @@
     }];
     
     [self.separatorView mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.right.equalTo(self.mas_right).offset(-88);
+        make.right.equalTo(self.mas_right).offset(-96);
         make.centerY.equalTo(self);
-        make.size.equalTo(@(CGSizeMake(0.5, 32)));
+        make.size.equalTo(@(CGSizeMake(0.5, 24)));
     }];
     [self.textField mas_makeConstraints:^(MASConstraintMaker *make) {
         make.left.equalTo(self.nameLabel.mas_right);
@@ -93,11 +93,11 @@
 #pragma mark -
 
 - (void)textFieldChange:(UITextField *)field {
-    
+    !self.textFieldHandle ?: self.textFieldHandle(field);
 }
 
 - (void)toSmsCode:(UIButton *)sender {
-    
+    !self.smsHandle ?: self.smsHandle(sender);
 }
 
 #pragma mark - lazy load
@@ -136,8 +136,8 @@
     if(_codeButton == nil) {
         _codeButton = [[UIButton alloc] init];
         [_codeButton setTitle:@"获取验证码" forState:UIControlStateNormal];
-        _codeButton.titleLabel.font = [YLZFont regular:15];
-        [_codeButton setTitleColor:YLZColorBlueView forState:UIControlStateNormal];
+        _codeButton.titleLabel.font = [YLZFont regular:12];
+        [_codeButton setTitleColor:YLZColorOrangeView forState:UIControlStateNormal];
         _codeButton.tag = 1;
         _codeButton.ylz_acceptEventInterval = 2.0;
         _codeButton.contentHorizontalAlignment = UIControlContentHorizontalAlignmentRight;

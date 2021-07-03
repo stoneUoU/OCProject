@@ -9,6 +9,9 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
+typedef void (^YLZConstTextFieldViewHandle)(UITextField *textField);
+
+
 @interface YLZConstTextFieldView : UIView
 
 @property (nonatomic, strong) NSString *nameString;
@@ -20,6 +23,8 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, strong) UILabel *nameLabel;
 
 @property (nonatomic, strong) UITextField *textField;
+
+@property (nonatomic, copy) YLZConstTextFieldViewHandle textFieldHandle;
 
 @end
 

@@ -74,6 +74,12 @@
 - (void)presentViewController:(NSString *)viewControllerName withParam:(NSDictionary *)param inNavigationController:(BOOL)isInNavigationController;
 - (void)presentViewController:(NSString *)viewControllerName withParam:(NSDictionary *)param inNavigationController:(BOOL)isInNavigationController animated:(BOOL)animated;
 
+- (void)presentExistingViewController:(UIViewController *)viewController;
+
+- (void)presentExistingViewController:(UIViewController *)viewController withParam:(NSDictionary *)param;
+
+- (void)presentExistingViewController:(UIViewController *)viewController withParam:(NSDictionary *)param animated:(BOOL)animated;
+
 - (void)fadeInViewController:(NSString *)viewControllerName withParam:(NSDictionary *)param;
 - (UIViewController *)fadeOutViewControllerWithParam:(NSDictionary *)param;
 

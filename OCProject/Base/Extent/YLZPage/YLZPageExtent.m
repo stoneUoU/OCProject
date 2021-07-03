@@ -308,6 +308,32 @@
         [self.currentViewController presentViewController:viewController animated:animated completion:nil];
     }
 }
+
+- (void)presentExistingViewController:(UIViewController *)viewController
+{
+    [self presentExistingViewController:viewController withParam:nil];
+}
+
+- (void)presentExistingViewController:(UIViewController *)viewController withParam:(NSDictionary *)param
+{
+    [self presentExistingViewController:viewController withParam:param animated:YES];
+}
+
+- (void)presentExistingViewController:(UIViewController *)viewController withParam:(NSDictionary *)param animated:(BOOL)animated
+{
+    if (!viewController) {
+        return;
+    }
+    if (param && ![param isKindOfClass:[NSDictionary class]]) {
+        return;
+    }
+        
+//    if (param) {
+//        [self updateViewController:viewController withParam:param];
+//    }
+    [self.currentViewController presentViewController:viewController animated:animated completion:nil];
+}
+
 - (void)fadeInViewController:(NSString *)viewControllerName withParam:(NSDictionary *)param
 {
     if (NSFoundationVersionNumber <= NSFoundationVersionNumber_iOS_8_4) {

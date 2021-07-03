@@ -14,6 +14,10 @@
 #import "YLZChangePasswordViewController.h"
 #import "YLZSwitchAccountViewController.h"
 #import "YLZAddAccountViewController.h"
+#import "YLZFeedBackViewController.h"
+#import "YLZBindPhoneViewController.h"
+#import "YLZChangePhoneViewController.h"
+#import "YLZLoginViewController.h"
 
 #import "YLZKitCategory.h"
 #import "YLZNetWork.h"
@@ -115,8 +119,24 @@
 //    [[YLZPageExtent sharedInstance] pushExistingViewController:vc];
     
     //添加帐号：
-    YLZAddAccountViewController *vc = [[YLZAddAccountViewController alloc] init];
-    [[YLZPageExtent sharedInstance] pushExistingViewController:vc];
+//    YLZAddAccountViewController *vc = [[YLZAddAccountViewController alloc] init];
+//    [[YLZPageExtent sharedInstance] pushExistingViewController:vc];
+    
+//    //意见反馈
+//    YLZFeedBackViewController *vc = [[YLZFeedBackViewController alloc] init];
+//    [[YLZPageExtent sharedInstance] pushExistingViewController:vc];
+    
+    //更改绑定手机号
+//    YLZChangePhoneViewController *vc = [[YLZChangePhoneViewController alloc] init];
+//    [[YLZPageExtent sharedInstance] pushExistingViewController:vc];
+    
+    //绑定手机号：
+//    YLZBindPhoneViewController *vc = [[YLZBindPhoneViewController alloc] init];
+//    [[YLZPageExtent sharedInstance] pushExistingViewController:vc];
+    
+    //登录：
+    YLZLoginViewController *vc = [[YLZLoginViewController alloc] init];
+    [[YLZPageExtent sharedInstance] presentExistingViewController:vc];
     
 }
 

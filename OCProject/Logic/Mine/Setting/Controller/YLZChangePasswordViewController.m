@@ -130,7 +130,6 @@
     if (!_doneButton) {
         _doneButton = [UIButton buttonWithType:UIButtonTypeCustom];
         _doneButton.titleLabel.font = [YLZFont regular:14];
-        _doneButton.backgroundColor = [UIColor whiteColor];
         _doneButton.layer.cornerRadius = 18;
         _doneButton.layer.masksToBounds = YES;
         _doneButton.backgroundColor = YLZColorOrangeView;

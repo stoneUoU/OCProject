@@ -64,7 +64,7 @@
     [self.nameLabel mas_makeConstraints:^(MASConstraintMaker *make) {
         make.left.equalTo(self.mas_left).offset(16);
         make.centerY.equalTo(self);
-        make.size.equalTo(@(CGSizeMake(120, 44)));
+        make.size.equalTo(@(CGSizeMake(100, 44)));
     }];
     [self.textField mas_makeConstraints:^(MASConstraintMaker *make) {
         make.left.equalTo(self.nameLabel.mas_right);
@@ -77,7 +77,7 @@
 #pragma mark -
 
 - (void)textFieldChange:(UITextField *)field {
-    
+    !self.textFieldHandle ?: self.textFieldHandle(field);
 }
 
 #pragma mark - lazy load

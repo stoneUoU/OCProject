@@ -1,18 +1,18 @@
 //
-//  YLZAddAccountViewController.m
+//  YLZChangePhoneViewController.m
 //  OCProject
 //
 //  Created by stone on 2021/7/3.
 //
 
-#import "YLZAddAccountViewController.h"
+#import "YLZChangePhoneViewController.h"
 
 #import "YLZConstTextFieldView.h"
 #import "YLZSmsCodeTextFieldView.h"
 
 #import "YLZCategory.h"
 
-@interface YLZAddAccountViewController()
+@interface YLZChangePhoneViewController()
 
 @property (nonatomic, strong) YLZConstTextFieldView *phoneView;
 
@@ -22,7 +22,7 @@
 
 @end
 
-@implementation YLZAddAccountViewController
+@implementation YLZChangePhoneViewController
 
 #pragma mark - LifeCycle
 #pragma mark -
@@ -32,7 +32,7 @@
     // Do any additional setup after loading the view.
     self.view.backgroundColor = YLZColorWhite;
     
-    [self setBaseUI:YLZColorWhite withTitleString:@"添加账号" withTitleColor:YLZColorTitleOne withLeftImageViewString:@"ylz_back" withRightString:@"" withRightColor:YLZColorWhite];
+    [self setBaseUI:YLZColorWhite withTitleString:@"更改绑定手机号" withTitleColor:YLZColorTitleOne withLeftImageViewString:@"ylz_back" withRightString:@"" withRightColor:YLZColorWhite];
     [self setUI];
 }
 
@@ -129,10 +129,11 @@
         _doneButton.layer.masksToBounds = YES;
         _doneButton.backgroundColor = YLZColorOrangeView;
         [_doneButton setTitleColor:YLZColorWhite forState:UIControlStateNormal];
-        [_doneButton setTitle:@"添加" forState:UIControlStateNormal];
+        [_doneButton setTitle:@"确定" forState:UIControlStateNormal];
         [_doneButton addTarget:self action:@selector(toDone:) forControlEvents:UIControlEventTouchUpInside];
     }
     return _doneButton;
 }
 
 @end
+
