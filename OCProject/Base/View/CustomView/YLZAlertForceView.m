@@ -84,8 +84,10 @@
         make.size.equalTo(@(CGSizeMake(126, 44)));
     }];
     [self.titleLabel mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.top.left.right.equalTo(self.contentView);
-        make.height.equalTo(@(92));
+        make.top.equalTo(self.contentView).offset(10);
+        make.left.equalTo(self.contentView.mas_left).offset(10);
+        make.right.equalTo(self.contentView.mas_right).offset(-10);
+        make.height.equalTo(@(82));
     }];
 }
 

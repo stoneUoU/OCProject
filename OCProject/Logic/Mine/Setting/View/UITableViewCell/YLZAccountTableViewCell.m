@@ -60,14 +60,14 @@
     [self.avaterImageView mas_makeConstraints:^(MASConstraintMaker *make) {
         make.left.equalTo(self.bgView.mas_left).offset(24);
         make.centerY.equalTo(self.bgView);
-        make.size.equalTo(@(CGSizeMake(50, 50)));
+        make.size.equalTo(@(CGSizeMake(36, 36)));
     }];
     [self.nameLabel mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.top.equalTo(self.avaterImageView.mas_top);
+        make.top.equalTo(self.avaterImageView.mas_top).offset(-2);
         make.left.equalTo(self.avaterImageView.mas_right).offset(16);
     }];
     [self.phoneLabel mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.bottom.equalTo(self.avaterImageView.mas_bottom);
+        make.bottom.equalTo(self.avaterImageView.mas_bottom).offset(2);
         make.left.equalTo(self.avaterImageView.mas_right).offset(16);
     }];
     [self.checkImageView mas_makeConstraints:^(MASConstraintMaker *make) {
@@ -91,6 +91,8 @@
     if (!_bgView) {
         _bgView = [UIView new];
         _bgView.backgroundColor = YLZColorCellBackGround;
+        _bgView.layer.cornerRadius = 21;
+        _bgView.layer.masksToBounds = YES;
     }
     return _bgView;
 }
@@ -98,7 +100,7 @@
 - (UILabel *)nameLabel {
     if (!_nameLabel) {
         _nameLabel = [UILabel new];
-        _nameLabel.font = [YLZFont medium:16];
+        _nameLabel.font = [YLZFont regular:14];
         _nameLabel.textColor = YLZColorTitleOne;
     }
     return _nameLabel;
@@ -109,7 +111,7 @@
         _avaterImageView = [UIImageView new];
         _avaterImageView.backgroundColor = YLZColorOrangeView;
         _avaterImageView.layer.masksToBounds = YES;
-        _avaterImageView.layer.cornerRadius = 25.0;
+        _avaterImageView.layer.cornerRadius = 18.0;
     }
     return _avaterImageView;
 }

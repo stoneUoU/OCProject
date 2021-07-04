@@ -86,6 +86,8 @@
     if (!_bgView) {
         _bgView = [UIView new];
         _bgView.backgroundColor = YLZColorCellBackGround;
+        _bgView.layer.cornerRadius = 21;
+        _bgView.layer.masksToBounds = YES;
     }
     return _bgView;
 }

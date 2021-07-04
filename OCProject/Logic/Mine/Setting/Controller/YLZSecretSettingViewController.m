@@ -10,6 +10,7 @@
 #import "YLZSecretSettingSwitchTableViewCell.h"
 #import "YLZSecretSettingTableViewCell.h"
 #import "YLZSettingModel.h"
+#import "YLZAlertForceView.h"
 
 @interface YLZSecretSettingViewController ()<UITableViewDataSource,UITableViewDelegate,YLZSecretSettingSwitchTableViewCellDelegate>
 
@@ -50,7 +51,7 @@
 - (void)setMas {
     [self.fontLabel mas_makeConstraints:^(MASConstraintMaker *make) {
         make.top.equalTo(self.view.mas_top).offset(StatusBarHeight+NavBarHeight);
-        make.left.equalTo(self.view.mas_left).offset(16);
+        make.left.equalTo(self.view.mas_left).offset(26);
         make.size.equalTo(@(CGSizeMake(SCREENWIDTH - 32, 44)));
     }];
     
@@ -76,7 +77,16 @@
 
 
 - (void)toSwitchClick:(UISwitch *)ylzSwitch {
-    
+    YLZAlertForceView *alertView = [[YLZAlertForceView alloc] initWithFrame:CGRectMake(0, 0, SCREENWIDTH, SCREENHEIGHT)];
+    YLZAlertForceModel *model = [[YLZAlertForceModel alloc] init];
+    model.titleString = @"打开模糊定位后，所有人将无法查看你在地图上的精准定位，是否确定打开模糊定位？";
+    model.okString = @"打开";
+    model.cancelString = @"取消";
+    alertView.model = model;
+    alertView.handle = ^(NSInteger index) {
+        YLZLOG(@"AAAAAAAAA");
+    };
+    [alertView showAlert];
 }
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
@@ -110,7 +120,7 @@
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
-    return 50;
+    return 66;
 }
 
 - (UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section {
@@ -119,7 +129,7 @@
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section {
-    return 12;
+    return 8;
 }
 
 - (UIView *)tableView:(UITableView *)tableView viewForFooterInSection:(NSInteger)section {
@@ -159,7 +169,7 @@
 - (UILabel *)fontLabel {
     if (!_fontLabel) {
         _fontLabel = [UILabel new];
-        _fontLabel.font = [YLZFont medium:18];
+        _fontLabel.font = [YLZFont regular:20];
         _fontLabel.textColor = YLZColorTitleOne;
         _fontLabel.text = @"隐私设置";
     }

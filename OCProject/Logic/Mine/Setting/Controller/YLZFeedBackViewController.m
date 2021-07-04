@@ -62,7 +62,7 @@
 - (void)setMas {
     [self.fontLabel mas_makeConstraints:^(MASConstraintMaker *make) {
         make.top.equalTo(self.view.mas_top).offset(StatusBarHeight+NavBarHeight);
-        make.left.equalTo(self.view.mas_left).offset(16);
+        make.left.equalTo(self.view.mas_left).offset(36);
         make.size.equalTo(@(CGSizeMake(SCREENWIDTH - 32, 44)));
     }];
     [self.fontView mas_makeConstraints:^(MASConstraintMaker *make) {
@@ -78,13 +78,13 @@
 //    }];
     [self.picLabel mas_makeConstraints:^(MASConstraintMaker *make) {
         make.top.equalTo(self.fontView.mas_bottom).offset(12);
-        make.left.equalTo(self.view.mas_left).offset(16);
+        make.left.equalTo(self.view.mas_left).offset(36);
         make.size.equalTo(@(CGSizeMake(SCREENWIDTH - 32, 44)));
     }];
     [self.picView mas_makeConstraints:^(MASConstraintMaker *make) {
         make.top.equalTo(self.picLabel.mas_bottom);
         make.left.equalTo(self.view.mas_left).offset(16);
-        make.size.equalTo(@(CGSizeMake(SCREENWIDTH - 32, 120)));
+        make.size.equalTo(@(CGSizeMake(SCREENWIDTH - 32, 240)));
     }];
     [self.doneButton mas_makeConstraints:^(MASConstraintMaker *make) {
         make.bottom.equalTo(self.view.mas_bottom).offset(-(BottomDangerAreaHeight+16));
@@ -124,7 +124,7 @@
     if (!_fontView) {
         _fontView = [UIView new];
         _fontView.backgroundColor = YLZColorCellBackGround;
-        _fontView.layer.cornerRadius = 10.0;
+        _fontView.layer.cornerRadius = 26.0;
         _fontView.layer.masksToBounds = YES;
     }
     return _fontView;
@@ -158,7 +158,7 @@
     if (!_picView) {
         _picView = [UIView new];
         _picView.backgroundColor = YLZColorCellBackGround;
-        _picView.layer.cornerRadius = 10.0;
+        _picView.layer.cornerRadius = 46.0;
         _picView.layer.masksToBounds = YES;
     }
     return _picView;

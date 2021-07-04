@@ -54,17 +54,17 @@
     [self.phoneView mas_makeConstraints:^(MASConstraintMaker *make) {
         make.top.equalTo(self.view.mas_top).offset(StatusBarHeight+NavBarHeight+24);
         make.centerX.equalTo(self.view);
-        make.size.equalTo(@(CGSizeMake(SCREENWIDTH- 32, 64)));
+        make.size.equalTo(@(CGSizeMake(SCREENWIDTH- 32, 66)));
     }];
     [self.smsCodeView mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.top.equalTo(self.phoneView.mas_bottom).offset(12);
+        make.top.equalTo(self.phoneView.mas_bottom).offset(8);
         make.centerX.equalTo(self.view);
-        make.size.equalTo(@(CGSizeMake(SCREENWIDTH- 32, 64)));
+        make.size.equalTo(@(CGSizeMake(SCREENWIDTH- 32, 66)));
     }];
     [self.doneButton mas_makeConstraints:^(MASConstraintMaker *make) {
         make.top.equalTo(self.smsCodeView.mas_bottom).offset(120);
         make.centerX.equalTo(self.view);
-        make.size.equalTo(@(CGSizeMake(SCREENWIDTH- 32, 44)));
+        make.size.equalTo(@(CGSizeMake(SCREENWIDTH- 32, 40)));
     }];
 }
 
@@ -91,7 +91,7 @@
         _phoneView.nameString = @"手机号码";
         _phoneView.textFieldString = @"请输入手机号码";
         _phoneView.keyboardType = UIKeyboardTypePhonePad;
-        _phoneView.layer.cornerRadius = 10;
+        _phoneView.layer.cornerRadius = 21;
         _phoneView.layer.masksToBounds = YES;
         _phoneView.backgroundColor = YLZColorCellBackGround;
         _phoneView.textFieldHandle = ^(UITextField * _Nonnull textField) {
@@ -107,7 +107,7 @@
         _smsCodeView.nameString = @"验证码";
         _smsCodeView.textFieldString = @"请输入手机验证码";
         _smsCodeView.keyboardType = UIKeyboardTypeNumberPad;
-        _smsCodeView.layer.cornerRadius = 10;
+        _smsCodeView.layer.cornerRadius = 21;
         _smsCodeView.layer.masksToBounds = YES;
         _smsCodeView.backgroundColor = YLZColorCellBackGround;
         _smsCodeView.textFieldHandle = ^(UITextField *textField) {
@@ -125,7 +125,7 @@
     if (!_doneButton) {
         _doneButton = [UIButton buttonWithType:UIButtonTypeCustom];
         _doneButton.titleLabel.font = [YLZFont regular:14];
-        _doneButton.layer.cornerRadius = 18;
+        _doneButton.layer.cornerRadius = 20;
         _doneButton.layer.masksToBounds = YES;
         _doneButton.backgroundColor = YLZColorOrangeView;
         [_doneButton setTitleColor:YLZColorWhite forState:UIControlStateNormal];

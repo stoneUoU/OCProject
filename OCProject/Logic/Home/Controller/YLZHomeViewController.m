@@ -134,8 +134,8 @@
 //    [[YLZPageExtent sharedInstance] pushExistingViewController:vc];
     
     //登录：
-    YLZLoginViewController *vc = [[YLZLoginViewController alloc] init];
-    [[YLZPageExtent sharedInstance] presentExistingViewController:vc];
+//    YLZLoginViewController *vc = [[YLZLoginViewController alloc] init];
+//    [[YLZPageExtent sharedInstance] presentExistingViewController:vc];
     
 }
 

@@ -54,16 +54,15 @@
     [self.picImageView mas_makeConstraints:^(MASConstraintMaker *make) {
         make.top.equalTo(self.view.mas_top).offset(StatusBarHeight+NavBarHeight+72);
         make.centerX.equalTo(self.view);
-        make.size.equalTo(@(CGSizeMake(72, 72)));
     }];
     [self.fontLabel mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.top.equalTo(self.picImageView.mas_bottom).offset(36);
+        make.top.equalTo(self.picImageView.mas_bottom).offset(42);
         make.centerX.equalTo(self.view);
     }];
     [self.doneButton mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.top.equalTo(self.fontLabel.mas_bottom).offset(120);
+        make.top.equalTo(self.fontLabel.mas_bottom).offset(50);
         make.centerX.equalTo(self.view);
-        make.size.equalTo(@(CGSizeMake(SCREENWIDTH- 32, 44)));
+        make.size.equalTo(@(CGSizeMake(SCREENWIDTH- 64, 40)));
     }];
 }
 
@@ -87,9 +86,7 @@
 - (UIImageView *)picImageView {
     if (!_picImageView) {
         _picImageView = [[UIImageView alloc] init];
-        _picImageView.layer.cornerRadius = 36;
-        _picImageView.layer.masksToBounds = YES;
-        _picImageView.backgroundColor = YLZColorRedView;
+        _picImageView.image = [UIImage imageNamed:@"ylz_mine_phone"];
     }
     return _picImageView;
 }
@@ -97,7 +94,7 @@
 - (UILabel *)fontLabel {
     if (!_fontLabel) {
         _fontLabel = [UILabel new];
-        _fontLabel.font = [YLZFont regular:16];
+        _fontLabel.font = [YLZFont regular:18];
         _fontLabel.textColor = YLZColorTitleOne;
         _fontLabel.text = @"已绑定手机号：15717914505";
     }
@@ -108,11 +105,11 @@
     if (!_doneButton) {
         _doneButton = [UIButton buttonWithType:UIButtonTypeCustom];
         _doneButton.titleLabel.font = [YLZFont regular:14];
-        _doneButton.layer.cornerRadius = 18;
+        _doneButton.layer.cornerRadius = 20;
         _doneButton.layer.masksToBounds = YES;
         _doneButton.backgroundColor = YLZColorOrangeView;
         [_doneButton setTitleColor:YLZColorWhite forState:UIControlStateNormal];
-        [_doneButton setTitle:@"确定" forState:UIControlStateNormal];
+        [_doneButton setTitle:@"更改绑定手机号码" forState:UIControlStateNormal];
         [_doneButton addTarget:self action:@selector(toDone:) forControlEvents:UIControlEventTouchUpInside];
     }
     return _doneButton;

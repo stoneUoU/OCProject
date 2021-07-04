@@ -54,22 +54,22 @@
     [self.oldPwdView mas_makeConstraints:^(MASConstraintMaker *make) {
         make.top.equalTo(self.view.mas_top).offset(StatusBarHeight+NavBarHeight+24);
         make.centerX.equalTo(self.view);
-        make.size.equalTo(@(CGSizeMake(SCREENWIDTH- 32, 64)));
+        make.size.equalTo(@(CGSizeMake(SCREENWIDTH- 32, 66)));
     }];
     [self.newPwdView mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.top.equalTo(self.oldPwdView.mas_bottom).offset(12);
+        make.top.equalTo(self.oldPwdView.mas_bottom).offset(8);
         make.centerX.equalTo(self.view);
-        make.size.equalTo(@(CGSizeMake(SCREENWIDTH- 32, 64)));
+        make.size.equalTo(@(CGSizeMake(SCREENWIDTH- 32, 66)));
     }];
     [self.confirmPwdView mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.top.equalTo(self.newPwdView.mas_bottom).offset(12);
+        make.top.equalTo(self.newPwdView.mas_bottom).offset(8);
         make.centerX.equalTo(self.view);
-        make.size.equalTo(@(CGSizeMake(SCREENWIDTH- 32, 64)));
+        make.size.equalTo(@(CGSizeMake(SCREENWIDTH- 32, 66)));
     }];
     [self.doneButton mas_makeConstraints:^(MASConstraintMaker *make) {
         make.top.equalTo(self.confirmPwdView.mas_bottom).offset(120);
         make.centerX.equalTo(self.view);
-        make.size.equalTo(@(CGSizeMake(SCREENWIDTH- 32, 44)));
+        make.size.equalTo(@(CGSizeMake(SCREENWIDTH- 32, 40)));
     }];
 }
 
@@ -95,7 +95,7 @@
         _oldPwdView = [[YLZConstTextFieldView alloc] init];
         _oldPwdView.nameString = @"旧密码";
         _oldPwdView.textFieldString = @"请输入旧密码";
-        _oldPwdView.layer.cornerRadius = 10;
+        _oldPwdView.layer.cornerRadius = 21;
         _oldPwdView.layer.masksToBounds = YES;
         _oldPwdView.backgroundColor = YLZColorCellBackGround;
     }
@@ -107,7 +107,7 @@
         _newPwdView = [[YLZConstTextFieldView alloc] init];
         _newPwdView.nameString = @"新密码";
         _newPwdView.textFieldString = @"请输入新密码";
-        _newPwdView.layer.cornerRadius = 10;
+        _newPwdView.layer.cornerRadius = 21;
         _newPwdView.layer.masksToBounds = YES;
         _newPwdView.backgroundColor = YLZColorCellBackGround;
     }
@@ -119,7 +119,7 @@
         _confirmPwdView = [[YLZConstTextFieldView alloc] init];
         _confirmPwdView.nameString = @"确认密码";
         _confirmPwdView.textFieldString = @"请再次输入新密码";
-        _confirmPwdView.layer.cornerRadius = 10;
+        _confirmPwdView.layer.cornerRadius = 21;
         _confirmPwdView.layer.masksToBounds = YES;
         _confirmPwdView.backgroundColor = YLZColorCellBackGround;
     }

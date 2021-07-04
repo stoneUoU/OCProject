@@ -56,7 +56,7 @@
     [self.avaterImageView mas_makeConstraints:^(MASConstraintMaker *make) {
         make.left.equalTo(self.bgView.mas_left).offset(24);
         make.centerY.equalTo(self.bgView);
-        make.size.equalTo(@(CGSizeMake(50, 50)));
+        make.size.equalTo(@(CGSizeMake(60, 60)));
     }];
     [self.nameLabel mas_makeConstraints:^(MASConstraintMaker *make) {
         make.centerY.equalTo(self.bgView);
@@ -88,6 +88,8 @@
     if (!_bgView) {
         _bgView = [UIView new];
         _bgView.backgroundColor = YLZColorCellBackGround;
+        _bgView.layer.cornerRadius = 21;
+        _bgView.layer.masksToBounds = YES;
     }
     return _bgView;
 }
@@ -106,7 +108,7 @@
         _avaterImageView = [UIImageView new];
         _avaterImageView.backgroundColor = YLZColorOrangeView;
         _avaterImageView.layer.masksToBounds = YES;
-        _avaterImageView.layer.cornerRadius = 25.0;
+        _avaterImageView.layer.cornerRadius = 30.0;
     }
     return _avaterImageView;
 }
