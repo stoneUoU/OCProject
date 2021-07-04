@@ -40,6 +40,18 @@
 		8E4243E1265CF7BF00E5A4A5 /* YLZFormat.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E4243E0265CF7BF00E5A4A5 /* YLZFormat.m */; };
 		8E4243E5265CF83100E5A4A5 /* YLZValidated.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E4243E4265CF83100E5A4A5 /* YLZValidated.m */; };
 		8E4243EB265CF8F500E5A4A5 /* YLZNetWork.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E4243EA265CF8F500E5A4A5 /* YLZNetWork.m */; };
+		8E59B150269148130043073C /* YLZRegisterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E59B14F269148130043073C /* YLZRegisterViewController.m */; };
+		8E59B154269149E00043073C /* YLZForgetPasswordViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E59B153269149E00043073C /* YLZForgetPasswordViewController.m */; };
+		8E59B15B26914ABE0043073C /* YLZSetIdentityViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E59B15A26914ABE0043073C /* YLZSetIdentityViewController.m */; };
+		8E59B160269151D70043073C /* YLZSetGenderViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E59B15F269151D70043073C /* YLZSetGenderViewController.m */; };
+		8E59B164269153B40043073C /* YLZSetNameViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E59B163269153B40043073C /* YLZSetNameViewController.m */; };
+		8E59B1692691598F0043073C /* YLZSetAreaViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E59B1682691598F0043073C /* YLZSetAreaViewController.m */; };
+		8E59B16D26915E3D0043073C /* YLZSetCollegeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E59B16C26915E3D0043073C /* YLZSetCollegeViewController.m */; };
+		8E59B17126916D200043073C /* YLZSetCollegeCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E59B17026916D200043073C /* YLZSetCollegeCollectionViewCell.m */; };
+		8E59B175269171750043073C /* YLZSetOrganizationNameViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E59B174269171750043073C /* YLZSetOrganizationNameViewController.m */; };
+		8E59B179269171910043073C /* YLZSetOrganizationAreaViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E59B178269171910043073C /* YLZSetOrganizationAreaViewController.m */; };
+		8E59B17D26919B190043073C /* YLZCollegeAreaPickerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E59B17C26919B190043073C /* YLZCollegeAreaPickerView.m */; };
+		8E59B1812691A2A60043073C /* YLZAlertForceView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E59B1802691A2A60043073C /* YLZAlertForceView.m */; };
 		8E79CDD9268EE5CF00E71F17 /* YLZBaseDefaults.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E79CDD8268EE5CF00E71F17 /* YLZBaseDefaults.m */; };
 		8E79CDDF268EE67E00E71F17 /* YLZLocalData.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E79CDDE268EE67E00E71F17 /* YLZLocalData.m */; };
 		8E79CDE3268EE71D00E71F17 /* YLZLocalData+ylz.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E79CDE2268EE71D00E71F17 /* YLZLocalData+ylz.m */; };
@@ -195,6 +207,30 @@
 		8E4243E4265CF83100E5A4A5 /* YLZValidated.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YLZValidated.m; sourceTree = "<group>"; };
 		8E4243E9265CF8F500E5A4A5 /* YLZNetWork.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YLZNetWork.h; sourceTree = "<group>"; };
 		8E4243EA265CF8F500E5A4A5 /* YLZNetWork.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YLZNetWork.m; sourceTree = "<group>"; };
+		8E59B14E269148130043073C /* YLZRegisterViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YLZRegisterViewController.h; sourceTree = "<group>"; };
+		8E59B14F269148130043073C /* YLZRegisterViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YLZRegisterViewController.m; sourceTree = "<group>"; };
+		8E59B152269149E00043073C /* YLZForgetPasswordViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YLZForgetPasswordViewController.h; sourceTree = "<group>"; };
+		8E59B153269149E00043073C /* YLZForgetPasswordViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YLZForgetPasswordViewController.m; sourceTree = "<group>"; };
+		8E59B15926914ABE0043073C /* YLZSetIdentityViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YLZSetIdentityViewController.h; sourceTree = "<group>"; };
+		8E59B15A26914ABE0043073C /* YLZSetIdentityViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YLZSetIdentityViewController.m; sourceTree = "<group>"; };
+		8E59B15E269151D70043073C /* YLZSetGenderViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YLZSetGenderViewController.h; sourceTree = "<group>"; };
+		8E59B15F269151D70043073C /* YLZSetGenderViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YLZSetGenderViewController.m; sourceTree = "<group>"; };
+		8E59B162269153B40043073C /* YLZSetNameViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YLZSetNameViewController.h; sourceTree = "<group>"; };
+		8E59B163269153B40043073C /* YLZSetNameViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YLZSetNameViewController.m; sourceTree = "<group>"; };
+		8E59B1672691598F0043073C /* YLZSetAreaViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YLZSetAreaViewController.h; sourceTree = "<group>"; };
+		8E59B1682691598F0043073C /* YLZSetAreaViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YLZSetAreaViewController.m; sourceTree = "<group>"; };
+		8E59B16B26915E3D0043073C /* YLZSetCollegeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YLZSetCollegeViewController.h; sourceTree = "<group>"; };
+		8E59B16C26915E3D0043073C /* YLZSetCollegeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YLZSetCollegeViewController.m; sourceTree = "<group>"; };
+		8E59B16F26916D200043073C /* YLZSetCollegeCollectionViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YLZSetCollegeCollectionViewCell.h; sourceTree = "<group>"; };
+		8E59B17026916D200043073C /* YLZSetCollegeCollectionViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YLZSetCollegeCollectionViewCell.m; sourceTree = "<group>"; };
+		8E59B173269171750043073C /* YLZSetOrganizationNameViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YLZSetOrganizationNameViewController.h; sourceTree = "<group>"; };
+		8E59B174269171750043073C /* YLZSetOrganizationNameViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YLZSetOrganizationNameViewController.m; sourceTree = "<group>"; };
+		8E59B177269171910043073C /* YLZSetOrganizationAreaViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YLZSetOrganizationAreaViewController.h; sourceTree = "<group>"; };
+		8E59B178269171910043073C /* YLZSetOrganizationAreaViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YLZSetOrganizationAreaViewController.m; sourceTree = "<group>"; };
+		8E59B17B26919B190043073C /* YLZCollegeAreaPickerView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YLZCollegeAreaPickerView.h; sourceTree = "<group>"; };
+		8E59B17C26919B190043073C /* YLZCollegeAreaPickerView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YLZCollegeAreaPickerView.m; sourceTree = "<group>"; };
+		8E59B17F2691A2A60043073C /* YLZAlertForceView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YLZAlertForceView.h; sourceTree = "<group>"; };
+		8E59B1802691A2A60043073C /* YLZAlertForceView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YLZAlertForceView.m; sourceTree = "<group>"; };
 		8E79CDD7268EE5CF00E71F17 /* YLZBaseDefaults.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YLZBaseDefaults.h; sourceTree = "<group>"; };
 		8E79CDD8268EE5CF00E71F17 /* YLZBaseDefaults.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YLZBaseDefaults.m; sourceTree = "<group>"; };
 		8E79CDDD268EE67E00E71F17 /* YLZLocalData.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YLZLocalData.h; sourceTree = "<group>"; };
@@ -683,9 +719,51 @@
 			path = Toast;
 			sourceTree = "<group>";
 		};
+		8E59B15626914A660043073C /* LoginFollow */ = {
+			isa = PBXGroup;
+			children = (
+				8E59B15826914A790043073C /* Controller */,
+				8E59B15726914A730043073C /* View */,
+			);
+			path = LoginFollow;
+			sourceTree = "<group>";
+		};
+		8E59B15726914A730043073C /* View */ = {
+			isa = PBXGroup;
+			children = (
+				8E59B16F26916D200043073C /* YLZSetCollegeCollectionViewCell.h */,
+				8E59B17026916D200043073C /* YLZSetCollegeCollectionViewCell.m */,
+				8E59B17B26919B190043073C /* YLZCollegeAreaPickerView.h */,
+				8E59B17C26919B190043073C /* YLZCollegeAreaPickerView.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		8E59B15826914A790043073C /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				8E59B15926914ABE0043073C /* YLZSetIdentityViewController.h */,
+				8E59B15A26914ABE0043073C /* YLZSetIdentityViewController.m */,
+				8E59B15E269151D70043073C /* YLZSetGenderViewController.h */,
+				8E59B15F269151D70043073C /* YLZSetGenderViewController.m */,
+				8E59B162269153B40043073C /* YLZSetNameViewController.h */,
+				8E59B163269153B40043073C /* YLZSetNameViewController.m */,
+				8E59B1672691598F0043073C /* YLZSetAreaViewController.h */,
+				8E59B1682691598F0043073C /* YLZSetAreaViewController.m */,
+				8E59B16B26915E3D0043073C /* YLZSetCollegeViewController.h */,
+				8E59B16C26915E3D0043073C /* YLZSetCollegeViewController.m */,
+				8E59B173269171750043073C /* YLZSetOrganizationNameViewController.h */,
+				8E59B174269171750043073C /* YLZSetOrganizationNameViewController.m */,
+				8E59B177269171910043073C /* YLZSetOrganizationAreaViewController.h */,
+				8E59B178269171910043073C /* YLZSetOrganizationAreaViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
 		8E79CDC1268ED12B00E71F17 /* Logic */ = {
 			isa = PBXGroup;
 			children = (
+				8E59B15626914A660043073C /* LoginFollow */,
 				8E79CE02268EF51D00E71F17 /* Home */,
 				8E79CDC3268ED13D00E71F17 /* Mine */,
 				8E79CDC2268ED13600E71F17 /* Login */,
@@ -723,6 +801,10 @@
 			children = (
 				8E9DD4652690774500D13F09 /* YLZLoginViewController.h */,
 				8E9DD4662690774500D13F09 /* YLZLoginViewController.m */,
+				8E59B14E269148130043073C /* YLZRegisterViewController.h */,
+				8E59B14F269148130043073C /* YLZRegisterViewController.m */,
+				8E59B152269149E00043073C /* YLZForgetPasswordViewController.h */,
+				8E59B153269149E00043073C /* YLZForgetPasswordViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -1088,6 +1170,8 @@
 				8E9DD44D26905CBA00D13F09 /* YLZSmsCodeTextFieldView.m */,
 				8E9DD45426906F6500D13F09 /* YLZPlaceHolderTextView.h */,
 				8E9DD45526906F6500D13F09 /* YLZPlaceHolderTextView.m */,
+				8E59B17F2691A2A60043073C /* YLZAlertForceView.h */,
+				8E59B1802691A2A60043073C /* YLZAlertForceView.m */,
 			);
 			path = CustomView;
 			sourceTree = "<group>";
@@ -1298,8 +1382,11 @@
 				8E9DD40D26903D1F00D13F09 /* YLZConstTableViewCell.m in Sources */,
 				8E79CEB3268F13F900E71F17 /* JXCategoryFactory.m in Sources */,
 				8E79CEA1268F13F900E71F17 /* JXCategoryIndicatorCell.m in Sources */,
+				8E59B179269171910043073C /* YLZSetOrganizationAreaViewController.m in Sources */,
 				8E9DD45226906A3C00D13F09 /* YLZFeedBackViewController.m in Sources */,
 				8E9DD463269070E400D13F09 /* YLZChangePhoneViewController.m in Sources */,
+				8E59B17126916D200043073C /* YLZSetCollegeCollectionViewCell.m in Sources */,
+				8E59B154269149E00043073C /* YLZForgetPasswordViewController.m in Sources */,
 				8E79CDFF268EF34300E71F17 /* UIViewController+YLZMediator.m in Sources */,
 				8E79CE96268F13F900E71F17 /* JXCategoryTitleVerticalZoomView.m in Sources */,
 				8E9DD437269056D400D13F09 /* YLZSwitchAccountViewController.m in Sources */,
@@ -1321,9 +1408,11 @@
 				8E79CEA8268F13F900E71F17 /* JXCategoryTitleImageCellModel.m in Sources */,
 				8E79CE99268F13F900E71F17 /* JXCategoryIndicatorTriangleView.m in Sources */,
 				8E79CE9E268F13F900E71F17 /* JXCategoryIndicatorDotLineView.m in Sources */,
+				8E59B1812691A2A60043073C /* YLZAlertForceView.m in Sources */,
 				8E4243CA265CF22400E5A4A5 /* YLZProgressHUDExtent.m in Sources */,
 				8E79CEA0268F13F900E71F17 /* JXCategoryIndicatorCellModel.m in Sources */,
 				8E9DD4232690493500D13F09 /* YLZBlacklistViewController.m in Sources */,
+				8E59B16D26915E3D0043073C /* YLZSetCollegeViewController.m in Sources */,
 				8E9DD43C269057A500D13F09 /* YLZAccountModel.m in Sources */,
 				8E79CE0F268EF57E00E71F17 /* YLZHomeViewController.m in Sources */,
 				8E4243A2265CF04600E5A4A5 /* UIButton+YLZFitSize.m in Sources */,
@@ -1336,6 +1425,7 @@
 				8E79CDE7268EE84000E71F17 /* YLZUserBaseInfo.m in Sources */,
 				8E424358265CEA1F00E5A4A5 /* YLZMSTabBarController.m in Sources */,
 				8E79CE94268F13F900E71F17 /* JXCategoryTitleVerticalZoomCellModel.m in Sources */,
+				8E59B160269151D70043073C /* YLZSetGenderViewController.m in Sources */,
 				8E79CEA7268F13F900E71F17 /* JXCategoryTitleImageCell.m in Sources */,
 				8E9DD4672690774500D13F09 /* YLZLoginViewController.m in Sources */,
 				8E9DD45D2690709D00D13F09 /* YLZBindPhoneViewController.m in Sources */,
@@ -1346,6 +1436,7 @@
 				8E4243EB265CF8F500E5A4A5 /* YLZNetWork.m in Sources */,
 				8E42439F265CF04600E5A4A5 /* UIButton+YLZCountDown.m in Sources */,
 				8E79CDE3268EE71D00E71F17 /* YLZLocalData+ylz.m in Sources */,
+				8E59B1692691598F0043073C /* YLZSetAreaViewController.m in Sources */,
 				8E79CEAB268F13F900E71F17 /* JXCategoryTitleView.m in Sources */,
 				8E79CEA3268F13F900E71F17 /* JXCategoryDotCell.m in Sources */,
 				8E79CEAA268F13F900E71F17 /* JXCategoryTitleCell.m in Sources */,
@@ -1354,7 +1445,9 @@
 				8E79CEB5268F13F900E71F17 /* JXCategoryIndicatorParamsModel.m in Sources */,
 				8E79CE9F268F13F900E71F17 /* JXCategoryIndicatorBackgroundView.m in Sources */,
 				8E79CEA9268F13F900E71F17 /* JXCategoryTitleCellModel.m in Sources */,
+				8E59B15B26914ABE0043073C /* YLZSetIdentityViewController.m in Sources */,
 				8E79CDF2268EF1A500E71F17 /* YLZPageExtent.m in Sources */,
+				8E59B150269148130043073C /* YLZRegisterViewController.m in Sources */,
 				8E4243A1265CF04600E5A4A5 /* UIButton+YLZFixMultiClick.m in Sources */,
 				8E424399265CF04600E5A4A5 /* UIImage+YLZCompress.m in Sources */,
 				8E4243DD265CF78400E5A4A5 /* YLZPageFunction.m in Sources */,
@@ -1364,6 +1457,8 @@
 				8E4243CF265CF22400E5A4A5 /* YLZJson.m in Sources */,
 				8E4243CC265CF22400E5A4A5 /* YLZPaddingLabel.m in Sources */,
 				8E79CEA5268F13F900E71F17 /* JXCategoryDotCellModel.m in Sources */,
+				8E59B175269171750043073C /* YLZSetOrganizationNameViewController.m in Sources */,
+				8E59B17D26919B190043073C /* YLZCollegeAreaPickerView.m in Sources */,
 				8E79CEB6268F13F900E71F17 /* JXCategoryViewAnimator.m in Sources */,
 				8E79CEA4268F13F900E71F17 /* JXCategoryDotView.m in Sources */,
 				8E4243AC265CF04600E5A4A5 /* YLZWeakProxy.m in Sources */,
@@ -1394,6 +1489,7 @@
 				8E9DD42F26904DD600D13F09 /* YLZChangePasswordViewController.m in Sources */,
 				8E4243CE265CF22400E5A4A5 /* YLZImageExtent.m in Sources */,
 				8E4243AB265CF04600E5A4A5 /* NSTimer+YLZPluto.m in Sources */,
+				8E59B164269153B40043073C /* YLZSetNameViewController.m in Sources */,
 				8E424360265CEB2F00E5A4A5 /* AppDelegate+Tarbar.m in Sources */,
 				8E79CEB9268F13F900E71F17 /* JXCategoryBaseView.m in Sources */,
 				8E4243D1265CF22400E5A4A5 /* YLZFont.m in Sources */,

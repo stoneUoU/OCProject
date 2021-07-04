@@ -28,7 +28,7 @@
     // Do any additional setup after loading the view.
     self.view.backgroundColor = YLZColorWhite;
     
-    [self setBaseUI:YLZColorWhite withTitleString:@"添加我的方式" withTitleColor:YLZColorTitleOne withLeftImageViewString:@"ylz_back" withRightString:@"" withRightColor:YLZColorWhite];
+    [self setBaseUI:YLZColorWhite withTitleString:@"添加我的方式" withTitleColor:YLZColorTitleOne withLeftImageViewString:@"ylz_back" withRightString:@"" withRightColor:YLZColorWhite withRightFontSize:14];
     [self setUI];
 }
 

@@ -21,7 +21,6 @@
 
 #import "YLZKitCategory.h"
 #import "YLZNetWork.h"
-#import "YLZPageExtent.h"
 
 @interface YLZHomeViewController ()
 
@@ -51,7 +50,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.view.backgroundColor = [UIColor whiteColor];
-    [self setBaseUI:YLZColorBlue withTitleString:@"首页" withTitleColor:YLZColorWhite withLeftImageViewString:@"" withRightString:@"" withRightColor:YLZColorWhite];
+    [self setBaseUI:YLZColorBlue withTitleString:@"首页" withTitleColor:YLZColorWhite withLeftImageViewString:@"" withRightString:@"" withRightColor:YLZColorWhite withRightFontSize:14];
     
     [self setUI];
 }

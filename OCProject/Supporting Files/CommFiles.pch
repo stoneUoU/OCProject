@@ -18,4 +18,8 @@
 #import "YLZColor.h"
 #import "YLZFont.h"
 
+#import "YLZPageExtent.h"
+
+#import <Toast/Toast.h>
+
 #endif /* CommFiles_pch */

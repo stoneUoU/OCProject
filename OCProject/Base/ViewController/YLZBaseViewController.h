@@ -11,7 +11,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface YLZBaseViewController : UIViewController
 
-- (void)setBaseUI:(UIColor *)navigationViewColor withTitleString:(NSString *)titleString withTitleColor:(UIColor *)titleColor withLeftImageViewString:(NSString *)leftImageViewString withRightString:(NSString *)rightString withRightColor:(UIColor *)rightColor;
+- (void)setBaseUI:(UIColor *)navigationViewColor withTitleString:(NSString *)titleString withTitleColor:(UIColor *)titleColor withLeftImageViewString:(NSString *)leftImageViewString withRightString:(NSString *)rightString withRightColor:(UIColor *)rightColor withRightFontSize:(NSInteger )fontSize;
 
 @end
 

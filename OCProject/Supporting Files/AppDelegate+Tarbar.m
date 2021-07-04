@@ -11,7 +11,9 @@
 #import "ViewController.h"
 
 #import <YYKit/YYKit.h>
-#import "YLZPageExtent.h"
+
+#import "YLZLoginViewController.h"
+#import "YLZSetIdentityViewController.h"
 
 @interface AppDelegate () <YLZMSTabBarControllerDelegate>
 
@@ -58,7 +60,9 @@
     [self.tabbarVC setupTabWithVCArr:vcArr imageNameArr:imageNameArr selectedImageNameArr:selectedImageNameArr titleArr:titleArr titleColor:YLZColorTitleTwo selecedTitleColor:YLZColorBlueView];
     [self.tabbarVC setupCenterTabWithCenterImage:@"tabbar_cert_middle" middleVC:nil isPresentVC:YES];
     
-    self.window.rootViewController = self.tabbarVC;
+    self.window.rootViewController = [[UINavigationController alloc] initWithRootViewController:[[YLZLoginViewController alloc] init]];
+    //self.window.rootViewController = self.tabbarVC;
+//    self.window.rootViewController = [[UINavigationController alloc] initWithRootViewController:[[YLZSetIdentityViewController alloc] init]];
 }
 
 

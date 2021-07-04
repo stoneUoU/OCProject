@@ -59,7 +59,7 @@
 #pragma mark - Public Method
 #pragma mark -
 
-- (void)setBaseUI:(UIColor *)navigationViewColor withTitleString:(NSString *)titleString withTitleColor:(UIColor *)titleColor withLeftImageViewString:(NSString *)leftImageViewString withRightString:(NSString *)rightString withRightColor:(UIColor *)rightColor {
+- (void)setBaseUI:(UIColor *)navigationViewColor withTitleString:(NSString *)titleString withTitleColor:(UIColor *)titleColor withLeftImageViewString:(NSString *)leftImageViewString withRightString:(NSString *)rightString withRightColor:(UIColor *)rightColor withRightFontSize:(NSInteger )fontSize {
     
     self.statusView.backgroundColor = navigationViewColor;
     self.navigationView.backgroundColor = navigationViewColor;
@@ -71,6 +71,7 @@
     
     [self.rightButton setTitle:rightString forState:UIControlStateNormal];
     [self.rightButton setTitleColor:rightColor  forState:UIControlStateNormal];
+    self.rightButton.titleLabel.font = [YLZFont regular:fontSize];
 }
 
 #pragma mark - Private Method
@@ -108,7 +109,7 @@
     }];
     [self.rightButton mas_makeConstraints:^(MASConstraintMaker *make) {
         make.centerY.equalTo(self.navigationView);
-        make.right.equalTo(self.navigationView.mas_right);
+        make.right.equalTo(self.navigationView.mas_right).offset(-16);
         make.height.mas_equalTo(NavBarHeight);
     }];
     [self.titleLabel mas_makeConstraints:^(MASConstraintMaker *make) {
@@ -167,7 +168,6 @@
 - (UIButton *)rightButton {
     if (!_rightButton) {
         _rightButton = [[UIButton alloc] init];
-        _rightButton.titleLabel.font=[UIFont systemFontOfSize:16];
         _rightButton.contentHorizontalAlignment = NSTextAlignmentRight;
         [_rightButton addTarget:self action:@selector(toSide)forControlEvents:UIControlEventTouchUpInside];
     }
@@ -177,7 +177,7 @@
 - (UILabel *)titleLabel {
     if (!_titleLabel) {
         _titleLabel = [[UILabel alloc] init];
-        _titleLabel.font=[UIFont systemFontOfSize:18];
+        _titleLabel.font=[YLZFont regular:18];
         _titleLabel.textAlignment = NSTextAlignmentCenter;
     }
     return _titleLabel;
