@@ -18,12 +18,6 @@
 
 @property (nonatomic, strong) UIView *qrCodeView;
 
-@property (nonatomic, strong) UIImageView *qrBgImageView;
-
-@property (nonatomic, strong) UIView *leftShadowView;
-
-@property (nonatomic, strong) UIView *rightShadowView;
-
 @end
 
 @implementation YLZMSTabBar
@@ -67,22 +61,14 @@
 
 - (void)initSubViews {
     [self addSubview:self.qrCodeView];
-    [self addSubview:self.leftShadowView];
-    [self addSubview:self.rightShadowView];
-    [self.qrCodeView addSubview:self.qrBgImageView];
     [self.qrCodeView addSubview:self.qrImageView];
     [self setMas];
 }
 
 - (void)setMas {
-    [self.qrBgImageView mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.top.equalTo(self.qrCodeView.mas_top).offset(20);
-        make.centerX.equalTo(self.qrCodeView);
-    }];
     [self.qrImageView mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.centerX.equalTo(self.qrCodeView).offset(-0.5);
-        make.bottom.equalTo(self.qrBgImageView.mas_bottom).offset(-5);
-        make.size.equalTo(@(CGSizeMake(72, 72)));
+        make.center.equalTo(self.qrCodeView);
+        make.size.equalTo(@(CGSizeMake(45, 45)));
     }];
 }
 
@@ -143,32 +129,6 @@
         _qrImageView = [[UIImageView alloc] init];
     }
     return _qrImageView;
-}
-
-- (UIImageView *)qrBgImageView {
-    if (!_qrBgImageView) {
-        _qrBgImageView = [[UIImageView alloc] init];
-        _qrBgImageView.image = [UIImage imageNamed:@"tabbar_middle_cert_shape"];
-    }
-    return _qrBgImageView;
-}
-
-- (UIView *)leftShadowView {
-    if (!_leftShadowView) {
-        _leftShadowView = [[UIView alloc] initWithFrame:CGRectMake(0, -4, (SCREENWIDTH - middleButtonWidth)/2, 8)];
-        UIImage *image = [UIImage imageNamed:@"ylz_tabbar_custom_line"];
-        _leftShadowView.layer.contents = (__bridge id)image.CGImage;
-    }
-    return _leftShadowView;
-}
-
-- (UIView *)rightShadowView {
-    if (!_rightShadowView) {
-        _rightShadowView = [[UIView alloc] initWithFrame:CGRectMake((SCREENWIDTH - middleButtonWidth)/2+middleButtonWidth, -4, (SCREENWIDTH - middleButtonWidth)/2, 8)];
-        UIImage *image = [UIImage imageNamed:@"ylz_tabbar_custom_line"];
-        _rightShadowView.layer.contents = (__bridge id)image.CGImage;
-    }
-    return _rightShadowView;
 }
 
 @end

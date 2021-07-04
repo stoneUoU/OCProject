@@ -27,6 +27,7 @@
 /// 橙色
 #define YLZColorOrangeView        [UIColor colorWithHexString:@"f1985c"]
 
+#define YLZColorView      [UIColor colorWithHexString:@"f4f6f9"]
 
 /// 标题、正文、辅助文字颜色
 #define YLZColorTitleOne        [UIColor colorWithHexString:@"303133"]

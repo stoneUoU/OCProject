@@ -31,25 +31,23 @@
 };
 
 #pragma mark - 设置Tab元素
-- (void)setupTabWithVCArr:(NSArray *)vcArr imageNameArr:(NSArray *)imageNameArr selectedImageNameArr:(NSArray *)selectedImageNameArr titleArr:(NSArray *)titleArr titleColor:(UIColor *)titleColor selecedTitleColor:(UIColor *)selecedTitleColor {
+- (void)setupTabWithVCArr:(NSArray *)vcArr imageNameArr:(NSArray *)imageNameArr selectedImageNameArr:(NSArray *)selectedImageNameArr titleColor:(UIColor *)titleColor selecedTitleColor:(UIColor *)selecedTitleColor {
     _vcArr = vcArr;
     for (int i = 0; i< vcArr.count; i++) {
         [self addChildVC:[vcArr objectAtIndex:i]
                imageName:[imageNameArr objectAtIndex:i]
-       selectedImageName:[selectedImageNameArr objectAtIndex:i]
-                   title:[titleArr objectAtIndex:i] titleColor:titleColor
+       selectedImageName:[selectedImageNameArr objectAtIndex:i] titleColor:titleColor
        selecedTitleColor:selecedTitleColor];
     }
 }
 
-- (void)addChildVC:(UIViewController *)childVc imageName:(NSString *)imageName selectedImageName:(NSString *)selectedImageName title:(NSString *)title titleColor:(UIColor *)titleColor selecedTitleColor:(UIColor *)selecedTitleColor {
+- (void)addChildVC:(UIViewController *)childVc imageName:(NSString *)imageName selectedImageName:(NSString *)selectedImageName titleColor:(UIColor *)titleColor selecedTitleColor:(UIColor *)selecedTitleColor {
     if (!childVc) {
         return;
     }
-    childVc.title = title;
     childVc.tabBarItem.image = [YLZImageExtent imageWithOriRenderingImage:imageName];
     childVc.tabBarItem.selectedImage = [YLZImageExtent imageWithOriRenderingImage:selectedImageName];
-    childVc.tabBarItem.imageInsets = UIEdgeInsetsMake(3, 0, -3, 0);
+    childVc.tabBarItem.imageInsets = UIEdgeInsetsMake(12, 0, 0, 0);
     UINavigationController *navi = [[UINavigationController alloc] initWithRootViewController:childVc];
     [self addChildViewController:navi];
 }

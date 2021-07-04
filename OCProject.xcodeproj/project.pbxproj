@@ -104,6 +104,15 @@
 		8E79CEB9268F13F900E71F17 /* JXCategoryBaseView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E79CE91268F13F900E71F17 /* JXCategoryBaseView.m */; };
 		8E79CEBA268F13F900E71F17 /* JXCategoryBaseCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E79CE92268F13F900E71F17 /* JXCategoryBaseCell.m */; };
 		8E79CEBB268F13F900E71F17 /* JXCategoryBaseCellModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E79CE93268F13F900E71F17 /* JXCategoryBaseCellModel.m */; };
+		8E8481E32691DC00005CCA34 /* YLZMomentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E8481E22691DC00005CCA34 /* YLZMomentViewController.m */; };
+		8E8481E82691DC0E005CCA34 /* YLZMomentView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E8481E72691DC0E005CCA34 /* YLZMomentView.m */; };
+		8E8481ED2691DC23005CCA34 /* YLZMomentModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E8481EC2691DC23005CCA34 /* YLZMomentModel.m */; };
+		8E8481F72691DE5F005CCA34 /* YLZMessageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E8481F62691DE5F005CCA34 /* YLZMessageViewController.m */; };
+		8E8481FC2691DE74005CCA34 /* YLZMessageModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E8481FB2691DE74005CCA34 /* YLZMessageModel.m */; };
+		8E8482002691E33A005CCA34 /* YLZOperateModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E8481FF2691E33A005CCA34 /* YLZOperateModel.m */; };
+		8E8482042691E3B8005CCA34 /* YLZMessageCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E8482032691E3B8005CCA34 /* YLZMessageCollectionViewCell.m */; };
+		8E8482082691E3D5005CCA34 /* YLZMessageTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E8482072691E3D5005CCA34 /* YLZMessageTableViewCell.m */; };
+		8E84820C2691FD21005CCA34 /* YLZMomentOnePhotoTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E84820B2691FD21005CCA34 /* YLZMomentOnePhotoTableViewCell.m */; };
 		8E9DD3FE2690359900D13F09 /* YLZSettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E9DD3FD2690359900D13F09 /* YLZSettingViewController.m */; };
 		8E9DD404269035CB00D13F09 /* YLZSettingModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E9DD403269035CB00D13F09 /* YLZSettingModel.m */; };
 		8E9DD4092690381500D13F09 /* YLZSettingTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E9DD4082690381500D13F09 /* YLZSettingTableViewCell.m */; };
@@ -337,6 +346,24 @@
 		8E79CE91268F13F900E71F17 /* JXCategoryBaseView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JXCategoryBaseView.m; sourceTree = "<group>"; };
 		8E79CE92268F13F900E71F17 /* JXCategoryBaseCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JXCategoryBaseCell.m; sourceTree = "<group>"; };
 		8E79CE93268F13F900E71F17 /* JXCategoryBaseCellModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JXCategoryBaseCellModel.m; sourceTree = "<group>"; };
+		8E8481E12691DC00005CCA34 /* YLZMomentViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YLZMomentViewController.h; sourceTree = "<group>"; };
+		8E8481E22691DC00005CCA34 /* YLZMomentViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YLZMomentViewController.m; sourceTree = "<group>"; };
+		8E8481E62691DC0E005CCA34 /* YLZMomentView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YLZMomentView.h; sourceTree = "<group>"; };
+		8E8481E72691DC0E005CCA34 /* YLZMomentView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YLZMomentView.m; sourceTree = "<group>"; };
+		8E8481EB2691DC23005CCA34 /* YLZMomentModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YLZMomentModel.h; sourceTree = "<group>"; };
+		8E8481EC2691DC23005CCA34 /* YLZMomentModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YLZMomentModel.m; sourceTree = "<group>"; };
+		8E8481F52691DE5F005CCA34 /* YLZMessageViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YLZMessageViewController.h; sourceTree = "<group>"; };
+		8E8481F62691DE5F005CCA34 /* YLZMessageViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YLZMessageViewController.m; sourceTree = "<group>"; };
+		8E8481FA2691DE74005CCA34 /* YLZMessageModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YLZMessageModel.h; sourceTree = "<group>"; };
+		8E8481FB2691DE74005CCA34 /* YLZMessageModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YLZMessageModel.m; sourceTree = "<group>"; };
+		8E8481FE2691E33A005CCA34 /* YLZOperateModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YLZOperateModel.h; sourceTree = "<group>"; };
+		8E8481FF2691E33A005CCA34 /* YLZOperateModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YLZOperateModel.m; sourceTree = "<group>"; };
+		8E8482022691E3B8005CCA34 /* YLZMessageCollectionViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YLZMessageCollectionViewCell.h; sourceTree = "<group>"; };
+		8E8482032691E3B8005CCA34 /* YLZMessageCollectionViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YLZMessageCollectionViewCell.m; sourceTree = "<group>"; };
+		8E8482062691E3D5005CCA34 /* YLZMessageTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YLZMessageTableViewCell.h; sourceTree = "<group>"; };
+		8E8482072691E3D5005CCA34 /* YLZMessageTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YLZMessageTableViewCell.m; sourceTree = "<group>"; };
+		8E84820A2691FD21005CCA34 /* YLZMomentOnePhotoTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YLZMomentOnePhotoTableViewCell.h; sourceTree = "<group>"; };
+		8E84820B2691FD21005CCA34 /* YLZMomentOnePhotoTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YLZMomentOnePhotoTableViewCell.m; sourceTree = "<group>"; };
 		8E9DD3FC2690359900D13F09 /* YLZSettingViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YLZSettingViewController.h; sourceTree = "<group>"; };
 		8E9DD3FD2690359900D13F09 /* YLZSettingViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YLZSettingViewController.m; sourceTree = "<group>"; };
 		8E9DD402269035CB00D13F09 /* YLZSettingModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YLZSettingModel.h; sourceTree = "<group>"; };
@@ -763,6 +790,8 @@
 		8E79CDC1268ED12B00E71F17 /* Logic */ = {
 			isa = PBXGroup;
 			children = (
+				8E8481F02691DE20005CCA34 /* Message */,
+				8E8481DE2691DBD4005CCA34 /* Moment */,
 				8E59B15626914A660043073C /* LoginFollow */,
 				8E79CE02268EF51D00E71F17 /* Home */,
 				8E79CDC3268ED13D00E71F17 /* Mine */,
@@ -1115,6 +1144,86 @@
 			path = Base;
 			sourceTree = "<group>";
 		};
+		8E8481DE2691DBD4005CCA34 /* Moment */ = {
+			isa = PBXGroup;
+			children = (
+				8E8481EA2691DC11005CCA34 /* Model */,
+				8E8481E02691DBDF005CCA34 /* Controller */,
+				8E8481DF2691DBDA005CCA34 /* View */,
+			);
+			path = Moment;
+			sourceTree = "<group>";
+		};
+		8E8481DF2691DBDA005CCA34 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				8E8481E62691DC0E005CCA34 /* YLZMomentView.h */,
+				8E8481E72691DC0E005CCA34 /* YLZMomentView.m */,
+				8E84820A2691FD21005CCA34 /* YLZMomentOnePhotoTableViewCell.h */,
+				8E84820B2691FD21005CCA34 /* YLZMomentOnePhotoTableViewCell.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		8E8481E02691DBDF005CCA34 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				8E8481E12691DC00005CCA34 /* YLZMomentViewController.h */,
+				8E8481E22691DC00005CCA34 /* YLZMomentViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		8E8481EA2691DC11005CCA34 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				8E8481EB2691DC23005CCA34 /* YLZMomentModel.h */,
+				8E8481EC2691DC23005CCA34 /* YLZMomentModel.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		8E8481F02691DE20005CCA34 /* Message */ = {
+			isa = PBXGroup;
+			children = (
+				8E8481F32691DE33005CCA34 /* Controller */,
+				8E8481F22691DE2F005CCA34 /* Model */,
+				8E8481F12691DE2A005CCA34 /* View */,
+			);
+			path = Message;
+			sourceTree = "<group>";
+		};
+		8E8481F12691DE2A005CCA34 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				8E8482022691E3B8005CCA34 /* YLZMessageCollectionViewCell.h */,
+				8E8482032691E3B8005CCA34 /* YLZMessageCollectionViewCell.m */,
+				8E8482062691E3D5005CCA34 /* YLZMessageTableViewCell.h */,
+				8E8482072691E3D5005CCA34 /* YLZMessageTableViewCell.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		8E8481F22691DE2F005CCA34 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				8E8481FA2691DE74005CCA34 /* YLZMessageModel.h */,
+				8E8481FB2691DE74005CCA34 /* YLZMessageModel.m */,
+				8E8481FE2691E33A005CCA34 /* YLZOperateModel.h */,
+				8E8481FF2691E33A005CCA34 /* YLZOperateModel.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		8E8481F32691DE33005CCA34 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				8E8481F52691DE5F005CCA34 /* YLZMessageViewController.h */,
+				8E8481F62691DE5F005CCA34 /* YLZMessageViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
 		8E9DD3FB2690357700D13F09 /* Setting */ = {
 			isa = PBXGroup;
 			children = (
@@ -1386,6 +1495,7 @@
 				8E9DD45226906A3C00D13F09 /* YLZFeedBackViewController.m in Sources */,
 				8E9DD463269070E400D13F09 /* YLZChangePhoneViewController.m in Sources */,
 				8E59B17126916D200043073C /* YLZSetCollegeCollectionViewCell.m in Sources */,
+				8E8481E32691DC00005CCA34 /* YLZMomentViewController.m in Sources */,
 				8E59B154269149E00043073C /* YLZForgetPasswordViewController.m in Sources */,
 				8E79CDFF268EF34300E71F17 /* UIViewController+YLZMediator.m in Sources */,
 				8E79CE96268F13F900E71F17 /* JXCategoryTitleVerticalZoomView.m in Sources */,
@@ -1402,14 +1512,17 @@
 				8E79CDDF268EE67E00E71F17 /* YLZLocalData.m in Sources */,
 				8EFB12BC265BB44F007D9FE1 /* ViewController.m in Sources */,
 				8E79CEAF268F13F900E71F17 /* JXCategoryNumberView.m in Sources */,
+				8E8481FC2691DE74005CCA34 /* YLZMessageModel.m in Sources */,
 				8E79CEB7268F13F900E71F17 /* UIColor+JXAdd.m in Sources */,
 				8EFB12B6265BB44F007D9FE1 /* AppDelegate.m in Sources */,
+				8E8482082691E3D5005CCA34 /* YLZMessageTableViewCell.m in Sources */,
 				8E42439B265CF04600E5A4A5 /* UIImage+YLZGif.m in Sources */,
 				8E79CEA8268F13F900E71F17 /* JXCategoryTitleImageCellModel.m in Sources */,
 				8E79CE99268F13F900E71F17 /* JXCategoryIndicatorTriangleView.m in Sources */,
 				8E79CE9E268F13F900E71F17 /* JXCategoryIndicatorDotLineView.m in Sources */,
 				8E59B1812691A2A60043073C /* YLZAlertForceView.m in Sources */,
 				8E4243CA265CF22400E5A4A5 /* YLZProgressHUDExtent.m in Sources */,
+				8E8482042691E3B8005CCA34 /* YLZMessageCollectionViewCell.m in Sources */,
 				8E79CEA0268F13F900E71F17 /* JXCategoryIndicatorCellModel.m in Sources */,
 				8E9DD4232690493500D13F09 /* YLZBlacklistViewController.m in Sources */,
 				8E59B16D26915E3D0043073C /* YLZSetCollegeViewController.m in Sources */,
@@ -1423,9 +1536,11 @@
 				8E9DD4172690436100D13F09 /* YLZSecretSettingTableViewCell.m in Sources */,
 				8E9DD4412690580F00D13F09 /* YLZAccountTableViewCell.m in Sources */,
 				8E79CDE7268EE84000E71F17 /* YLZUserBaseInfo.m in Sources */,
+				8E8481E82691DC0E005CCA34 /* YLZMomentView.m in Sources */,
 				8E424358265CEA1F00E5A4A5 /* YLZMSTabBarController.m in Sources */,
 				8E79CE94268F13F900E71F17 /* JXCategoryTitleVerticalZoomCellModel.m in Sources */,
 				8E59B160269151D70043073C /* YLZSetGenderViewController.m in Sources */,
+				8E8482002691E33A005CCA34 /* YLZOperateModel.m in Sources */,
 				8E79CEA7268F13F900E71F17 /* JXCategoryTitleImageCell.m in Sources */,
 				8E9DD4672690774500D13F09 /* YLZLoginViewController.m in Sources */,
 				8E9DD45D2690709D00D13F09 /* YLZBindPhoneViewController.m in Sources */,
@@ -1433,6 +1548,7 @@
 				8E79CEAE268F13F900E71F17 /* JXCategoryImageCellModel.m in Sources */,
 				8E79CE9D268F13F900E71F17 /* JXCategoryIndicatorComponentView.m in Sources */,
 				8E79CEBA268F13F900E71F17 /* JXCategoryBaseCell.m in Sources */,
+				8E8481ED2691DC23005CCA34 /* YLZMomentModel.m in Sources */,
 				8E4243EB265CF8F500E5A4A5 /* YLZNetWork.m in Sources */,
 				8E42439F265CF04600E5A4A5 /* UIButton+YLZCountDown.m in Sources */,
 				8E79CDE3268EE71D00E71F17 /* YLZLocalData+ylz.m in Sources */,
@@ -1441,6 +1557,7 @@
 				8E79CEA3268F13F900E71F17 /* JXCategoryDotCell.m in Sources */,
 				8E79CEAA268F13F900E71F17 /* JXCategoryTitleCell.m in Sources */,
 				8E9DD4272690497900D13F09 /* YLZBlacklistTableViewCell.m in Sources */,
+				8E84820C2691FD21005CCA34 /* YLZMomentOnePhotoTableViewCell.m in Sources */,
 				8E79CE0B268EF57000E71F17 /* YLZMineViewController.m in Sources */,
 				8E79CEB5268F13F900E71F17 /* JXCategoryIndicatorParamsModel.m in Sources */,
 				8E79CE9F268F13F900E71F17 /* JXCategoryIndicatorBackgroundView.m in Sources */,
@@ -1484,6 +1601,7 @@
 				8E4243CD265CF22400E5A4A5 /* YLZViewExtent.m in Sources */,
 				8E9DD42B2690499E00D13F09 /* YLZBlacklistModel.m in Sources */,
 				8E42439C265CF04600E5A4A5 /* UIImage+YLZEncoding.m in Sources */,
+				8E8481F72691DE5F005CCA34 /* YLZMessageViewController.m in Sources */,
 				8E79CEA2268F13F900E71F17 /* JXCategoryIndicatorView.m in Sources */,
 				8E79CEB0268F13F900E71F17 /* JXCategoryNumberCell.m in Sources */,
 				8E9DD42F26904DD600D13F09 /* YLZChangePasswordViewController.m in Sources */,

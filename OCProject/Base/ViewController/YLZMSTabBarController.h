@@ -37,7 +37,7 @@ typedef NS_ENUM(NSInteger, YLZMSTabIndex) {
  @param titleColor Tab 标题颜色
  @param selecedTitleColor Tab 标题选中颜色
  */
-- (void)setupTabWithVCArr:(NSArray *)vcArr imageNameArr:(NSArray *)imageNameArr selectedImageNameArr:(NSArray *)selectedImageNameArr titleArr:(NSArray *)titleArr titleColor:(UIColor *)titleColor selecedTitleColor:(UIColor *)selecedTitleColor ;
+- (void)setupTabWithVCArr:(NSArray *)vcArr imageNameArr:(NSArray *)imageNameArr selectedImageNameArr:(NSArray *)selectedImageNameArr titleColor:(UIColor *)titleColor selecedTitleColor:(UIColor *)selecedTitleColor ;
 
 /**
  设置中间Tab

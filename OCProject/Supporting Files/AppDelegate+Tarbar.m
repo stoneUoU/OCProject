@@ -8,6 +8,8 @@
 #import "AppDelegate+Tarbar.h"
 #import "YLZHomeViewController.h"
 #import "YLZMineViewController.h"
+#import "YLZMessageViewController.h"
+#import "YLZMomentViewController.h""
 #import "ViewController.h"
 
 #import <YYKit/YYKit.h>
@@ -50,15 +52,16 @@
     self.tabbarVC.tabbarDelegate = self;
     
     UIViewController *homeVC =  [[YLZHomeViewController alloc] init];
+    UIViewController *messageVC = [[YLZMessageViewController alloc] init];
+    UIViewController *momentVC = [[YLZMomentViewController alloc] init];
     UIViewController *mineVC = [[YLZMineViewController alloc] init];
     
-    NSArray *vcArr = @[homeVC, mineVC];
-    NSArray *titleArr = @[@"首页", @"我的"];
-    NSArray *imageNameArr = @[@"tabbar_home",@"tabbar_mine"];
-    NSArray *selectedImageNameArr = @[@"tabbar_home_selected", @"tabbar_mine_selected"];
+    NSArray *vcArr = @[homeVC,messageVC,momentVC,mineVC];
+    NSArray *imageNameArr = @[@"ylz_tabbar_home",@"ylz_tabbar_message",@"ylz_tabbar_moment",@"ylz_tabbar_me"];
+    NSArray *selectedImageNameArr = @[@"ylz_tabbar_home_selected",@"ylz_tabbar_message_selected",@"ylz_tabbar_moment_selected",@"ylz_tabbar_me_selected"];
     
-    [self.tabbarVC setupTabWithVCArr:vcArr imageNameArr:imageNameArr selectedImageNameArr:selectedImageNameArr titleArr:titleArr titleColor:YLZColorTitleTwo selecedTitleColor:YLZColorBlueView];
-    [self.tabbarVC setupCenterTabWithCenterImage:@"tabbar_cert_middle" middleVC:nil isPresentVC:YES];
+    [self.tabbarVC setupTabWithVCArr:vcArr imageNameArr:imageNameArr selectedImageNameArr:selectedImageNameArr titleColor:YLZColorTitleTwo selecedTitleColor:YLZColorBlueView];
+    [self.tabbarVC setupCenterTabWithCenterImage:@"ylz_tabbar_plus" middleVC:nil isPresentVC:YES];
     
 //    self.window.rootViewController = [[UINavigationController alloc] initWithRootViewController:[[YLZLoginViewController alloc] init]];
     self.window.rootViewController = self.tabbarVC;
