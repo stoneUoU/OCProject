@@ -64,7 +64,7 @@ static CGFloat const kMargin = 24.0;
     // Do any additional setup after loading the view.
     self.view.backgroundColor = YLZColorWhite;
     
-    [self setBaseUI:YLZColorWhite withTitleString:@"" withTitleColor:YLZColorTitleOne withLeftImageViewString:@"ylz_back" withRightString:@"步骤4/4" withRightColor:YLZColorTitleThree withRightFontSize:14];
+    [self setBaseUI:YLZColorWhite withTitleString:@"" withTitleColor:YLZColorTitleOne withLeftImageViewString:@"ylz_back_circle" withRightString:@"步骤4/4" withRightColor:YLZColorTitleThree withRightFontSize:14];
     [self setUI];
 }
 

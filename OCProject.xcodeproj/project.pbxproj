@@ -52,6 +52,25 @@
 		8E59B179269171910043073C /* YLZSetOrganizationAreaViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E59B178269171910043073C /* YLZSetOrganizationAreaViewController.m */; };
 		8E59B17D26919B190043073C /* YLZCollegeAreaPickerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E59B17C26919B190043073C /* YLZCollegeAreaPickerView.m */; };
 		8E59B1812691A2A60043073C /* YLZAlertForceView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E59B1802691A2A60043073C /* YLZAlertForceView.m */; };
+		8E67D0D4269291BD00BF476D /* YLZMomentFourPhotoTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E67D0D3269291BD00BF476D /* YLZMomentFourPhotoTableViewCell.m */; };
+		8E67D0D8269292D900BF476D /* YLZMomentPicCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E67D0D7269292D900BF476D /* YLZMomentPicCollectionViewCell.m */; };
+		8E67D0E02692995300BF476D /* YLZPendingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E67D0DF2692995300BF476D /* YLZPendingViewController.m */; };
+		8E67D0E52692996A00BF476D /* YLZPendingTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E67D0E42692996A00BF476D /* YLZPendingTableViewCell.m */; };
+		8E67D0E92692999100BF476D /* YLZPendingModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E67D0E82692999100BF476D /* YLZPendingModel.m */; };
+		8E67D0ED26929BD000BF476D /* YLZReviewingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E67D0EC26929BD000BF476D /* YLZReviewingViewController.m */; };
+		8E67D0F126929BF000BF476D /* YLZReviewingModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E67D0F026929BF000BF476D /* YLZReviewingModel.m */; };
+		8E67D0F526929C0400BF476D /* YLZReviewingTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E67D0F426929C0400BF476D /* YLZReviewingTableViewCell.m */; };
+		8E67D0F92692A4FB00BF476D /* YLZInvitedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E67D0F82692A4FB00BF476D /* YLZInvitedViewController.m */; };
+		8E67D0FD2692A50F00BF476D /* YLZInvitedModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E67D0FC2692A50F00BF476D /* YLZInvitedModel.m */; };
+		8E67D1012692A52500BF476D /* YLZInvitedTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E67D1002692A52500BF476D /* YLZInvitedTableViewCell.m */; };
+		8E67D1092692A83500BF476D /* YLZNewFollowViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E67D1082692A83500BF476D /* YLZNewFollowViewController.m */; };
+		8E67D10E2692A86100BF476D /* YLZNewFollowTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E67D10D2692A86100BF476D /* YLZNewFollowTableViewCell.m */; };
+		8E67D1122692A87D00BF476D /* YLZNewFollowModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E67D1112692A87D00BF476D /* YLZNewFollowModel.m */; };
+		8E67D1162692AD3900BF476D /* YLZNewFollowTableSectionHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E67D1152692AD3900BF476D /* YLZNewFollowTableSectionHeaderView.m */; };
+		8E67D11C2692E21D00BF476D /* YLZMineBaseTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E67D11B2692E21D00BF476D /* YLZMineBaseTableView.m */; };
+		8E67D1202692E25A00BF476D /* YLZMineHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E67D11F2692E25A00BF476D /* YLZMineHeaderView.m */; };
+		8E67D1382692FC7200BF476D /* JXCategoryIndicatorSpringBackgroundView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E67D1342692FC7200BF476D /* JXCategoryIndicatorSpringBackgroundView.m */; };
+		8E67D13E269302A300BF476D /* YLZMineMomentTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E67D13D269302A300BF476D /* YLZMineMomentTableView.m */; };
 		8E79CDD9268EE5CF00E71F17 /* YLZBaseDefaults.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E79CDD8268EE5CF00E71F17 /* YLZBaseDefaults.m */; };
 		8E79CDDF268EE67E00E71F17 /* YLZLocalData.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E79CDDE268EE67E00E71F17 /* YLZLocalData.m */; };
 		8E79CDE3268EE71D00E71F17 /* YLZLocalData+ylz.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E79CDE2268EE71D00E71F17 /* YLZLocalData+ylz.m */; };
@@ -240,6 +259,44 @@
 		8E59B17C26919B190043073C /* YLZCollegeAreaPickerView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YLZCollegeAreaPickerView.m; sourceTree = "<group>"; };
 		8E59B17F2691A2A60043073C /* YLZAlertForceView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YLZAlertForceView.h; sourceTree = "<group>"; };
 		8E59B1802691A2A60043073C /* YLZAlertForceView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YLZAlertForceView.m; sourceTree = "<group>"; };
+		8E67D0D2269291BD00BF476D /* YLZMomentFourPhotoTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YLZMomentFourPhotoTableViewCell.h; sourceTree = "<group>"; };
+		8E67D0D3269291BD00BF476D /* YLZMomentFourPhotoTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YLZMomentFourPhotoTableViewCell.m; sourceTree = "<group>"; };
+		8E67D0D6269292D900BF476D /* YLZMomentPicCollectionViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YLZMomentPicCollectionViewCell.h; sourceTree = "<group>"; };
+		8E67D0D7269292D900BF476D /* YLZMomentPicCollectionViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YLZMomentPicCollectionViewCell.m; sourceTree = "<group>"; };
+		8E67D0DE2692995300BF476D /* YLZPendingViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YLZPendingViewController.h; sourceTree = "<group>"; };
+		8E67D0DF2692995300BF476D /* YLZPendingViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YLZPendingViewController.m; sourceTree = "<group>"; };
+		8E67D0E32692996A00BF476D /* YLZPendingTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YLZPendingTableViewCell.h; sourceTree = "<group>"; };
+		8E67D0E42692996A00BF476D /* YLZPendingTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YLZPendingTableViewCell.m; sourceTree = "<group>"; };
+		8E67D0E72692999100BF476D /* YLZPendingModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YLZPendingModel.h; sourceTree = "<group>"; };
+		8E67D0E82692999100BF476D /* YLZPendingModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YLZPendingModel.m; sourceTree = "<group>"; };
+		8E67D0EB26929BD000BF476D /* YLZReviewingViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YLZReviewingViewController.h; sourceTree = "<group>"; };
+		8E67D0EC26929BD000BF476D /* YLZReviewingViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YLZReviewingViewController.m; sourceTree = "<group>"; };
+		8E67D0EF26929BF000BF476D /* YLZReviewingModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YLZReviewingModel.h; sourceTree = "<group>"; };
+		8E67D0F026929BF000BF476D /* YLZReviewingModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YLZReviewingModel.m; sourceTree = "<group>"; };
+		8E67D0F326929C0400BF476D /* YLZReviewingTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YLZReviewingTableViewCell.h; sourceTree = "<group>"; };
+		8E67D0F426929C0400BF476D /* YLZReviewingTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YLZReviewingTableViewCell.m; sourceTree = "<group>"; };
+		8E67D0F72692A4FB00BF476D /* YLZInvitedViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YLZInvitedViewController.h; sourceTree = "<group>"; };
+		8E67D0F82692A4FB00BF476D /* YLZInvitedViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YLZInvitedViewController.m; sourceTree = "<group>"; };
+		8E67D0FB2692A50F00BF476D /* YLZInvitedModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YLZInvitedModel.h; sourceTree = "<group>"; };
+		8E67D0FC2692A50F00BF476D /* YLZInvitedModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YLZInvitedModel.m; sourceTree = "<group>"; };
+		8E67D0FF2692A52500BF476D /* YLZInvitedTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YLZInvitedTableViewCell.h; sourceTree = "<group>"; };
+		8E67D1002692A52500BF476D /* YLZInvitedTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YLZInvitedTableViewCell.m; sourceTree = "<group>"; };
+		8E67D1072692A83500BF476D /* YLZNewFollowViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YLZNewFollowViewController.h; sourceTree = "<group>"; };
+		8E67D1082692A83500BF476D /* YLZNewFollowViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YLZNewFollowViewController.m; sourceTree = "<group>"; };
+		8E67D10C2692A86100BF476D /* YLZNewFollowTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YLZNewFollowTableViewCell.h; sourceTree = "<group>"; };
+		8E67D10D2692A86100BF476D /* YLZNewFollowTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YLZNewFollowTableViewCell.m; sourceTree = "<group>"; };
+		8E67D1102692A87D00BF476D /* YLZNewFollowModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YLZNewFollowModel.h; sourceTree = "<group>"; };
+		8E67D1112692A87D00BF476D /* YLZNewFollowModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YLZNewFollowModel.m; sourceTree = "<group>"; };
+		8E67D1142692AD3900BF476D /* YLZNewFollowTableSectionHeaderView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YLZNewFollowTableSectionHeaderView.h; sourceTree = "<group>"; };
+		8E67D1152692AD3900BF476D /* YLZNewFollowTableSectionHeaderView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YLZNewFollowTableSectionHeaderView.m; sourceTree = "<group>"; };
+		8E67D11A2692E21D00BF476D /* YLZMineBaseTableView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YLZMineBaseTableView.h; sourceTree = "<group>"; };
+		8E67D11B2692E21D00BF476D /* YLZMineBaseTableView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YLZMineBaseTableView.m; sourceTree = "<group>"; };
+		8E67D11E2692E25A00BF476D /* YLZMineHeaderView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YLZMineHeaderView.h; sourceTree = "<group>"; };
+		8E67D11F2692E25A00BF476D /* YLZMineHeaderView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YLZMineHeaderView.m; sourceTree = "<group>"; };
+		8E67D1342692FC7200BF476D /* JXCategoryIndicatorSpringBackgroundView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JXCategoryIndicatorSpringBackgroundView.m; sourceTree = "<group>"; };
+		8E67D1362692FC7200BF476D /* JXCategoryIndicatorSpringBackgroundView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JXCategoryIndicatorSpringBackgroundView.h; sourceTree = "<group>"; };
+		8E67D13C269302A300BF476D /* YLZMineMomentTableView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YLZMineMomentTableView.h; sourceTree = "<group>"; };
+		8E67D13D269302A300BF476D /* YLZMineMomentTableView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YLZMineMomentTableView.m; sourceTree = "<group>"; };
 		8E79CDD7268EE5CF00E71F17 /* YLZBaseDefaults.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YLZBaseDefaults.h; sourceTree = "<group>"; };
 		8E79CDD8268EE5CF00E71F17 /* YLZBaseDefaults.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YLZBaseDefaults.m; sourceTree = "<group>"; };
 		8E79CDDD268EE67E00E71F17 /* YLZLocalData.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YLZLocalData.h; sourceTree = "<group>"; };
@@ -257,7 +314,7 @@
 		8E79CDFD268EF34300E71F17 /* UIViewController+YLZMediator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIViewController+YLZMediator.h"; sourceTree = "<group>"; };
 		8E79CDFE268EF34300E71F17 /* UIViewController+YLZMediator.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+YLZMediator.m"; sourceTree = "<group>"; };
 		8E79CE09268EF57000E71F17 /* YLZMineViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YLZMineViewController.h; sourceTree = "<group>"; };
-		8E79CE0A268EF57000E71F17 /* YLZMineViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YLZMineViewController.m; sourceTree = "<group>"; };
+		8E79CE0A268EF57000E71F17 /* YLZMineViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YLZMineViewController.m; sourceTree = "<group>"; wrapsLines = 1; };
 		8E79CE0D268EF57E00E71F17 /* YLZHomeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YLZHomeViewController.h; sourceTree = "<group>"; };
 		8E79CE0E268EF57E00E71F17 /* YLZHomeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YLZHomeViewController.m; sourceTree = "<group>"; };
 		8E79CE12268EF6E700E71F17 /* YLZLoadingView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YLZLoadingView.h; sourceTree = "<group>"; };
@@ -787,6 +844,103 @@
 			path = Controller;
 			sourceTree = "<group>";
 		};
+		8E67D0DA2692990800BF476D /* Pending(待处理) */ = {
+			isa = PBXGroup;
+			children = (
+				8E67D0DD2692992100BF476D /* Controller */,
+				8E67D0DC2692991C00BF476D /* Model */,
+				8E67D0DB2692991400BF476D /* View */,
+			);
+			path = "Pending(待处理)";
+			sourceTree = "<group>";
+		};
+		8E67D0DB2692991400BF476D /* View */ = {
+			isa = PBXGroup;
+			children = (
+				8E67D0E32692996A00BF476D /* YLZPendingTableViewCell.h */,
+				8E67D0E42692996A00BF476D /* YLZPendingTableViewCell.m */,
+				8E67D0F326929C0400BF476D /* YLZReviewingTableViewCell.h */,
+				8E67D0F426929C0400BF476D /* YLZReviewingTableViewCell.m */,
+				8E67D0FF2692A52500BF476D /* YLZInvitedTableViewCell.h */,
+				8E67D1002692A52500BF476D /* YLZInvitedTableViewCell.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		8E67D0DC2692991C00BF476D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				8E67D0E72692999100BF476D /* YLZPendingModel.h */,
+				8E67D0E82692999100BF476D /* YLZPendingModel.m */,
+				8E67D0EF26929BF000BF476D /* YLZReviewingModel.h */,
+				8E67D0F026929BF000BF476D /* YLZReviewingModel.m */,
+				8E67D0FB2692A50F00BF476D /* YLZInvitedModel.h */,
+				8E67D0FC2692A50F00BF476D /* YLZInvitedModel.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		8E67D0DD2692992100BF476D /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				8E67D0DE2692995300BF476D /* YLZPendingViewController.h */,
+				8E67D0DF2692995300BF476D /* YLZPendingViewController.m */,
+				8E67D0EB26929BD000BF476D /* YLZReviewingViewController.h */,
+				8E67D0EC26929BD000BF476D /* YLZReviewingViewController.m */,
+				8E67D0F72692A4FB00BF476D /* YLZInvitedViewController.h */,
+				8E67D0F82692A4FB00BF476D /* YLZInvitedViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		8E67D1032692A7CF00BF476D /* Follow(新增关注) */ = {
+			isa = PBXGroup;
+			children = (
+				8E67D1062692A81800BF476D /* Model */,
+				8E67D1052692A81200BF476D /* Controller */,
+				8E67D1042692A7DD00BF476D /* View */,
+			);
+			path = "Follow(新增关注)";
+			sourceTree = "<group>";
+		};
+		8E67D1042692A7DD00BF476D /* View */ = {
+			isa = PBXGroup;
+			children = (
+				8E67D10C2692A86100BF476D /* YLZNewFollowTableViewCell.h */,
+				8E67D10D2692A86100BF476D /* YLZNewFollowTableViewCell.m */,
+				8E67D1142692AD3900BF476D /* YLZNewFollowTableSectionHeaderView.h */,
+				8E67D1152692AD3900BF476D /* YLZNewFollowTableSectionHeaderView.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		8E67D1052692A81200BF476D /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				8E67D1072692A83500BF476D /* YLZNewFollowViewController.h */,
+				8E67D1082692A83500BF476D /* YLZNewFollowViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		8E67D1062692A81800BF476D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				8E67D1102692A87D00BF476D /* YLZNewFollowModel.h */,
+				8E67D1112692A87D00BF476D /* YLZNewFollowModel.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		8E67D1332692FC7200BF476D /* SpringIndicator */ = {
+			isa = PBXGroup;
+			children = (
+				8E67D1342692FC7200BF476D /* JXCategoryIndicatorSpringBackgroundView.m */,
+				8E67D1362692FC7200BF476D /* JXCategoryIndicatorSpringBackgroundView.h */,
+			);
+			path = SpringIndicator;
+			sourceTree = "<group>";
+		};
 		8E79CDC1268ED12B00E71F17 /* Logic */ = {
 			isa = PBXGroup;
 			children = (
@@ -933,6 +1087,12 @@
 			isa = PBXGroup;
 			children = (
 				8E9DD4392690573200D13F09 /* UITableViewCell */,
+				8E67D11A2692E21D00BF476D /* YLZMineBaseTableView.h */,
+				8E67D11B2692E21D00BF476D /* YLZMineBaseTableView.m */,
+				8E67D11E2692E25A00BF476D /* YLZMineHeaderView.h */,
+				8E67D11F2692E25A00BF476D /* YLZMineHeaderView.m */,
+				8E67D13C269302A300BF476D /* YLZMineMomentTableView.h */,
+				8E67D13D269302A300BF476D /* YLZMineMomentTableView.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -969,6 +1129,7 @@
 		8E79CE35268F13F900E71F17 /* JXCategoryView */ = {
 			isa = PBXGroup;
 			children = (
+				8E67D1332692FC7200BF476D /* SpringIndicator */,
 				8E79CE36268F13F900E71F17 /* VerticalZoomTitle */,
 				8E79CE3D268F13F900E71F17 /* RLTManager */,
 				8E79CE40268F13F900E71F17 /* Indicator */,
@@ -1161,6 +1322,10 @@
 				8E8481E72691DC0E005CCA34 /* YLZMomentView.m */,
 				8E84820A2691FD21005CCA34 /* YLZMomentOnePhotoTableViewCell.h */,
 				8E84820B2691FD21005CCA34 /* YLZMomentOnePhotoTableViewCell.m */,
+				8E67D0D2269291BD00BF476D /* YLZMomentFourPhotoTableViewCell.h */,
+				8E67D0D3269291BD00BF476D /* YLZMomentFourPhotoTableViewCell.m */,
+				8E67D0D6269292D900BF476D /* YLZMomentPicCollectionViewCell.h */,
+				8E67D0D7269292D900BF476D /* YLZMomentPicCollectionViewCell.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -1186,6 +1351,8 @@
 		8E8481F02691DE20005CCA34 /* Message */ = {
 			isa = PBXGroup;
 			children = (
+				8E67D1032692A7CF00BF476D /* Follow(新增关注) */,
+				8E67D0DA2692990800BF476D /* Pending(待处理) */,
 				8E8481F32691DE33005CCA34 /* Controller */,
 				8E8481F22691DE2F005CCA34 /* Model */,
 				8E8481F12691DE2A005CCA34 /* View */,
@@ -1499,6 +1666,7 @@
 				8E59B154269149E00043073C /* YLZForgetPasswordViewController.m in Sources */,
 				8E79CDFF268EF34300E71F17 /* UIViewController+YLZMediator.m in Sources */,
 				8E79CE96268F13F900E71F17 /* JXCategoryTitleVerticalZoomView.m in Sources */,
+				8E67D0D4269291BD00BF476D /* YLZMomentFourPhotoTableViewCell.m in Sources */,
 				8E9DD437269056D400D13F09 /* YLZSwitchAccountViewController.m in Sources */,
 				8E4243CB265CF22400E5A4A5 /* YLZEnlargeButton.m in Sources */,
 				8E4243E1265CF7BF00E5A4A5 /* YLZFormat.m in Sources */,
@@ -1543,6 +1711,7 @@
 				8E8482002691E33A005CCA34 /* YLZOperateModel.m in Sources */,
 				8E79CEA7268F13F900E71F17 /* JXCategoryTitleImageCell.m in Sources */,
 				8E9DD4672690774500D13F09 /* YLZLoginViewController.m in Sources */,
+				8E67D0FD2692A50F00BF476D /* YLZInvitedModel.m in Sources */,
 				8E9DD45D2690709D00D13F09 /* YLZBindPhoneViewController.m in Sources */,
 				8E79CE9C268F13F900E71F17 /* JXCategoryIndicatorBallView.m in Sources */,
 				8E79CEAE268F13F900E71F17 /* JXCategoryImageCellModel.m in Sources */,
@@ -1556,6 +1725,7 @@
 				8E79CEAB268F13F900E71F17 /* JXCategoryTitleView.m in Sources */,
 				8E79CEA3268F13F900E71F17 /* JXCategoryDotCell.m in Sources */,
 				8E79CEAA268F13F900E71F17 /* JXCategoryTitleCell.m in Sources */,
+				8E67D11C2692E21D00BF476D /* YLZMineBaseTableView.m in Sources */,
 				8E9DD4272690497900D13F09 /* YLZBlacklistTableViewCell.m in Sources */,
 				8E84820C2691FD21005CCA34 /* YLZMomentOnePhotoTableViewCell.m in Sources */,
 				8E79CE0B268EF57000E71F17 /* YLZMineViewController.m in Sources */,
@@ -1567,7 +1737,9 @@
 				8E59B150269148130043073C /* YLZRegisterViewController.m in Sources */,
 				8E4243A1265CF04600E5A4A5 /* UIButton+YLZFixMultiClick.m in Sources */,
 				8E424399265CF04600E5A4A5 /* UIImage+YLZCompress.m in Sources */,
+				8E67D0E52692996A00BF476D /* YLZPendingTableViewCell.m in Sources */,
 				8E4243DD265CF78400E5A4A5 /* YLZPageFunction.m in Sources */,
+				8E67D0E02692995300BF476D /* YLZPendingViewController.m in Sources */,
 				8E4243A7265CF04600E5A4A5 /* UIViewController+YLZChange.m in Sources */,
 				8E79CE97268F13F900E71F17 /* RTLManager.m in Sources */,
 				8E79CE98268F13F900E71F17 /* JXCategoryIndicatorLineView.m in Sources */,
@@ -1582,15 +1754,20 @@
 				8E4243A5265CF04600E5A4A5 /* UIView+YLZCore.m in Sources */,
 				8E9DD44626905B3A00D13F09 /* YLZAddAccountViewController.m in Sources */,
 				8E9DD3FE2690359900D13F09 /* YLZSettingViewController.m in Sources */,
+				8E67D1162692AD3900BF476D /* YLZNewFollowTableSectionHeaderView.m in Sources */,
+				8E67D0F92692A4FB00BF476D /* YLZInvitedViewController.m in Sources */,
 				8E79CDED268EE97000E71F17 /* YLZBaseViewController.m in Sources */,
 				8E4243AA265CF04600E5A4A5 /* NSString+YLZExtension.m in Sources */,
 				8E4243A9265CF04600E5A4A5 /* NSError+YLZMS.m in Sources */,
+				8E67D1382692FC7200BF476D /* JXCategoryIndicatorSpringBackgroundView.m in Sources */,
 				8E79CEB4268F13F900E71F17 /* JXCategoryCollectionView.m in Sources */,
 				8E9DD45626906F6500D13F09 /* YLZPlaceHolderTextView.m in Sources */,
 				8EFB12C7265BB450007D9FE1 /* main.m in Sources */,
 				8E79CEA6268F13F900E71F17 /* JXCategoryTitleImageView.m in Sources */,
+				8E67D13E269302A300BF476D /* YLZMineMomentTableView.m in Sources */,
 				8E79CE9B268F13F900E71F17 /* JXCategoryIndicatorImageView.m in Sources */,
 				8E9DD4092690381500D13F09 /* YLZSettingTableViewCell.m in Sources */,
+				8E67D0ED26929BD000BF476D /* YLZReviewingViewController.m in Sources */,
 				8E4243A0265CF04600E5A4A5 /* UIButton+YLZExtension.m in Sources */,
 				8E79CEAD268F13F900E71F17 /* JXCategoryImageCell.m in Sources */,
 				8E4243A3265CF04600E5A4A5 /* UIColor+YLZHex.m in Sources */,
@@ -1598,13 +1775,18 @@
 				8E9DD404269035CB00D13F09 /* YLZSettingModel.m in Sources */,
 				8E79CE95268F13F900E71F17 /* JXCategoryTitleVerticalZoomCell.m in Sources */,
 				8E42431D265CA2F800E5A4A5 /* YLZMSTabBar.m in Sources */,
+				8E67D0D8269292D900BF476D /* YLZMomentPicCollectionViewCell.m in Sources */,
+				8E67D1092692A83500BF476D /* YLZNewFollowViewController.m in Sources */,
+				8E67D0F126929BF000BF476D /* YLZReviewingModel.m in Sources */,
 				8E4243CD265CF22400E5A4A5 /* YLZViewExtent.m in Sources */,
+				8E67D1202692E25A00BF476D /* YLZMineHeaderView.m in Sources */,
 				8E9DD42B2690499E00D13F09 /* YLZBlacklistModel.m in Sources */,
 				8E42439C265CF04600E5A4A5 /* UIImage+YLZEncoding.m in Sources */,
 				8E8481F72691DE5F005CCA34 /* YLZMessageViewController.m in Sources */,
 				8E79CEA2268F13F900E71F17 /* JXCategoryIndicatorView.m in Sources */,
 				8E79CEB0268F13F900E71F17 /* JXCategoryNumberCell.m in Sources */,
 				8E9DD42F26904DD600D13F09 /* YLZChangePasswordViewController.m in Sources */,
+				8E67D0F526929C0400BF476D /* YLZReviewingTableViewCell.m in Sources */,
 				8E4243CE265CF22400E5A4A5 /* YLZImageExtent.m in Sources */,
 				8E4243AB265CF04600E5A4A5 /* NSTimer+YLZPluto.m in Sources */,
 				8E59B164269153B40043073C /* YLZSetNameViewController.m in Sources */,
@@ -1614,7 +1796,11 @@
 				8E79CEBB268F13F900E71F17 /* JXCategoryBaseCellModel.m in Sources */,
 				8E79CE14268EF6E700E71F17 /* YLZLoadingView.m in Sources */,
 				8E9DD43326904E0200D13F09 /* YLZConstTextFieldView.m in Sources */,
+				8E67D1122692A87D00BF476D /* YLZNewFollowModel.m in Sources */,
 				8E9DD41F2690479600D13F09 /* YLZAddMeMethodViewController.m in Sources */,
+				8E67D10E2692A86100BF476D /* YLZNewFollowTableViewCell.m in Sources */,
+				8E67D0E92692999100BF476D /* YLZPendingModel.m in Sources */,
+				8E67D1012692A52500BF476D /* YLZInvitedTableViewCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

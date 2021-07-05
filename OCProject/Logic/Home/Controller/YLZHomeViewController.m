@@ -18,6 +18,10 @@
 #import "YLZBindPhoneViewController.h"
 #import "YLZChangePhoneViewController.h"
 #import "YLZLoginViewController.h"
+#import "YLZPendingViewController.h"
+#import "YLZReviewingViewController.h"
+#import "YLZInvitedViewController.h"
+#import "YLZNewFollowViewController.h"
 
 #import "YLZKitCategory.h"
 #import "YLZNetWork.h"
@@ -137,6 +141,21 @@
 //    YLZLoginViewController *vc = [[YLZLoginViewController alloc] init];
 //    [[YLZPageExtent sharedInstance] presentExistingViewController:vc];
     
+//    //待处理：
+//    YLZPendingViewController *vc = [[YLZPendingViewController alloc] init];
+//    [[YLZPageExtent sharedInstance] pushExistingViewController:vc];
+    
+    //待审核：
+//    YLZReviewingViewController *vc = [[YLZReviewingViewController alloc] init];
+//    [[YLZPageExtent sharedInstance] pushExistingViewController:vc];
+    
+    //被邀请：
+//    YLZInvitedViewController *vc = [[YLZInvitedViewController alloc] init];
+//    [[YLZPageExtent sharedInstance] pushExistingViewController:vc];
+    
+    //新增关注：
+    YLZNewFollowViewController *vc = [[YLZNewFollowViewController alloc] init];
+    [[YLZPageExtent sharedInstance] pushExistingViewController:vc];
 }
 
 - (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {

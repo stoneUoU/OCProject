@@ -9,7 +9,7 @@
 #import "YLZHomeViewController.h"
 #import "YLZMineViewController.h"
 #import "YLZMessageViewController.h"
-#import "YLZMomentViewController.h""
+#import "YLZMomentViewController.h"
 #import "ViewController.h"
 
 #import <YYKit/YYKit.h>

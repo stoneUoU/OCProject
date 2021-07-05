@@ -7,6 +7,7 @@
 
 #import "YLZMomentViewController.h"
 #import "YLZMomentOnePhotoTableViewCell.h"
+#import "YLZMomentFourPhotoTableViewCell.h"
 
 #import "YLZKitCategory.h"
 #import "YLZNetWork.h"
@@ -15,6 +16,7 @@
 
 static CGFloat const kMargin = 24.0;
 static NSString *const kYLZMomentOnePhotoTableViewCell = @"YLZMomentOnePhotoTableViewCell";
+static NSString *const kYLZMomentFourPhotoTableViewCell = @"YLZMomentFourPhotoTableViewCell";
 
 @interface YLZMomentViewController ()< UITableViewDataSource,UITableViewDelegate>
 
@@ -102,13 +104,23 @@ static NSString *const kYLZMomentOnePhotoTableViewCell = @"YLZMomentOnePhotoTabl
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     YLZMomentModel *model = self.momentModelArrays[indexPath.section];
-    YLZMomentOnePhotoTableViewCell *viewCell = [tableView dequeueReusableCellWithIdentifier:kYLZMomentOnePhotoTableViewCell];
-    if (!viewCell){
-        viewCell = [[YLZMomentOnePhotoTableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:kYLZMomentOnePhotoTableViewCell];
+    if (indexPath.section == 0) {
+        YLZMomentFourPhotoTableViewCell *viewCell = [tableView dequeueReusableCellWithIdentifier:kYLZMomentFourPhotoTableViewCell];
+        if (!viewCell){
+            viewCell = [[YLZMomentFourPhotoTableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:kYLZMomentFourPhotoTableViewCell];
+        }
+        viewCell.selectionStyle = UITableViewCellSelectionStyleNone;
+        viewCell.model = model;
+        return viewCell;
+    } else {
+        YLZMomentOnePhotoTableViewCell *viewCell = [tableView dequeueReusableCellWithIdentifier:kYLZMomentOnePhotoTableViewCell];
+        if (!viewCell){
+            viewCell = [[YLZMomentOnePhotoTableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:kYLZMomentOnePhotoTableViewCell];
+        }
+        viewCell.selectionStyle = UITableViewCellSelectionStyleNone;
+        viewCell.model = model;
+        return viewCell;
     }
-    viewCell.selectionStyle = UITableViewCellSelectionStyleNone;
-    viewCell.model = model;
-    return viewCell;
 }
 
 - (UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section {
@@ -149,6 +161,7 @@ static NSString *const kYLZMomentOnePhotoTableViewCell = @"YLZMomentOnePhotoTabl
         _tableView.estimatedSectionHeaderHeight = 300;
         _tableView.showsVerticalScrollIndicator = NO;
         [_tableView registerClass:[YLZMomentOnePhotoTableViewCell class] forCellReuseIdentifier:kYLZMomentOnePhotoTableViewCell];
+        [_tableView registerClass:[YLZMomentFourPhotoTableViewCell class] forCellReuseIdentifier:kYLZMomentFourPhotoTableViewCell];
         if (@available(iOS 11.0, *)) {
             _tableView.contentInsetAdjustmentBehavior = UIScrollViewContentInsetAdjustmentNever;
         }

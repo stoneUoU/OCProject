@@ -22,7 +22,7 @@ target 'OCProject' do
   pod 'Aspects', '1.4.1'
   pod 'MJExtension', '3.2.1'
   pod 'UITableView+FDTemplateLayoutCell', :git => 'https://github.com/forkingdog/UITableView-FDTemplateLayoutCell.git', :tag => '1.7.beta'
-  
+  pod 'JXPagingView/Pager'
   #打正式包得把下面三个库给注释：  若adhoc包中包含Reveal-SDK，则不要勾选Rebuild from Bitcode
   pod 'Reveal-SDK','~>4', :configurations => ['Debug']
   

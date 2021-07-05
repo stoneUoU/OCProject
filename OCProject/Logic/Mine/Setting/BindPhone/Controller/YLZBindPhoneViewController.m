@@ -32,7 +32,7 @@
     // Do any additional setup after loading the view.
     self.view.backgroundColor = YLZColorWhite;
     
-    [self setBaseUI:YLZColorWhite withTitleString:@"绑定手机号" withTitleColor:YLZColorTitleOne withLeftImageViewString:@"ylz_back" withRightString:@"" withRightColor:YLZColorWhite withRightFontSize:14];
+    [self setBaseUI:YLZColorWhite withTitleString:@"绑定手机号" withTitleColor:YLZColorTitleOne withLeftImageViewString:@"ylz_back_circle" withRightString:@"" withRightColor:YLZColorWhite withRightFontSize:14];
     [self setUI];
 }
 

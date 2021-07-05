@@ -8,109 +8,125 @@
 #import "YLZMineViewController.h"
 #import "YLZKitCategory.h"
 
-@interface YLZMineViewController ()
+#import <JXPagingView/JXPagerView.h>
+#import "JXCategoryView.h"
+#import "YLZMineHeaderView.h"
+#import "YLZMineBaseTableView.h"
+#import "YLZMineMomentTableView.h"
+#import "JXCategoryIndicatorSpringBackgroundView.h"
 
-@property (nonatomic, strong) NSMutableArray *homeModelArrays;
+@interface YLZMineViewController () <JXPagerViewDelegate, JXCategoryViewDelegate>
+@property (nonatomic, strong) JXPagerView *pagingView;
+@property (nonatomic, strong) YLZMineHeaderView *headerView;
 
-@property (nonatomic, strong) UIButton *btnOk;
-
+@property (nonatomic, strong) JXCategoryTitleImageView *categoryView;
+@property (nonatomic, strong) NSArray <NSString *> *titles;
 @end
 
 @implementation YLZMineViewController
 
-#pragma mark - LifeCycle
-#pragma mark -
-
-- (void)dealloc {
-    YLZLOG(@"界面销毁");
-}
-
-- (instancetype)init
-{
-    self = [super init ];//当前对象self
-    if (self !=nil) {//如果对象初始化成功，才有必要进行接下来的初始化
-    }
-    return self;//返回一个已经初始化完毕的对象；
-}
-
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.view.backgroundColor = [UIColor whiteColor];
-    [self setBaseUI:YLZColorRed withTitleString:@"个人中心" withTitleColor:YLZColorWhite withLeftImageViewString:@"" withRightString:@"" withRightColor:YLZColorWhite withRightFontSize:14];
+    self.view.backgroundColor = YLZColorView;
+//    [self setBaseUI:YLZColorWhite withTitleString:@"设置" withTitleColor:YLZColorTitleOne withLeftImageViewString:@"" withRightString:@"" withRightColor:YLZColorWhite withRightFontSize:14];
     
-    [self setUI];
+    [self.view addSubview:self.pagingView];
+
+    self.categoryView.listContainer = (id<JXCategoryViewListContainer>)self.pagingView.listContainerView;
+
+    JXCategoryIndicatorBackgroundView *backgroundView = [[JXCategoryIndicatorBackgroundView alloc] init];
+    backgroundView.indicatorHeight = 40;
+    backgroundView.indicatorCornerRadius = 5;
+    backgroundView.indicatorColor = YLZColorOrangeView;
+    backgroundView.indicatorWidthIncrement = 32;
+    self.categoryView.indicators = @[backgroundView];
+    
+    self.navigationController.interactivePopGestureRecognizer.enabled = (self.categoryView.selectedIndex == 0);
 }
 
-- (void)viewWillAppear:(BOOL)animated {
-    [super viewWillAppear:animated];
+- (void)viewDidLayoutSubviews {
+    [super viewDidLayoutSubviews];
+    self.pagingView.frame = self.view.bounds;
 }
 
-- (void)viewDidDisappear:(BOOL)animated {
-    [super viewDidDisappear:animated];
+#pragma mark - JXPagingViewDelegate
+
+- (UIView *)tableHeaderViewInPagerView:(JXPagerView *)pagerView {
+    return self.headerView;
 }
 
-#pragma mark - Public Method
-#pragma mark -
-
-#pragma mark - Private Method
-#pragma mark -
-
-- (void)setUI {
-    [self.view addSubview:self.btnOk];
-    [self setMas];
+- (NSUInteger)tableHeaderViewHeightInPagerView:(JXPagerView *)pagerView {
+    return StatusBarHeight+16+246;
 }
 
-- (void)setMas {
-    [self.btnOk mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.center.equalTo(self.view);
-        make.size.equalTo(@(CGSizeMake(SCREENWIDTH - 64, 40)));
-    }];
+- (NSUInteger)heightForPinSectionHeaderInPagerView:(JXPagerView *)pagerView {
+    return StatusBarHeight+NavBarHeight;
 }
 
-#pragma mark - IB-Action
-#pragma mark -
-
-- (void)btnOKClick {
-//    YLZLOG(@"YYYYYYYYY");
-//    self.view.backgroundColor = [UIColor redColor];
+- (UIView *)viewForPinSectionHeaderInPagerView:(JXPagerView *)pagerView {
+    return self.categoryView;
 }
 
-- (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
-//    self.view.backgroundColor = [UIColor greenColor];
+- (NSInteger)numberOfListsInPagerView:(JXPagerView *)pagerView {
+    return self.titles.count;
 }
 
-#pragma mark - Notice
-#pragma mark -
+- (id<JXPagerViewListViewDelegate>)pagerView:(JXPagerView *)pagerView initListAtIndex:(NSInteger)index {
+    YLZMineMomentTableView *list = [[YLZMineMomentTableView alloc] init];
+    return list;
+}
 
+#pragma mark - JXCategoryViewDelegate
 
-#pragma mark - Delegate
-#pragma mark -
+- (void)categoryView:(JXCategoryBaseView *)categoryView didSelectedItemAtIndex:(NSInteger)index {
+    self.navigationController.interactivePopGestureRecognizer.enabled = (index == 0);
+}
 
-#pragma mark - lazy load
-#pragma mark -
-
-- (NSMutableArray *)homeModelArrays {
-    if (!_homeModelArrays) {
-        _homeModelArrays = [NSMutableArray array];
+- (NSArray <NSString *> *)titles {
+    if (!_titles) {
+        _titles = @[@"能力", @"活动", @"我的日历"];
     }
-    return _homeModelArrays;
+    return _titles;
 }
 
-- (UIButton *)btnOk
-{
-    if (!_btnOk) {
-        _btnOk = [UIButton buttonWithType:UIButtonTypeCustom];
-        [_btnOk setTitle:@"个人中心" forState:UIControlStateNormal];
-        [_btnOk setTitleColor:YLZColorTitleOne forState:UIControlStateNormal];
-        _btnOk.titleLabel.font = [YLZFont medium:16.f];
-        _btnOk.layer.cornerRadius = 20.f;
-        _btnOk.layer.masksToBounds = YES;
-        _btnOk.layer.borderColor = [YLZColorBlue CGColor];
-        _btnOk.layer.borderWidth = 0.5;
-        [_btnOk addTarget:self action:@selector(btnOKClick) forControlEvents:UIControlEventTouchUpInside];
+- (JXPagerView *)pagingView {
+    if (!_pagingView) {
+        _pagingView = [[JXPagerView alloc] initWithDelegate:self];
     }
-    return _btnOk;
+    return _pagingView;
 }
 
+- (YLZMineHeaderView *)headerView {
+    if (!_headerView) {
+        _headerView = [[YLZMineHeaderView alloc] initWithFrame:CGRectMake(0, 0, SCREENWIDTH, StatusBarHeight+16+246)];
+        _headerView.backgroundColor = YLZColorView;
+    }
+    return _headerView;
+}
+
+- (JXCategoryTitleImageView *)categoryView {
+    if (!_categoryView) {
+        _categoryView = [[JXCategoryTitleImageView alloc] initWithFrame:CGRectMake(0, 0, SCREENWIDTH, StatusBarHeight+NavBarHeight)];
+        _categoryView.backgroundColor = YLZColorView;
+        _categoryView.titles = self.titles;
+        NSArray *imageNames = @[@"tabbar_home", @"tabbar_mine", @"tabbar_home"];
+        NSArray *selectedImageNames = @[@"tabbar_home_selected", @"tabbar_mine_selected", @"tabbar_home_selected"];
+        _categoryView.imageNames = imageNames;
+        _categoryView.selectedImageNames = selectedImageNames;
+        _categoryView.delegate = self;
+        _categoryView.titleSelectedColor = YLZColorWhite;
+        _categoryView.titleColor = YLZColorTitleOne;
+        _categoryView.titleFont = [YLZFont regular:12];
+        _categoryView.titleSelectedFont = [YLZFont medium:14];
+        _categoryView.titleColorGradientEnabled = YES;
+        _categoryView.titleLabelZoomEnabled = YES;
+        _categoryView.averageCellSpacingEnabled = NO;
+        _categoryView.cellSpacing = 36;
+    }
+    return _categoryView;
+}
 
 @end
+
+
+
