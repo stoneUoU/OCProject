@@ -43,5 +43,7 @@
     <string>App访问你的相册，用于保存图片资料</string>
     <key>NSPhotoLibraryUsageDescription</key>
     <string>App访问你的相册，用于图片资料的上传</string>
+    <key>UIUserInterfaceStyle</key>
+    <string>Light</string>
 </dict>
 </plist>

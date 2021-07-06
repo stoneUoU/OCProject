@@ -71,6 +71,8 @@
 		8E67D1202692E25A00BF476D /* YLZMineHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E67D11F2692E25A00BF476D /* YLZMineHeaderView.m */; };
 		8E67D1382692FC7200BF476D /* JXCategoryIndicatorSpringBackgroundView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E67D1342692FC7200BF476D /* JXCategoryIndicatorSpringBackgroundView.m */; };
 		8E67D13E269302A300BF476D /* YLZMineMomentTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E67D13D269302A300BF476D /* YLZMineMomentTableView.m */; };
+		8E67D1462693179D00BF476D /* YLZMomentFollowViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E67D1452693179D00BF476D /* YLZMomentFollowViewController.m */; };
+		8E67D14A269317D700BF476D /* YLZMomentRecommendViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E67D149269317D700BF476D /* YLZMomentRecommendViewController.m */; };
 		8E79CDD9268EE5CF00E71F17 /* YLZBaseDefaults.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E79CDD8268EE5CF00E71F17 /* YLZBaseDefaults.m */; };
 		8E79CDDF268EE67E00E71F17 /* YLZLocalData.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E79CDDE268EE67E00E71F17 /* YLZLocalData.m */; };
 		8E79CDE3268EE71D00E71F17 /* YLZLocalData+ylz.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E79CDE2268EE71D00E71F17 /* YLZLocalData+ylz.m */; };
@@ -297,6 +299,10 @@
 		8E67D1362692FC7200BF476D /* JXCategoryIndicatorSpringBackgroundView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JXCategoryIndicatorSpringBackgroundView.h; sourceTree = "<group>"; };
 		8E67D13C269302A300BF476D /* YLZMineMomentTableView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YLZMineMomentTableView.h; sourceTree = "<group>"; };
 		8E67D13D269302A300BF476D /* YLZMineMomentTableView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YLZMineMomentTableView.m; sourceTree = "<group>"; };
+		8E67D1442693179D00BF476D /* YLZMomentFollowViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YLZMomentFollowViewController.h; sourceTree = "<group>"; };
+		8E67D1452693179D00BF476D /* YLZMomentFollowViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YLZMomentFollowViewController.m; sourceTree = "<group>"; };
+		8E67D148269317D700BF476D /* YLZMomentRecommendViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YLZMomentRecommendViewController.h; sourceTree = "<group>"; };
+		8E67D149269317D700BF476D /* YLZMomentRecommendViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YLZMomentRecommendViewController.m; sourceTree = "<group>"; };
 		8E79CDD7268EE5CF00E71F17 /* YLZBaseDefaults.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YLZBaseDefaults.h; sourceTree = "<group>"; };
 		8E79CDD8268EE5CF00E71F17 /* YLZBaseDefaults.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YLZBaseDefaults.m; sourceTree = "<group>"; };
 		8E79CDDD268EE67E00E71F17 /* YLZLocalData.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YLZLocalData.h; sourceTree = "<group>"; };
@@ -1335,6 +1341,10 @@
 			children = (
 				8E8481E12691DC00005CCA34 /* YLZMomentViewController.h */,
 				8E8481E22691DC00005CCA34 /* YLZMomentViewController.m */,
+				8E67D1442693179D00BF476D /* YLZMomentFollowViewController.h */,
+				8E67D1452693179D00BF476D /* YLZMomentFollowViewController.m */,
+				8E67D148269317D700BF476D /* YLZMomentRecommendViewController.h */,
+				8E67D149269317D700BF476D /* YLZMomentRecommendViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -1681,9 +1691,11 @@
 				8EFB12BC265BB44F007D9FE1 /* ViewController.m in Sources */,
 				8E79CEAF268F13F900E71F17 /* JXCategoryNumberView.m in Sources */,
 				8E8481FC2691DE74005CCA34 /* YLZMessageModel.m in Sources */,
+				8E67D1462693179D00BF476D /* YLZMomentFollowViewController.m in Sources */,
 				8E79CEB7268F13F900E71F17 /* UIColor+JXAdd.m in Sources */,
 				8EFB12B6265BB44F007D9FE1 /* AppDelegate.m in Sources */,
 				8E8482082691E3D5005CCA34 /* YLZMessageTableViewCell.m in Sources */,
+				8E67D14A269317D700BF476D /* YLZMomentRecommendViewController.m in Sources */,
 				8E42439B265CF04600E5A4A5 /* UIImage+YLZGif.m in Sources */,
 				8E79CEA8268F13F900E71F17 /* JXCategoryTitleImageCellModel.m in Sources */,
 				8E79CE99268F13F900E71F17 /* JXCategoryIndicatorTriangleView.m in Sources */,

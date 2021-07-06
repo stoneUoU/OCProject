@@ -1,11 +1,11 @@
 //
-//  YLZMineMomentTableView.m
+//  YLZMomentFollowViewController.m
 //  OCProject
 //
 //  Created by stone on 2021/7/5.
 //
 
-#import "YLZMineMomentTableView.h"
+#import "YLZMomentFollowViewController.h"
 #import "YLZMomentOnePhotoTableViewCell.h"
 #import "YLZMomentFourPhotoTableViewCell.h"
 
@@ -18,17 +18,15 @@ static CGFloat const kMargin = 24.0;
 static NSString *const kYLZMomentOnePhotoTableViewCell = @"YLZMomentOnePhotoTableViewCell";
 static NSString *const kYLZMomentFourPhotoTableViewCell = @"YLZMomentFourPhotoTableViewCell";
 
-@interface YLZMineMomentTableView ()<UITableViewDataSource,UITableViewDelegate>
+@interface YLZMomentFollowViewController ()< UITableViewDataSource,UITableViewDelegate>
 
 @property (nonatomic, strong) NSMutableArray <YLZMomentModel *> *momentModelArrays;
 
 @property (nonatomic, strong) UITableView *tableView;
 
-@property (nonatomic, copy) void(^scrollCallback)(UIScrollView *scrollView);
-
 @end
 
-@implementation YLZMineMomentTableView
+@implementation YLZMomentFollowViewController
 
 #pragma mark - LifeCycle
 #pragma mark -
@@ -41,9 +39,22 @@ static NSString *const kYLZMomentFourPhotoTableViewCell = @"YLZMomentFourPhotoTa
 {
     self = [super init ];//当前对象self
     if (self !=nil) {//如果对象初始化成功，才有必要进行接下来的初始化
-        [self setUI];
     }
     return self;//返回一个已经初始化完毕的对象；
+}
+
+- (void)viewDidLoad {
+    [super viewDidLoad];
+    self.view.backgroundColor = YLZColorView;
+    [self setUI];
+}
+
+- (void)viewWillAppear:(BOOL)animated {
+    [super viewWillAppear:animated];
+}
+
+- (void)viewDidDisappear:(BOOL)animated {
+    [super viewDidDisappear:animated];
 }
 
 #pragma mark - Public Method
@@ -53,19 +64,23 @@ static NSString *const kYLZMomentFourPhotoTableViewCell = @"YLZMomentFourPhotoTa
 #pragma mark -
 
 - (void)setUI {
-    [self addSubview:self.tableView];
-    
+    [self.view addSubview:self.tableView];
+
     [self setMas];
 }
 
 - (void)setMas {
     [self.tableView mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.edges.equalTo(self);
+        make.edges.equalTo(self.view);
     }];
 }
 
 #pragma mark - IB-Action
 #pragma mark -
+
+- (void)toSearch:(UIButton *)sender {
+
+}
 
 #pragma mark - Notice
 #pragma mark -
@@ -125,23 +140,15 @@ static NSString *const kYLZMomentFourPhotoTableViewCell = @"YLZMomentFourPhotoTa
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
 }
 
-- (void)scrollViewDidScroll:(UIScrollView *)scrollView {
-    self.scrollCallback(scrollView);
-}
+#pragma mark - JXCategoryListContentViewDelegate
 
-#pragma mark - JXPagingViewListViewDelegate
-
-- (UIScrollView *)listScrollView {
-    return self.tableView;
-}
-
-- (void)listViewDidScrollCallback:(void (^)(UIScrollView *))callback {
-    self.scrollCallback = callback;
-}
-
+/**
+ 实现 <JXCategoryListContentViewDelegate> 协议方法，返回该视图控制器所拥有的「视图」
+ */
 - (UIView *)listView {
-    return self;
+    return self.view;
 }
+
 
 #pragma mark - lazy load
 #pragma mark -

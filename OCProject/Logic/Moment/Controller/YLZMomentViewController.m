@@ -1,205 +1,158 @@
+
 //
 //  YLZMomentViewController.m
 //  OCProject
 //
-//  Created by stone on 2021/7/4.
+//  Created by stone on 2021/7/2.
+//
+
+//
+//  BaseViewController.m
+//  JXCategoryView
+//
+//  Created by jiaxin on 2018/8/9.
+//  Copyright © 2018年 jiaxin. All rights reserved.
 //
 
 #import "YLZMomentViewController.h"
-#import "YLZMomentOnePhotoTableViewCell.h"
-#import "YLZMomentFourPhotoTableViewCell.h"
+#import "YLZMomentFollowViewController.h"
+#import "YLZMomentRecommendViewController.h"
+#import "JXCategoryTitleImageView.h"
 
-#import "YLZKitCategory.h"
-#import "YLZNetWork.h"
+@interface YLZMomentViewController () <JXCategoryViewDelegate>
 
-#import "YLZMomentModel.h"
+@property (nonatomic, strong) NSArray *titles;
+@property (nonatomic, strong) JXCategoryTitleImageView *categoryView;
+@property (nonatomic, strong) JXCategoryListContainerView *listContainerView;
 
-static CGFloat const kMargin = 24.0;
-static NSString *const kYLZMomentOnePhotoTableViewCell = @"YLZMomentOnePhotoTableViewCell";
-static NSString *const kYLZMomentFourPhotoTableViewCell = @"YLZMomentFourPhotoTableViewCell";
-
-@interface YLZMomentViewController ()< UITableViewDataSource,UITableViewDelegate>
-
-@property (nonatomic, strong) NSMutableArray <YLZMomentModel *> *momentModelArrays;
-
-@property (nonatomic, strong) UITableView *tableView;
+@property (nonatomic, strong) UIButton *plusButton;
 
 @end
 
 @implementation YLZMomentViewController
 
-#pragma mark - LifeCycle
-#pragma mark -
-
-- (void)dealloc {
-    YLZLOG(@"界面销毁");
-}
-
-- (instancetype)init
-{
-    self = [super init ];//当前对象self
-    if (self !=nil) {//如果对象初始化成功，才有必要进行接下来的初始化
-    }
-    return self;//返回一个已经初始化完毕的对象；
-}
+#pragma mark - View life cycle
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+
     self.view.backgroundColor = YLZColorView;
-    [self setBaseUI:YLZColorWhite withTitleString:@"时刻" withTitleColor:YLZColorTitleOne withLeftImageViewString:@"" withRightString:@"" withRightColor:YLZColorWhite withRightFontSize:14];
+    [self.view addSubview:self.categoryView];
+    [self.view addSubview:self.plusButton];
+    [self.view addSubview:self.listContainerView];
     
-    [self setUI];
-}
-
-- (void)viewWillAppear:(BOOL)animated {
-    [super viewWillAppear:animated];
-}
-
-- (void)viewDidDisappear:(BOOL)animated {
-    [super viewDidDisappear:animated];
-}
-
-#pragma mark - Public Method
-#pragma mark -
-
-#pragma mark - Private Method
-#pragma mark -
-
-- (void)setUI {
-    [self.view addSubview:self.tableView];
+    JXCategoryIndicatorBackgroundView *backgroundView = [[JXCategoryIndicatorBackgroundView alloc] init];
+    backgroundView.indicatorHeight = 40;
+    backgroundView.indicatorCornerRadius = 5;
+    backgroundView.indicatorColor = YLZColorOrangeView;
+    backgroundView.indicatorWidthIncrement = 32;
+    self.categoryView.indicators = @[backgroundView];
     
-    [self setMas];
-}
-
-- (void)setMas {
-    [self.tableView mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.top.equalTo(self.view.mas_top).offset(StatusBarHeight+NavBarHeight);
-        make.left.equalTo(self.view.mas_left);
-        make.right.equalTo(self.view.mas_right);
-        make.bottom.equalTo(self.view);
+    [self.plusButton mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.right.equalTo(self.categoryView.mas_right).offset(-16);
+        make.centerY.equalTo(self.categoryView);
+        make.size.equalTo(@(CGSizeMake(36, 36)));
     }];
 }
 
-#pragma mark - IB-Action
-#pragma mark -
+- (void)viewDidAppear:(BOOL)animated {
+    [super viewDidAppear:animated];
 
-- (void)toSearch:(UIButton *)sender {
-
+    // 处于第一个item的时候，才允许屏幕边缘手势返回
+    self.navigationController.interactivePopGestureRecognizer.enabled = (self.categoryView.selectedIndex == 0);
 }
 
-#pragma mark - Notice
-#pragma mark -
+- (void)viewWillDisappear:(BOOL)animated {
+    [super viewWillDisappear:animated];
 
-
-#pragma mark - Delegate
-#pragma mark -
-
-- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
-    return [self.momentModelArrays count];
+    // 离开页面的时候，需要恢复屏幕边缘手势，不能影响其他页面
+    self.navigationController.interactivePopGestureRecognizer.enabled = YES;
 }
 
-- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    return 1;
+- (void)toOperate:(UIButton *)sender {
+    YLZLOG(@"发不发不");
 }
 
-- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    YLZMomentModel *model = self.momentModelArrays[indexPath.section];
-    if (indexPath.section == 0) {
-        YLZMomentFourPhotoTableViewCell *viewCell = [tableView dequeueReusableCellWithIdentifier:kYLZMomentFourPhotoTableViewCell];
-        if (!viewCell){
-            viewCell = [[YLZMomentFourPhotoTableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:kYLZMomentFourPhotoTableViewCell];
-        }
-        viewCell.selectionStyle = UITableViewCellSelectionStyleNone;
-        viewCell.model = model;
-        return viewCell;
+#pragma mark - Custom Accessors
+
+- (JXCategoryTitleImageView *)categoryView {
+    if (!_categoryView) {
+        _categoryView = [[JXCategoryTitleImageView alloc] initWithFrame:CGRectMake(0, StatusBarHeight, SCREENWIDTH, NavBarHeight)];
+        _categoryView.backgroundColor = YLZColorView;
+        _categoryView.titles = @[@"关注", @"推荐"];
+        NSArray *imageNames = @[@"tabbar_home", @"tabbar_mine"];
+        NSArray *selectedImageNames = @[@"tabbar_home_selected", @"tabbar_mine_selected"];
+        _categoryView.imageNames = imageNames;
+        _categoryView.selectedImageNames = selectedImageNames;
+        _categoryView.delegate = self;
+        _categoryView.titleSelectedColor = YLZColorWhite;
+        _categoryView.titleColor = YLZColorTitleOne;
+        _categoryView.titleFont = [YLZFont regular:12];
+        _categoryView.titleSelectedFont = [YLZFont medium:14];
+        _categoryView.titleColorGradientEnabled = YES;
+        _categoryView.titleLabelZoomEnabled = YES;
+        _categoryView.averageCellSpacingEnabled = NO;
+        _categoryView.cellSpacing = 36;
+        _categoryView.listContainer = self.listContainerView;
+    }
+    return _categoryView;
+}
+
+// 列表容器视图
+- (JXCategoryListContainerView *)listContainerView {
+    if (!_listContainerView) {
+        _listContainerView = [[JXCategoryListContainerView alloc] initWithType:JXCategoryListContainerType_ScrollView delegate:self];
+        _listContainerView.frame = CGRectMake(0, StatusBarHeight+NavBarHeight, SCREENWIDTH, SCREENHEIGHT);
+    }
+    return _listContainerView;
+}
+
+- (UIButton *)plusButton {
+    if (!_plusButton) {
+        _plusButton = [UIButton buttonWithType:UIButtonTypeCustom];
+        [_plusButton setImage:[UIImage imageNamed:@"ylz_moment_send"] forState:UIControlStateNormal];
+        [_plusButton addTarget:self action:@selector(toOperate:) forControlEvents:UIControlEventTouchUpInside];
+        _plusButton.layer.cornerRadius = 6.0;
+        _plusButton.layer.masksToBounds = YES;
+        _plusButton.backgroundColor = YLZColorOrangeView;
+    }
+    return _plusButton;
+}
+
+
+#pragma mark - Public
+
+#pragma mark - JXCategoryViewDelegate
+
+// 点击选中或者滚动选中都会调用该方法。适用于只关心选中事件，不关心具体是点击还是滚动选中的。
+- (void)categoryView:(JXCategoryBaseView *)categoryView didSelectedItemAtIndex:(NSInteger)index {
+    NSLog(@"%@", NSStringFromSelector(_cmd));
+    self.navigationController.interactivePopGestureRecognizer.enabled = (index == 0);
+}
+
+// 滚动选中的情况才会调用该方法
+- (void)categoryView:(JXCategoryBaseView *)categoryView didScrollSelectedItemAtIndex:(NSInteger)index {
+    NSLog(@"%@", NSStringFromSelector(_cmd));
+}
+
+#pragma mark - JXCategoryListContainerViewDelegate
+
+// 返回列表的数量
+- (NSInteger)numberOfListsInlistContainerView:(JXCategoryListContainerView *)listContainerView {
+    return 2;
+}
+
+// 返回各个列表菜单下的实例，该实例需要遵守并实现 <JXCategoryListContentViewDelegate> 协议
+- (id<JXCategoryListContentViewDelegate>)listContainerView:(JXCategoryListContainerView *)listContainerView initListForIndex:(NSInteger)index {
+    if (index == 0) {
+        YLZMomentFollowViewController *followVC = [[YLZMomentFollowViewController alloc] init];
+        return followVC;
     } else {
-        YLZMomentOnePhotoTableViewCell *viewCell = [tableView dequeueReusableCellWithIdentifier:kYLZMomentOnePhotoTableViewCell];
-        if (!viewCell){
-            viewCell = [[YLZMomentOnePhotoTableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:kYLZMomentOnePhotoTableViewCell];
-        }
-        viewCell.selectionStyle = UITableViewCellSelectionStyleNone;
-        viewCell.model = model;
-        return viewCell;
+        YLZMomentRecommendViewController *recommendVC = [[YLZMomentRecommendViewController alloc] init];
+        return recommendVC;
     }
-}
-
-- (UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section {
-    UIView *headerView = [[UIView alloc] init];
-    return headerView;
-}
-
-- (CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section {
-    return 8;
-}
-
-- (UIView *)tableView:(UITableView *)tableView viewForFooterInSection:(NSInteger)section {
-    UIView *footerView = [[UIView alloc] init];
-    return footerView;
-}
-
-- (CGFloat)tableView:(UITableView *)tableView heightForFooterInSection:(NSInteger)section {
-    return 0.000001;
-}
-
-- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
-    [tableView deselectRowAtIndexPath:indexPath animated:YES];
-}
-
-#pragma mark - lazy load
-#pragma mark -
-
-- (UITableView *)tableView {
-    if(_tableView == nil) {
-        _tableView = [[UITableView alloc] initWithFrame:CGRectZero style:UITableViewStyleGrouped];
-        _tableView.backgroundColor = [UIColor whiteColor];
-        _tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
-        _tableView.separatorInset = UIEdgeInsetsMake(0, 16, 0, 16);
-        _tableView.dataSource = self;
-        _tableView.delegate = self;
-        _tableView.estimatedRowHeight = 300;
-        _tableView.estimatedSectionFooterHeight = 300;
-        _tableView.estimatedSectionHeaderHeight = 300;
-        _tableView.showsVerticalScrollIndicator = NO;
-        [_tableView registerClass:[YLZMomentOnePhotoTableViewCell class] forCellReuseIdentifier:kYLZMomentOnePhotoTableViewCell];
-        [_tableView registerClass:[YLZMomentFourPhotoTableViewCell class] forCellReuseIdentifier:kYLZMomentFourPhotoTableViewCell];
-        if (@available(iOS 11.0, *)) {
-            _tableView.contentInsetAdjustmentBehavior = UIScrollViewContentInsetAdjustmentNever;
-        }
-    }
-    return _tableView;
-}
-
-- (NSMutableArray *)momentModelArrays {
-    if (!_momentModelArrays) {
-        _momentModelArrays = [NSMutableArray array];
-        for (int i = 0; i < 4; i++) {
-            YLZMomentModel *model = [[YLZMomentModel alloc] init];
-            model.count = i;
-            if (i == 0) {
-                model.contentString = @"南昌工程学院南昌工程学院";
-                model.timeString = @"9：01";
-                model.titleString = @"Stone";
-                model.picString = @"ylz_message_admire";
-            } else if (i == 1) {
-                model.contentString = @"你的实名认证已通过审核";
-                model.timeString = @"22：01";
-                model.titleString = @"活动通知";
-                model.picString = @"ylz_message_comment";
-            } else if (i == 2) {
-                model.contentString = @"“一块流浪”评论了您的说说";
-                model.timeString = @"22：36";
-                model.titleString = @"系统消息";
-                model.picString = @"ylz_message_follow";
-            } else {
-                model.contentString = @"你在干嘛？";
-                model.timeString = @"22：01";
-                model.titleString = @"不屑的小坦克";
-                model.picString = @"ylz_message_waiting";
-            }
-            [_momentModelArrays addObject:model];
-        }
-    }
-    return _momentModelArrays;
 }
 
 @end
+
+
