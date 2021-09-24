@@ -32,6 +32,8 @@
 
 @property (nonatomic, strong) UIButton *btnOk;
 
+@property (nonatomic, strong) dispatch_semaphore_t sem;
+
 @end
 
 @implementation YLZHomeViewController
@@ -54,9 +56,10 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.view.backgroundColor = [UIColor whiteColor];
-    [self setBaseUI:YLZColorBlue withTitleString:@"首页" withTitleColor:YLZColorWhite withLeftImageViewString:@"" withRightString:@"" withRightColor:YLZColorWhite withRightFontSize:14];
+    [self setBaseUI:YLZColorBlueView withTitleString:@"首页" withTitleColor:YLZColorWhite withLeftImageViewString:@"" withRightString:@"" withRightColor:YLZColorWhite withRightFontSize:14];
     
     [self setUI];
+    [self setSemaphore];
 }
 
 - (void)viewWillAppear:(BOOL)animated {
@@ -83,6 +86,31 @@
         make.center.equalTo(self.view);
         make.size.equalTo(@(CGSizeMake(SCREENWIDTH - 64, 40)));
     }];
+}
+
+- (void)setSemaphore {
+    dispatch_queue_t customQuue = dispatch_queue_create("com.wumeng.network", DISPATCH_QUEUE_SERIAL);
+     //创建信号量并初始化总量为1
+//    self.sem = dispatch_semaphore_create(0);
+    //添加任务
+    dispatch_async(customQuue, ^{
+        dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(2.0 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+            YLZLOG(@"11111111111111111");
+//            dispatch_semaphore_signal(self.sem);
+        });
+        // 相当于加锁
+//        dispatch_semaphore_wait(self.sem, DISPATCH_TIME_FOREVER);
+        //发送第二个请求
+        dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(2.0 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+            YLZLOG(@"2222222222222");
+//            dispatch_semaphore_signal(self.sem);
+        });
+        // 相当于加锁
+//        dispatch_semaphore_wait(self.sem, DISPATCH_TIME_FOREVER);
+//        dispatch_async(dispatch_get_main_queue(), ^{
+            YLZLOG(@"任务完成");
+//        });
+    });
 }
 
 #pragma mark - IB-Action

@@ -71,7 +71,10 @@ static NSString *const kYLZMomentFourPhotoTableViewCell = @"YLZMomentFourPhotoTa
 
 - (void)setMas {
     [self.tableView mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.edges.equalTo(self.view);
+        make.top.equalTo(self.view.mas_top);
+        make.left.equalTo(self.view.mas_left);
+        make.right.equalTo(self.view.mas_right);
+        make.height.equalTo(@(SCREENHEIGHT - (TabBarHeight+StatusBarHeight+NavBarHeight)));
     }];
 }
 

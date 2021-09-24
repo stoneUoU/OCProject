@@ -9,7 +9,15 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
+@protocol YLZMineHeaderViewDelegate <NSObject>
+
+- (void)toHeaderViewDelegate;
+
+@end
+
 @interface YLZMineHeaderView : UIView
+
+@property (nonatomic, weak) id<YLZMineHeaderViewDelegate> delegate;
 
 @end
 

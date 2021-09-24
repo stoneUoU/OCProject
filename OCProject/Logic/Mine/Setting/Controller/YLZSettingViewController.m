@@ -11,6 +11,21 @@
 #import "YLZConstTableViewCell.h"
 #import "YLZSettingModel.h"
 
+#import "YLZSecretSettingViewController.h"
+#import "YLZAddMeMethodViewController.h"
+#import "YLZBlacklistViewController.h"
+#import "YLZChangePasswordViewController.h"
+#import "YLZSwitchAccountViewController.h"
+#import "YLZAddAccountViewController.h"
+#import "YLZFeedBackViewController.h"
+#import "YLZBindPhoneViewController.h"
+#import "YLZChangePhoneViewController.h"
+#import "YLZLoginViewController.h"
+#import "YLZPendingViewController.h"
+#import "YLZReviewingViewController.h"
+#import "YLZInvitedViewController.h"
+#import "YLZNewFollowViewController.h"
+
 @interface YLZSettingViewController ()<UITableViewDataSource,UITableViewDelegate>
 
 @property (nonatomic, strong) UITableView *tableView;
@@ -118,6 +133,22 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
+    if (indexPath.section == 1) {
+        YLZSecretSettingViewController *vc = [[YLZSecretSettingViewController alloc] init];
+       [[YLZPageExtent sharedInstance] pushExistingViewController:vc];
+    } else if (indexPath.section == 2) {
+        YLZChangePasswordViewController *vc = [[YLZChangePasswordViewController alloc] init];
+       [[YLZPageExtent sharedInstance] pushExistingViewController:vc];
+    } else if (indexPath.section == 4) {
+        YLZChangePhoneViewController *vc = [[YLZChangePhoneViewController alloc] init];
+       [[YLZPageExtent sharedInstance] pushExistingViewController:vc];
+    } else if (indexPath.section == 6) {
+        YLZChangePhoneViewController *vc = [[YLZChangePhoneViewController alloc] init];
+       [[YLZPageExtent sharedInstance] pushExistingViewController:vc];
+    }  else if (indexPath.section == 8) {
+        YLZSwitchAccountViewController *vc = [[YLZSwitchAccountViewController alloc] init];
+       [[YLZPageExtent sharedInstance] pushExistingViewController:vc];
+    }
 }
 
 #pragma mark - lazy load

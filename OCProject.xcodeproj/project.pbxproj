@@ -40,6 +40,18 @@
 		8E4243E1265CF7BF00E5A4A5 /* YLZFormat.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E4243E0265CF7BF00E5A4A5 /* YLZFormat.m */; };
 		8E4243E5265CF83100E5A4A5 /* YLZValidated.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E4243E4265CF83100E5A4A5 /* YLZValidated.m */; };
 		8E4243EB265CF8F500E5A4A5 /* YLZNetWork.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E4243EA265CF8F500E5A4A5 /* YLZNetWork.m */; };
+		8E46904926EB57B0004EDD58 /* YLZHomeModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E46904826EB57B0004EDD58 /* YLZHomeModel.m */; };
+		8E5200CD26FD77D7000EBCEB /* YLZHealthCodeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E5200CC26FD77D7000EBCEB /* YLZHealthCodeViewController.m */; };
+		8E5200D026FD77EC000EBCEB /* YLZHealthCodeView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E5200CF26FD77EC000EBCEB /* YLZHealthCodeView.m */; };
+		8E5200D326FDA502000EBCEB /* YLZHealthCodeInfoTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E5200D226FDA502000EBCEB /* YLZHealthCodeInfoTableViewCell.m */; };
+		8E5200D626FDAC71000EBCEB /* YLZHealthCodeTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E5200D526FDAC71000EBCEB /* YLZHealthCodeTableViewCell.m */; };
+		8E5200D926FDACC8000EBCEB /* YLZHealthCodeCheckTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E5200D826FDACC8000EBCEB /* YLZHealthCodeCheckTableViewCell.m */; };
+		8E5200DD26FDC636000EBCEB /* YLZTimer.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E5200DC26FDC636000EBCEB /* YLZTimer.m */; };
+		8E5200E226FDCCEA000EBCEB /* YLZQrcodeExtent.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E5200E126FDCCEA000EBCEB /* YLZQrcodeExtent.m */; };
+		8E5200E626FDF444000EBCEB /* YLZHealthCodeCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E5200E526FDF444000EBCEB /* YLZHealthCodeCollectionViewCell.m */; };
+		8E5200E926FDF46C000EBCEB /* YLZHealthCodeServiceTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E5200E826FDF46C000EBCEB /* YLZHealthCodeServiceTableViewCell.m */; };
+		8E5200EC26FDF4AD000EBCEB /* YLZHealthCodeSourceTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E5200EB26FDF4AD000EBCEB /* YLZHealthCodeSourceTableViewCell.m */; };
+		8E5200EF26FE0280000EBCEB /* YLZHealthCodeTableFooterView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E5200EE26FE0280000EBCEB /* YLZHealthCodeTableFooterView.m */; };
 		8E59B150269148130043073C /* YLZRegisterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E59B14F269148130043073C /* YLZRegisterViewController.m */; };
 		8E59B154269149E00043073C /* YLZForgetPasswordViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E59B153269149E00043073C /* YLZForgetPasswordViewController.m */; };
 		8E59B15B26914ABE0043073C /* YLZSetIdentityViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E59B15A26914ABE0043073C /* YLZSetIdentityViewController.m */; };
@@ -237,6 +249,30 @@
 		8E4243E4265CF83100E5A4A5 /* YLZValidated.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YLZValidated.m; sourceTree = "<group>"; };
 		8E4243E9265CF8F500E5A4A5 /* YLZNetWork.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YLZNetWork.h; sourceTree = "<group>"; };
 		8E4243EA265CF8F500E5A4A5 /* YLZNetWork.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YLZNetWork.m; sourceTree = "<group>"; };
+		8E46904726EB57B0004EDD58 /* YLZHomeModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YLZHomeModel.h; sourceTree = "<group>"; };
+		8E46904826EB57B0004EDD58 /* YLZHomeModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YLZHomeModel.m; sourceTree = "<group>"; };
+		8E5200CB26FD77D7000EBCEB /* YLZHealthCodeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YLZHealthCodeViewController.h; sourceTree = "<group>"; };
+		8E5200CC26FD77D7000EBCEB /* YLZHealthCodeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YLZHealthCodeViewController.m; sourceTree = "<group>"; };
+		8E5200CE26FD77EC000EBCEB /* YLZHealthCodeView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YLZHealthCodeView.h; sourceTree = "<group>"; };
+		8E5200CF26FD77EC000EBCEB /* YLZHealthCodeView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YLZHealthCodeView.m; sourceTree = "<group>"; };
+		8E5200D126FDA502000EBCEB /* YLZHealthCodeInfoTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YLZHealthCodeInfoTableViewCell.h; sourceTree = "<group>"; };
+		8E5200D226FDA502000EBCEB /* YLZHealthCodeInfoTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YLZHealthCodeInfoTableViewCell.m; sourceTree = "<group>"; };
+		8E5200D426FDAC71000EBCEB /* YLZHealthCodeTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YLZHealthCodeTableViewCell.h; sourceTree = "<group>"; };
+		8E5200D526FDAC71000EBCEB /* YLZHealthCodeTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YLZHealthCodeTableViewCell.m; sourceTree = "<group>"; };
+		8E5200D726FDACC8000EBCEB /* YLZHealthCodeCheckTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YLZHealthCodeCheckTableViewCell.h; sourceTree = "<group>"; };
+		8E5200D826FDACC8000EBCEB /* YLZHealthCodeCheckTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YLZHealthCodeCheckTableViewCell.m; sourceTree = "<group>"; };
+		8E5200DB26FDC636000EBCEB /* YLZTimer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YLZTimer.h; sourceTree = "<group>"; };
+		8E5200DC26FDC636000EBCEB /* YLZTimer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YLZTimer.m; sourceTree = "<group>"; };
+		8E5200E026FDCCEA000EBCEB /* YLZQrcodeExtent.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YLZQrcodeExtent.h; sourceTree = "<group>"; };
+		8E5200E126FDCCEA000EBCEB /* YLZQrcodeExtent.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YLZQrcodeExtent.m; sourceTree = "<group>"; };
+		8E5200E426FDF444000EBCEB /* YLZHealthCodeCollectionViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YLZHealthCodeCollectionViewCell.h; sourceTree = "<group>"; };
+		8E5200E526FDF444000EBCEB /* YLZHealthCodeCollectionViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YLZHealthCodeCollectionViewCell.m; sourceTree = "<group>"; };
+		8E5200E726FDF46C000EBCEB /* YLZHealthCodeServiceTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YLZHealthCodeServiceTableViewCell.h; sourceTree = "<group>"; };
+		8E5200E826FDF46C000EBCEB /* YLZHealthCodeServiceTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YLZHealthCodeServiceTableViewCell.m; sourceTree = "<group>"; };
+		8E5200EA26FDF4AD000EBCEB /* YLZHealthCodeSourceTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YLZHealthCodeSourceTableViewCell.h; sourceTree = "<group>"; };
+		8E5200EB26FDF4AD000EBCEB /* YLZHealthCodeSourceTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YLZHealthCodeSourceTableViewCell.m; sourceTree = "<group>"; };
+		8E5200ED26FE0280000EBCEB /* YLZHealthCodeTableFooterView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YLZHealthCodeTableFooterView.h; sourceTree = "<group>"; };
+		8E5200EE26FE0280000EBCEB /* YLZHealthCodeTableFooterView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YLZHealthCodeTableFooterView.m; sourceTree = "<group>"; };
 		8E59B14E269148130043073C /* YLZRegisterViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YLZRegisterViewController.h; sourceTree = "<group>"; };
 		8E59B14F269148130043073C /* YLZRegisterViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YLZRegisterViewController.m; sourceTree = "<group>"; };
 		8E59B152269149E00043073C /* YLZForgetPasswordViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YLZForgetPasswordViewController.h; sourceTree = "<group>"; };
@@ -567,6 +603,8 @@
 		8E424320265CA32800E5A4A5 /* Extent */ = {
 			isa = PBXGroup;
 			children = (
+				8E5200DF26FDCCC9000EBCEB /* YLZQrcode */,
+				8E5200DE26FDCCB1000EBCEB /* YLZTimer */,
 				8E79CDEF268EF17F00E71F17 /* YLZPage */,
 				8E79CDD6268EE59F00E71F17 /* YLZStore */,
 				8E4243C9265CF22400E5A4A5 /* YLZKitCategory.h */,
@@ -809,6 +847,73 @@
 			path = Toast;
 			sourceTree = "<group>";
 		};
+		8E5200C526FD7716000EBCEB /* HealthCode */ = {
+			isa = PBXGroup;
+			children = (
+				8E5200C826FD773B000EBCEB /* Model */,
+				8E5200C726FD7734000EBCEB /* View */,
+				8E5200C626FD772B000EBCEB /* Controller */,
+			);
+			path = HealthCode;
+			sourceTree = "<group>";
+		};
+		8E5200C626FD772B000EBCEB /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				8E5200CB26FD77D7000EBCEB /* YLZHealthCodeViewController.h */,
+				8E5200CC26FD77D7000EBCEB /* YLZHealthCodeViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		8E5200C726FD7734000EBCEB /* View */ = {
+			isa = PBXGroup;
+			children = (
+				8E5200CE26FD77EC000EBCEB /* YLZHealthCodeView.h */,
+				8E5200CF26FD77EC000EBCEB /* YLZHealthCodeView.m */,
+				8E5200ED26FE0280000EBCEB /* YLZHealthCodeTableFooterView.h */,
+				8E5200EE26FE0280000EBCEB /* YLZHealthCodeTableFooterView.m */,
+				8E5200D126FDA502000EBCEB /* YLZHealthCodeInfoTableViewCell.h */,
+				8E5200D226FDA502000EBCEB /* YLZHealthCodeInfoTableViewCell.m */,
+				8E5200D426FDAC71000EBCEB /* YLZHealthCodeTableViewCell.h */,
+				8E5200D526FDAC71000EBCEB /* YLZHealthCodeTableViewCell.m */,
+				8E5200D726FDACC8000EBCEB /* YLZHealthCodeCheckTableViewCell.h */,
+				8E5200D826FDACC8000EBCEB /* YLZHealthCodeCheckTableViewCell.m */,
+				8E5200E726FDF46C000EBCEB /* YLZHealthCodeServiceTableViewCell.h */,
+				8E5200E826FDF46C000EBCEB /* YLZHealthCodeServiceTableViewCell.m */,
+				8E5200E426FDF444000EBCEB /* YLZHealthCodeCollectionViewCell.h */,
+				8E5200E526FDF444000EBCEB /* YLZHealthCodeCollectionViewCell.m */,
+				8E5200EA26FDF4AD000EBCEB /* YLZHealthCodeSourceTableViewCell.h */,
+				8E5200EB26FDF4AD000EBCEB /* YLZHealthCodeSourceTableViewCell.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		8E5200C826FD773B000EBCEB /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		8E5200DE26FDCCB1000EBCEB /* YLZTimer */ = {
+			isa = PBXGroup;
+			children = (
+				8E5200DB26FDC636000EBCEB /* YLZTimer.h */,
+				8E5200DC26FDC636000EBCEB /* YLZTimer.m */,
+			);
+			path = YLZTimer;
+			sourceTree = "<group>";
+		};
+		8E5200DF26FDCCC9000EBCEB /* YLZQrcode */ = {
+			isa = PBXGroup;
+			children = (
+				8E5200E026FDCCEA000EBCEB /* YLZQrcodeExtent.h */,
+				8E5200E126FDCCEA000EBCEB /* YLZQrcodeExtent.m */,
+			);
+			path = YLZQrcode;
+			sourceTree = "<group>";
+		};
 		8E59B15626914A660043073C /* LoginFollow */ = {
 			isa = PBXGroup;
 			children = (
@@ -950,6 +1055,7 @@
 		8E79CDC1268ED12B00E71F17 /* Logic */ = {
 			isa = PBXGroup;
 			children = (
+				8E5200C526FD7716000EBCEB /* HealthCode */,
 				8E8481F02691DE20005CCA34 /* Message */,
 				8E8481DE2691DBD4005CCA34 /* Moment */,
 				8E59B15626914A660043073C /* LoginFollow */,
@@ -1060,6 +1166,8 @@
 		8E79CE05268EF52E00E71F17 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				8E46904726EB57B0004EDD58 /* YLZHomeModel.h */,
+				8E46904826EB57B0004EDD58 /* YLZHomeModel.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -1676,6 +1784,7 @@
 				8E59B154269149E00043073C /* YLZForgetPasswordViewController.m in Sources */,
 				8E79CDFF268EF34300E71F17 /* UIViewController+YLZMediator.m in Sources */,
 				8E79CE96268F13F900E71F17 /* JXCategoryTitleVerticalZoomView.m in Sources */,
+				8E5200D626FDAC71000EBCEB /* YLZHealthCodeTableViewCell.m in Sources */,
 				8E67D0D4269291BD00BF476D /* YLZMomentFourPhotoTableViewCell.m in Sources */,
 				8E9DD437269056D400D13F09 /* YLZSwitchAccountViewController.m in Sources */,
 				8E4243CB265CF22400E5A4A5 /* YLZEnlargeButton.m in Sources */,
@@ -1707,11 +1816,14 @@
 				8E9DD4232690493500D13F09 /* YLZBlacklistViewController.m in Sources */,
 				8E59B16D26915E3D0043073C /* YLZSetCollegeViewController.m in Sources */,
 				8E9DD43C269057A500D13F09 /* YLZAccountModel.m in Sources */,
+				8E5200E926FDF46C000EBCEB /* YLZHealthCodeServiceTableViewCell.m in Sources */,
 				8E79CE0F268EF57E00E71F17 /* YLZHomeViewController.m in Sources */,
 				8E4243A2265CF04600E5A4A5 /* UIButton+YLZFitSize.m in Sources */,
 				8E79CE9A268F13F900E71F17 /* JXCategoryIndicatorRainbowLineView.m in Sources */,
 				8E79CEB8268F13F900E71F17 /* JXCategoryListContainerRTLCell.m in Sources */,
+				8E5200D926FDACC8000EBCEB /* YLZHealthCodeCheckTableViewCell.m in Sources */,
 				8E9DD4132690434B00D13F09 /* YLZSecretSettingSwitchTableViewCell.m in Sources */,
+				8E46904926EB57B0004EDD58 /* YLZHomeModel.m in Sources */,
 				8E79CDF7268EF21B00E71F17 /* YLZMediator.m in Sources */,
 				8E9DD4172690436100D13F09 /* YLZSecretSettingTableViewCell.m in Sources */,
 				8E9DD4412690580F00D13F09 /* YLZAccountTableViewCell.m in Sources */,
@@ -1725,6 +1837,7 @@
 				8E9DD4672690774500D13F09 /* YLZLoginViewController.m in Sources */,
 				8E67D0FD2692A50F00BF476D /* YLZInvitedModel.m in Sources */,
 				8E9DD45D2690709D00D13F09 /* YLZBindPhoneViewController.m in Sources */,
+				8E5200D326FDA502000EBCEB /* YLZHealthCodeInfoTableViewCell.m in Sources */,
 				8E79CE9C268F13F900E71F17 /* JXCategoryIndicatorBallView.m in Sources */,
 				8E79CEAE268F13F900E71F17 /* JXCategoryImageCellModel.m in Sources */,
 				8E79CE9D268F13F900E71F17 /* JXCategoryIndicatorComponentView.m in Sources */,
@@ -1747,15 +1860,18 @@
 				8E59B15B26914ABE0043073C /* YLZSetIdentityViewController.m in Sources */,
 				8E79CDF2268EF1A500E71F17 /* YLZPageExtent.m in Sources */,
 				8E59B150269148130043073C /* YLZRegisterViewController.m in Sources */,
+				8E5200E626FDF444000EBCEB /* YLZHealthCodeCollectionViewCell.m in Sources */,
 				8E4243A1265CF04600E5A4A5 /* UIButton+YLZFixMultiClick.m in Sources */,
 				8E424399265CF04600E5A4A5 /* UIImage+YLZCompress.m in Sources */,
 				8E67D0E52692996A00BF476D /* YLZPendingTableViewCell.m in Sources */,
+				8E5200E226FDCCEA000EBCEB /* YLZQrcodeExtent.m in Sources */,
 				8E4243DD265CF78400E5A4A5 /* YLZPageFunction.m in Sources */,
 				8E67D0E02692995300BF476D /* YLZPendingViewController.m in Sources */,
 				8E4243A7265CF04600E5A4A5 /* UIViewController+YLZChange.m in Sources */,
 				8E79CE97268F13F900E71F17 /* RTLManager.m in Sources */,
 				8E79CE98268F13F900E71F17 /* JXCategoryIndicatorLineView.m in Sources */,
 				8E4243CF265CF22400E5A4A5 /* YLZJson.m in Sources */,
+				8E5200CD26FD77D7000EBCEB /* YLZHealthCodeViewController.m in Sources */,
 				8E4243CC265CF22400E5A4A5 /* YLZPaddingLabel.m in Sources */,
 				8E79CEA5268F13F900E71F17 /* JXCategoryDotCellModel.m in Sources */,
 				8E59B175269171750043073C /* YLZSetOrganizationNameViewController.m in Sources */,
@@ -1764,12 +1880,14 @@
 				8E79CEA4268F13F900E71F17 /* JXCategoryDotView.m in Sources */,
 				8E4243AC265CF04600E5A4A5 /* YLZWeakProxy.m in Sources */,
 				8E4243A5265CF04600E5A4A5 /* UIView+YLZCore.m in Sources */,
+				8E5200EC26FDF4AD000EBCEB /* YLZHealthCodeSourceTableViewCell.m in Sources */,
 				8E9DD44626905B3A00D13F09 /* YLZAddAccountViewController.m in Sources */,
 				8E9DD3FE2690359900D13F09 /* YLZSettingViewController.m in Sources */,
 				8E67D1162692AD3900BF476D /* YLZNewFollowTableSectionHeaderView.m in Sources */,
 				8E67D0F92692A4FB00BF476D /* YLZInvitedViewController.m in Sources */,
 				8E79CDED268EE97000E71F17 /* YLZBaseViewController.m in Sources */,
 				8E4243AA265CF04600E5A4A5 /* NSString+YLZExtension.m in Sources */,
+				8E5200DD26FDC636000EBCEB /* YLZTimer.m in Sources */,
 				8E4243A9265CF04600E5A4A5 /* NSError+YLZMS.m in Sources */,
 				8E67D1382692FC7200BF476D /* JXCategoryIndicatorSpringBackgroundView.m in Sources */,
 				8E79CEB4268F13F900E71F17 /* JXCategoryCollectionView.m in Sources */,
@@ -1811,8 +1929,10 @@
 				8E67D1122692A87D00BF476D /* YLZNewFollowModel.m in Sources */,
 				8E9DD41F2690479600D13F09 /* YLZAddMeMethodViewController.m in Sources */,
 				8E67D10E2692A86100BF476D /* YLZNewFollowTableViewCell.m in Sources */,
+				8E5200D026FD77EC000EBCEB /* YLZHealthCodeView.m in Sources */,
 				8E67D0E92692999100BF476D /* YLZPendingModel.m in Sources */,
 				8E67D1012692A52500BF476D /* YLZInvitedTableViewCell.m in Sources */,
+				8E5200EF26FE0280000EBCEB /* YLZHealthCodeTableFooterView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

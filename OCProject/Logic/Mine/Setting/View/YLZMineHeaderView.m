@@ -157,7 +157,9 @@
 }
 
 - (void)toSetting:(UIButton *)sender {
-    
+    if (self.delegate && [self.delegate respondsToSelector:@selector(toHeaderViewDelegate)]) {
+        [self.delegate toHeaderViewDelegate];
+    }
 }
 
 - (UIView *)wrapView {

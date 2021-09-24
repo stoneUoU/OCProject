@@ -10,6 +10,7 @@ target 'OCProject' do
   # Pods for OCProject
 
   # 第三方组件
+  pod 'ZSCodeUtil', '0.1.0'
   pod 'Masonry', '1.1.0'
   pod 'AFNetworking','4.0.1'
   pod 'lottie-ios', '2.5.2'   #OC版

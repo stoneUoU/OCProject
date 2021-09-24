@@ -9,6 +9,7 @@
 #import "YLZRegisterViewController.h"
 #import "YLZForgetPasswordViewController.h"
 #import "YLZAlertForceView.h"
+#import "YLZSetIdentityViewController.h"
 
 #import "YLZEnlargeButton.h"
 
@@ -219,7 +220,8 @@ static CGFloat const kLoginMargin = 32.0;
         model.cancelString = @"取消";
         alertView.model = model;
         alertView.handle = ^(NSInteger index) {
-            YLZLOG(@"AAAAAAAAA");
+            YLZSetIdentityViewController *vc = [[YLZSetIdentityViewController alloc] init];
+            [[YLZPageExtent sharedInstance] pushExistingViewController:vc];
         };
         [alertView showAlert];
     }
@@ -233,6 +235,7 @@ static CGFloat const kLoginMargin = 32.0;
     } else {
         YLZLOG(@"sina");
     }
+    [self dismissViewControllerAnimated:YES completion:nil];
 }
 
 - (void)btnAgreeMentClick

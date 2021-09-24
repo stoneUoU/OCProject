@@ -24,10 +24,18 @@
 #define YLZColorRedView         [UIColor colorWithHexString:@"F56C6C"]
 /// 蓝色
 #define YLZColorBlueView        [UIColor colorWithHexString:@"1B65B9"]
+/// 淡蓝色
+#define YLZColorLightBlueView   [UIColor colorWithHexString:@"3B71E8"]
+/// 闽政通淡蓝色
+#define YLZColorMZTBlueView   [UIColor colorWithHexString:@"2171f6"]
+/// 金色
+#define YLZColorGoldView        [UIColor colorWithHexString:@"E6A23C"]
 /// 橙色
 #define YLZColorOrangeView        [UIColor colorWithHexString:@"f1985c"]
 
 #define YLZColorView      [UIColor colorWithHexString:@"f4f6f9"]
+
+#define YLZColorPlace           [UIColor colorWithHexString:@"F7F9FD"]
 
 /// 标题、正文、辅助文字颜色
 #define YLZColorTitleOne        [UIColor colorWithHexString:@"303133"]

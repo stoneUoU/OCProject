@@ -7,6 +7,7 @@
 
 #import "ViewController.h"
 #import "YLZKitCategory.h"
+#import <MJExtension/MJExtension.h>
 
 @interface ViewController ()
 
@@ -73,7 +74,7 @@
 #pragma mark -
 
 - (void)btnOKClick {
-//    YLZLOG(@"YYYYYYYYY");
+    YLZLOG(@"YYYYYYYYY_____%@",[@{@"homeModel":@"stone"} mj_JSONString]);
 //    self.view.backgroundColor = [UIColor redColor];
 }
 
@@ -114,6 +115,5 @@
     }
     return _btnOk;
 }
-
 
 @end

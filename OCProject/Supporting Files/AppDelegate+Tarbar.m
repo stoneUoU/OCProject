@@ -10,6 +10,7 @@
 #import "YLZMineViewController.h"
 #import "YLZMessageViewController.h"
 #import "YLZMomentViewController.h"
+#import "YLZHealthCodeViewController.h"
 #import "ViewController.h"
 
 #import <YYKit/YYKit.h>
@@ -64,7 +65,8 @@
     [self.tabbarVC setupCenterTabWithCenterImage:@"ylz_tabbar_plus" middleVC:nil isPresentVC:YES];
     
 //    self.window.rootViewController = [[UINavigationController alloc] initWithRootViewController:[[YLZLoginViewController alloc] init]];
-    self.window.rootViewController = self.tabbarVC;
+//    self.window.rootViewController = self.tabbarVC;
+    self.window.rootViewController = [[YLZHealthCodeViewController alloc] init];
 //    self.window.rootViewController = [[UINavigationController alloc] initWithRootViewController:[[YLZSetIdentityViewController alloc] init]];
 }
 
@@ -73,8 +75,8 @@
 #pragma mark -
 
 - (void)toRouterWithExsitTopController {
-    ViewController *vc = [[ViewController alloc] init];
-    [[YLZPageExtent sharedInstance] pushExistingViewController:vc];
+    UINavigationController *vc = [[UINavigationController alloc] initWithRootViewController:[[YLZLoginViewController alloc] init]];
+    [[YLZPageExtent sharedInstance] presentExistingViewController:vc];
 }
 
 #pragma mark - Delegate

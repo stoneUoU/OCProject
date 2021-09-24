@@ -15,6 +15,9 @@
 #import "YLZMessageModel.h"
 #import "YLZOperateModel.h"
 
+#import "YLZPendingViewController.h"
+#import "YLZNewFollowViewController.h"
+
 static CGFloat const kMargin = 24.0;
 static NSString *const kYLZMessageCollectionViewCell = @"YLZMessageCollectionViewCell";
 static NSString *const kYLZMessageTableViewCell = @"YLZMessageTableViewCell";
@@ -212,6 +215,13 @@ static NSString *const kYLZMessageTableViewCell = @"YLZMessageTableViewCell";
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
+    if (indexPath.section == 0) {
+        YLZPendingViewController *vc = [[YLZPendingViewController alloc] init];
+        [[YLZPageExtent sharedInstance] pushExistingViewController:vc];
+    } else {
+        YLZNewFollowViewController *vc = [[YLZNewFollowViewController alloc] init];
+        [[YLZPageExtent sharedInstance] pushExistingViewController:vc];
+    }
 }
 
 #pragma mark - lazy load

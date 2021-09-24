@@ -15,7 +15,9 @@
 #import "YLZMineMomentTableView.h"
 #import "JXCategoryIndicatorSpringBackgroundView.h"
 
-@interface YLZMineViewController () <JXPagerViewDelegate, JXCategoryViewDelegate>
+#import "YLZSettingViewController.h"
+
+@interface YLZMineViewController () <JXPagerViewDelegate, JXCategoryViewDelegate,YLZMineHeaderViewDelegate>
 @property (nonatomic, strong) JXPagerView *pagingView;
 @property (nonatomic, strong) YLZMineHeaderView *headerView;
 
@@ -50,6 +52,11 @@
 }
 
 #pragma mark - JXPagingViewDelegate
+
+- (void)toHeaderViewDelegate {
+    YLZSettingViewController *vc = [[YLZSettingViewController alloc] init];
+    [[YLZPageExtent sharedInstance] pushExistingViewController:vc];
+};
 
 - (UIView *)tableHeaderViewInPagerView:(JXPagerView *)pagerView {
     return self.headerView;
@@ -100,6 +107,7 @@
     if (!_headerView) {
         _headerView = [[YLZMineHeaderView alloc] initWithFrame:CGRectMake(0, 0, SCREENWIDTH, StatusBarHeight+16+246)];
         _headerView.backgroundColor = YLZColorView;
+        _headerView.delegate = self;
     }
     return _headerView;
 }
