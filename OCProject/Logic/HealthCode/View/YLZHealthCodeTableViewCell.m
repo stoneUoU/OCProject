@@ -27,6 +27,8 @@
 
 @property (nonatomic, strong) UIImageView *qrCodeImageView;
 
+@property (nonatomic, strong) UIImageView *logoImageView;
+
 @property (nonatomic, strong) UILabel *codeLabel;
 
 @property (nonatomic, strong) UIButton *fastButton;
@@ -58,19 +60,15 @@
 }
 
 - (void)setClickNum:(NSInteger)clickNum {
-    ZSGenerateCodeLogo *appLogo = [ZSGenerateCodeLogo new];
-    appLogo.image = [UIImage imageNamed:@"ylz_mzt_logo"];
-    appLogo.size = CGSizeMake(100, 100);
-    
     if (clickNum == 0) {
         [self formatWithString:@"健康状况核验 未见异常【绿码】" location:7 fontColor:[UIColor colorWithHexString:@"#6ab069"]];
-        self.qrCodeImageView.image = [ZSGenerateCodeUtil zs_QRCode:@"3623241996****6010" size:CGSizeMake(228, 228) color:[UIColor colorWithHexString:@"#6ab069"] backgroudColor:YLZColorWhite logo:appLogo];
+        self.qrCodeImageView.image = [ZSGenerateCodeUtil zs_QRCode:@"3623241996****6010" size:CGSizeMake(228, 228) color:[UIColor colorWithHexString:@"#6ab069"] backgroudColor:YLZColorWhite];
     } else if (clickNum == 1) {
         [self formatWithString:@"健康状况核验 建议隔离【橙码】" location:7 fontColor:[UIColor colorWithHexString:@"#F7ce44"]];
-        self.qrCodeImageView.image = [ZSGenerateCodeUtil zs_QRCode:@"3623241996****6010" size:CGSizeMake(228, 228) color:[UIColor colorWithHexString:@"#F7ce44"] backgroudColor:YLZColorWhite logo:appLogo];
+        self.qrCodeImageView.image = [ZSGenerateCodeUtil zs_QRCode:@"3623241996****6010" size:CGSizeMake(228, 228) color:[UIColor colorWithHexString:@"#F7ce44"] backgroudColor:YLZColorWhite];
     } else {
         [self formatWithString:@"健康状况核验 强制隔离【红码】" location:7 fontColor:[UIColor colorWithHexString:@"#eb3223"]];
-        self.qrCodeImageView.image = [ZSGenerateCodeUtil zs_QRCode:@"3623241996****6010" size:CGSizeMake(228, 228) color:[UIColor colorWithHexString:@"#eb3223"] backgroudColor:YLZColorWhite logo:appLogo];
+        self.qrCodeImageView.image = [ZSGenerateCodeUtil zs_QRCode:@"3623241996****6010" size:CGSizeMake(228, 228) color:[UIColor colorWithHexString:@"#eb3223"] backgroudColor:YLZColorWhite];
     }
 }
 
@@ -83,6 +81,7 @@
     [self.bgView addSubview:self.rightImageView];
     [self.bgView addSubview:self.codeGradientView];
     [self.bgView addSubview:self.qrCodeImageView];
+    [self.bgView addSubview:self.logoImageView];
     [self.bgView addSubview:self.codeLabel];
     
     [self.bgView addSubview:self.fastButton];
@@ -131,6 +130,11 @@
     [self.qrCodeImageView mas_makeConstraints:^(MASConstraintMaker *make) {
         make.center.equalTo(self.codeGradientView);
         make.size.equalTo(@(CGSizeMake(230, 230)));
+    }];
+    
+    [self.logoImageView mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.center.equalTo(self.qrCodeImageView);
+        make.size.equalTo(@(CGSizeMake(40, 40)));
     }];
     
     [self.codeLabel mas_makeConstraints:^(MASConstraintMaker *make) {
@@ -291,12 +295,18 @@
         _qrCodeImageView = [UIImageView new];
         _qrCodeImageView.layer.masksToBounds = YES;
         _qrCodeImageView.layer.cornerRadius = 12.0;
-        ZSGenerateCodeLogo *appLogo = [ZSGenerateCodeLogo new];
-        appLogo.image = [UIImage imageNamed:@"ylz_mzt_logo"];
-        appLogo.size = CGSizeMake(100, 100);
-        _qrCodeImageView.image = [ZSGenerateCodeUtil zs_QRCode:@"3623241996****6010" size:CGSizeMake(228, 228) color:[UIColor colorWithHexString:@"#6ab069"] backgroudColor:YLZColorWhite logo:appLogo];
     }
     return _qrCodeImageView;
+}
+
+- (UIImageView *)logoImageView {
+    if (!_logoImageView) {
+        _logoImageView = [UIImageView new];
+        _logoImageView.layer.masksToBounds = YES;
+        _logoImageView.layer.cornerRadius = 3.0;
+        _logoImageView.image = [UIImage imageNamed:@"ylz_mzt_logo"];
+    }
+    return _logoImageView;
 }
 
 - (UILabel *)codeLabel {

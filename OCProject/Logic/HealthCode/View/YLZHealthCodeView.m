@@ -89,7 +89,7 @@
     } else if (indexPath.section == 3) {
         return 308;
     } else {
-        return 196;
+        return 188;
     }
 }
 

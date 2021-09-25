@@ -89,7 +89,7 @@
         make.right.equalTo(self.bgView.mas_right);
     }];
     [self.leftThreeLabel mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.top.equalTo(self.rightTwoLabel.mas_bottom).offset(16);
+        make.top.equalTo(self.rightTwoLabel.mas_bottom).offset(8);
         make.left.equalTo(self.bgView).offset(16);
         make.width.equalTo(@(72));
     }];
