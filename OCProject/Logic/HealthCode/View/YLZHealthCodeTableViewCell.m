@@ -9,6 +9,7 @@
 #import "YLZHealthCodeTableViewCell.h"
 #import "YLZQrcodeExtent.h"
 #import "YLZKitCategory.h"
+#import "YLZCategory.h"
 #import "YLZTimer.h"
 
 @interface YLZHealthCodeTableViewCell()
@@ -62,13 +63,13 @@
 - (void)setClickNum:(NSInteger)clickNum {
     if (clickNum == 0) {
         [self formatWithString:@"健康状况核验 未见异常【绿码】" location:7 fontColor:[UIColor colorWithHexString:@"#6ab069"]];
-        self.qrCodeImageView.image = [ZSGenerateCodeUtil zs_QRCode:@"3623241996****6010" size:CGSizeMake(228, 228) color:[UIColor colorWithHexString:@"#6ab069"] backgroudColor:YLZColorWhite];
+        self.qrCodeImageView.image = [ZSGenerateCodeUtil zs_QRCode:[NSString ylz_randomStringWithLength:18] size:CGSizeMake(228, 228) color:[UIColor colorWithHexString:@"#6ab069"] backgroudColor:YLZColorWhite];
     } else if (clickNum == 1) {
         [self formatWithString:@"健康状况核验 建议隔离【橙码】" location:7 fontColor:[UIColor colorWithHexString:@"#F7ce44"]];
-        self.qrCodeImageView.image = [ZSGenerateCodeUtil zs_QRCode:@"3623241996****6010" size:CGSizeMake(228, 228) color:[UIColor colorWithHexString:@"#F7ce44"] backgroudColor:YLZColorWhite];
+        self.qrCodeImageView.image = [ZSGenerateCodeUtil zs_QRCode:[NSString ylz_randomStringWithLength:18] size:CGSizeMake(228, 228) color:[UIColor colorWithHexString:@"#F7ce44"] backgroudColor:YLZColorWhite];
     } else {
         [self formatWithString:@"健康状况核验 强制隔离【红码】" location:7 fontColor:[UIColor colorWithHexString:@"#eb3223"]];
-        self.qrCodeImageView.image = [ZSGenerateCodeUtil zs_QRCode:@"3623241996****6010" size:CGSizeMake(228, 228) color:[UIColor colorWithHexString:@"#eb3223"] backgroudColor:YLZColorWhite];
+        self.qrCodeImageView.image = [ZSGenerateCodeUtil zs_QRCode:[NSString ylz_randomStringWithLength:18] size:CGSizeMake(228, 228) color:[UIColor colorWithHexString:@"#eb3223"] backgroudColor:YLZColorWhite];
     }
 }
 
