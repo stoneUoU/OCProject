@@ -22,6 +22,7 @@
 
 - (instancetype)initWithFrame:(CGRect)frame {
     if (self = [super initWithFrame:frame]) {
+        self.backgroundColor = YLZColorWhite;
         [self setUI];
     }
     return self;
