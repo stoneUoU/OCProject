@@ -107,12 +107,12 @@
     self.isOn = !self.isOn;
     if (self.isOn) {
         [self.senderButton setImage:[UIImage imageNamed:@"ylz_eye_show"] forState:UIControlStateNormal];
-        self.nameLabel.text = @"姓名： 林磊";
-        self.certNoLabel.text = @"身份证号： 362324199610016010";
+        self.nameLabel.text = @"姓名： 彭于晏";
+        self.certNoLabel.text = @"身份证号： 362324199509185186";
     } else {
         [self.senderButton setImage:[UIImage imageNamed:@"ylz_eye_hide"] forState:UIControlStateNormal];
-        self.nameLabel.text = @"姓名： *磊";
-        self.certNoLabel.text = @"身份证号： 36**************610";
+        self.nameLabel.text = @"姓名： 彭*晏";
+        self.certNoLabel.text = @"身份证号： 362324********5186";
     }
 }
 
@@ -167,7 +167,7 @@
         _nameLabel = [[UILabel alloc] init];
         _nameLabel.font = [YLZFont regular:16];
         _nameLabel.textColor = YLZColorWhite;
-        _nameLabel.text = @"姓名： *磊";
+        _nameLabel.text = @"姓名： 彭*晏";
     }
     return _nameLabel;
 }
@@ -177,7 +177,7 @@
         _certNoLabel = [[UILabel alloc] init];
         _certNoLabel.font = [YLZFont regular:16];
         _certNoLabel.textColor = YLZColorWhite;
-        _certNoLabel.text = @"身份证号： 36**************610";
+        _certNoLabel.text = @"身份证号： 362324********5186";
     }
     return _certNoLabel;
 }

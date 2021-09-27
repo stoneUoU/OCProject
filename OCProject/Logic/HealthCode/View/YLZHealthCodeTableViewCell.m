@@ -315,7 +315,7 @@
         _codeLabel = [UILabel new];
         _codeLabel.font = [YLZFont regular:16];
         _codeLabel.textColor = YLZColorTitleOne;
-        _codeLabel.text = @"91090909096608";
+        _codeLabel.text = [NSString ylz_randomStringWithLength:18];
     }
     return _codeLabel;
 }

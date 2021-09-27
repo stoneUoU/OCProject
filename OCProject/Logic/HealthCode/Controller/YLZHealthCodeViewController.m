@@ -101,13 +101,13 @@
         make.right.equalTo(self.navigationView.mas_right).offset(-16);
         make.size.equalTo(@(CGSizeMake(80, 30)));
     }];
-    [self.moreButton mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.centerY.equalTo(self.navigationView);
-        make.right.equalTo(self.separatorView.mas_left).offset(-8);
-    }];
     [self.separatorView mas_makeConstraints:^(MASConstraintMaker *make) {
         make.center.equalTo(self.operateView);
         make.size.equalTo(@(CGSizeMake(0.5, 16)));
+    }];
+    [self.moreButton mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.centerY.equalTo(self.navigationView);
+        make.right.equalTo(self.separatorView.mas_left).offset(-8);
     }];
     [self.shutButton mas_makeConstraints:^(MASConstraintMaker *make) {
         make.centerY.equalTo(self.navigationView);
