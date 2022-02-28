@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		63F60B96E8187744865B5169 /* libPods-OCProject.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4D4A4AD40EFD34FFB4CE26F2 /* libPods-OCProject.a */; };
+		8E150BDF27B5031F00CBD777 /* YLZFile.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E150BDE27B5031F00CBD777 /* YLZFile.m */; };
+		8E150BE227B5038300CBD777 /* YLZFileManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E150BE127B5038300CBD777 /* YLZFileManager.m */; };
 		8E42431D265CA2F800E5A4A5 /* YLZMSTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E42431C265CA2F800E5A4A5 /* YLZMSTabBar.m */; };
 		8E424358265CEA1F00E5A4A5 /* YLZMSTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E424357265CEA1F00E5A4A5 /* YLZMSTabBarController.m */; };
 		8E424360265CEB2F00E5A4A5 /* AppDelegate+Tarbar.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E42435F265CEB2F00E5A4A5 /* AppDelegate+Tarbar.m */; };
@@ -180,6 +182,10 @@
 		158424B93E8655E4E45F8B9A /* Pods-OCProject.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OCProject.release.xcconfig"; path = "Target Support Files/Pods-OCProject/Pods-OCProject.release.xcconfig"; sourceTree = "<group>"; };
 		402A9C51765DEC75E7C47C20 /* Pods-OCProject.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OCProject.debug.xcconfig"; path = "Target Support Files/Pods-OCProject/Pods-OCProject.debug.xcconfig"; sourceTree = "<group>"; };
 		4D4A4AD40EFD34FFB4CE26F2 /* libPods-OCProject.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-OCProject.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8E150BDD27B5031F00CBD777 /* YLZFile.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YLZFile.h; sourceTree = "<group>"; };
+		8E150BDE27B5031F00CBD777 /* YLZFile.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YLZFile.m; sourceTree = "<group>"; };
+		8E150BE027B5038300CBD777 /* YLZFileManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YLZFileManager.h; sourceTree = "<group>"; };
+		8E150BE127B5038300CBD777 /* YLZFileManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YLZFileManager.m; sourceTree = "<group>"; };
 		8E424303265C9C9D00E5A4A5 /* CommFiles.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CommFiles.pch; sourceTree = "<group>"; };
 		8E424304265C9CCA00E5A4A5 /* Macros.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Macros.h; sourceTree = "<group>"; };
 		8E42431B265CA2F800E5A4A5 /* YLZMSTabBar.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YLZMSTabBar.h; sourceTree = "<group>"; };
@@ -540,6 +546,17 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		8E150BDC27B502EC00CBD777 /* YLZFileManage */ = {
+			isa = PBXGroup;
+			children = (
+				8E150BDD27B5031F00CBD777 /* YLZFile.h */,
+				8E150BDE27B5031F00CBD777 /* YLZFile.m */,
+				8E150BE027B5038300CBD777 /* YLZFileManager.h */,
+				8E150BE127B5038300CBD777 /* YLZFileManager.m */,
+			);
+			path = YLZFileManage;
+			sourceTree = "<group>";
+		};
 		8E4242EF265C9AE800E5A4A5 /* Base */ = {
 			isa = PBXGroup;
 			children = (
@@ -603,6 +620,7 @@
 		8E424320265CA32800E5A4A5 /* Extent */ = {
 			isa = PBXGroup;
 			children = (
+				8E150BDC27B502EC00CBD777 /* YLZFileManage */,
 				8E5200DF26FDCCC9000EBCEB /* YLZQrcode */,
 				8E5200DE26FDCCB1000EBCEB /* YLZTimer */,
 				8E79CDEF268EF17F00E71F17 /* YLZPage */,
@@ -1845,6 +1863,7 @@
 				8E8481ED2691DC23005CCA34 /* YLZMomentModel.m in Sources */,
 				8E4243EB265CF8F500E5A4A5 /* YLZNetWork.m in Sources */,
 				8E42439F265CF04600E5A4A5 /* UIButton+YLZCountDown.m in Sources */,
+				8E150BE227B5038300CBD777 /* YLZFileManager.m in Sources */,
 				8E79CDE3268EE71D00E71F17 /* YLZLocalData+ylz.m in Sources */,
 				8E59B1692691598F0043073C /* YLZSetAreaViewController.m in Sources */,
 				8E79CEAB268F13F900E71F17 /* JXCategoryTitleView.m in Sources */,
@@ -1853,6 +1872,7 @@
 				8E67D11C2692E21D00BF476D /* YLZMineBaseTableView.m in Sources */,
 				8E9DD4272690497900D13F09 /* YLZBlacklistTableViewCell.m in Sources */,
 				8E84820C2691FD21005CCA34 /* YLZMomentOnePhotoTableViewCell.m in Sources */,
+				8E150BDF27B5031F00CBD777 /* YLZFile.m in Sources */,
 				8E79CE0B268EF57000E71F17 /* YLZMineViewController.m in Sources */,
 				8E79CEB5268F13F900E71F17 /* JXCategoryIndicatorParamsModel.m in Sources */,
 				8E79CE9F268F13F900E71F17 /* JXCategoryIndicatorBackgroundView.m in Sources */,
