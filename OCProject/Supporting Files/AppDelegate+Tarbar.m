@@ -11,6 +11,7 @@
 #import "YLZMessageViewController.h"
 #import "YLZMomentViewController.h"
 #import "YLZHealthCodeViewController.h"
+#import "YLZRouteCodeViewController.h"
 #import "ViewController.h"
 
 #import <YYKit/YYKit.h>
@@ -66,7 +67,8 @@
     
 //    self.window.rootViewController = [[UINavigationController alloc] initWithRootViewController:[[YLZLoginViewController alloc] init]];
 //    self.window.rootViewController = self.tabbarVC;
-    self.window.rootViewController = [[YLZHealthCodeViewController alloc] init];
+//    self.window.rootViewController = [[YLZHealthCodeViewController alloc] init];
+    self.window.rootViewController = [[YLZRouteCodeViewController alloc] init];
 //    self.window.rootViewController = [[UINavigationController alloc] initWithRootViewController:[[YLZSetIdentityViewController alloc] init]];
 }
 

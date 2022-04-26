@@ -171,6 +171,19 @@
 		8E9DD45D2690709D00D13F09 /* YLZBindPhoneViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E9DD45C2690709D00D13F09 /* YLZBindPhoneViewController.m */; };
 		8E9DD463269070E400D13F09 /* YLZChangePhoneViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E9DD462269070E400D13F09 /* YLZChangePhoneViewController.m */; };
 		8E9DD4672690774500D13F09 /* YLZLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E9DD4662690774500D13F09 /* YLZLoginViewController.m */; };
+		8ECBC2A92817882900071F21 /* YLZRouteCodeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8ECBC2A82817882900071F21 /* YLZRouteCodeViewController.m */; };
+		8ECBC2AD2817883F00071F21 /* YLZRouteCodeView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8ECBC2AC2817883F00071F21 /* YLZRouteCodeView.m */; };
+		8ECBC2B02817887700071F21 /* YLZRouteCodeInfoCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8ECBC2AF2817887700071F21 /* YLZRouteCodeInfoCell.m */; };
+		8ECBC2B32817888A00071F21 /* YLZRouteCodeRecordCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8ECBC2B22817888A00071F21 /* YLZRouteCodeRecordCell.m */; };
+		8ECBC2B62817889C00071F21 /* YLZRouteCodeLoadingCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8ECBC2B52817889C00071F21 /* YLZRouteCodeLoadingCell.m */; };
+		8ECBC2B9281788AD00071F21 /* YLZRouteCodeCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8ECBC2B8281788AD00071F21 /* YLZRouteCodeCell.m */; };
+		8ECBC2BC2817899D00071F21 /* YLZRouteCodeTableFooterView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8ECBC2BB2817899D00071F21 /* YLZRouteCodeTableFooterView.m */; };
+		8ECBC2BF281789AC00071F21 /* YLZRouteCodeTableHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8ECBC2BE281789AC00071F21 /* YLZRouteCodeTableHeaderView.m */; };
+		8ECBC2C228178AA800071F21 /* YLZFunctionModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 8ECBC2C128178AA800071F21 /* YLZFunctionModel.m */; };
+		8ECBC2C52817970C00071F21 /* YLZRouteCodeCellInfoView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8ECBC2C42817970C00071F21 /* YLZRouteCodeCellInfoView.m */; };
+		8ECBC2C82817972100071F21 /* YLZRouteCodeCellBottomView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8ECBC2C72817972100071F21 /* YLZRouteCodeCellBottomView.m */; };
+		8ECBC2CB28179B4B00071F21 /* YLZRouteCodeCellLoadingView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8ECBC2CA28179B4B00071F21 /* YLZRouteCodeCellLoadingView.m */; };
+		8ECBC2CE28179EA900071F21 /* YLZRouteCodeCellView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8ECBC2CD28179EA900071F21 /* YLZRouteCodeCellView.m */; };
 		8EFB12B6265BB44F007D9FE1 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EFB12B5265BB44F007D9FE1 /* AppDelegate.m */; };
 		8EFB12BC265BB44F007D9FE1 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EFB12BB265BB44F007D9FE1 /* ViewController.m */; };
 		8EFB12C1265BB450007D9FE1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8EFB12C0265BB450007D9FE1 /* Assets.xcassets */; };
@@ -515,6 +528,32 @@
 		8E9DD462269070E400D13F09 /* YLZChangePhoneViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YLZChangePhoneViewController.m; sourceTree = "<group>"; };
 		8E9DD4652690774500D13F09 /* YLZLoginViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YLZLoginViewController.h; sourceTree = "<group>"; };
 		8E9DD4662690774500D13F09 /* YLZLoginViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YLZLoginViewController.m; sourceTree = "<group>"; };
+		8ECBC2A72817882900071F21 /* YLZRouteCodeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YLZRouteCodeViewController.h; sourceTree = "<group>"; };
+		8ECBC2A82817882900071F21 /* YLZRouteCodeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YLZRouteCodeViewController.m; sourceTree = "<group>"; };
+		8ECBC2AB2817883F00071F21 /* YLZRouteCodeView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YLZRouteCodeView.h; sourceTree = "<group>"; };
+		8ECBC2AC2817883F00071F21 /* YLZRouteCodeView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YLZRouteCodeView.m; sourceTree = "<group>"; };
+		8ECBC2AE2817887700071F21 /* YLZRouteCodeInfoCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YLZRouteCodeInfoCell.h; sourceTree = "<group>"; };
+		8ECBC2AF2817887700071F21 /* YLZRouteCodeInfoCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YLZRouteCodeInfoCell.m; sourceTree = "<group>"; };
+		8ECBC2B12817888A00071F21 /* YLZRouteCodeRecordCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YLZRouteCodeRecordCell.h; sourceTree = "<group>"; };
+		8ECBC2B22817888A00071F21 /* YLZRouteCodeRecordCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YLZRouteCodeRecordCell.m; sourceTree = "<group>"; };
+		8ECBC2B42817889C00071F21 /* YLZRouteCodeLoadingCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YLZRouteCodeLoadingCell.h; sourceTree = "<group>"; };
+		8ECBC2B52817889C00071F21 /* YLZRouteCodeLoadingCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YLZRouteCodeLoadingCell.m; sourceTree = "<group>"; };
+		8ECBC2B7281788AD00071F21 /* YLZRouteCodeCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YLZRouteCodeCell.h; sourceTree = "<group>"; };
+		8ECBC2B8281788AD00071F21 /* YLZRouteCodeCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YLZRouteCodeCell.m; sourceTree = "<group>"; };
+		8ECBC2BA2817899D00071F21 /* YLZRouteCodeTableFooterView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YLZRouteCodeTableFooterView.h; sourceTree = "<group>"; };
+		8ECBC2BB2817899D00071F21 /* YLZRouteCodeTableFooterView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YLZRouteCodeTableFooterView.m; sourceTree = "<group>"; };
+		8ECBC2BD281789AC00071F21 /* YLZRouteCodeTableHeaderView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YLZRouteCodeTableHeaderView.h; sourceTree = "<group>"; };
+		8ECBC2BE281789AC00071F21 /* YLZRouteCodeTableHeaderView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YLZRouteCodeTableHeaderView.m; sourceTree = "<group>"; };
+		8ECBC2C028178AA800071F21 /* YLZFunctionModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YLZFunctionModel.h; sourceTree = "<group>"; };
+		8ECBC2C128178AA800071F21 /* YLZFunctionModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YLZFunctionModel.m; sourceTree = "<group>"; };
+		8ECBC2C32817970C00071F21 /* YLZRouteCodeCellInfoView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YLZRouteCodeCellInfoView.h; sourceTree = "<group>"; };
+		8ECBC2C42817970C00071F21 /* YLZRouteCodeCellInfoView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YLZRouteCodeCellInfoView.m; sourceTree = "<group>"; };
+		8ECBC2C62817972100071F21 /* YLZRouteCodeCellBottomView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YLZRouteCodeCellBottomView.h; sourceTree = "<group>"; };
+		8ECBC2C72817972100071F21 /* YLZRouteCodeCellBottomView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YLZRouteCodeCellBottomView.m; sourceTree = "<group>"; };
+		8ECBC2C928179B4B00071F21 /* YLZRouteCodeCellLoadingView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YLZRouteCodeCellLoadingView.h; sourceTree = "<group>"; };
+		8ECBC2CA28179B4B00071F21 /* YLZRouteCodeCellLoadingView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YLZRouteCodeCellLoadingView.m; sourceTree = "<group>"; };
+		8ECBC2CC28179EA900071F21 /* YLZRouteCodeCellView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YLZRouteCodeCellView.h; sourceTree = "<group>"; };
+		8ECBC2CD28179EA900071F21 /* YLZRouteCodeCellView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YLZRouteCodeCellView.m; sourceTree = "<group>"; };
 		8EFB12B1265BB44F007D9FE1 /* OCProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OCProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8EFB12B4265BB44F007D9FE1 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		8EFB12B5265BB44F007D9FE1 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -1073,6 +1112,7 @@
 		8E79CDC1268ED12B00E71F17 /* Logic */ = {
 			isa = PBXGroup;
 			children = (
+				8ECBC2A3281787E400071F21 /* RouteCode */,
 				8E5200C526FD7716000EBCEB /* HealthCode */,
 				8E8481F02691DE20005CCA34 /* Message */,
 				8E8481DE2691DBD4005CCA34 /* Moment */,
@@ -1615,6 +1655,63 @@
 			path = Controller;
 			sourceTree = "<group>";
 		};
+		8ECBC2A3281787E400071F21 /* RouteCode */ = {
+			isa = PBXGroup;
+			children = (
+				8ECBC2A4281787F700071F21 /* Model */,
+				8ECBC2A5281787FE00071F21 /* View */,
+				8ECBC2A62817880300071F21 /* Controller */,
+			);
+			path = RouteCode;
+			sourceTree = "<group>";
+		};
+		8ECBC2A4281787F700071F21 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				8ECBC2C028178AA800071F21 /* YLZFunctionModel.h */,
+				8ECBC2C128178AA800071F21 /* YLZFunctionModel.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		8ECBC2A5281787FE00071F21 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				8ECBC2AB2817883F00071F21 /* YLZRouteCodeView.h */,
+				8ECBC2AC2817883F00071F21 /* YLZRouteCodeView.m */,
+				8ECBC2B42817889C00071F21 /* YLZRouteCodeLoadingCell.h */,
+				8ECBC2B52817889C00071F21 /* YLZRouteCodeLoadingCell.m */,
+				8ECBC2B7281788AD00071F21 /* YLZRouteCodeCell.h */,
+				8ECBC2B8281788AD00071F21 /* YLZRouteCodeCell.m */,
+				8ECBC2B12817888A00071F21 /* YLZRouteCodeRecordCell.h */,
+				8ECBC2B22817888A00071F21 /* YLZRouteCodeRecordCell.m */,
+				8ECBC2C32817970C00071F21 /* YLZRouteCodeCellInfoView.h */,
+				8ECBC2C42817970C00071F21 /* YLZRouteCodeCellInfoView.m */,
+				8ECBC2C62817972100071F21 /* YLZRouteCodeCellBottomView.h */,
+				8ECBC2C72817972100071F21 /* YLZRouteCodeCellBottomView.m */,
+				8ECBC2C928179B4B00071F21 /* YLZRouteCodeCellLoadingView.h */,
+				8ECBC2CA28179B4B00071F21 /* YLZRouteCodeCellLoadingView.m */,
+				8ECBC2CC28179EA900071F21 /* YLZRouteCodeCellView.h */,
+				8ECBC2CD28179EA900071F21 /* YLZRouteCodeCellView.m */,
+				8ECBC2AE2817887700071F21 /* YLZRouteCodeInfoCell.h */,
+				8ECBC2AF2817887700071F21 /* YLZRouteCodeInfoCell.m */,
+				8ECBC2BD281789AC00071F21 /* YLZRouteCodeTableHeaderView.h */,
+				8ECBC2BE281789AC00071F21 /* YLZRouteCodeTableHeaderView.m */,
+				8ECBC2BA2817899D00071F21 /* YLZRouteCodeTableFooterView.h */,
+				8ECBC2BB2817899D00071F21 /* YLZRouteCodeTableFooterView.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		8ECBC2A62817880300071F21 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				8ECBC2A72817882900071F21 /* YLZRouteCodeViewController.h */,
+				8ECBC2A82817882900071F21 /* YLZRouteCodeViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
 		8EFB12A8265BB44F007D9FE1 = {
 			isa = PBXGroup;
 			children = (
@@ -1790,6 +1887,7 @@
 			files = (
 				8E9DD41B269044EA00D13F09 /* YLZSecretSettingViewController.m in Sources */,
 				8E79CEB1268F13F900E71F17 /* JXCategoryNumberCellModel.m in Sources */,
+				8ECBC2C52817970C00071F21 /* YLZRouteCodeCellInfoView.m in Sources */,
 				8E79CDD9268EE5CF00E71F17 /* YLZBaseDefaults.m in Sources */,
 				8E9DD40D26903D1F00D13F09 /* YLZConstTableViewCell.m in Sources */,
 				8E79CEB3268F13F900E71F17 /* JXCategoryFactory.m in Sources */,
@@ -1797,11 +1895,13 @@
 				8E59B179269171910043073C /* YLZSetOrganizationAreaViewController.m in Sources */,
 				8E9DD45226906A3C00D13F09 /* YLZFeedBackViewController.m in Sources */,
 				8E9DD463269070E400D13F09 /* YLZChangePhoneViewController.m in Sources */,
+				8ECBC2B9281788AD00071F21 /* YLZRouteCodeCell.m in Sources */,
 				8E59B17126916D200043073C /* YLZSetCollegeCollectionViewCell.m in Sources */,
 				8E8481E32691DC00005CCA34 /* YLZMomentViewController.m in Sources */,
 				8E59B154269149E00043073C /* YLZForgetPasswordViewController.m in Sources */,
 				8E79CDFF268EF34300E71F17 /* UIViewController+YLZMediator.m in Sources */,
 				8E79CE96268F13F900E71F17 /* JXCategoryTitleVerticalZoomView.m in Sources */,
+				8ECBC2C82817972100071F21 /* YLZRouteCodeCellBottomView.m in Sources */,
 				8E5200D626FDAC71000EBCEB /* YLZHealthCodeTableViewCell.m in Sources */,
 				8E67D0D4269291BD00BF476D /* YLZMomentFourPhotoTableViewCell.m in Sources */,
 				8E9DD437269056D400D13F09 /* YLZSwitchAccountViewController.m in Sources */,
@@ -1813,12 +1913,14 @@
 				8E79CEB2268F13F900E71F17 /* JXCategoryListContainerView.m in Sources */,
 				8E4243E5265CF83100E5A4A5 /* YLZValidated.m in Sources */,
 				8E4243A8265CF04600E5A4A5 /* UITextField+YLZExtension.m in Sources */,
+				8ECBC2B62817889C00071F21 /* YLZRouteCodeLoadingCell.m in Sources */,
 				8E4243A4265CF04600E5A4A5 /* UIView+YLZChange.m in Sources */,
 				8E79CDDF268EE67E00E71F17 /* YLZLocalData.m in Sources */,
 				8EFB12BC265BB44F007D9FE1 /* ViewController.m in Sources */,
 				8E79CEAF268F13F900E71F17 /* JXCategoryNumberView.m in Sources */,
 				8E8481FC2691DE74005CCA34 /* YLZMessageModel.m in Sources */,
 				8E67D1462693179D00BF476D /* YLZMomentFollowViewController.m in Sources */,
+				8ECBC2AD2817883F00071F21 /* YLZRouteCodeView.m in Sources */,
 				8E79CEB7268F13F900E71F17 /* UIColor+JXAdd.m in Sources */,
 				8EFB12B6265BB44F007D9FE1 /* AppDelegate.m in Sources */,
 				8E8482082691E3D5005CCA34 /* YLZMessageTableViewCell.m in Sources */,
@@ -1828,6 +1930,7 @@
 				8E79CE99268F13F900E71F17 /* JXCategoryIndicatorTriangleView.m in Sources */,
 				8E79CE9E268F13F900E71F17 /* JXCategoryIndicatorDotLineView.m in Sources */,
 				8E59B1812691A2A60043073C /* YLZAlertForceView.m in Sources */,
+				8ECBC2CB28179B4B00071F21 /* YLZRouteCodeCellLoadingView.m in Sources */,
 				8E4243CA265CF22400E5A4A5 /* YLZProgressHUDExtent.m in Sources */,
 				8E8482042691E3B8005CCA34 /* YLZMessageCollectionViewCell.m in Sources */,
 				8E79CEA0268F13F900E71F17 /* JXCategoryIndicatorCellModel.m in Sources */,
@@ -1847,6 +1950,7 @@
 				8E9DD4412690580F00D13F09 /* YLZAccountTableViewCell.m in Sources */,
 				8E79CDE7268EE84000E71F17 /* YLZUserBaseInfo.m in Sources */,
 				8E8481E82691DC0E005CCA34 /* YLZMomentView.m in Sources */,
+				8ECBC2BF281789AC00071F21 /* YLZRouteCodeTableHeaderView.m in Sources */,
 				8E424358265CEA1F00E5A4A5 /* YLZMSTabBarController.m in Sources */,
 				8E79CE94268F13F900E71F17 /* JXCategoryTitleVerticalZoomCellModel.m in Sources */,
 				8E59B160269151D70043073C /* YLZSetGenderViewController.m in Sources */,
@@ -1857,6 +1961,7 @@
 				8E9DD45D2690709D00D13F09 /* YLZBindPhoneViewController.m in Sources */,
 				8E5200D326FDA502000EBCEB /* YLZHealthCodeInfoTableViewCell.m in Sources */,
 				8E79CE9C268F13F900E71F17 /* JXCategoryIndicatorBallView.m in Sources */,
+				8ECBC2C228178AA800071F21 /* YLZFunctionModel.m in Sources */,
 				8E79CEAE268F13F900E71F17 /* JXCategoryImageCellModel.m in Sources */,
 				8E79CE9D268F13F900E71F17 /* JXCategoryIndicatorComponentView.m in Sources */,
 				8E79CEBA268F13F900E71F17 /* JXCategoryBaseCell.m in Sources */,
@@ -1913,6 +2018,7 @@
 				8E79CEB4268F13F900E71F17 /* JXCategoryCollectionView.m in Sources */,
 				8E9DD45626906F6500D13F09 /* YLZPlaceHolderTextView.m in Sources */,
 				8EFB12C7265BB450007D9FE1 /* main.m in Sources */,
+				8ECBC2A92817882900071F21 /* YLZRouteCodeViewController.m in Sources */,
 				8E79CEA6268F13F900E71F17 /* JXCategoryTitleImageView.m in Sources */,
 				8E67D13E269302A300BF476D /* YLZMineMomentTableView.m in Sources */,
 				8E79CE9B268F13F900E71F17 /* JXCategoryIndicatorImageView.m in Sources */,
@@ -1922,6 +2028,7 @@
 				8E79CEAD268F13F900E71F17 /* JXCategoryImageCell.m in Sources */,
 				8E4243A3265CF04600E5A4A5 /* UIColor+YLZHex.m in Sources */,
 				8E79CEAC268F13F900E71F17 /* JXCategoryImageView.m in Sources */,
+				8ECBC2CE28179EA900071F21 /* YLZRouteCodeCellView.m in Sources */,
 				8E9DD404269035CB00D13F09 /* YLZSettingModel.m in Sources */,
 				8E79CE95268F13F900E71F17 /* JXCategoryTitleVerticalZoomCell.m in Sources */,
 				8E42431D265CA2F800E5A4A5 /* YLZMSTabBar.m in Sources */,
@@ -1951,8 +2058,11 @@
 				8E67D10E2692A86100BF476D /* YLZNewFollowTableViewCell.m in Sources */,
 				8E5200D026FD77EC000EBCEB /* YLZHealthCodeView.m in Sources */,
 				8E67D0E92692999100BF476D /* YLZPendingModel.m in Sources */,
+				8ECBC2BC2817899D00071F21 /* YLZRouteCodeTableFooterView.m in Sources */,
 				8E67D1012692A52500BF476D /* YLZInvitedTableViewCell.m in Sources */,
+				8ECBC2B02817887700071F21 /* YLZRouteCodeInfoCell.m in Sources */,
 				8E5200EF26FE0280000EBCEB /* YLZHealthCodeTableFooterView.m in Sources */,
+				8ECBC2B32817888A00071F21 /* YLZRouteCodeRecordCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

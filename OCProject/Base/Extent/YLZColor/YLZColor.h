@@ -99,5 +99,11 @@
 /// Cell的背景色
 #define YLZColorCellBackGround  [UIColor colorWithHexString:@"fafafc"]
 
+/// 福建健康码背景
+#define YLZColorRouteCode  [UIColor colorWithHexString:@"e8eaf0"]
+#define YLZColorAllInsertCode  [UIColor colorWithHexString:@"f3fcf5"]
+#define YLZColorCodeBlue  [UIColor colorWithHexString:@"3a5ddd"]
+#define YLZColorCodeButtonbgColor  [UIColor colorWithHexString:@"eceffb"]
+
 #endif /* YLZColorMacros_h */
 
