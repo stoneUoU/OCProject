@@ -7,8 +7,7 @@
 
 #import "YLZRouteCodeCellInfoView.h"
 #import "YLZEnlargeButton.h"
-
-typedef void(^YLZRouteCodeCellInfoViewHandle)(void);
+#import "YLZKitCategory.h"
 
 @interface YLZRouteCodeCellInfoView()
 
@@ -23,8 +22,6 @@ typedef void(^YLZRouteCodeCellInfoViewHandle)(void);
 @property (nonatomic, strong) UILabel *familyCodeLabel;
 
 @property (nonatomic, strong) UIImageView *dashImageView;
-
-@property (nonatomic, copy) YLZRouteCodeCellInfoViewHandle handle;
 
 @property (nonatomic, assign) BOOL eyeFlag;
 
@@ -93,9 +90,7 @@ typedef void(^YLZRouteCodeCellInfoViewHandle)(void);
          make.centerY.equalTo(self);
          make.right.equalTo(self.familyCodeLabel.mas_left).offset(-6);
      }];
-     [self.dashImageView mas_makeConstraints:^(MASConstraintMaker *make) {
-         make.bottom.right.equalTo(self);
-     }];
+     [YLZImageExtent drawLineByImageView:self.dashImageView withDashColor:YLZColorTitleThree];
 }
     
 #pragma mark - IB-Action

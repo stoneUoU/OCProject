@@ -203,7 +203,7 @@
     [attributeStr addAttribute:NSFontAttributeName value:[YLZFont regular:18] range:NSMakeRange(0, location)];
     [attributeStr addAttribute:NSForegroundColorAttributeName value:fontColor range:NSMakeRange(location, textString.length-location)];
     [attributeStr addAttribute:NSFontAttributeName value:[YLZFont bold:18] range:NSMakeRange(location, textString.length-location)];
-    _stateLabel.attributedText = attributeStr;
+    self.stateLabel.attributedText = attributeStr;
 }
 
 - (void)doTask {

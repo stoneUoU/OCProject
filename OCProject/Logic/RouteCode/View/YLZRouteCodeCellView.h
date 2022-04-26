@@ -11,6 +11,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface YLZRouteCodeCellView : UIView
 
+@property (nonatomic, assign) NSInteger clickNum;
+
 @end
 
 NS_ASSUME_NONNULL_END
