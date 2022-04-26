@@ -18,8 +18,6 @@
     
 }
 
-@property (nonatomic, strong) UITableView *tableView;
-
 @property (nonatomic, strong) NSMutableArray *dataArrays;
 
 @property (nonatomic, assign) NSInteger clickNum;
@@ -36,7 +34,7 @@
     self = [super init];//当前对象self
     if (self !=nil) {
         self.clickNum = 0;
-        self.isLoading = NO;
+        self.isLoading = YES;
         [self setUI];
     }
     return self;//返回一个已经初始化完毕的对象；

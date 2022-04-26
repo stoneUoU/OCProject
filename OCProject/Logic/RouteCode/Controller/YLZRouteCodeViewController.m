@@ -7,6 +7,7 @@
 
 #import "YLZRouteCodeView.h"
 #import "YLZRouteCodeViewController.h"
+#import <MBProgressHUD/MBProgressHUD.h>
 
 @interface YLZRouteCodeViewController () <YLZRouteCodeViewDelegate>
     
@@ -48,6 +49,21 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     [self setUI];
+//    [SVProgressHUD setDefaultStyle:SVProgressHUDStyleDark];
+//    [SVProgressHUD setDefaultAnimationType:SVProgressHUDAnimationTypeNative];
+//    [SVProgressHUD showWithStatus:@"加载中..."];
+    MBProgressHUD *hud = [MBProgressHUD showHUDAddedTo:self.view animated:YES];
+    //纯文本模式
+    hud.mode = MBProgressHUDModeIndeterminate;
+//        hud.bezelView.backgroundColor = YLZColorTitleTwo;
+    //设置提示标题
+    hud.label.text = @"加载中...";
+    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(2.0 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+//        [SVProgressHUD dismiss];
+        [hud hideAnimated:YES];
+        self.routeCodeView.isLoading = NO;
+        [self.routeCodeView.tableView reloadData];
+    });
 }
     
 - (void)viewWillAppear:(BOOL)animated {

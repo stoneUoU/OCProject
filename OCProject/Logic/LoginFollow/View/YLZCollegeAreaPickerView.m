@@ -145,6 +145,7 @@ static const CGFloat animationDuration = 0.3;
         _closeButton = [YLZEnlargeButton buttonWithType:UIButtonTypeCustom];
         [_closeButton setImage:[UIImage imageNamed:@"ylz_close"] forState:UIControlStateNormal];
         _closeButton.tag = 0;
+        _closeButton.enlargeEdge_ylz = UIEdgeInsetsMake(5, 5, 5, 5);
         [_closeButton addTarget:self action:@selector(toDone:) forControlEvents:UIControlEventTouchUpInside];
     }
     return _closeButton;

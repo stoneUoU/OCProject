@@ -100,6 +100,7 @@
     self.eyeFlag = !self.eyeFlag;
     self.nameLabel.text = self.eyeFlag ? self.nameDesensitizationString : self.nameString;
     self.certLabel.text = self.eyeFlag ? self.certDesensitizationString : self.certString;
+    [self.eyeButton setImage:[UIImage imageNamed:self.eyeFlag ? @"ylz_route_eye_close" : @"ylz_route_eye_open"] forState:UIControlStateNormal];
 }
 
 - (void)toRecognizer:(UIGestureRecognizer *)sender {
@@ -123,6 +124,7 @@
         _eyeButton = [YLZEnlargeButton buttonWithType:UIButtonTypeCustom];
         [_eyeButton setImage:[UIImage imageNamed:@"ylz_route_eye_close"] forState:UIControlStateNormal];
         _eyeButton.tag = 0;
+        _eyeButton.enlargeEdge_ylz = UIEdgeInsetsMake(5, 5, 5, 5);
         [_eyeButton addTarget:self action:@selector(toDone:) forControlEvents:UIControlEventTouchUpInside];
     }
     return _eyeButton;

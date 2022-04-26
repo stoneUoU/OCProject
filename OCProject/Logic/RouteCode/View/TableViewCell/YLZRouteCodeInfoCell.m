@@ -68,9 +68,10 @@
     self.titleLabel.text = funcModel.functionName;
     if (funcModel.topFillet) {
         [self.bgView ylz_addRoundedCorners:UIRectCornerTopLeft|UIRectCornerTopRight  withRadii:CGSizeMake(12, 12) viewRect:self.bgView.bounds];
-    }
-    if (funcModel.bottomFillet) {
+    } else if (funcModel.bottomFillet) {
         [self.bgView ylz_addRoundedCorners:UIRectCornerBottomLeft|UIRectCornerBottomRight  withRadii:CGSizeMake(12, 12) viewRect:self.bgView.bounds];
+    } else {
+        [self.bgView ylz_addRoundedCorners:UIRectCornerAllCorners withRadii:CGSizeMake(0, 0) viewRect:self.bgView.bounds];
     }
     self.separatorView.hidden = funcModel.bottomFillet;
 }
@@ -117,6 +118,7 @@
 - (UIView *)separatorView {
     if (!_separatorView) {
         _separatorView = [UIView new];
+        _separatorView.backgroundColor = YLZColorLine;
     }
     return _separatorView;
 }

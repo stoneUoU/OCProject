@@ -171,8 +171,8 @@
 
 - (void)setClickNum:(NSInteger)clickNum {
     if (clickNum == 0) {
-        [self formatWithString:@"绿码：健康状态为低风险" location:0 fontColor:[UIColor colorWithHexString:@"#6ab069"]];
-        self.qrCodeImageView.image = [ZSGenerateCodeUtil zs_QRCode:[NSString ylz_randomStringWithLength:100] size:CGSizeMake(228, 228) color:[UIColor colorWithHexString:@"#6ab069"] backgroudColor:YLZColorWhite];
+        [self formatWithString:@"绿码：健康状态为低风险" location:0 fontColor:[UIColor colorWithHexString:@"#609f6c"]];
+        self.qrCodeImageView.image = [ZSGenerateCodeUtil zs_QRCode:[NSString ylz_randomStringWithLength:100] size:CGSizeMake(228, 228) color:[UIColor colorWithHexString:@"#609f6c"] backgroudColor:YLZColorWhite];
     } else if (clickNum == 1) {
         [self formatWithString:@"黄码：健康状态为中风险" location:0 fontColor:[UIColor colorWithHexString:@"#F7ce44"]];
         self.qrCodeImageView.image = [ZSGenerateCodeUtil zs_QRCode:[NSString ylz_randomStringWithLength:100] size:CGSizeMake(228, 228) color:[UIColor colorWithHexString:@"#F7ce44"] backgroudColor:YLZColorWhite];

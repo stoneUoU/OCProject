@@ -461,6 +461,7 @@ static CGFloat const kLoginMargin = 32.0;
         _agreementButton = [YLZEnlargeButton buttonWithType:UIButtonTypeCustom];
         [_agreementButton setImage:[UIImage imageNamed:@"ylz_agreement_select"] forState:UIControlStateNormal];
         [_agreementButton setImage:[UIImage imageNamed:@"ylz_agreement_selected"] forState:UIControlStateSelected];
+        _agreementButton.enlargeEdge_ylz = UIEdgeInsetsMake(5, 5, 5, 5);
         [_agreementButton addTarget:self action:@selector(btnAgreeMentClick) forControlEvents:UIControlEventTouchUpInside];
     }
     return _agreementButton;

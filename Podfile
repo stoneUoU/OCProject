@@ -18,6 +18,7 @@ target 'OCProject' do
   pod 'Toast', '4.0.0'
   pod 'SDWebImage', '5.1.1'
   pod 'SVProgressHUD', '2.2.5'
+  pod 'MBProgressHUD', '~> 1.1.0'
   pod 'YYKit', '1.0.9'
   pod 'IQKeyboardManager', '6.5.6'
   pod 'Aspects', '1.4.1'

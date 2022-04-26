@@ -1677,28 +1677,12 @@
 		8ECBC2A5281787FE00071F21 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				8ECBC2D22817DE8500071F21 /* CodeView */,
+				8ECBC2D12817DE4C00071F21 /* FooterView */,
+				8ECBC2D02817DE4100071F21 /* HeaderView */,
+				8ECBC2CF2817DE1000071F21 /* TableViewCell */,
 				8ECBC2AB2817883F00071F21 /* YLZRouteCodeView.h */,
 				8ECBC2AC2817883F00071F21 /* YLZRouteCodeView.m */,
-				8ECBC2B42817889C00071F21 /* YLZRouteCodeLoadingCell.h */,
-				8ECBC2B52817889C00071F21 /* YLZRouteCodeLoadingCell.m */,
-				8ECBC2B7281788AD00071F21 /* YLZRouteCodeCell.h */,
-				8ECBC2B8281788AD00071F21 /* YLZRouteCodeCell.m */,
-				8ECBC2B12817888A00071F21 /* YLZRouteCodeRecordCell.h */,
-				8ECBC2B22817888A00071F21 /* YLZRouteCodeRecordCell.m */,
-				8ECBC2C32817970C00071F21 /* YLZRouteCodeCellInfoView.h */,
-				8ECBC2C42817970C00071F21 /* YLZRouteCodeCellInfoView.m */,
-				8ECBC2C62817972100071F21 /* YLZRouteCodeCellBottomView.h */,
-				8ECBC2C72817972100071F21 /* YLZRouteCodeCellBottomView.m */,
-				8ECBC2C928179B4B00071F21 /* YLZRouteCodeCellLoadingView.h */,
-				8ECBC2CA28179B4B00071F21 /* YLZRouteCodeCellLoadingView.m */,
-				8ECBC2CC28179EA900071F21 /* YLZRouteCodeCellView.h */,
-				8ECBC2CD28179EA900071F21 /* YLZRouteCodeCellView.m */,
-				8ECBC2AE2817887700071F21 /* YLZRouteCodeInfoCell.h */,
-				8ECBC2AF2817887700071F21 /* YLZRouteCodeInfoCell.m */,
-				8ECBC2BD281789AC00071F21 /* YLZRouteCodeTableHeaderView.h */,
-				8ECBC2BE281789AC00071F21 /* YLZRouteCodeTableHeaderView.m */,
-				8ECBC2BA2817899D00071F21 /* YLZRouteCodeTableFooterView.h */,
-				8ECBC2BB2817899D00071F21 /* YLZRouteCodeTableFooterView.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -1710,6 +1694,54 @@
 				8ECBC2A82817882900071F21 /* YLZRouteCodeViewController.m */,
 			);
 			path = Controller;
+			sourceTree = "<group>";
+		};
+		8ECBC2CF2817DE1000071F21 /* TableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				8ECBC2B42817889C00071F21 /* YLZRouteCodeLoadingCell.h */,
+				8ECBC2B52817889C00071F21 /* YLZRouteCodeLoadingCell.m */,
+				8ECBC2B7281788AD00071F21 /* YLZRouteCodeCell.h */,
+				8ECBC2B8281788AD00071F21 /* YLZRouteCodeCell.m */,
+				8ECBC2B12817888A00071F21 /* YLZRouteCodeRecordCell.h */,
+				8ECBC2B22817888A00071F21 /* YLZRouteCodeRecordCell.m */,
+				8ECBC2AE2817887700071F21 /* YLZRouteCodeInfoCell.h */,
+				8ECBC2AF2817887700071F21 /* YLZRouteCodeInfoCell.m */,
+			);
+			path = TableViewCell;
+			sourceTree = "<group>";
+		};
+		8ECBC2D02817DE4100071F21 /* HeaderView */ = {
+			isa = PBXGroup;
+			children = (
+				8ECBC2BD281789AC00071F21 /* YLZRouteCodeTableHeaderView.h */,
+				8ECBC2BE281789AC00071F21 /* YLZRouteCodeTableHeaderView.m */,
+			);
+			path = HeaderView;
+			sourceTree = "<group>";
+		};
+		8ECBC2D12817DE4C00071F21 /* FooterView */ = {
+			isa = PBXGroup;
+			children = (
+				8ECBC2BA2817899D00071F21 /* YLZRouteCodeTableFooterView.h */,
+				8ECBC2BB2817899D00071F21 /* YLZRouteCodeTableFooterView.m */,
+			);
+			path = FooterView;
+			sourceTree = "<group>";
+		};
+		8ECBC2D22817DE8500071F21 /* CodeView */ = {
+			isa = PBXGroup;
+			children = (
+				8ECBC2C32817970C00071F21 /* YLZRouteCodeCellInfoView.h */,
+				8ECBC2C42817970C00071F21 /* YLZRouteCodeCellInfoView.m */,
+				8ECBC2C62817972100071F21 /* YLZRouteCodeCellBottomView.h */,
+				8ECBC2C72817972100071F21 /* YLZRouteCodeCellBottomView.m */,
+				8ECBC2C928179B4B00071F21 /* YLZRouteCodeCellLoadingView.h */,
+				8ECBC2CA28179B4B00071F21 /* YLZRouteCodeCellLoadingView.m */,
+				8ECBC2CC28179EA900071F21 /* YLZRouteCodeCellView.h */,
+				8ECBC2CD28179EA900071F21 /* YLZRouteCodeCellView.m */,
+			);
+			path = CodeView;
 			sourceTree = "<group>";
 		};
 		8EFB12A8265BB44F007D9FE1 = {
