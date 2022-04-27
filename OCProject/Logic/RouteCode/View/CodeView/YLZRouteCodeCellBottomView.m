@@ -13,6 +13,8 @@
 
 @property (nonatomic, strong) UIImageView *rightIconImageView;
 
+@property (nonatomic, strong) UIImageView *dashImageView;
+
 @property (nonatomic, strong) UILabel *searchLabel;
 
 @property (nonatomic, strong) UIImageView *arrowIconImageView;
@@ -48,6 +50,7 @@
 - (void)setUI {
     [self addSubview:self.leftIconImageView];
     [self addSubview:self.rightIconImageView];
+    [self addSubview:self.dashImageView];
     [self addSubview:self.searchLabel];
     [self addSubview:self.arrowIconImageView];
     [self addSubview:self.infoLabel];
@@ -79,6 +82,7 @@
      [self.processImageView mas_makeConstraints:^(MASConstraintMaker *make) {
          make.bottom.right.equalTo(self);
      }];
+     [YLZImageExtent drawLineByImageView:self.dashImageView withDashColor:YLZColorTitleThree];
 }
     
 #pragma mark - IB-Action
@@ -142,6 +146,14 @@
         _processImageView.image = [UIImage imageNamed:@"ylz_process"];
     }
     return _processImageView;
+}
+
+- (UIImageView *)dashImageView {
+    if(_dashImageView == nil) {
+        _dashImageView = [[UIImageView alloc] init];
+        _dashImageView.frame = CGRectMake(16, 16, SCREENWIDTH - (48+32), 2);
+    }
+    return _dashImageView;
 }
 
 @end
