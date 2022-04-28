@@ -6,6 +6,7 @@
 //
 
 #import "YLZRouteCodeCellBottomView.h"
+#import "YLZKitCategory.h"
 
 @interface YLZRouteCodeCellBottomView()
 
