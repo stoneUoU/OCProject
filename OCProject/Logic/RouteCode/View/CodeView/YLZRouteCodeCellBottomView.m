@@ -83,7 +83,7 @@
      [self.processImageView mas_makeConstraints:^(MASConstraintMaker *make) {
          make.bottom.right.equalTo(self);
      }];
-     [YLZImageExtent drawLineByImageView:self.dashImageView withDashColor:YLZColorTitleThree];
+     [YLZImageHelper drawLineByImageView:self.dashImageView withDashColor:YLZColorTitleThree];
 }
     
 #pragma mark - IB-Action

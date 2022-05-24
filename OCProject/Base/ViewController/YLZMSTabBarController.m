@@ -6,7 +6,7 @@
 //
 
 #import "YLZMSTabBarController.h"
-#import "YLZImageExtent.h"
+#import "YLZImageHelper.h"
 #import "YLZMSTabBar.h"
 
 #import <YYKit/YYKit.h>
@@ -45,8 +45,8 @@
     if (!childVc) {
         return;
     }
-    childVc.tabBarItem.image = [YLZImageExtent imageWithOriRenderingImage:imageName];
-    childVc.tabBarItem.selectedImage = [YLZImageExtent imageWithOriRenderingImage:selectedImageName];
+    childVc.tabBarItem.image = [YLZImageHelper imageWithOriRenderingImage:imageName];
+    childVc.tabBarItem.selectedImage = [YLZImageHelper imageWithOriRenderingImage:selectedImageName];
     childVc.tabBarItem.imageInsets = UIEdgeInsetsMake(12, 0, 0, 0);
     UINavigationController *navi = [[UINavigationController alloc] initWithRootViewController:childVc];
     [self addChildViewController:navi];

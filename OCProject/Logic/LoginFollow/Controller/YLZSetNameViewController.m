@@ -115,7 +115,7 @@ static CGFloat const kMargin = 24.0;
 
 - (void)toDone:(UIButton *)sender {
     YLZSetAreaViewController *vc = [[YLZSetAreaViewController alloc] init];
-    [[YLZPageExtent sharedInstance] pushExistingViewController:vc withParam:@{@"gender":@(self.gender)}];
+    [[YLZPageHelper sharedInstance] pushExistingViewController:vc withParam:@{@"gender":@(self.gender)}];
 }
 
 - (void)textFieldChange:(UITextField *)textField {

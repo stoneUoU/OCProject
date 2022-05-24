@@ -127,63 +127,63 @@
     
     //设置：
 //    YLZSettingViewController *vc = [[YLZSettingViewController alloc] init];
-//    [[YLZPageExtent sharedInstance] pushExistingViewController:vc];
+//    [[YLZPageHelper sharedInstance] pushExistingViewController:vc];
     
 //    //隐私设置：
 //    YLZSecretSettingViewController *vc = [[YLZSecretSettingViewController alloc] init];
-//    [[YLZPageExtent sharedInstance] pushExistingViewController:vc];
+//    [[YLZPageHelper sharedInstance] pushExistingViewController:vc];
     
     //添加我的方式：
 //    YLZAddMeMethodViewController *vc = [[YLZAddMeMethodViewController alloc] init];
-//    [[YLZPageExtent sharedInstance] pushExistingViewController:vc];
+//    [[YLZPageHelper sharedInstance] pushExistingViewController:vc];
     
     //黑名单：
 //    YLZBlacklistViewController *vc = [[YLZBlacklistViewController alloc] init];
-//    [[YLZPageExtent sharedInstance] pushExistingViewController:vc];
+//    [[YLZPageHelper sharedInstance] pushExistingViewController:vc];
     
     //密码修改：
 //    YLZChangePasswordViewController *vc = [[YLZChangePasswordViewController alloc] init];
-//    [[YLZPageExtent sharedInstance] pushExistingViewController:vc];
+//    [[YLZPageHelper sharedInstance] pushExistingViewController:vc];
     
     //切换帐号：
 //    YLZSwitchAccountViewController *vc = [[YLZSwitchAccountViewController alloc] init];
-//    [[YLZPageExtent sharedInstance] pushExistingViewController:vc];
+//    [[YLZPageHelper sharedInstance] pushExistingViewController:vc];
     
     //添加帐号：
 //    YLZAddAccountViewController *vc = [[YLZAddAccountViewController alloc] init];
-//    [[YLZPageExtent sharedInstance] pushExistingViewController:vc];
+//    [[YLZPageHelper sharedInstance] pushExistingViewController:vc];
     
 //    //意见反馈
 //    YLZFeedBackViewController *vc = [[YLZFeedBackViewController alloc] init];
-//    [[YLZPageExtent sharedInstance] pushExistingViewController:vc];
+//    [[YLZPageHelper sharedInstance] pushExistingViewController:vc];
     
     //更改绑定手机号
 //    YLZChangePhoneViewController *vc = [[YLZChangePhoneViewController alloc] init];
-//    [[YLZPageExtent sharedInstance] pushExistingViewController:vc];
+//    [[YLZPageHelper sharedInstance] pushExistingViewController:vc];
     
     //绑定手机号：
 //    YLZBindPhoneViewController *vc = [[YLZBindPhoneViewController alloc] init];
-//    [[YLZPageExtent sharedInstance] pushExistingViewController:vc];
+//    [[YLZPageHelper sharedInstance] pushExistingViewController:vc];
     
     //登录：
 //    YLZLoginViewController *vc = [[YLZLoginViewController alloc] init];
-//    [[YLZPageExtent sharedInstance] presentExistingViewController:vc];
+//    [[YLZPageHelper sharedInstance] presentExistingViewController:vc];
     
 //    //待处理：
 //    YLZPendingViewController *vc = [[YLZPendingViewController alloc] init];
-//    [[YLZPageExtent sharedInstance] pushExistingViewController:vc];
+//    [[YLZPageHelper sharedInstance] pushExistingViewController:vc];
     
     //待审核：
 //    YLZReviewingViewController *vc = [[YLZReviewingViewController alloc] init];
-//    [[YLZPageExtent sharedInstance] pushExistingViewController:vc];
+//    [[YLZPageHelper sharedInstance] pushExistingViewController:vc];
     
     //被邀请：
 //    YLZInvitedViewController *vc = [[YLZInvitedViewController alloc] init];
-//    [[YLZPageExtent sharedInstance] pushExistingViewController:vc];
+//    [[YLZPageHelper sharedInstance] pushExistingViewController:vc];
     
     //新增关注：
     YLZNewFollowViewController *vc = [[YLZNewFollowViewController alloc] init];
-    [[YLZPageExtent sharedInstance] pushExistingViewController:vc];
+    [[YLZPageHelper sharedInstance] pushExistingViewController:vc];
 }
 
 - (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {

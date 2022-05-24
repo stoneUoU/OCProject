@@ -142,7 +142,7 @@ static CGFloat const kMargin = 24.0;
 
 - (void)toDone:(UIButton *)sender {
     YLZSetCollegeViewController *vc = [[YLZSetCollegeViewController alloc] init];
-    [[YLZPageExtent sharedInstance] pushExistingViewController:vc withParam:nil];
+    [[YLZPageHelper sharedInstance] pushExistingViewController:vc withParam:nil];
 }
 
 - (void)textFieldChange:(UITextField *)textField {

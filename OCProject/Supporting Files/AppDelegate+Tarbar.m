@@ -78,7 +78,7 @@
 
 - (void)toRouterWithExsitTopController {
     UINavigationController *vc = [[UINavigationController alloc] initWithRootViewController:[[YLZLoginViewController alloc] init]];
-    [[YLZPageExtent sharedInstance] presentExistingViewController:vc];
+    [[YLZPageHelper sharedInstance] presentExistingViewController:vc];
 }
 
 #pragma mark - Delegate

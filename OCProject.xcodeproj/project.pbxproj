@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		63F60B96E8187744865B5169 /* libPods-OCProject.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4D4A4AD40EFD34FFB4CE26F2 /* libPods-OCProject.a */; };
 		8E150BDF27B5031F00CBD777 /* YLZFile.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E150BDE27B5031F00CBD777 /* YLZFile.m */; };
-		8E150BE227B5038300CBD777 /* YLZFileManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E150BE127B5038300CBD777 /* YLZFileManager.m */; };
+		8E150BE227B5038300CBD777 /* YLZFileHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E150BE127B5038300CBD777 /* YLZFileHelper.m */; };
 		8E42431D265CA2F800E5A4A5 /* YLZMSTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E42431C265CA2F800E5A4A5 /* YLZMSTabBar.m */; };
 		8E424358265CEA1F00E5A4A5 /* YLZMSTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E424357265CEA1F00E5A4A5 /* YLZMSTabBarController.m */; };
 		8E424360265CEB2F00E5A4A5 /* AppDelegate+Tarbar.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E42435F265CEB2F00E5A4A5 /* AppDelegate+Tarbar.m */; };
@@ -30,17 +30,15 @@
 		8E4243AA265CF04600E5A4A5 /* NSString+YLZExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E424393265CF04600E5A4A5 /* NSString+YLZExtension.m */; };
 		8E4243AB265CF04600E5A4A5 /* NSTimer+YLZPluto.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E424395265CF04600E5A4A5 /* NSTimer+YLZPluto.m */; };
 		8E4243AC265CF04600E5A4A5 /* YLZWeakProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E424396265CF04600E5A4A5 /* YLZWeakProxy.m */; };
-		8E4243CA265CF22400E5A4A5 /* YLZProgressHUDExtent.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E4243B3265CF22400E5A4A5 /* YLZProgressHUDExtent.m */; };
+		8E4243CA265CF22400E5A4A5 /* YLZProgressHUDHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E4243B3265CF22400E5A4A5 /* YLZProgressHUDHelper.m */; };
 		8E4243CB265CF22400E5A4A5 /* YLZEnlargeButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E4243B7265CF22400E5A4A5 /* YLZEnlargeButton.m */; };
 		8E4243CC265CF22400E5A4A5 /* YLZPaddingLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E4243BA265CF22400E5A4A5 /* YLZPaddingLabel.m */; };
-		8E4243CD265CF22400E5A4A5 /* YLZViewExtent.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E4243BD265CF22400E5A4A5 /* YLZViewExtent.m */; };
-		8E4243CE265CF22400E5A4A5 /* YLZImageExtent.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E4243BF265CF22400E5A4A5 /* YLZImageExtent.m */; };
-		8E4243CF265CF22400E5A4A5 /* YLZJson.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E4243C3265CF22400E5A4A5 /* YLZJson.m */; };
+		8E4243CD265CF22400E5A4A5 /* YLZViewHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E4243BD265CF22400E5A4A5 /* YLZViewHelper.m */; };
+		8E4243CE265CF22400E5A4A5 /* YLZImageHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E4243BF265CF22400E5A4A5 /* YLZImageHelper.m */; };
+		8E4243CF265CF22400E5A4A5 /* YLZJsonHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E4243C3265CF22400E5A4A5 /* YLZJsonHelper.m */; };
 		8E4243D1265CF22400E5A4A5 /* YLZFont.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E4243C7265CF22400E5A4A5 /* YLZFont.m */; };
-		8E4243D8265CF75B00E5A4A5 /* YLZViewFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E4243D7265CF75B00E5A4A5 /* YLZViewFactory.m */; };
-		8E4243DD265CF78400E5A4A5 /* YLZPageFunction.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E4243DC265CF78400E5A4A5 /* YLZPageFunction.m */; };
-		8E4243E1265CF7BF00E5A4A5 /* YLZFormat.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E4243E0265CF7BF00E5A4A5 /* YLZFormat.m */; };
-		8E4243E5265CF83100E5A4A5 /* YLZValidated.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E4243E4265CF83100E5A4A5 /* YLZValidated.m */; };
+		8E4243E1265CF7BF00E5A4A5 /* YLZFormatHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E4243E0265CF7BF00E5A4A5 /* YLZFormatHelper.m */; };
+		8E4243E5265CF83100E5A4A5 /* YLZRegExpHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E4243E4265CF83100E5A4A5 /* YLZRegExpHelper.m */; };
 		8E4243EB265CF8F500E5A4A5 /* YLZNetWork.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E4243EA265CF8F500E5A4A5 /* YLZNetWork.m */; };
 		8E46904926EB57B0004EDD58 /* YLZHomeModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E46904826EB57B0004EDD58 /* YLZHomeModel.m */; };
 		8E5200CD26FD77D7000EBCEB /* YLZHealthCodeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E5200CC26FD77D7000EBCEB /* YLZHealthCodeViewController.m */; };
@@ -48,8 +46,8 @@
 		8E5200D326FDA502000EBCEB /* YLZHealthCodeInfoTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E5200D226FDA502000EBCEB /* YLZHealthCodeInfoTableViewCell.m */; };
 		8E5200D626FDAC71000EBCEB /* YLZHealthCodeTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E5200D526FDAC71000EBCEB /* YLZHealthCodeTableViewCell.m */; };
 		8E5200D926FDACC8000EBCEB /* YLZHealthCodeCheckTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E5200D826FDACC8000EBCEB /* YLZHealthCodeCheckTableViewCell.m */; };
-		8E5200DD26FDC636000EBCEB /* YLZTimer.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E5200DC26FDC636000EBCEB /* YLZTimer.m */; };
-		8E5200E226FDCCEA000EBCEB /* YLZQrcodeExtent.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E5200E126FDCCEA000EBCEB /* YLZQrcodeExtent.m */; };
+		8E5200DD26FDC636000EBCEB /* YLZTimerHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E5200DC26FDC636000EBCEB /* YLZTimerHelper.m */; };
+		8E5200E226FDCCEA000EBCEB /* YLZQrcodeHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E5200E126FDCCEA000EBCEB /* YLZQrcodeHelper.m */; };
 		8E5200E626FDF444000EBCEB /* YLZHealthCodeCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E5200E526FDF444000EBCEB /* YLZHealthCodeCollectionViewCell.m */; };
 		8E5200E926FDF46C000EBCEB /* YLZHealthCodeServiceTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E5200E826FDF46C000EBCEB /* YLZHealthCodeServiceTableViewCell.m */; };
 		8E5200EC26FDF4AD000EBCEB /* YLZHealthCodeSourceTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E5200EB26FDF4AD000EBCEB /* YLZHealthCodeSourceTableViewCell.m */; };
@@ -89,10 +87,10 @@
 		8E67D14A269317D700BF476D /* YLZMomentRecommendViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E67D149269317D700BF476D /* YLZMomentRecommendViewController.m */; };
 		8E79CDD9268EE5CF00E71F17 /* YLZBaseDefaults.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E79CDD8268EE5CF00E71F17 /* YLZBaseDefaults.m */; };
 		8E79CDDF268EE67E00E71F17 /* YLZLocalData.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E79CDDE268EE67E00E71F17 /* YLZLocalData.m */; };
-		8E79CDE3268EE71D00E71F17 /* YLZLocalData+ylz.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E79CDE2268EE71D00E71F17 /* YLZLocalData+ylz.m */; };
+		8E79CDE3268EE71D00E71F17 /* YLZLocalData+Store.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E79CDE2268EE71D00E71F17 /* YLZLocalData+Store.m */; };
 		8E79CDE7268EE84000E71F17 /* YLZUserBaseInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E79CDE6268EE84000E71F17 /* YLZUserBaseInfo.m */; };
 		8E79CDED268EE97000E71F17 /* YLZBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E79CDEC268EE97000E71F17 /* YLZBaseViewController.m */; };
-		8E79CDF2268EF1A500E71F17 /* YLZPageExtent.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E79CDF1268EF1A500E71F17 /* YLZPageExtent.m */; };
+		8E79CDF2268EF1A500E71F17 /* YLZPageHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E79CDF1268EF1A500E71F17 /* YLZPageHelper.m */; };
 		8E79CDF7268EF21B00E71F17 /* YLZMediator.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E79CDF6268EF21B00E71F17 /* YLZMediator.m */; };
 		8E79CDFF268EF34300E71F17 /* UIViewController+YLZMediator.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E79CDFE268EF34300E71F17 /* UIViewController+YLZMediator.m */; };
 		8E79CE0B268EF57000E71F17 /* YLZMineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E79CE0A268EF57000E71F17 /* YLZMineViewController.m */; };
@@ -148,6 +146,7 @@
 		8E8482042691E3B8005CCA34 /* YLZMessageCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E8482032691E3B8005CCA34 /* YLZMessageCollectionViewCell.m */; };
 		8E8482082691E3D5005CCA34 /* YLZMessageTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E8482072691E3D5005CCA34 /* YLZMessageTableViewCell.m */; };
 		8E84820C2691FD21005CCA34 /* YLZMomentOnePhotoTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E84820B2691FD21005CCA34 /* YLZMomentOnePhotoTableViewCell.m */; };
+		8E97D91A283C7AD8004850C7 /* YLZBaseModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E97D919283C7AD8004850C7 /* YLZBaseModel.m */; };
 		8E9DD3FE2690359900D13F09 /* YLZSettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E9DD3FD2690359900D13F09 /* YLZSettingViewController.m */; };
 		8E9DD404269035CB00D13F09 /* YLZSettingModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E9DD403269035CB00D13F09 /* YLZSettingModel.m */; };
 		8E9DD4092690381500D13F09 /* YLZSettingTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E9DD4082690381500D13F09 /* YLZSettingTableViewCell.m */; };
@@ -197,8 +196,8 @@
 		4D4A4AD40EFD34FFB4CE26F2 /* libPods-OCProject.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-OCProject.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8E150BDD27B5031F00CBD777 /* YLZFile.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YLZFile.h; sourceTree = "<group>"; };
 		8E150BDE27B5031F00CBD777 /* YLZFile.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YLZFile.m; sourceTree = "<group>"; };
-		8E150BE027B5038300CBD777 /* YLZFileManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YLZFileManager.h; sourceTree = "<group>"; };
-		8E150BE127B5038300CBD777 /* YLZFileManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YLZFileManager.m; sourceTree = "<group>"; };
+		8E150BE027B5038300CBD777 /* YLZFileHelper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YLZFileHelper.h; sourceTree = "<group>"; };
+		8E150BE127B5038300CBD777 /* YLZFileHelper.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YLZFileHelper.m; sourceTree = "<group>"; };
 		8E424303265C9C9D00E5A4A5 /* CommFiles.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CommFiles.pch; sourceTree = "<group>"; };
 		8E424304265C9CCA00E5A4A5 /* Macros.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Macros.h; sourceTree = "<group>"; };
 		8E42431B265CA2F800E5A4A5 /* YLZMSTabBar.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YLZMSTabBar.h; sourceTree = "<group>"; };
@@ -243,29 +242,25 @@
 		8E424396265CF04600E5A4A5 /* YLZWeakProxy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YLZWeakProxy.m; sourceTree = "<group>"; };
 		8E424397265CF04600E5A4A5 /* NSTimer+YLZPluto.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSTimer+YLZPluto.h"; sourceTree = "<group>"; };
 		8E424398265CF04600E5A4A5 /* YLZWeakProxy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YLZWeakProxy.h; sourceTree = "<group>"; };
-		8E4243B3265CF22400E5A4A5 /* YLZProgressHUDExtent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YLZProgressHUDExtent.m; sourceTree = "<group>"; };
-		8E4243B4265CF22400E5A4A5 /* YLZProgressHUDExtent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YLZProgressHUDExtent.h; sourceTree = "<group>"; };
+		8E4243B3265CF22400E5A4A5 /* YLZProgressHUDHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YLZProgressHUDHelper.m; sourceTree = "<group>"; };
+		8E4243B4265CF22400E5A4A5 /* YLZProgressHUDHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YLZProgressHUDHelper.h; sourceTree = "<group>"; };
 		8E4243B6265CF22400E5A4A5 /* YLZEnlargeButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YLZEnlargeButton.h; sourceTree = "<group>"; };
 		8E4243B7265CF22400E5A4A5 /* YLZEnlargeButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YLZEnlargeButton.m; sourceTree = "<group>"; };
 		8E4243B9265CF22400E5A4A5 /* YLZPaddingLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YLZPaddingLabel.h; sourceTree = "<group>"; };
 		8E4243BA265CF22400E5A4A5 /* YLZPaddingLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YLZPaddingLabel.m; sourceTree = "<group>"; };
-		8E4243BC265CF22400E5A4A5 /* YLZViewExtent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YLZViewExtent.h; sourceTree = "<group>"; };
-		8E4243BD265CF22400E5A4A5 /* YLZViewExtent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YLZViewExtent.m; sourceTree = "<group>"; };
-		8E4243BF265CF22400E5A4A5 /* YLZImageExtent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YLZImageExtent.m; sourceTree = "<group>"; };
-		8E4243C0265CF22400E5A4A5 /* YLZImageExtent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YLZImageExtent.h; sourceTree = "<group>"; };
-		8E4243C2265CF22400E5A4A5 /* YLZJson.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YLZJson.h; sourceTree = "<group>"; };
-		8E4243C3265CF22400E5A4A5 /* YLZJson.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YLZJson.m; sourceTree = "<group>"; };
+		8E4243BC265CF22400E5A4A5 /* YLZViewHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YLZViewHelper.h; sourceTree = "<group>"; };
+		8E4243BD265CF22400E5A4A5 /* YLZViewHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YLZViewHelper.m; sourceTree = "<group>"; };
+		8E4243BF265CF22400E5A4A5 /* YLZImageHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YLZImageHelper.m; sourceTree = "<group>"; };
+		8E4243C0265CF22400E5A4A5 /* YLZImageHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YLZImageHelper.h; sourceTree = "<group>"; };
+		8E4243C2265CF22400E5A4A5 /* YLZJsonHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YLZJsonHelper.h; sourceTree = "<group>"; };
+		8E4243C3265CF22400E5A4A5 /* YLZJsonHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YLZJsonHelper.m; sourceTree = "<group>"; };
 		8E4243C6265CF22400E5A4A5 /* YLZFont.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YLZFont.h; sourceTree = "<group>"; };
 		8E4243C7265CF22400E5A4A5 /* YLZFont.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YLZFont.m; sourceTree = "<group>"; };
 		8E4243C9265CF22400E5A4A5 /* YLZKitCategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YLZKitCategory.h; sourceTree = "<group>"; };
-		8E4243D6265CF75B00E5A4A5 /* YLZViewFactory.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YLZViewFactory.h; sourceTree = "<group>"; };
-		8E4243D7265CF75B00E5A4A5 /* YLZViewFactory.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YLZViewFactory.m; sourceTree = "<group>"; };
-		8E4243DB265CF78400E5A4A5 /* YLZPageFunction.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YLZPageFunction.h; sourceTree = "<group>"; };
-		8E4243DC265CF78400E5A4A5 /* YLZPageFunction.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YLZPageFunction.m; sourceTree = "<group>"; };
-		8E4243DF265CF7BF00E5A4A5 /* YLZFormat.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YLZFormat.h; sourceTree = "<group>"; };
-		8E4243E0265CF7BF00E5A4A5 /* YLZFormat.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YLZFormat.m; sourceTree = "<group>"; };
-		8E4243E3265CF83100E5A4A5 /* YLZValidated.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YLZValidated.h; sourceTree = "<group>"; };
-		8E4243E4265CF83100E5A4A5 /* YLZValidated.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YLZValidated.m; sourceTree = "<group>"; };
+		8E4243DF265CF7BF00E5A4A5 /* YLZFormatHelper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YLZFormatHelper.h; sourceTree = "<group>"; };
+		8E4243E0265CF7BF00E5A4A5 /* YLZFormatHelper.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YLZFormatHelper.m; sourceTree = "<group>"; };
+		8E4243E3265CF83100E5A4A5 /* YLZRegExpHelper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YLZRegExpHelper.h; sourceTree = "<group>"; };
+		8E4243E4265CF83100E5A4A5 /* YLZRegExpHelper.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YLZRegExpHelper.m; sourceTree = "<group>"; };
 		8E4243E9265CF8F500E5A4A5 /* YLZNetWork.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YLZNetWork.h; sourceTree = "<group>"; };
 		8E4243EA265CF8F500E5A4A5 /* YLZNetWork.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YLZNetWork.m; sourceTree = "<group>"; };
 		8E46904726EB57B0004EDD58 /* YLZHomeModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YLZHomeModel.h; sourceTree = "<group>"; };
@@ -280,10 +275,10 @@
 		8E5200D526FDAC71000EBCEB /* YLZHealthCodeTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YLZHealthCodeTableViewCell.m; sourceTree = "<group>"; };
 		8E5200D726FDACC8000EBCEB /* YLZHealthCodeCheckTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YLZHealthCodeCheckTableViewCell.h; sourceTree = "<group>"; };
 		8E5200D826FDACC8000EBCEB /* YLZHealthCodeCheckTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YLZHealthCodeCheckTableViewCell.m; sourceTree = "<group>"; };
-		8E5200DB26FDC636000EBCEB /* YLZTimer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YLZTimer.h; sourceTree = "<group>"; };
-		8E5200DC26FDC636000EBCEB /* YLZTimer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YLZTimer.m; sourceTree = "<group>"; };
-		8E5200E026FDCCEA000EBCEB /* YLZQrcodeExtent.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YLZQrcodeExtent.h; sourceTree = "<group>"; };
-		8E5200E126FDCCEA000EBCEB /* YLZQrcodeExtent.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YLZQrcodeExtent.m; sourceTree = "<group>"; };
+		8E5200DB26FDC636000EBCEB /* YLZTimerHelper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YLZTimerHelper.h; sourceTree = "<group>"; };
+		8E5200DC26FDC636000EBCEB /* YLZTimerHelper.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YLZTimerHelper.m; sourceTree = "<group>"; };
+		8E5200E026FDCCEA000EBCEB /* YLZQrcodeHelper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YLZQrcodeHelper.h; sourceTree = "<group>"; };
+		8E5200E126FDCCEA000EBCEB /* YLZQrcodeHelper.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YLZQrcodeHelper.m; sourceTree = "<group>"; };
 		8E5200E426FDF444000EBCEB /* YLZHealthCodeCollectionViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YLZHealthCodeCollectionViewCell.h; sourceTree = "<group>"; };
 		8E5200E526FDF444000EBCEB /* YLZHealthCodeCollectionViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YLZHealthCodeCollectionViewCell.m; sourceTree = "<group>"; };
 		8E5200E726FDF46C000EBCEB /* YLZHealthCodeServiceTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YLZHealthCodeServiceTableViewCell.h; sourceTree = "<group>"; };
@@ -362,14 +357,14 @@
 		8E79CDD8268EE5CF00E71F17 /* YLZBaseDefaults.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YLZBaseDefaults.m; sourceTree = "<group>"; };
 		8E79CDDD268EE67E00E71F17 /* YLZLocalData.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YLZLocalData.h; sourceTree = "<group>"; };
 		8E79CDDE268EE67E00E71F17 /* YLZLocalData.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YLZLocalData.m; sourceTree = "<group>"; };
-		8E79CDE1268EE71D00E71F17 /* YLZLocalData+ylz.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "YLZLocalData+ylz.h"; sourceTree = "<group>"; };
-		8E79CDE2268EE71D00E71F17 /* YLZLocalData+ylz.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "YLZLocalData+ylz.m"; sourceTree = "<group>"; };
+		8E79CDE1268EE71D00E71F17 /* YLZLocalData+Store.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "YLZLocalData+Store.h"; sourceTree = "<group>"; };
+		8E79CDE2268EE71D00E71F17 /* YLZLocalData+Store.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "YLZLocalData+Store.m"; sourceTree = "<group>"; };
 		8E79CDE5268EE84000E71F17 /* YLZUserBaseInfo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YLZUserBaseInfo.h; sourceTree = "<group>"; };
 		8E79CDE6268EE84000E71F17 /* YLZUserBaseInfo.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YLZUserBaseInfo.m; sourceTree = "<group>"; };
 		8E79CDEB268EE97000E71F17 /* YLZBaseViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YLZBaseViewController.h; sourceTree = "<group>"; };
 		8E79CDEC268EE97000E71F17 /* YLZBaseViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YLZBaseViewController.m; sourceTree = "<group>"; };
-		8E79CDF0268EF1A500E71F17 /* YLZPageExtent.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YLZPageExtent.h; sourceTree = "<group>"; };
-		8E79CDF1268EF1A500E71F17 /* YLZPageExtent.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YLZPageExtent.m; sourceTree = "<group>"; };
+		8E79CDF0268EF1A500E71F17 /* YLZPageHelper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YLZPageHelper.h; sourceTree = "<group>"; };
+		8E79CDF1268EF1A500E71F17 /* YLZPageHelper.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YLZPageHelper.m; sourceTree = "<group>"; };
 		8E79CDF5268EF21B00E71F17 /* YLZMediator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YLZMediator.h; sourceTree = "<group>"; };
 		8E79CDF6268EF21B00E71F17 /* YLZMediator.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YLZMediator.m; sourceTree = "<group>"; };
 		8E79CDFD268EF34300E71F17 /* UIViewController+YLZMediator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIViewController+YLZMediator.h"; sourceTree = "<group>"; };
@@ -482,6 +477,8 @@
 		8E8482072691E3D5005CCA34 /* YLZMessageTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YLZMessageTableViewCell.m; sourceTree = "<group>"; };
 		8E84820A2691FD21005CCA34 /* YLZMomentOnePhotoTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YLZMomentOnePhotoTableViewCell.h; sourceTree = "<group>"; };
 		8E84820B2691FD21005CCA34 /* YLZMomentOnePhotoTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YLZMomentOnePhotoTableViewCell.m; sourceTree = "<group>"; };
+		8E97D918283C7AD8004850C7 /* YLZBaseModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YLZBaseModel.h; sourceTree = "<group>"; };
+		8E97D919283C7AD8004850C7 /* YLZBaseModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YLZBaseModel.m; sourceTree = "<group>"; };
 		8E9DD3FC2690359900D13F09 /* YLZSettingViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YLZSettingViewController.h; sourceTree = "<group>"; };
 		8E9DD3FD2690359900D13F09 /* YLZSettingViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YLZSettingViewController.m; sourceTree = "<group>"; };
 		8E9DD402269035CB00D13F09 /* YLZSettingModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YLZSettingModel.h; sourceTree = "<group>"; };
@@ -585,15 +582,15 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		8E150BDC27B502EC00CBD777 /* YLZFileManage */ = {
+		8E150BDC27B502EC00CBD777 /* YLZFile */ = {
 			isa = PBXGroup;
 			children = (
 				8E150BDD27B5031F00CBD777 /* YLZFile.h */,
 				8E150BDE27B5031F00CBD777 /* YLZFile.m */,
-				8E150BE027B5038300CBD777 /* YLZFileManager.h */,
-				8E150BE127B5038300CBD777 /* YLZFileManager.m */,
+				8E150BE027B5038300CBD777 /* YLZFileHelper.h */,
+				8E150BE127B5038300CBD777 /* YLZFileHelper.m */,
 			);
-			path = YLZFileManage;
+			path = YLZFile;
 			sourceTree = "<group>";
 		};
 		8E4242EF265C9AE800E5A4A5 /* Base */ = {
@@ -603,7 +600,7 @@
 				8E9DD401269035B100D13F09 /* Model */,
 				8E4243D5265CF73A00E5A4A5 /* Public */,
 				8E424362265CF04600E5A4A5 /* Category */,
-				8E424320265CA32800E5A4A5 /* Extent */,
+				8E424320265CA32800E5A4A5 /* Helpers */,
 				8E424319265CA2C900E5A4A5 /* View */,
 				8E42430A265C9DE500E5A4A5 /* ViewController */,
 			);
@@ -639,6 +636,8 @@
 		8E424319265CA2C900E5A4A5 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				8E4243B8265CF22400E5A4A5 /* YLZLabel */,
+				8E4243B5265CF22400E5A4A5 /* YLZButton */,
 				8E9DD44A26905C8B00D13F09 /* CustomView */,
 				8E79CE11268EF6CD00E71F17 /* Loading */,
 				8E4243E8265CF8E000E5A4A5 /* Toast */,
@@ -656,25 +655,25 @@
 			path = Tabbar;
 			sourceTree = "<group>";
 		};
-		8E424320265CA32800E5A4A5 /* Extent */ = {
+		8E424320265CA32800E5A4A5 /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
-				8E150BDC27B502EC00CBD777 /* YLZFileManage */,
+				8E97D91C283C7E4A004850C7 /* YLZRegExp */,
+				8E97D91B283C7C28004850C7 /* YLZFormat */,
+				8E150BDC27B502EC00CBD777 /* YLZFile */,
 				8E5200DF26FDCCC9000EBCEB /* YLZQrcode */,
 				8E5200DE26FDCCB1000EBCEB /* YLZTimer */,
 				8E79CDEF268EF17F00E71F17 /* YLZPage */,
 				8E79CDD6268EE59F00E71F17 /* YLZStore */,
 				8E4243C9265CF22400E5A4A5 /* YLZKitCategory.h */,
-				8E4243B5265CF22400E5A4A5 /* YLZButton */,
 				8E4243C4265CF22400E5A4A5 /* YLZFont */,
 				8E4243B2265CF22400E5A4A5 /* YLZHud */,
 				8E4243BE265CF22400E5A4A5 /* YLZImage */,
 				8E4243C1265CF22400E5A4A5 /* YLZJson */,
-				8E4243B8265CF22400E5A4A5 /* YLZLabel */,
 				8E4243BB265CF22400E5A4A5 /* YLZView */,
 				8E42434B265CE8FE00E5A4A5 /* YLZColor */,
 			);
-			path = Extent;
+			path = Helpers;
 			sourceTree = "<group>";
 		};
 		8E42434B265CE8FE00E5A4A5 /* YLZColor */ = {
@@ -820,8 +819,8 @@
 		8E4243B2265CF22400E5A4A5 /* YLZHud */ = {
 			isa = PBXGroup;
 			children = (
-				8E4243B3265CF22400E5A4A5 /* YLZProgressHUDExtent.m */,
-				8E4243B4265CF22400E5A4A5 /* YLZProgressHUDExtent.h */,
+				8E4243B3265CF22400E5A4A5 /* YLZProgressHUDHelper.m */,
+				8E4243B4265CF22400E5A4A5 /* YLZProgressHUDHelper.h */,
 			);
 			path = YLZHud;
 			sourceTree = "<group>";
@@ -847,8 +846,8 @@
 		8E4243BB265CF22400E5A4A5 /* YLZView */ = {
 			isa = PBXGroup;
 			children = (
-				8E4243BC265CF22400E5A4A5 /* YLZViewExtent.h */,
-				8E4243BD265CF22400E5A4A5 /* YLZViewExtent.m */,
+				8E4243BC265CF22400E5A4A5 /* YLZViewHelper.h */,
+				8E4243BD265CF22400E5A4A5 /* YLZViewHelper.m */,
 			);
 			path = YLZView;
 			sourceTree = "<group>";
@@ -856,8 +855,8 @@
 		8E4243BE265CF22400E5A4A5 /* YLZImage */ = {
 			isa = PBXGroup;
 			children = (
-				8E4243BF265CF22400E5A4A5 /* YLZImageExtent.m */,
-				8E4243C0265CF22400E5A4A5 /* YLZImageExtent.h */,
+				8E4243BF265CF22400E5A4A5 /* YLZImageHelper.m */,
+				8E4243C0265CF22400E5A4A5 /* YLZImageHelper.h */,
 			);
 			path = YLZImage;
 			sourceTree = "<group>";
@@ -865,8 +864,8 @@
 		8E4243C1265CF22400E5A4A5 /* YLZJson */ = {
 			isa = PBXGroup;
 			children = (
-				8E4243C2265CF22400E5A4A5 /* YLZJson.h */,
-				8E4243C3265CF22400E5A4A5 /* YLZJson.m */,
+				8E4243C2265CF22400E5A4A5 /* YLZJsonHelper.h */,
+				8E4243C3265CF22400E5A4A5 /* YLZJsonHelper.m */,
 			);
 			path = YLZJson;
 			sourceTree = "<group>";
@@ -883,14 +882,6 @@
 		8E4243D5265CF73A00E5A4A5 /* Public */ = {
 			isa = PBXGroup;
 			children = (
-				8E4243D6265CF75B00E5A4A5 /* YLZViewFactory.h */,
-				8E4243D7265CF75B00E5A4A5 /* YLZViewFactory.m */,
-				8E4243DB265CF78400E5A4A5 /* YLZPageFunction.h */,
-				8E4243DC265CF78400E5A4A5 /* YLZPageFunction.m */,
-				8E4243DF265CF7BF00E5A4A5 /* YLZFormat.h */,
-				8E4243E0265CF7BF00E5A4A5 /* YLZFormat.m */,
-				8E4243E3265CF83100E5A4A5 /* YLZValidated.h */,
-				8E4243E4265CF83100E5A4A5 /* YLZValidated.m */,
 				8E4243E9265CF8F500E5A4A5 /* YLZNetWork.h */,
 				8E4243EA265CF8F500E5A4A5 /* YLZNetWork.m */,
 			);
@@ -956,8 +947,8 @@
 		8E5200DE26FDCCB1000EBCEB /* YLZTimer */ = {
 			isa = PBXGroup;
 			children = (
-				8E5200DB26FDC636000EBCEB /* YLZTimer.h */,
-				8E5200DC26FDC636000EBCEB /* YLZTimer.m */,
+				8E5200DB26FDC636000EBCEB /* YLZTimerHelper.h */,
+				8E5200DC26FDC636000EBCEB /* YLZTimerHelper.m */,
 			);
 			path = YLZTimer;
 			sourceTree = "<group>";
@@ -965,8 +956,8 @@
 		8E5200DF26FDCCC9000EBCEB /* YLZQrcode */ = {
 			isa = PBXGroup;
 			children = (
-				8E5200E026FDCCEA000EBCEB /* YLZQrcodeExtent.h */,
-				8E5200E126FDCCEA000EBCEB /* YLZQrcodeExtent.m */,
+				8E5200E026FDCCEA000EBCEB /* YLZQrcodeHelper.h */,
+				8E5200E126FDCCEA000EBCEB /* YLZQrcodeHelper.m */,
 			);
 			path = YLZQrcode;
 			sourceTree = "<group>";
@@ -1178,8 +1169,8 @@
 				8E79CDE6268EE84000E71F17 /* YLZUserBaseInfo.m */,
 				8E79CDDD268EE67E00E71F17 /* YLZLocalData.h */,
 				8E79CDDE268EE67E00E71F17 /* YLZLocalData.m */,
-				8E79CDE1268EE71D00E71F17 /* YLZLocalData+ylz.h */,
-				8E79CDE2268EE71D00E71F17 /* YLZLocalData+ylz.m */,
+				8E79CDE1268EE71D00E71F17 /* YLZLocalData+Store.h */,
+				8E79CDE2268EE71D00E71F17 /* YLZLocalData+Store.m */,
 			);
 			path = YLZStore;
 			sourceTree = "<group>";
@@ -1187,8 +1178,8 @@
 		8E79CDEF268EF17F00E71F17 /* YLZPage */ = {
 			isa = PBXGroup;
 			children = (
-				8E79CDF0268EF1A500E71F17 /* YLZPageExtent.h */,
-				8E79CDF1268EF1A500E71F17 /* YLZPageExtent.m */,
+				8E79CDF0268EF1A500E71F17 /* YLZPageHelper.h */,
+				8E79CDF1268EF1A500E71F17 /* YLZPageHelper.m */,
 				8E79CDF5268EF21B00E71F17 /* YLZMediator.h */,
 				8E79CDF6268EF21B00E71F17 /* YLZMediator.m */,
 			);
@@ -1567,6 +1558,24 @@
 			path = Controller;
 			sourceTree = "<group>";
 		};
+		8E97D91B283C7C28004850C7 /* YLZFormat */ = {
+			isa = PBXGroup;
+			children = (
+				8E4243DF265CF7BF00E5A4A5 /* YLZFormatHelper.h */,
+				8E4243E0265CF7BF00E5A4A5 /* YLZFormatHelper.m */,
+			);
+			path = YLZFormat;
+			sourceTree = "<group>";
+		};
+		8E97D91C283C7E4A004850C7 /* YLZRegExp */ = {
+			isa = PBXGroup;
+			children = (
+				8E4243E3265CF83100E5A4A5 /* YLZRegExpHelper.h */,
+				8E4243E4265CF83100E5A4A5 /* YLZRegExpHelper.m */,
+			);
+			path = YLZRegExp;
+			sourceTree = "<group>";
+		};
 		8E9DD3FB2690357700D13F09 /* Setting */ = {
 			isa = PBXGroup;
 			children = (
@@ -1583,6 +1592,8 @@
 			children = (
 				8E9DD402269035CB00D13F09 /* YLZSettingModel.h */,
 				8E9DD403269035CB00D13F09 /* YLZSettingModel.m */,
+				8E97D918283C7AD8004850C7 /* YLZBaseModel.h */,
+				8E97D919283C7AD8004850C7 /* YLZBaseModel.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -1938,12 +1949,11 @@
 				8E67D0D4269291BD00BF476D /* YLZMomentFourPhotoTableViewCell.m in Sources */,
 				8E9DD437269056D400D13F09 /* YLZSwitchAccountViewController.m in Sources */,
 				8E4243CB265CF22400E5A4A5 /* YLZEnlargeButton.m in Sources */,
-				8E4243E1265CF7BF00E5A4A5 /* YLZFormat.m in Sources */,
-				8E4243D8265CF75B00E5A4A5 /* YLZViewFactory.m in Sources */,
+				8E4243E1265CF7BF00E5A4A5 /* YLZFormatHelper.m in Sources */,
 				8E42439A265CF04600E5A4A5 /* UIImage+YLZChange.m in Sources */,
 				8E9DD44E26905CBA00D13F09 /* YLZSmsCodeTextFieldView.m in Sources */,
 				8E79CEB2268F13F900E71F17 /* JXCategoryListContainerView.m in Sources */,
-				8E4243E5265CF83100E5A4A5 /* YLZValidated.m in Sources */,
+				8E4243E5265CF83100E5A4A5 /* YLZRegExpHelper.m in Sources */,
 				8E4243A8265CF04600E5A4A5 /* UITextField+YLZExtension.m in Sources */,
 				8ECBC2B62817889C00071F21 /* YLZRouteCodeLoadingCell.m in Sources */,
 				8E4243A4265CF04600E5A4A5 /* UIView+YLZChange.m in Sources */,
@@ -1963,7 +1973,7 @@
 				8E79CE9E268F13F900E71F17 /* JXCategoryIndicatorDotLineView.m in Sources */,
 				8E59B1812691A2A60043073C /* YLZAlertForceView.m in Sources */,
 				8ECBC2CB28179B4B00071F21 /* YLZRouteCodeCellLoadingView.m in Sources */,
-				8E4243CA265CF22400E5A4A5 /* YLZProgressHUDExtent.m in Sources */,
+				8E4243CA265CF22400E5A4A5 /* YLZProgressHUDHelper.m in Sources */,
 				8E8482042691E3B8005CCA34 /* YLZMessageCollectionViewCell.m in Sources */,
 				8E79CEA0268F13F900E71F17 /* JXCategoryIndicatorCellModel.m in Sources */,
 				8E9DD4232690493500D13F09 /* YLZBlacklistViewController.m in Sources */,
@@ -2000,8 +2010,9 @@
 				8E8481ED2691DC23005CCA34 /* YLZMomentModel.m in Sources */,
 				8E4243EB265CF8F500E5A4A5 /* YLZNetWork.m in Sources */,
 				8E42439F265CF04600E5A4A5 /* UIButton+YLZCountDown.m in Sources */,
-				8E150BE227B5038300CBD777 /* YLZFileManager.m in Sources */,
-				8E79CDE3268EE71D00E71F17 /* YLZLocalData+ylz.m in Sources */,
+				8E97D91A283C7AD8004850C7 /* YLZBaseModel.m in Sources */,
+				8E150BE227B5038300CBD777 /* YLZFileHelper.m in Sources */,
+				8E79CDE3268EE71D00E71F17 /* YLZLocalData+Store.m in Sources */,
 				8E59B1692691598F0043073C /* YLZSetAreaViewController.m in Sources */,
 				8E79CEAB268F13F900E71F17 /* JXCategoryTitleView.m in Sources */,
 				8E79CEA3268F13F900E71F17 /* JXCategoryDotCell.m in Sources */,
@@ -2015,19 +2026,18 @@
 				8E79CE9F268F13F900E71F17 /* JXCategoryIndicatorBackgroundView.m in Sources */,
 				8E79CEA9268F13F900E71F17 /* JXCategoryTitleCellModel.m in Sources */,
 				8E59B15B26914ABE0043073C /* YLZSetIdentityViewController.m in Sources */,
-				8E79CDF2268EF1A500E71F17 /* YLZPageExtent.m in Sources */,
+				8E79CDF2268EF1A500E71F17 /* YLZPageHelper.m in Sources */,
 				8E59B150269148130043073C /* YLZRegisterViewController.m in Sources */,
 				8E5200E626FDF444000EBCEB /* YLZHealthCodeCollectionViewCell.m in Sources */,
 				8E4243A1265CF04600E5A4A5 /* UIButton+YLZFixMultiClick.m in Sources */,
 				8E424399265CF04600E5A4A5 /* UIImage+YLZCompress.m in Sources */,
 				8E67D0E52692996A00BF476D /* YLZPendingTableViewCell.m in Sources */,
-				8E5200E226FDCCEA000EBCEB /* YLZQrcodeExtent.m in Sources */,
-				8E4243DD265CF78400E5A4A5 /* YLZPageFunction.m in Sources */,
+				8E5200E226FDCCEA000EBCEB /* YLZQrcodeHelper.m in Sources */,
 				8E67D0E02692995300BF476D /* YLZPendingViewController.m in Sources */,
 				8E4243A7265CF04600E5A4A5 /* UIViewController+YLZChange.m in Sources */,
 				8E79CE97268F13F900E71F17 /* RTLManager.m in Sources */,
 				8E79CE98268F13F900E71F17 /* JXCategoryIndicatorLineView.m in Sources */,
-				8E4243CF265CF22400E5A4A5 /* YLZJson.m in Sources */,
+				8E4243CF265CF22400E5A4A5 /* YLZJsonHelper.m in Sources */,
 				8E5200CD26FD77D7000EBCEB /* YLZHealthCodeViewController.m in Sources */,
 				8E4243CC265CF22400E5A4A5 /* YLZPaddingLabel.m in Sources */,
 				8E79CEA5268F13F900E71F17 /* JXCategoryDotCellModel.m in Sources */,
@@ -2044,7 +2054,7 @@
 				8E67D0F92692A4FB00BF476D /* YLZInvitedViewController.m in Sources */,
 				8E79CDED268EE97000E71F17 /* YLZBaseViewController.m in Sources */,
 				8E4243AA265CF04600E5A4A5 /* NSString+YLZExtension.m in Sources */,
-				8E5200DD26FDC636000EBCEB /* YLZTimer.m in Sources */,
+				8E5200DD26FDC636000EBCEB /* YLZTimerHelper.m in Sources */,
 				8E4243A9265CF04600E5A4A5 /* NSError+YLZMS.m in Sources */,
 				8E67D1382692FC7200BF476D /* JXCategoryIndicatorSpringBackgroundView.m in Sources */,
 				8E79CEB4268F13F900E71F17 /* JXCategoryCollectionView.m in Sources */,
@@ -2067,7 +2077,7 @@
 				8E67D0D8269292D900BF476D /* YLZMomentPicCollectionViewCell.m in Sources */,
 				8E67D1092692A83500BF476D /* YLZNewFollowViewController.m in Sources */,
 				8E67D0F126929BF000BF476D /* YLZReviewingModel.m in Sources */,
-				8E4243CD265CF22400E5A4A5 /* YLZViewExtent.m in Sources */,
+				8E4243CD265CF22400E5A4A5 /* YLZViewHelper.m in Sources */,
 				8E67D1202692E25A00BF476D /* YLZMineHeaderView.m in Sources */,
 				8E9DD42B2690499E00D13F09 /* YLZBlacklistModel.m in Sources */,
 				8E42439C265CF04600E5A4A5 /* UIImage+YLZEncoding.m in Sources */,
@@ -2076,7 +2086,7 @@
 				8E79CEB0268F13F900E71F17 /* JXCategoryNumberCell.m in Sources */,
 				8E9DD42F26904DD600D13F09 /* YLZChangePasswordViewController.m in Sources */,
 				8E67D0F526929C0400BF476D /* YLZReviewingTableViewCell.m in Sources */,
-				8E4243CE265CF22400E5A4A5 /* YLZImageExtent.m in Sources */,
+				8E4243CE265CF22400E5A4A5 /* YLZImageHelper.m in Sources */,
 				8E4243AB265CF04600E5A4A5 /* NSTimer+YLZPluto.m in Sources */,
 				8E59B164269153B40043073C /* YLZSetNameViewController.m in Sources */,
 				8E424360265CEB2F00E5A4A5 /* AppDelegate+Tarbar.m in Sources */,

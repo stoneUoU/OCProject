@@ -7,10 +7,9 @@
 
 #import <ZSCodeUtil/ZSCode.h>
 #import "YLZHealthCodeTableViewCell.h"
-#import "YLZQrcodeExtent.h"
 #import "YLZKitCategory.h"
 #import "YLZCategory.h"
-#import "YLZTimer.h"
+#import "YLZTimerHelper.h"
 
 @interface YLZHealthCodeTableViewCell()
 
@@ -55,7 +54,7 @@
     if (self) {
         self.backgroundColor = YLZColorMZTBlueView;
         [self setUI];
-        self.task = [YLZTimer execTask:self selector:@selector(doTask) start:0.0 interval:1.0 repeats:YES async:NO];
+        self.task = [YLZTimerHelper execTask:self selector:@selector(doTask) start:0.0 interval:1.0 repeats:YES async:NO];
     }
     return self;
 }
@@ -174,7 +173,7 @@
         make.right.equalTo(self.bgView.mas_right).offset(-12);
         make.height.equalTo(@(2));
     }];
-    [YLZImageExtent drawLineByImageView:self.dashImageView withDashColor:YLZColorLine];
+    [YLZImageHelper drawLineByImageView:self.dashImageView withDashColor:YLZColorLine];
     
     [self.codeGradientView layoutIfNeeded];
     CAGradientLayer *statusGradient = [CAGradientLayer layer];

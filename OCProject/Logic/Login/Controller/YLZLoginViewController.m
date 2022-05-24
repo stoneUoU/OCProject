@@ -206,11 +206,11 @@ static CGFloat const kLoginMargin = 32.0;
     if (sender.tag == 0) {
         YLZLOG(@"立即注册");
         YLZRegisterViewController *vc = [[YLZRegisterViewController alloc] init];
-        [[YLZPageExtent sharedInstance] pushExistingViewController:vc];
+        [[YLZPageHelper sharedInstance] pushExistingViewController:vc];
     } else if (sender.tag == 1) {
         YLZLOG(@"忘记密码？");
         YLZForgetPasswordViewController *vc = [[YLZForgetPasswordViewController alloc] init];
-        [[YLZPageExtent sharedInstance] pushExistingViewController:vc];
+        [[YLZPageHelper sharedInstance] pushExistingViewController:vc];
     } else {
         YLZLOG(@"立即登录");
         YLZAlertForceView *alertView = [[YLZAlertForceView alloc] initWithFrame:CGRectMake(0, 0, SCREENWIDTH, SCREENHEIGHT)];
@@ -221,7 +221,7 @@ static CGFloat const kLoginMargin = 32.0;
         alertView.model = model;
         alertView.handle = ^(NSInteger index) {
             YLZSetIdentityViewController *vc = [[YLZSetIdentityViewController alloc] init];
-            [[YLZPageExtent sharedInstance] pushExistingViewController:vc];
+            [[YLZPageHelper sharedInstance] pushExistingViewController:vc];
         };
         [alertView showAlert];
     }

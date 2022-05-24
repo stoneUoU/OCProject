@@ -217,10 +217,10 @@ static NSString *const kYLZMessageTableViewCell = @"YLZMessageTableViewCell";
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
     if (indexPath.section == 0) {
         YLZPendingViewController *vc = [[YLZPendingViewController alloc] init];
-        [[YLZPageExtent sharedInstance] pushExistingViewController:vc];
+        [[YLZPageHelper sharedInstance] pushExistingViewController:vc];
     } else {
         YLZNewFollowViewController *vc = [[YLZNewFollowViewController alloc] init];
-        [[YLZPageExtent sharedInstance] pushExistingViewController:vc];
+        [[YLZPageHelper sharedInstance] pushExistingViewController:vc];
     }
 }
 

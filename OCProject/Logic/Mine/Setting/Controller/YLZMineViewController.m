@@ -55,7 +55,7 @@
 
 - (void)toHeaderViewDelegate {
     YLZSettingViewController *vc = [[YLZSettingViewController alloc] init];
-    [[YLZPageExtent sharedInstance] pushExistingViewController:vc];
+    [[YLZPageHelper sharedInstance] pushExistingViewController:vc];
 };
 
 - (UIView *)tableHeaderViewInPagerView:(JXPagerView *)pagerView {

@@ -152,15 +152,15 @@
     if (self.isOrganization == 0) {
         //[self.view makeToast:@"请选择性别" duration:1.0 position:CSToastPositionCenter];
         YLZSetCollegeViewController *vc = [[YLZSetCollegeViewController alloc] init];
-        [[YLZPageExtent sharedInstance] pushExistingViewController:vc];
+        [[YLZPageHelper sharedInstance] pushExistingViewController:vc];
         return;
     }
     if (self.isOrganization == 1) {
         YLZSetGenderViewController *vc = [[YLZSetGenderViewController alloc] init];
-        [[YLZPageExtent sharedInstance] pushExistingViewController:vc];
+        [[YLZPageHelper sharedInstance] pushExistingViewController:vc];
     } else {
         YLZSetOrganizationNameViewController *vc = [[YLZSetOrganizationNameViewController alloc] init];
-        [[YLZPageExtent sharedInstance] pushExistingViewController:vc];
+        [[YLZPageHelper sharedInstance] pushExistingViewController:vc];
     }
 }
 

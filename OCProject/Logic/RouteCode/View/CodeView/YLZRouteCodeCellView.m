@@ -8,7 +8,7 @@
 #import "YLZRouteCodeCellView.h"
 #import "YLZCategory.h"
 #import <ZSCodeUtil/ZSCode.h>
-#import "YLZTimer.h"
+#import "YLZTimerHelper.h"
 
 @interface YLZRouteCodeCellView()
 
@@ -50,7 +50,7 @@
     self = [super init];//当前对象self
     if (self !=nil) {
         [self setUI];
-        self.task = [YLZTimer execTask:self selector:@selector(doTask) start:0.0 interval:1.0 repeats:YES async:NO];
+        self.task = [YLZTimerHelper execTask:self selector:@selector(doTask) start:0.0 interval:1.0 repeats:YES async:NO];
     }
     return self;//返回一个已经初始化完毕的对象；
 }

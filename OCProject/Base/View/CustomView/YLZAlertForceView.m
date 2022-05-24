@@ -4,14 +4,6 @@
 //
 //  Created by stone on 2021/7/4.
 //
-
-#import "YLZAlertForceView.h"
-
-//
-//  HECPrivilegeNoticeView.m
-//  HSA-ElectronicCertificateModule-iOS
-//
-//  Created by stone on 2021/3/11.
 //  使用：
 //  HECPrivilegeNoticeView *enLargeView = [[HECPrivilegeNoticeView alloc] initWithFrame:CGRectMake(0, 0, SCREENWIDTH, SCREENHEIGHT)];
 //  [enLargeView showPrivilege];

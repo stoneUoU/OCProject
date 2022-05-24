@@ -11,11 +11,11 @@ typedef void (^YLZAlertForceViewHanlde)(NSInteger index);
 
 @interface YLZAlertForceModel : NSObject
 
-@property (nonatomic, copy) NSString * titleString;
+@property (nonatomic, copy) NSString * _Nullable titleString;
 
-@property (nonatomic, copy) NSString *okString;
+@property (nonatomic, copy) NSString * _Nullable okString;
 
-@property (nonatomic, copy) NSString *cancelString;
+@property (nonatomic, copy) NSString * _Nullable cancelString;
 
 @end
 

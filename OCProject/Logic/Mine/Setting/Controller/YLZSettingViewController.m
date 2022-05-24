@@ -135,19 +135,19 @@
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
     if (indexPath.section == 1) {
         YLZSecretSettingViewController *vc = [[YLZSecretSettingViewController alloc] init];
-       [[YLZPageExtent sharedInstance] pushExistingViewController:vc];
+       [[YLZPageHelper sharedInstance] pushExistingViewController:vc];
     } else if (indexPath.section == 2) {
         YLZChangePasswordViewController *vc = [[YLZChangePasswordViewController alloc] init];
-       [[YLZPageExtent sharedInstance] pushExistingViewController:vc];
+       [[YLZPageHelper sharedInstance] pushExistingViewController:vc];
     } else if (indexPath.section == 4) {
         YLZChangePhoneViewController *vc = [[YLZChangePhoneViewController alloc] init];
-       [[YLZPageExtent sharedInstance] pushExistingViewController:vc];
+       [[YLZPageHelper sharedInstance] pushExistingViewController:vc];
     } else if (indexPath.section == 6) {
         YLZChangePhoneViewController *vc = [[YLZChangePhoneViewController alloc] init];
-       [[YLZPageExtent sharedInstance] pushExistingViewController:vc];
+       [[YLZPageHelper sharedInstance] pushExistingViewController:vc];
     }  else if (indexPath.section == 8) {
         YLZSwitchAccountViewController *vc = [[YLZSwitchAccountViewController alloc] init];
-       [[YLZPageExtent sharedInstance] pushExistingViewController:vc];
+       [[YLZPageHelper sharedInstance] pushExistingViewController:vc];
     }
 }
 

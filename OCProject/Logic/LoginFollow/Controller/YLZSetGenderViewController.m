@@ -144,7 +144,7 @@
     }
     
     YLZSetNameViewController *vc = [[YLZSetNameViewController alloc] init];
-    [[YLZPageExtent sharedInstance] pushExistingViewController:vc withParam:@{@"gender":@(self.gender)}];
+    [[YLZPageHelper sharedInstance] pushExistingViewController:vc withParam:@{@"gender":@(self.gender)}];
 }
 
 - (void)toChecked:(UIButton *)sender {

@@ -5,11 +5,11 @@
 //  Created by stone on 2021/7/3.
 //
 
-#import <Foundation/Foundation.h>
+#import "YLZBaseModel.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface YLZSettingModel : NSObject
+@interface YLZSettingModel : YLZBaseModel
 
 @property (nonatomic, copy) NSString *titleString;
 

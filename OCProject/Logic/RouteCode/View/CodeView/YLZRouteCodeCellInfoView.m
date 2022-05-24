@@ -90,7 +90,7 @@
          make.centerY.equalTo(self);
          make.right.equalTo(self.familyCodeLabel.mas_left).offset(-6);
      }];
-     [YLZImageExtent drawLineByImageView:self.dashImageView withDashColor:YLZColorTitleThree];
+     [YLZImageHelper drawLineByImageView:self.dashImageView withDashColor:YLZColorTitleThree];
 }
     
 #pragma mark - IB-Action
