@@ -13,6 +13,7 @@
 #import "YLZHealthCodeViewController.h"
 #import "YLZRouteCodeViewController.h"
 #import "ViewController.h"
+#import "ISECUtils.h"
 
 #import <YYKit/YYKit.h>
 
@@ -65,13 +66,92 @@
     [self.tabbarVC setupTabWithVCArr:vcArr imageNameArr:imageNameArr selectedImageNameArr:selectedImageNameArr titleColor:YLZColorTitleTwo selecedTitleColor:YLZColorBlueView];
     [self.tabbarVC setupCenterTabWithCenterImage:@"ylz_tabbar_plus" middleVC:nil isPresentVC:YES];
     
+    self.window.rootViewController = [[UINavigationController alloc] initWithRootViewController:[[ViewController alloc] init]];
 //    self.window.rootViewController = [[UINavigationController alloc] initWithRootViewController:[[YLZLoginViewController alloc] init]];
 //    self.window.rootViewController = self.tabbarVC;
 //    self.window.rootViewController = [[YLZHealthCodeViewController alloc] init];
-    self.window.rootViewController = [[YLZRouteCodeViewController alloc] init];
+//    self.window.rootViewController = [[YLZRouteCodeViewController alloc] init];
 //    self.window.rootViewController = [[UINavigationController alloc] initWithRootViewController:[[YLZSetIdentityViewController alloc] init]];
+    [self initProtectSDK];
+//    self.window.rootViewController = self.tabbarVC;
 }
 
+
+- (void)initProtectSDK {
+    //防截屏机制
+    [[ISECUtils instance] antiScreenShot];
+    [ISECUtils antiDbg];  //防调式
+    [ISECUtils antiDyld]; //防注入
+    [ISECUtils antiSign:@"2SRTBWK6P4"];//公司苹果开发者账号的teamid， 防二次打包
+    [ISECUtils antiProxy]; //防wifi代理
+    [ISECUtils antiFrida]; //防frida
+    [ISECUtils antiEnv];   //防越狱环境
+    if (isec_flag & ISEC_DEBUG_FLAG) {
+        UIAlertController * alertController = [UIAlertController alertControllerWithTitle:@"安全提醒" message:@"当前应用被调试，操作可能存在风险。" preferredStyle:UIAlertControllerStyleAlert];
+        UIAlertAction * action = [UIAlertAction actionWithTitle:@"确认" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
+            exit(0);
+        }];
+        [alertController addAction:action];
+        [self.window.rootViewController presentViewController:alertController animated:YES completion:nil];
+        return;
+    }
+    if (isec_flag & ISEC_SIGN_FLAG) {
+        UIAlertController * alertController = [UIAlertController alertControllerWithTitle:@"安全提醒" message:@"当前应用被篡改，操作可能存在风险。" preferredStyle:UIAlertControllerStyleAlert];
+        UIAlertAction * action = [UIAlertAction actionWithTitle:@"确认" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
+            exit(0);
+        }];
+        [alertController addAction:action];
+        [self.window.rootViewController presentViewController:alertController animated:YES completion:nil];
+        return;
+    }
+    if(isec_flag & ISEC_ROOT_FLAG) {
+        UIAlertController * alertController = [UIAlertController alertControllerWithTitle:@"安全提醒" message:@"当前应用被越狱，操作可能存在风险。" preferredStyle:UIAlertControllerStyleAlert];
+        UIAlertAction * action = [UIAlertAction actionWithTitle:@"确认" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
+            exit(0);
+        }];
+        [alertController addAction:action];
+        [self.window.rootViewController presentViewController:alertController animated:YES completion:nil];
+        return;
+    }
+
+    if(isec_flag & ISEC_PROXY_FLAG) {
+        UIAlertController * alertController = [UIAlertController alertControllerWithTitle:@"安全提醒" message:@"当前设备设置了代理，操作可能存在风险。" preferredStyle:UIAlertControllerStyleAlert];
+        UIAlertAction * action = [UIAlertAction actionWithTitle:@"确认" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
+            exit(0);
+        }];
+        [alertController addAction:action];
+        [self.window.rootViewController presentViewController:alertController animated:YES completion:nil];
+        return;
+     }
+    if(isec_flag & ISEC_FRIDA_FLAG) {
+        UIAlertController * alertController = [UIAlertController alertControllerWithTitle:@"安全提醒" message:@"当前应用被注入，操作可能存在风险。" preferredStyle:UIAlertControllerStyleAlert];
+        UIAlertAction * action = [UIAlertAction actionWithTitle:@"确认" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
+            exit(0);
+        }];
+        [alertController addAction:action];
+        [self.window.rootViewController presentViewController:alertController animated:YES completion:nil];
+        return;
+    }
+    if (isec_flag & ISEC_ENV_MOBILE_FLAG) {
+        UIAlertController * alertController = [UIAlertController alertControllerWithTitle:@"安全提醒" message:@"当前应用环境，是越狱环境。" preferredStyle:UIAlertControllerStyleAlert];
+        UIAlertAction * action = [UIAlertAction actionWithTitle:@"确认" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
+            exit(0);
+        }];
+        [alertController addAction:action];
+        [self.window.rootViewController presentViewController:alertController animated:YES completion:nil];
+        return;
+    }
+    if (isec_flag & ISEC_DYLD_FLAG) {
+       UIAlertController * alertController = [UIAlertController alertControllerWithTitle:@"安全提醒" message:@"当前应用环境，操作可能存在风险。" preferredStyle:UIAlertControllerStyleAlert];
+       UIAlertAction * action = [UIAlertAction actionWithTitle:@"确认" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
+           exit(0);
+       }];
+       [alertController addAction:action];
+       [self.window.rootViewController presentViewController:alertController animated:YES completion:nil];
+        return;
+    }
+    self.window.rootViewController = self.tabbarVC;
+}
 
 #pragma mark - Private Method
 #pragma mark -

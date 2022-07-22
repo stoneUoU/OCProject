@@ -56,7 +56,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.view.backgroundColor = [UIColor whiteColor];
-    [self setBaseUI:YLZColorBlueView withTitleString:@"首页" withTitleColor:YLZColorWhite withLeftImageViewString:@"" withRightString:@"" withRightColor:YLZColorWhite withRightFontSize:14];
+    [self setBaseUI:YLZColorLightBlueView withTitleString:@"首页" withTitleColor:YLZColorWhite withLeftImageViewString:@"" withRightString:@"" withRightColor:YLZColorWhite withRightFontSize:14];
     
     [self setUI];
     [self setSemaphore];

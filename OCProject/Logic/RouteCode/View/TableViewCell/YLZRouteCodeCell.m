@@ -83,11 +83,11 @@
         _codeInfoView.frame = CGRectMake(0, 0, SCREENWIDTH - 48, 76);
         __weak typeof(self) weakSelf = self;
         _codeInfoView.handle = ^{
-//            weakSelf.clickNum = weakSelf.clickNum+1;
-//            if (weakSelf.clickNum>2) {
-//                weakSelf.clickNum = 0;
-//            }
-//            weakSelf.codeView.clickNum = weakSelf.clickNum;
+            weakSelf.clickNum = weakSelf.clickNum+1;
+            if (weakSelf.clickNum>2) {
+                weakSelf.clickNum = 0;
+            }
+            weakSelf.codeView.clickNum = weakSelf.clickNum;
         };
     }
     return _codeInfoView;

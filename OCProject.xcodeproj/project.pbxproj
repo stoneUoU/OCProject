@@ -10,6 +10,7 @@
 		63F60B96E8187744865B5169 /* libPods-OCProject.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4D4A4AD40EFD34FFB4CE26F2 /* libPods-OCProject.a */; };
 		8E150BDF27B5031F00CBD777 /* YLZFile.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E150BDE27B5031F00CBD777 /* YLZFile.m */; };
 		8E150BE227B5038300CBD777 /* YLZFileHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E150BE127B5038300CBD777 /* YLZFileHelper.m */; };
+		8E1C89AD288A9C44000C253F /* libisecutils.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E1C89AC288A9C44000C253F /* libisecutils.a */; };
 		8E42431D265CA2F800E5A4A5 /* YLZMSTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E42431C265CA2F800E5A4A5 /* YLZMSTabBar.m */; };
 		8E424358265CEA1F00E5A4A5 /* YLZMSTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E424357265CEA1F00E5A4A5 /* YLZMSTabBarController.m */; };
 		8E424360265CEB2F00E5A4A5 /* AppDelegate+Tarbar.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E42435F265CEB2F00E5A4A5 /* AppDelegate+Tarbar.m */; };
@@ -198,6 +199,8 @@
 		8E150BDE27B5031F00CBD777 /* YLZFile.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YLZFile.m; sourceTree = "<group>"; };
 		8E150BE027B5038300CBD777 /* YLZFileHelper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YLZFileHelper.h; sourceTree = "<group>"; };
 		8E150BE127B5038300CBD777 /* YLZFileHelper.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YLZFileHelper.m; sourceTree = "<group>"; };
+		8E1C89AB288A9C44000C253F /* ISECUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ISECUtils.h; sourceTree = "<group>"; };
+		8E1C89AC288A9C44000C253F /* libisecutils.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libisecutils.a; sourceTree = "<group>"; };
 		8E424303265C9C9D00E5A4A5 /* CommFiles.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CommFiles.pch; sourceTree = "<group>"; };
 		8E424304265C9CCA00E5A4A5 /* Macros.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Macros.h; sourceTree = "<group>"; };
 		8E42431B265CA2F800E5A4A5 /* YLZMSTabBar.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YLZMSTabBar.h; sourceTree = "<group>"; };
@@ -568,6 +571,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				63F60B96E8187744865B5169 /* libPods-OCProject.a in Frameworks */,
+				8E1C89AD288A9C44000C253F /* libisecutils.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -591,6 +595,15 @@
 				8E150BE127B5038300CBD777 /* YLZFileHelper.m */,
 			);
 			path = YLZFile;
+			sourceTree = "<group>";
+		};
+		8E1C89AA288A9C14000C253F /* SafeSDK */ = {
+			isa = PBXGroup;
+			children = (
+				8E1C89AB288A9C44000C253F /* ISECUtils.h */,
+				8E1C89AC288A9C44000C253F /* libisecutils.a */,
+			);
+			path = SafeSDK;
 			sourceTree = "<group>";
 		};
 		8E4242EF265C9AE800E5A4A5 /* Base */ = {
@@ -1284,6 +1297,7 @@
 		8E79CE34268F13E500E71F17 /* ExtraPart */ = {
 			isa = PBXGroup;
 			children = (
+				8E1C89AA288A9C14000C253F /* SafeSDK */,
 				8E79CE35268F13F900E71F17 /* JXCategoryView */,
 			);
 			path = ExtraPart;
@@ -2250,6 +2264,10 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/OCProject/ExtraPart/SafeSDK",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = cn.hsa.OCProject;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -2272,6 +2290,10 @@
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/OCProject/ExtraPart/SafeSDK",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = cn.hsa.OCProject;
 				PRODUCT_NAME = "$(TARGET_NAME)";

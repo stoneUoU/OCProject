@@ -15,6 +15,12 @@
 
 @property (nonatomic, strong) UIButton *btnOk;
 
+@property (nonatomic, strong) UIImageView *iconImageView;
+
+@property (nonatomic, strong) UILabel *productLabel;
+
+@property (nonatomic, strong) UILabel *bottomLabel;
+
 @end
 
 @implementation ViewController
@@ -37,7 +43,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.view.backgroundColor = [UIColor whiteColor];
-    [self setBaseUI:YLZColorRed withTitleString:@"首页" withTitleColor:YLZColorWhite withLeftImageViewString:@"" withRightString:@"" withRightColor:YLZColorWhite withRightFontSize:14];
+    [self setBaseUI:YLZColorWhite withTitleString:@"" withTitleColor:YLZColorWhite withLeftImageViewString:@"" withRightString:@"" withRightColor:YLZColorWhite withRightFontSize:14];
     
     [self setUI];
 }
@@ -59,14 +65,31 @@
 #pragma mark -
 
 - (void)setUI {
-    [self.view addSubview:self.btnOk];
+//    [self.view addSubview:self.btnOk];
+    [self.view addSubview:self.iconImageView];
+    [self.view addSubview:self.productLabel];
+    [self.view addSubview:self.bottomLabel];
     [self setMas];
 }
 
 - (void)setMas {
-    [self.btnOk mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.center.equalTo(self.view);
-        make.size.equalTo(@(CGSizeMake(SCREENWIDTH - 64, 40)));
+//    [self.btnOk mas_makeConstraints:^(MASConstraintMaker *make) {
+//        make.center.equalTo(self.view);
+//        make.size.equalTo(@(CGSizeMake(SCREENWIDTH - 64, 40)));
+//    }];
+    
+    [self.iconImageView mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.centerX.equalTo(self.view);
+        make.centerY.equalTo(self.view).offset(-64);
+        make.size.equalTo(@(CGSizeMake(64, 64)));
+    }];
+    [self.productLabel mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.centerX.equalTo(self.view);
+        make.top.equalTo(self.iconImageView.mas_bottom).offset(32);
+    }];
+    [self.bottomLabel mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.centerX.equalTo(self.view);
+        make.bottom.equalTo(self.view.mas_bottom).offset(-(BottomDangerAreaHeight+16));
     }];
 }
 
@@ -114,6 +137,36 @@
         [_btnOk addTarget:self action:@selector(btnOKClick) forControlEvents:UIControlEventTouchUpInside];
     }
     return _btnOk;
+}
+
+- (UIImageView *)iconImageView {
+    if(_iconImageView == nil) {
+        _iconImageView = [[UIImageView alloc] init];
+        _iconImageView.backgroundColor = YLZColorLightBlueView;
+        _iconImageView.layer.cornerRadius = 4.0;
+        _iconImageView.layer.masksToBounds = YES;
+    }
+    return _iconImageView;
+}
+
+- (UILabel *)productLabel {
+    if (!_productLabel) {
+        _productLabel = [UILabel new];
+        _productLabel.font = [YLZFont regular:14];
+        _productLabel.textColor = YLZColorTitleOne;
+        _productLabel.text = @"易联众（民生）框架";
+    }
+    return _productLabel;
+}
+
+- (UILabel *)bottomLabel {
+    if (!_bottomLabel) {
+        _bottomLabel = [UILabel new];
+        _bottomLabel.font = [YLZFont regular:14];
+        _bottomLabel.textColor = YLZColorTitleThree;
+        _bottomLabel.text = @"Power By 许久_";
+    }
+    return _bottomLabel;
 }
 
 @end
