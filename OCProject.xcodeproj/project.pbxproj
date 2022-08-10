@@ -10,7 +10,6 @@
 		63F60B96E8187744865B5169 /* libPods-OCProject.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4D4A4AD40EFD34FFB4CE26F2 /* libPods-OCProject.a */; };
 		8E150BDF27B5031F00CBD777 /* YLZFile.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E150BDE27B5031F00CBD777 /* YLZFile.m */; };
 		8E150BE227B5038300CBD777 /* YLZFileHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E150BE127B5038300CBD777 /* YLZFileHelper.m */; };
-		8E1C89AD288A9C44000C253F /* libisecutils.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E1C89AC288A9C44000C253F /* libisecutils.a */; };
 		8E42431D265CA2F800E5A4A5 /* YLZMSTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E42431C265CA2F800E5A4A5 /* YLZMSTabBar.m */; };
 		8E424358265CEA1F00E5A4A5 /* YLZMSTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E424357265CEA1F00E5A4A5 /* YLZMSTabBarController.m */; };
 		8E424360265CEB2F00E5A4A5 /* AppDelegate+Tarbar.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E42435F265CEB2F00E5A4A5 /* AppDelegate+Tarbar.m */; };
@@ -53,6 +52,7 @@
 		8E5200E926FDF46C000EBCEB /* YLZHealthCodeServiceTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E5200E826FDF46C000EBCEB /* YLZHealthCodeServiceTableViewCell.m */; };
 		8E5200EC26FDF4AD000EBCEB /* YLZHealthCodeSourceTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E5200EB26FDF4AD000EBCEB /* YLZHealthCodeSourceTableViewCell.m */; };
 		8E5200EF26FE0280000EBCEB /* YLZHealthCodeTableFooterView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E5200EE26FE0280000EBCEB /* YLZHealthCodeTableFooterView.m */; };
+		8E562FE3288AA86C00D0AD64 /* libisecutils.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E562FE1288AA86C00D0AD64 /* libisecutils.a */; };
 		8E59B150269148130043073C /* YLZRegisterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E59B14F269148130043073C /* YLZRegisterViewController.m */; };
 		8E59B154269149E00043073C /* YLZForgetPasswordViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E59B153269149E00043073C /* YLZForgetPasswordViewController.m */; };
 		8E59B15B26914ABE0043073C /* YLZSetIdentityViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E59B15A26914ABE0043073C /* YLZSetIdentityViewController.m */; };
@@ -184,6 +184,8 @@
 		8ECBC2C82817972100071F21 /* YLZRouteCodeCellBottomView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8ECBC2C72817972100071F21 /* YLZRouteCodeCellBottomView.m */; };
 		8ECBC2CB28179B4B00071F21 /* YLZRouteCodeCellLoadingView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8ECBC2CA28179B4B00071F21 /* YLZRouteCodeCellLoadingView.m */; };
 		8ECBC2CE28179EA900071F21 /* YLZRouteCodeCellView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8ECBC2CD28179EA900071F21 /* YLZRouteCodeCellView.m */; };
+		8ED85251288CE2720036E99F /* HSAExampleHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 8ED85250288CE2720036E99F /* HSAExampleHelper.m */; };
+		8ED85253288CE5310036E99F /* HSAExampleHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ED85252288CE5310036E99F /* HSAExampleHelper.swift */; };
 		8EFB12B6265BB44F007D9FE1 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EFB12B5265BB44F007D9FE1 /* AppDelegate.m */; };
 		8EFB12BC265BB44F007D9FE1 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EFB12BB265BB44F007D9FE1 /* ViewController.m */; };
 		8EFB12C1265BB450007D9FE1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8EFB12C0265BB450007D9FE1 /* Assets.xcassets */; };
@@ -199,8 +201,6 @@
 		8E150BDE27B5031F00CBD777 /* YLZFile.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YLZFile.m; sourceTree = "<group>"; };
 		8E150BE027B5038300CBD777 /* YLZFileHelper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YLZFileHelper.h; sourceTree = "<group>"; };
 		8E150BE127B5038300CBD777 /* YLZFileHelper.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YLZFileHelper.m; sourceTree = "<group>"; };
-		8E1C89AB288A9C44000C253F /* ISECUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ISECUtils.h; sourceTree = "<group>"; };
-		8E1C89AC288A9C44000C253F /* libisecutils.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libisecutils.a; sourceTree = "<group>"; };
 		8E424303265C9C9D00E5A4A5 /* CommFiles.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CommFiles.pch; sourceTree = "<group>"; };
 		8E424304265C9CCA00E5A4A5 /* Macros.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Macros.h; sourceTree = "<group>"; };
 		8E42431B265CA2F800E5A4A5 /* YLZMSTabBar.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YLZMSTabBar.h; sourceTree = "<group>"; };
@@ -290,6 +290,8 @@
 		8E5200EB26FDF4AD000EBCEB /* YLZHealthCodeSourceTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YLZHealthCodeSourceTableViewCell.m; sourceTree = "<group>"; };
 		8E5200ED26FE0280000EBCEB /* YLZHealthCodeTableFooterView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YLZHealthCodeTableFooterView.h; sourceTree = "<group>"; };
 		8E5200EE26FE0280000EBCEB /* YLZHealthCodeTableFooterView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YLZHealthCodeTableFooterView.m; sourceTree = "<group>"; };
+		8E562FE1288AA86C00D0AD64 /* libisecutils.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libisecutils.a; sourceTree = "<group>"; };
+		8E562FE2288AA86C00D0AD64 /* ISECUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ISECUtil.h; sourceTree = "<group>"; };
 		8E59B14E269148130043073C /* YLZRegisterViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YLZRegisterViewController.h; sourceTree = "<group>"; };
 		8E59B14F269148130043073C /* YLZRegisterViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YLZRegisterViewController.m; sourceTree = "<group>"; };
 		8E59B152269149E00043073C /* YLZForgetPasswordViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YLZForgetPasswordViewController.h; sourceTree = "<group>"; };
@@ -554,6 +556,9 @@
 		8ECBC2CA28179B4B00071F21 /* YLZRouteCodeCellLoadingView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YLZRouteCodeCellLoadingView.m; sourceTree = "<group>"; };
 		8ECBC2CC28179EA900071F21 /* YLZRouteCodeCellView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YLZRouteCodeCellView.h; sourceTree = "<group>"; };
 		8ECBC2CD28179EA900071F21 /* YLZRouteCodeCellView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YLZRouteCodeCellView.m; sourceTree = "<group>"; };
+		8ED8524F288CE2720036E99F /* HSAExampleHelper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HSAExampleHelper.h; sourceTree = "<group>"; };
+		8ED85250288CE2720036E99F /* HSAExampleHelper.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HSAExampleHelper.m; sourceTree = "<group>"; };
+		8ED85252288CE5310036E99F /* HSAExampleHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HSAExampleHelper.swift; sourceTree = "<group>"; };
 		8EFB12B1265BB44F007D9FE1 /* OCProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OCProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8EFB12B4265BB44F007D9FE1 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		8EFB12B5265BB44F007D9FE1 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -571,7 +576,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				63F60B96E8187744865B5169 /* libPods-OCProject.a in Frameworks */,
-				8E1C89AD288A9C44000C253F /* libisecutils.a in Frameworks */,
+				8E562FE3288AA86C00D0AD64 /* libisecutils.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -600,8 +605,8 @@
 		8E1C89AA288A9C14000C253F /* SafeSDK */ = {
 			isa = PBXGroup;
 			children = (
-				8E1C89AB288A9C44000C253F /* ISECUtils.h */,
-				8E1C89AC288A9C44000C253F /* libisecutils.a */,
+				8E562FE2288AA86C00D0AD64 /* ISECUtil.h */,
+				8E562FE1288AA86C00D0AD64 /* libisecutils.a */,
 			);
 			path = SafeSDK;
 			sourceTree = "<group>";
@@ -685,6 +690,9 @@
 				8E4243C1265CF22400E5A4A5 /* YLZJson */,
 				8E4243BB265CF22400E5A4A5 /* YLZView */,
 				8E42434B265CE8FE00E5A4A5 /* YLZColor */,
+				8ED8524F288CE2720036E99F /* HSAExampleHelper.h */,
+				8ED85250288CE2720036E99F /* HSAExampleHelper.m */,
+				8ED85252288CE5310036E99F /* HSAExampleHelper.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -973,6 +981,13 @@
 				8E5200E126FDCCEA000EBCEB /* YLZQrcodeHelper.m */,
 			);
 			path = YLZQrcode;
+			sourceTree = "<group>";
+		};
+		8E594E792893DBEF0078AC2F /* InfoPlists */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = InfoPlists;
 			sourceTree = "<group>";
 		};
 		8E59B15626914A660043073C /* LoginFollow */ = {
@@ -1790,6 +1805,7 @@
 		8EFB12B3265BB44F007D9FE1 /* OCProject */ = {
 			isa = PBXGroup;
 			children = (
+				8E594E792893DBEF0078AC2F /* InfoPlists */,
 				8E79CE34268F13E500E71F17 /* ExtraPart */,
 				8E79CDC1268ED12B00E71F17 /* Logic */,
 				8E4242EF265C9AE800E5A4A5 /* Base */,
@@ -1844,6 +1860,7 @@
 				TargetAttributes = {
 					8EFB12B0265BB44F007D9FE1 = {
 						CreatedOnToolsVersion = 12.3;
+						LastSwiftMigration = 1300;
 					};
 				};
 			};
@@ -2107,10 +2124,12 @@
 				8E79CEB9268F13F900E71F17 /* JXCategoryBaseView.m in Sources */,
 				8E4243D1265CF22400E5A4A5 /* YLZFont.m in Sources */,
 				8E79CEBB268F13F900E71F17 /* JXCategoryBaseCellModel.m in Sources */,
+				8ED85253288CE5310036E99F /* HSAExampleHelper.swift in Sources */,
 				8E79CE14268EF6E700E71F17 /* YLZLoadingView.m in Sources */,
 				8E9DD43326904E0200D13F09 /* YLZConstTextFieldView.m in Sources */,
 				8E67D1122692A87D00BF476D /* YLZNewFollowModel.m in Sources */,
 				8E9DD41F2690479600D13F09 /* YLZAddMeMethodViewController.m in Sources */,
+				8ED85251288CE2720036E99F /* HSAExampleHelper.m in Sources */,
 				8E67D10E2692A86100BF476D /* YLZNewFollowTableViewCell.m in Sources */,
 				8E5200D026FD77EC000EBCEB /* YLZHealthCodeView.m in Sources */,
 				8E67D0E92692999100BF476D /* YLZPendingModel.m in Sources */,
@@ -2254,9 +2273,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 2SRTBWK6P4;
+				ENABLE_BITCODE = NO;
 				GCC_PREFIX_HEADER = "OCProject/Supporting Files/CommFiles.pch";
 				INFOPLIST_FILE = "OCProject/Supporting Files/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
@@ -2271,6 +2292,8 @@
 				PRODUCT_BUNDLE_IDENTIFIER = cn.hsa.OCProject;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
@@ -2281,9 +2304,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 2SRTBWK6P4;
+				ENABLE_BITCODE = NO;
 				GCC_PREFIX_HEADER = "OCProject/Supporting Files/CommFiles.pch";
 				INFOPLIST_FILE = "OCProject/Supporting Files/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
@@ -2298,6 +2323,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = cn.hsa.OCProject;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;

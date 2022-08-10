@@ -1,6 +1,6 @@
 //
-//  ISECUtils.h
-//  ISECUtils
+//  ISECUtil.h
+//  ISECUtil
 //
 //  Created by illa on 2020/3/3.
 //  Copyright © 2020. All rights reserved.
@@ -13,7 +13,7 @@
 
 #import <Foundation/Foundation.h>
 
-#define ISECUTILS_VERSION "v1.0.2f"
+#define ISECUtil_VERSION "v1.0.2f"
 
 /** 错误码
  |注入崩溃码|1025|
@@ -33,9 +33,9 @@
 
 /** 函数混淆
  */
-#ifndef ISECUTILS_OBF
-#define ISECUTILS_OBF
-//#define ISECUtils sub_1000003002303
+#ifndef ISECUtil_OBF
+#define ISECUtil_OBF
+//#define ISECUtil sub_1000003002303
 #define antiDbg sub_1000003002304
 #define antiDyld sub_1000003003212
 #define antiSign sub_1000003008821
@@ -45,10 +45,10 @@
 #define antiProxyWith   sub_1000003008831
 #define antiFrida   sub_1000003008940
 #define antiEnv     sub_1000003008953
-#define isec_flag   var_1000003108823
+#define isec_flag   varr_1000003108823
 
 
-#endif //ISECUTILS_OBF
+#endif //ISECUtil_OBF
 
 /** 风险标识
  */
@@ -58,12 +58,12 @@
 #define ISEC_SIGN_FLAG      0x1 << 4    //签名标识
 #define ISEC_PROXY_FLAG     0x1 << 5    //代理标识
 #define ISEC_FRIDA_FLAG     0x1 << 6    //frida标识
-#define ISEC_ENV_MOBILE_FLAG    0x1 << 7    //移动环境标识
+#define ISEC_ENV_MOBILE_FLAG    0x1 << 9    //移动环境标识
 extern int isec_flag;
 
-/** ISECUtils
+/** ISECUtil
 */
-@interface ISECUtils : NSObject
+@interface ISECUtil : NSObject
 + (void) antiDbg;
 + (void) antiDyld;
 + (void) antiHook :(NSString *)withClass method:(NSString *)method imp:(IMP)imp;

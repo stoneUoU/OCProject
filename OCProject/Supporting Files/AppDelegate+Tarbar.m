@@ -13,7 +13,7 @@
 #import "YLZHealthCodeViewController.h"
 #import "YLZRouteCodeViewController.h"
 #import "ViewController.h"
-#import "ISECUtils.h"
+#import "ISECUtil.h"
 
 #import <YYKit/YYKit.h>
 
@@ -79,13 +79,13 @@
 
 - (void)initProtectSDK {
     //防截屏机制
-    [[ISECUtils instance] antiScreenShot];
-    [ISECUtils antiDbg];  //防调式
-    [ISECUtils antiDyld]; //防注入
-    [ISECUtils antiSign:@"2SRTBWK6P4"];//公司苹果开发者账号的teamid， 防二次打包
-    [ISECUtils antiProxy]; //防wifi代理
-    [ISECUtils antiFrida]; //防frida
-    [ISECUtils antiEnv];   //防越狱环境
+    [[ISECUtil instance] antiScreenShot];
+    [ISECUtil antiDbg];  //防调式
+    [ISECUtil antiDyld]; //防注入
+    [ISECUtil antiSign:@"2SRTBWK6P4"];//公司苹果开发者账号的teamid， 防二次打包
+    [ISECUtil antiProxy]; //防wifi代理
+    [ISECUtil antiFrida]; //防frida
+    [ISECUtil antiEnv];   //防越狱环境
     if (isec_flag & ISEC_DEBUG_FLAG) {
         UIAlertController * alertController = [UIAlertController alertControllerWithTitle:@"安全提醒" message:@"当前应用被调试，操作可能存在风险。" preferredStyle:UIAlertControllerStyleAlert];
         UIAlertAction * action = [UIAlertAction actionWithTitle:@"确认" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
