@@ -9,6 +9,8 @@
 #import "YLZKitCategory.h"
 #import <MJExtension/MJExtension.h>
 
+typedef void(^HSAExcuteHandle)(BOOL isSucc);
+
 @interface ViewController ()
 
 @property (nonatomic, strong) NSMutableArray *homeModelArrays;
@@ -20,6 +22,12 @@
 @property (nonatomic, strong) UILabel *productLabel;
 
 @property (nonatomic, strong) UILabel *bottomLabel;
+
+@property (nonatomic, strong) dispatch_semaphore_t semaphore;
+
+@property (nonatomic, copy) HSAExcuteHandle hsaHandle;
+
+@property (nonatomic, copy) void(^resultHandle)(BOOL isSucc);
 
 @end
 
@@ -36,6 +44,7 @@
 {
     self = [super init ];//当前对象self
     if (self !=nil) {//如果对象初始化成功，才有必要进行接下来的初始化
+        self.semaphore = dispatch_semaphore_create(0);
     }
     return self;//返回一个已经初始化完毕的对象；
 }
@@ -91,6 +100,138 @@
         make.centerX.equalTo(self.view);
         make.bottom.equalTo(self.view.mas_bottom).offset(-(BottomDangerAreaHeight+16));
     }];
+    
+//    [self funcWithHandle:^(NSString *handleStr) {
+//        YLZLOG(@"_____%@",handleStr);
+//    }];
+    
+//    [self mergeRequest];
+    
+//    [self excuteSerialQueue];
+    
+    [self excuteQueueGroup];
+}
+
+- (void)funcWithHandle:(void(^)(NSString *handleStr))handle {
+    
+//    void(^excuteHandle)(NSString *handleStr) = ^(NSString *handleStr) {
+//    };
+//    excuteHandle(@"iOS开发工程师");
+    
+    !handle ?: handle(@"iOS开发工程师----林磊");
+}
+
+#pragma mark - Example 1
+#pragma mark -
+
+- (void)mergeRequest {
+    __weak typeof(self)weakSelf = self;
+    dispatch_queue_t concurrentQueue = dispatch_queue_create("hsa.barItem.concurrent.queue", DISPATCH_QUEUE_CONCURRENT);
+    dispatch_async(concurrentQueue, ^{
+        [self fetchHotBannersWithHandle:^(BOOL isSuccess) {
+            __weak typeof(weakSelf)strongifySelf = weakSelf;
+            dispatch_semaphore_signal(strongifySelf.semaphore);
+        }];
+        dispatch_semaphore_wait(self.semaphore, DISPATCH_TIME_FOREVER);
+        [self fetchHotServicesWithHandle:^(BOOL isSuccess) {
+            __weak typeof(weakSelf)strongifySelf = weakSelf;
+            dispatch_semaphore_signal(strongifySelf.semaphore);
+        }];
+        dispatch_semaphore_wait(self.semaphore, DISPATCH_TIME_FOREVER);
+        dispatch_async(dispatch_get_main_queue(), ^{
+            __weak typeof(weakSelf)strongifySelf = weakSelf;
+            YLZLOG(@"请求完毕____");
+        });
+    });
+}
+
+- (void)fetchHotBannersWithHandle:(void(^)(BOOL isSucc))handle {
+    sleep(3.0);
+    YLZLOG(@"_______%@",NSStringFromSelector(_cmd));
+    !handle ?: handle(YES);
+}
+
+- (void)fetchHotServicesWithHandle:(void(^)(BOOL isSucc))handle {
+    sleep(2.0);
+    YLZLOG(@"_______%@",NSStringFromSelector(_cmd));
+    !handle ?: handle(YES);
+}
+
+#pragma mark - Example 2
+#pragma mark -
+
+- (void)excuteSerialQueue {
+    dispatch_queue_t serialQueue = dispatch_queue_create("hsa_serial_queue",NULL);
+    dispatch_async(serialQueue, ^{
+        [self doTask];
+        YLZLOG(@"Task1----------结束________%@",[NSThread currentThread]);
+    });
+    dispatch_async(serialQueue, ^{
+        [self doTaskDelay];
+        YLZLOG(@"Task2----------结束________%@",[NSThread currentThread]);
+    });
+    dispatch_async(serialQueue, ^{
+        YLZLOG(@"请求完毕----------%@",[NSThread currentThread]);
+    });
+}
+
+- (void)doTask {
+    [self funcWithHandle:^(NSString *handleStr) {
+        YLZLOG(@"doTask----------1");
+    }];
+}
+
+- (void)doTaskDelay {
+    sleep(3.0);
+    for (int i=0; i<10; i++) {
+        YLZLOG(@"doTaskDelay----------%d----------%@",i,[NSThread currentThread]);
+    }
+}
+
+#pragma mark - Example 3
+#pragma mark -
+
+- (void)excuteQueueGroup {
+//    YLZLOG(@"currentThread---%@",[NSThread currentThread]);  // 打印当前线程
+//    YLZLOG(@"group---begin");
+//
+//    dispatch_group_t group =  dispatch_group_create();
+//    dispatch_group_async(group, dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
+//        // 追加任务 1
+//        [NSThread sleepForTimeInterval:2];              // 模拟耗时操作
+//        YLZLOG(@"1---%@",[NSThread currentThread]);      // 打印当前线程
+//    });
+//
+//    dispatch_group_async(group, dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
+//        YLZLOG(@"2---%@",[NSThread currentThread]);      // 打印当前线程
+//    });
+//
+//    dispatch_group_notify(group, dispatch_get_main_queue(), ^{
+//        YLZLOG(@"3---%@",[NSThread currentThread]);      // 打印当前线程
+//        YLZLOG(@"group---end");
+//    });
+    
+    YLZLOG(@"group---begin");
+    dispatch_group_t group = dispatch_group_create();
+    dispatch_queue_t queue = dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0);
+    dispatch_group_enter(group);
+    dispatch_async(queue, ^{
+        // 追加任务 1
+        [NSThread sleepForTimeInterval:5];              // 模拟耗时操作
+        YLZLOG(@"task1---%@",[NSThread currentThread]);      // 打印当前线程
+        dispatch_group_leave(group);
+    });
+    dispatch_group_enter(group);
+    dispatch_async(queue, ^{
+        // 追加任务 2
+        YLZLOG(@"task2---%@",[NSThread currentThread]);      // 打印当前线程
+        dispatch_group_leave(group);
+    });
+    dispatch_group_notify(group, dispatch_get_main_queue(), ^{
+        [NSThread sleepForTimeInterval:2];              // 模拟耗时操作
+        YLZLOG(@"task3---%@",[NSThread currentThread]);      // 打印当前线程
+        YLZLOG(@"group---end");
+    });
 }
 
 #pragma mark - IB-Action

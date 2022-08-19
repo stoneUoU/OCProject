@@ -10,6 +10,9 @@
 		63F60B96E8187744865B5169 /* libPods-OCProject.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4D4A4AD40EFD34FFB4CE26F2 /* libPods-OCProject.a */; };
 		8E150BDF27B5031F00CBD777 /* YLZFile.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E150BDE27B5031F00CBD777 /* YLZFile.m */; };
 		8E150BE227B5038300CBD777 /* YLZFileHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E150BE127B5038300CBD777 /* YLZFileHelper.m */; };
+		8E1DE99128ACE79B00AB9A09 /* YLZMSBasePresenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E1DE99028ACE79B00AB9A09 /* YLZMSBasePresenter.m */; };
+		8E1DE99928ACE8CF00AB9A09 /* YLZMSBaseTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E1DE99828ACE8CF00AB9A09 /* YLZMSBaseTableViewCell.m */; };
+		8E1DE99C28ACEA0100AB9A09 /* YLZMSBaseTableViewPresenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E1DE99B28ACEA0100AB9A09 /* YLZMSBaseTableViewPresenter.m */; };
 		8E42431D265CA2F800E5A4A5 /* YLZMSTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E42431C265CA2F800E5A4A5 /* YLZMSTabBar.m */; };
 		8E424358265CEA1F00E5A4A5 /* YLZMSTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E424357265CEA1F00E5A4A5 /* YLZMSTabBarController.m */; };
 		8E424360265CEB2F00E5A4A5 /* AppDelegate+Tarbar.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E42435F265CEB2F00E5A4A5 /* AppDelegate+Tarbar.m */; };
@@ -201,6 +204,14 @@
 		8E150BDE27B5031F00CBD777 /* YLZFile.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YLZFile.m; sourceTree = "<group>"; };
 		8E150BE027B5038300CBD777 /* YLZFileHelper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YLZFileHelper.h; sourceTree = "<group>"; };
 		8E150BE127B5038300CBD777 /* YLZFileHelper.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YLZFileHelper.m; sourceTree = "<group>"; };
+		8E1DE98F28ACE79B00AB9A09 /* YLZMSBasePresenter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YLZMSBasePresenter.h; sourceTree = "<group>"; };
+		8E1DE99028ACE79B00AB9A09 /* YLZMSBasePresenter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YLZMSBasePresenter.m; sourceTree = "<group>"; };
+		8E1DE99328ACE7DA00AB9A09 /* YLZMSViewDataProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YLZMSViewDataProtocol.h; sourceTree = "<group>"; };
+		8E1DE99428ACE7F400AB9A09 /* YLZMSPresenterProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YLZMSPresenterProtocol.h; sourceTree = "<group>"; };
+		8E1DE99728ACE8CF00AB9A09 /* YLZMSBaseTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YLZMSBaseTableViewCell.h; sourceTree = "<group>"; };
+		8E1DE99828ACE8CF00AB9A09 /* YLZMSBaseTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YLZMSBaseTableViewCell.m; sourceTree = "<group>"; };
+		8E1DE99A28ACEA0100AB9A09 /* YLZMSBaseTableViewPresenter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YLZMSBaseTableViewPresenter.h; sourceTree = "<group>"; };
+		8E1DE99B28ACEA0100AB9A09 /* YLZMSBaseTableViewPresenter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YLZMSBaseTableViewPresenter.m; sourceTree = "<group>"; };
 		8E424303265C9C9D00E5A4A5 /* CommFiles.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CommFiles.pch; sourceTree = "<group>"; };
 		8E424304265C9CCA00E5A4A5 /* Macros.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Macros.h; sourceTree = "<group>"; };
 		8E42431B265CA2F800E5A4A5 /* YLZMSTabBar.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YLZMSTabBar.h; sourceTree = "<group>"; };
@@ -611,9 +622,38 @@
 			path = SafeSDK;
 			sourceTree = "<group>";
 		};
+		8E1DE98E28ACE77200AB9A09 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				8E1DE99228ACE7B100AB9A09 /* Protocol */,
+				8E1DE98F28ACE79B00AB9A09 /* YLZMSBasePresenter.h */,
+				8E1DE99028ACE79B00AB9A09 /* YLZMSBasePresenter.m */,
+				8E1DE99A28ACEA0100AB9A09 /* YLZMSBaseTableViewPresenter.h */,
+				8E1DE99B28ACEA0100AB9A09 /* YLZMSBaseTableViewPresenter.m */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		8E1DE99228ACE7B100AB9A09 /* Protocol */ = {
+			isa = PBXGroup;
+			children = (
+				8E1DE99328ACE7DA00AB9A09 /* YLZMSViewDataProtocol.h */,
+				8E1DE99428ACE7F400AB9A09 /* YLZMSPresenterProtocol.h */,
+			);
+			path = Protocol;
+			sourceTree = "<group>";
+		};
+		8E1DE99D28ACEBAC00AB9A09 /* Tool */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Tool;
+			sourceTree = "<group>";
+		};
 		8E4242EF265C9AE800E5A4A5 /* Base */ = {
 			isa = PBXGroup;
 			children = (
+				8E1DE98E28ACE77200AB9A09 /* Presenter */,
 				8E9DD40F269042CE00D13F09 /* TableViewCell */,
 				8E9DD401269035B100D13F09 /* Model */,
 				8E4243D5265CF73A00E5A4A5 /* Public */,
@@ -676,6 +716,10 @@
 		8E424320265CA32800E5A4A5 /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
+				8E4243C9265CF22400E5A4A5 /* YLZKitCategory.h */,
+				8ED8524F288CE2720036E99F /* HSAExampleHelper.h */,
+				8ED85250288CE2720036E99F /* HSAExampleHelper.m */,
+				8ED85252288CE5310036E99F /* HSAExampleHelper.swift */,
 				8E97D91C283C7E4A004850C7 /* YLZRegExp */,
 				8E97D91B283C7C28004850C7 /* YLZFormat */,
 				8E150BDC27B502EC00CBD777 /* YLZFile */,
@@ -683,16 +727,12 @@
 				8E5200DE26FDCCB1000EBCEB /* YLZTimer */,
 				8E79CDEF268EF17F00E71F17 /* YLZPage */,
 				8E79CDD6268EE59F00E71F17 /* YLZStore */,
-				8E4243C9265CF22400E5A4A5 /* YLZKitCategory.h */,
 				8E4243C4265CF22400E5A4A5 /* YLZFont */,
 				8E4243B2265CF22400E5A4A5 /* YLZHud */,
 				8E4243BE265CF22400E5A4A5 /* YLZImage */,
 				8E4243C1265CF22400E5A4A5 /* YLZJson */,
 				8E4243BB265CF22400E5A4A5 /* YLZView */,
 				8E42434B265CE8FE00E5A4A5 /* YLZColor */,
-				8ED8524F288CE2720036E99F /* HSAExampleHelper.h */,
-				8ED85250288CE2720036E99F /* HSAExampleHelper.m */,
-				8ED85252288CE5310036E99F /* HSAExampleHelper.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -981,13 +1021,6 @@
 				8E5200E126FDCCEA000EBCEB /* YLZQrcodeHelper.m */,
 			);
 			path = YLZQrcode;
-			sourceTree = "<group>";
-		};
-		8E594E792893DBEF0078AC2F /* InfoPlists */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = InfoPlists;
 			sourceTree = "<group>";
 		};
 		8E59B15626914A660043073C /* LoginFollow */ = {
@@ -1632,6 +1665,8 @@
 			children = (
 				8E9DD40B26903D1F00D13F09 /* YLZConstTableViewCell.h */,
 				8E9DD40C26903D1F00D13F09 /* YLZConstTableViewCell.m */,
+				8E1DE99728ACE8CF00AB9A09 /* YLZMSBaseTableViewCell.h */,
+				8E1DE99828ACE8CF00AB9A09 /* YLZMSBaseTableViewCell.m */,
 			);
 			path = TableViewCell;
 			sourceTree = "<group>";
@@ -1805,10 +1840,10 @@
 		8EFB12B3265BB44F007D9FE1 /* OCProject */ = {
 			isa = PBXGroup;
 			children = (
-				8E594E792893DBEF0078AC2F /* InfoPlists */,
+				8E1DE99D28ACEBAC00AB9A09 /* Tool */,
 				8E79CE34268F13E500E71F17 /* ExtraPart */,
-				8E79CDC1268ED12B00E71F17 /* Logic */,
 				8E4242EF265C9AE800E5A4A5 /* Base */,
+				8E79CDC1268ED12B00E71F17 /* Logic */,
 				8E4242F0265C9AF200E5A4A5 /* Supporting Files */,
 				8EFB12BA265BB44F007D9FE1 /* ViewController.h */,
 				8EFB12BB265BB44F007D9FE1 /* ViewController.m */,
@@ -2020,6 +2055,7 @@
 				8E46904926EB57B0004EDD58 /* YLZHomeModel.m in Sources */,
 				8E79CDF7268EF21B00E71F17 /* YLZMediator.m in Sources */,
 				8E9DD4172690436100D13F09 /* YLZSecretSettingTableViewCell.m in Sources */,
+				8E1DE99128ACE79B00AB9A09 /* YLZMSBasePresenter.m in Sources */,
 				8E9DD4412690580F00D13F09 /* YLZAccountTableViewCell.m in Sources */,
 				8E79CDE7268EE84000E71F17 /* YLZUserBaseInfo.m in Sources */,
 				8E8481E82691DC0E005CCA34 /* YLZMomentView.m in Sources */,
@@ -2048,6 +2084,7 @@
 				8E79CEAB268F13F900E71F17 /* JXCategoryTitleView.m in Sources */,
 				8E79CEA3268F13F900E71F17 /* JXCategoryDotCell.m in Sources */,
 				8E79CEAA268F13F900E71F17 /* JXCategoryTitleCell.m in Sources */,
+				8E1DE99928ACE8CF00AB9A09 /* YLZMSBaseTableViewCell.m in Sources */,
 				8E67D11C2692E21D00BF476D /* YLZMineBaseTableView.m in Sources */,
 				8E9DD4272690497900D13F09 /* YLZBlacklistTableViewCell.m in Sources */,
 				8E84820C2691FD21005CCA34 /* YLZMomentOnePhotoTableViewCell.m in Sources */,
@@ -2062,6 +2099,7 @@
 				8E5200E626FDF444000EBCEB /* YLZHealthCodeCollectionViewCell.m in Sources */,
 				8E4243A1265CF04600E5A4A5 /* UIButton+YLZFixMultiClick.m in Sources */,
 				8E424399265CF04600E5A4A5 /* UIImage+YLZCompress.m in Sources */,
+				8E1DE99C28ACEA0100AB9A09 /* YLZMSBaseTableViewPresenter.m in Sources */,
 				8E67D0E52692996A00BF476D /* YLZPendingTableViewCell.m in Sources */,
 				8E5200E226FDCCEA000EBCEB /* YLZQrcodeHelper.m in Sources */,
 				8E67D0E02692995300BF476D /* YLZPendingViewController.m in Sources */,

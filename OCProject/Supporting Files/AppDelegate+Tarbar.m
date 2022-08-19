@@ -66,13 +66,13 @@
     [self.tabbarVC setupTabWithVCArr:vcArr imageNameArr:imageNameArr selectedImageNameArr:selectedImageNameArr titleColor:YLZColorTitleTwo selecedTitleColor:YLZColorBlueView];
     [self.tabbarVC setupCenterTabWithCenterImage:@"ylz_tabbar_plus" middleVC:nil isPresentVC:YES];
     
-    self.window.rootViewController = [[UINavigationController alloc] initWithRootViewController:[[ViewController alloc] init]];
+//    self.window.rootViewController = [[UINavigationController alloc] initWithRootViewController:[[ViewController alloc] init]];
 //    self.window.rootViewController = [[UINavigationController alloc] initWithRootViewController:[[YLZLoginViewController alloc] init]];
-//    self.window.rootViewController = self.tabbarVC;
+    self.window.rootViewController = self.tabbarVC;
 //    self.window.rootViewController = [[YLZHealthCodeViewController alloc] init];
 //    self.window.rootViewController = [[YLZRouteCodeViewController alloc] init];
 //    self.window.rootViewController = [[UINavigationController alloc] initWithRootViewController:[[YLZSetIdentityViewController alloc] init]];
-    [self initProtectSDK];
+//    [self initProtectSDK];
 //    self.window.rootViewController = self.tabbarVC;
 }
 
