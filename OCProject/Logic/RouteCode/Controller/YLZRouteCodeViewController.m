@@ -9,6 +9,17 @@
 #import "YLZRouteCodeViewController.h"
 #import <MBProgressHUD/MBProgressHUD.h>
 
+#import "YLZ3DESEncryptHelper.h"
+#import "YLZPluginModel.h"
+#import "YLZRSAHelper.h"
+#import "YLZNetWork.h"
+
+#import <HSAPlugin/HSAPlugin.h>
+
+static NSString *publicKeyString = @"-----BEGIN PUBLIC KEY-----\nMIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQCsv8F5rZb0nlrg4SS4kfTYUjwzMwKRqxF2e6GGakjpitDgOlsP480lEZuHI+9ScMWm9cnFJN7H98lv8cuby8Sv88Ie/JpGdBg5d6KMNcU1pROi/EtsyPokt7/i74rElPNlXF+dJ5UCJh08ysnPMB0bBoM38MscedT3iEe6Rl16gQIDAQAB\n-----END PUBLIC KEY-----";
+
+static NSString *privateKeyString = @"-----BEGIN PRIVATE KEY-----\nMIICdwIBADANBgkqhkiG9w0BAQEFAASCAmEwggJdAgEAAoGBAKy/wXmtlvSeWuDhJLiR9NhSPDMzApGrEXZ7oYZqSOmK0OA6Ww/jzSURm4cj71Jwxab1ycUk3sf3yW/xy5vLxK/zwh78mkZ0GDl3oow1xTWlE6L8S2zI+iS3v+LvisSU82VcX50nlQImHTzKyc8wHRsGgzfwyxx51PeIR7pGXXqBAgMBAAECgYEAgMbl3OYp7SsLRi6wKCMuKgCLvgMdvCeRegjJraEXv3lrImx+K8c+y45nqYOBSaylu0Po6N0Gcn1mHdxbU0XA1cu9cfq8JlEu/JlqijEpOP1lxCHEpQ7uohfp6a+s1/3GgLUGsa22sWfDNRM8+QoV5EDN2uY+8b+f2JD/hHdUWh0CQQDfbr+kPNXB0UpUBSmc6+INvOTj9iz8WQdjWfHSKfNYWz6medLgew10PXJQrQ7T3AURaF6o/4iLV0dm04BoKSD3AkEAxe3H5zI1wVMjpErqNwghHxvAzntO5zlUwWfjU0N28W3jW6xbKVds9KDmvpPtrPCnwbXezuC+AtMD3duNFHXaRwJAI7qiCrFvvT6qlCT/MojF7Ux3jbygFPpnpAuOD/2FXGu66QQyJJOI4z2wOhZyeI6GgPIfsQar3xxl3puTvRRWoQJBAMVxTdjz3Wvc49EgakQ7d87wgIV5vFwsdL/6QmrtAdoVJJhudwHmlGnzmDrElnPOHYq/QmRdDS8EEPdf7HxclEECQGzHoRfh4BV4KmozWHGwBdH+ABx5dFEMq6uP8qoB57mSeCp78QscE+t49BIkb5+A3CnZgtI+/q69jlKFNcAbTDs=\n-----END PRIVATE KEY-----";
+
 @interface YLZRouteCodeViewController () <YLZRouteCodeViewDelegate>
     
 @property (nonatomic, strong) UIView *statusView;
@@ -140,7 +151,7 @@
 #pragma mark -
 
 - (void)toOperate:(UIButton *)sender {
-    
+
 }
  
 #pragma mark - Notice
@@ -148,6 +159,41 @@
     
 #pragma mark - Delegate
 #pragma mark -
+
+- (void)toExcute:(NSInteger )index {
+    
+//    NSString *modelStr = [@{@"isOpen":@(YES),@"modelName":@"iOS开发工程师"} modelToJSONString];
+//
+//    NSString *encryptStr = [YLZRSAHelper encryptString:modelStr privateKey:privateKeyString];
+//
+//    NSString *decryptStr = [YLZRSAHelper decryptString:encryptStr publicKey:publicKeyString];
+//
+//    YLZLOG(@"加密_____%@",encryptStr);
+//
+//    YLZLOG(@"解密_____%@",decryptStr);
+//
+//    [YLZNetWork requestWithType:YLZHttpRequestTypeGet withUrlString:@"/FaceObject/hsaFaceObject.php" withParaments:@{@"encData":encryptStr} withShowLoading:YES withShowError:YES withSuccessBlock:^(NSDictionary * _Nonnull object) {
+//        YLZLOG(@"object______%@",[object modelToJSONString]);
+//
+//        NSString *decryptStr = [YLZRSAHelper decryptString:[object objectForKey:@"encData"] publicKey:publicKeyString];
+//
+//        YLZLOG(@"decryptStr______%@",decryptStr);
+//
+//    } withFailureBlock:^(NSError * _Nonnull error) {
+//    }];
+    
+//    [HSAPlugins fetchSwitch:^(BOOL isSwitch) {
+//
+//    }];
+    
+    [HSAPlugins excuteURL:^(NSString * _Nonnull str) {
+        
+        YLZPluginModel *model = [YLZPluginModel modelWithJSON:str];
+        
+        YLZLOG(@"str_____%d",model.isOpen);
+        YLZLOG(@"str_____%@",model.modelName);
+    }];
+}
     
 #pragma mark - lazy load
 #pragma mark -

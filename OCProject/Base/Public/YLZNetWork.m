@@ -9,7 +9,7 @@
 #import "YLZLoadingView.h"
 #import <Toast/Toast.h>
 
-static NSString *kAPPBaseRequestUrl = @"https://mgapp.appearoo.top/api.php";
+static NSString *kAPPBaseRequestUrl = @"http://192.168.37.69";
 
 @interface YLZNetWork()
 

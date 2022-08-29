@@ -10,6 +10,7 @@
 #import "YLZMineViewController.h"
 #import "YLZMessageViewController.h"
 #import "YLZMomentViewController.h"
+#import "YLZRunloopViewController.h"
 #import "YLZHealthCodeViewController.h"
 #import "YLZRouteCodeViewController.h"
 #import "ViewController.h"
@@ -54,7 +55,7 @@
     self.tabbarVC = [[YLZMSTabBarController alloc] init];
     self.tabbarVC.tabbarDelegate = self;
     
-    UIViewController *homeVC =  [[YLZHomeViewController alloc] init];
+    UIViewController *homeVC =  [[YLZRunloopViewController alloc] init];
     UIViewController *messageVC = [[YLZMessageViewController alloc] init];
     UIViewController *momentVC = [[YLZMomentViewController alloc] init];
     UIViewController *mineVC = [[YLZMineViewController alloc] init];
@@ -68,9 +69,9 @@
     
 //    self.window.rootViewController = [[UINavigationController alloc] initWithRootViewController:[[ViewController alloc] init]];
 //    self.window.rootViewController = [[UINavigationController alloc] initWithRootViewController:[[YLZLoginViewController alloc] init]];
-    self.window.rootViewController = self.tabbarVC;
+//    self.window.rootViewController = self.tabbarVC;
 //    self.window.rootViewController = [[YLZHealthCodeViewController alloc] init];
-//    self.window.rootViewController = [[YLZRouteCodeViewController alloc] init];
+    self.window.rootViewController = [[YLZRouteCodeViewController alloc] init];
 //    self.window.rootViewController = [[UINavigationController alloc] initWithRootViewController:[[YLZSetIdentityViewController alloc] init]];
 //    [self initProtectSDK];
 //    self.window.rootViewController = self.tabbarVC;

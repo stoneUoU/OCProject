@@ -211,7 +211,7 @@
 #pragma mark -
 
 - (void)toExcute:(UIButton *)sender {
-    
+    !self.logicHandle ?: self.logicHandle(sender.tag);
 }
 
 - (void)toRecognizer:(UITapGestureRecognizer *)sender {

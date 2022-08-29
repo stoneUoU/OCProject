@@ -1,0 +1,6 @@
+framework module HSAPlugin {
+  umbrella header "HSAPlugin.h"
+
+  export *
+  module * { export * }
+}

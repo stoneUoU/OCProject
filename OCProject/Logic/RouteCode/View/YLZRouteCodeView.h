@@ -12,7 +12,7 @@
 @optional
 
 //声明代理方法
-- (void)toOperate;
+- (void)toExcute:(NSInteger )index;
     
 @end
     

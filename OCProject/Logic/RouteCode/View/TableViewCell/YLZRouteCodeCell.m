@@ -97,6 +97,10 @@
     if (!_codeView) {
         _codeView = [[YLZRouteCodeCellView alloc] init];
         _codeView.frame = CGRectMake(16, 76, SCREENWIDTH - (48+32), 380);
+        __weak typeof(self) weakSelf = self;
+        _codeView.logicHandle = ^(NSInteger index) {
+            !weakSelf.logicHandle ?: weakSelf.logicHandle(index);
+        };
     }
     return _codeView;
 }

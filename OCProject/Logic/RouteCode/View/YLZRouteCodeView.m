@@ -149,6 +149,11 @@
             viewCell = [[YLZRouteCodeCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:NSStringFromClass([YLZRouteCodeCell class])];
         }
         viewCell.selectionStyle = UITableViewCellSelectionStyleNone;
+        viewCell.logicHandle = ^(NSInteger index) {
+            if (self.delegate && [self.delegate respondsToSelector:@selector(toExcute:)]) {
+                [self.delegate toExcute:index];
+            }
+        };
         return viewCell;
     } else if (indexPath.section == 1) {
         YLZRouteCodeRecordCell *viewCell = [tableView dequeueReusableCellWithIdentifier:NSStringFromClass([YLZRouteCodeRecordCell class])];
