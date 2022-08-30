@@ -180,6 +180,12 @@
 		8E9DD4672690774500D13F09 /* YLZLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E9DD4662690774500D13F09 /* YLZLoginViewController.m */; };
 		8EC51A3428BC657F005C4078 /* HSAPlugin.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8EC51A3328BC657F005C4078 /* HSAPlugin.framework */; };
 		8EC51A3828BC88B1005C4078 /* YLZPluginModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EC51A3728BC88B1005C4078 /* YLZPluginModel.m */; };
+		8EC51A3B28BC8E23005C4078 /* YLZAcidCheckViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EC51A3A28BC8E23005C4078 /* YLZAcidCheckViewController.m */; };
+		8EC51A3E28BC8EC9005C4078 /* YLZAcidCheckView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EC51A3D28BC8EC9005C4078 /* YLZAcidCheckView.m */; };
+		8EC51A4128BC8FAA005C4078 /* YLZAcidCheckTableHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EC51A4028BC8FAA005C4078 /* YLZAcidCheckTableHeaderView.m */; };
+		8EC51A4428BC93FE005C4078 /* YLZAcidCheckTableFooterView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EC51A4328BC93FE005C4078 /* YLZAcidCheckTableFooterView.m */; };
+		8EC51A4728BCA066005C4078 /* YLZAcidCheckStatusCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EC51A4628BCA066005C4078 /* YLZAcidCheckStatusCell.m */; };
+		8EC51A4A28BCA07A005C4078 /* YLZAcidCheckInfoCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EC51A4928BCA07A005C4078 /* YLZAcidCheckInfoCell.m */; };
 		8ECBC2A92817882900071F21 /* YLZRouteCodeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8ECBC2A82817882900071F21 /* YLZRouteCodeViewController.m */; };
 		8ECBC2AD2817883F00071F21 /* YLZRouteCodeView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8ECBC2AC2817883F00071F21 /* YLZRouteCodeView.m */; };
 		8ECBC2B02817887700071F21 /* YLZRouteCodeInfoCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8ECBC2AF2817887700071F21 /* YLZRouteCodeInfoCell.m */; };
@@ -559,6 +565,18 @@
 		8EC51A3328BC657F005C4078 /* HSAPlugin.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = HSAPlugin.framework; sourceTree = "<group>"; };
 		8EC51A3628BC88B1005C4078 /* YLZPluginModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YLZPluginModel.h; sourceTree = "<group>"; };
 		8EC51A3728BC88B1005C4078 /* YLZPluginModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YLZPluginModel.m; sourceTree = "<group>"; };
+		8EC51A3928BC8E23005C4078 /* YLZAcidCheckViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YLZAcidCheckViewController.h; sourceTree = "<group>"; };
+		8EC51A3A28BC8E23005C4078 /* YLZAcidCheckViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YLZAcidCheckViewController.m; sourceTree = "<group>"; };
+		8EC51A3C28BC8EC9005C4078 /* YLZAcidCheckView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YLZAcidCheckView.h; sourceTree = "<group>"; };
+		8EC51A3D28BC8EC9005C4078 /* YLZAcidCheckView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YLZAcidCheckView.m; sourceTree = "<group>"; };
+		8EC51A3F28BC8FAA005C4078 /* YLZAcidCheckTableHeaderView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YLZAcidCheckTableHeaderView.h; sourceTree = "<group>"; };
+		8EC51A4028BC8FAA005C4078 /* YLZAcidCheckTableHeaderView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YLZAcidCheckTableHeaderView.m; sourceTree = "<group>"; };
+		8EC51A4228BC93FE005C4078 /* YLZAcidCheckTableFooterView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YLZAcidCheckTableFooterView.h; sourceTree = "<group>"; };
+		8EC51A4328BC93FE005C4078 /* YLZAcidCheckTableFooterView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YLZAcidCheckTableFooterView.m; sourceTree = "<group>"; };
+		8EC51A4528BCA066005C4078 /* YLZAcidCheckStatusCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YLZAcidCheckStatusCell.h; sourceTree = "<group>"; };
+		8EC51A4628BCA066005C4078 /* YLZAcidCheckStatusCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YLZAcidCheckStatusCell.m; sourceTree = "<group>"; };
+		8EC51A4828BCA07A005C4078 /* YLZAcidCheckInfoCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YLZAcidCheckInfoCell.h; sourceTree = "<group>"; };
+		8EC51A4928BCA07A005C4078 /* YLZAcidCheckInfoCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YLZAcidCheckInfoCell.m; sourceTree = "<group>"; };
 		8ECBC2A72817882900071F21 /* YLZRouteCodeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YLZRouteCodeViewController.h; sourceTree = "<group>"; };
 		8ECBC2A82817882900071F21 /* YLZRouteCodeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YLZRouteCodeViewController.m; sourceTree = "<group>"; };
 		8ECBC2AB2817883F00071F21 /* YLZRouteCodeView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YLZRouteCodeView.h; sourceTree = "<group>"; };
@@ -1805,6 +1823,8 @@
 				8ECBC2CF2817DE1000071F21 /* TableViewCell */,
 				8ECBC2AB2817883F00071F21 /* YLZRouteCodeView.h */,
 				8ECBC2AC2817883F00071F21 /* YLZRouteCodeView.m */,
+				8EC51A3C28BC8EC9005C4078 /* YLZAcidCheckView.h */,
+				8EC51A3D28BC8EC9005C4078 /* YLZAcidCheckView.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -1814,6 +1834,8 @@
 			children = (
 				8ECBC2A72817882900071F21 /* YLZRouteCodeViewController.h */,
 				8ECBC2A82817882900071F21 /* YLZRouteCodeViewController.m */,
+				8EC51A3928BC8E23005C4078 /* YLZAcidCheckViewController.h */,
+				8EC51A3A28BC8E23005C4078 /* YLZAcidCheckViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -1829,6 +1851,10 @@
 				8ECBC2B22817888A00071F21 /* YLZRouteCodeRecordCell.m */,
 				8ECBC2AE2817887700071F21 /* YLZRouteCodeInfoCell.h */,
 				8ECBC2AF2817887700071F21 /* YLZRouteCodeInfoCell.m */,
+				8EC51A4528BCA066005C4078 /* YLZAcidCheckStatusCell.h */,
+				8EC51A4628BCA066005C4078 /* YLZAcidCheckStatusCell.m */,
+				8EC51A4828BCA07A005C4078 /* YLZAcidCheckInfoCell.h */,
+				8EC51A4928BCA07A005C4078 /* YLZAcidCheckInfoCell.m */,
 			);
 			path = TableViewCell;
 			sourceTree = "<group>";
@@ -1838,6 +1864,8 @@
 			children = (
 				8ECBC2BD281789AC00071F21 /* YLZRouteCodeTableHeaderView.h */,
 				8ECBC2BE281789AC00071F21 /* YLZRouteCodeTableHeaderView.m */,
+				8EC51A3F28BC8FAA005C4078 /* YLZAcidCheckTableHeaderView.h */,
+				8EC51A4028BC8FAA005C4078 /* YLZAcidCheckTableHeaderView.m */,
 			);
 			path = HeaderView;
 			sourceTree = "<group>";
@@ -1847,6 +1875,8 @@
 			children = (
 				8ECBC2BA2817899D00071F21 /* YLZRouteCodeTableFooterView.h */,
 				8ECBC2BB2817899D00071F21 /* YLZRouteCodeTableFooterView.m */,
+				8EC51A4228BC93FE005C4078 /* YLZAcidCheckTableFooterView.h */,
+				8EC51A4328BC93FE005C4078 /* YLZAcidCheckTableFooterView.m */,
 			);
 			path = FooterView;
 			sourceTree = "<group>";
@@ -2095,6 +2125,7 @@
 				8E59B16D26915E3D0043073C /* YLZSetCollegeViewController.m in Sources */,
 				8E9DD43C269057A500D13F09 /* YLZAccountModel.m in Sources */,
 				8E5200E926FDF46C000EBCEB /* YLZHealthCodeServiceTableViewCell.m in Sources */,
+				8EC51A4128BC8FAA005C4078 /* YLZAcidCheckTableHeaderView.m in Sources */,
 				8E79CE0F268EF57E00E71F17 /* YLZHomeViewController.m in Sources */,
 				8E4243A2265CF04600E5A4A5 /* UIButton+YLZFitSize.m in Sources */,
 				8E79CE9A268F13F900E71F17 /* JXCategoryIndicatorRainbowLineView.m in Sources */,
@@ -2109,6 +2140,7 @@
 				8E79CDE7268EE84000E71F17 /* YLZUserBaseInfo.m in Sources */,
 				8E8481E82691DC0E005CCA34 /* YLZMomentView.m in Sources */,
 				8ECBC2BF281789AC00071F21 /* YLZRouteCodeTableHeaderView.m in Sources */,
+				8EC51A4728BCA066005C4078 /* YLZAcidCheckStatusCell.m in Sources */,
 				8E424358265CEA1F00E5A4A5 /* YLZMSTabBarController.m in Sources */,
 				8E79CE94268F13F900E71F17 /* JXCategoryTitleVerticalZoomCellModel.m in Sources */,
 				8E59B160269151D70043073C /* YLZSetGenderViewController.m in Sources */,
@@ -2120,6 +2152,7 @@
 				8E29A1C728B8B4ED0015C277 /* YLZRSAHelper.m in Sources */,
 				8E5200D326FDA502000EBCEB /* YLZHealthCodeInfoTableViewCell.m in Sources */,
 				8E79CE9C268F13F900E71F17 /* JXCategoryIndicatorBallView.m in Sources */,
+				8EC51A3E28BC8EC9005C4078 /* YLZAcidCheckView.m in Sources */,
 				8ECBC2C228178AA800071F21 /* YLZFunctionModel.m in Sources */,
 				8E79CEAE268F13F900E71F17 /* JXCategoryImageCellModel.m in Sources */,
 				8E79CE9D268F13F900E71F17 /* JXCategoryIndicatorComponentView.m in Sources */,
@@ -2135,6 +2168,7 @@
 				8E79CEA3268F13F900E71F17 /* JXCategoryDotCell.m in Sources */,
 				8E79CEAA268F13F900E71F17 /* JXCategoryTitleCell.m in Sources */,
 				8E1DE99928ACE8CF00AB9A09 /* YLZMSBaseTableViewCell.m in Sources */,
+				8EC51A4428BC93FE005C4078 /* YLZAcidCheckTableFooterView.m in Sources */,
 				8E67D11C2692E21D00BF476D /* YLZMineBaseTableView.m in Sources */,
 				8E9DD4272690497900D13F09 /* YLZBlacklistTableViewCell.m in Sources */,
 				8E84820C2691FD21005CCA34 /* YLZMomentOnePhotoTableViewCell.m in Sources */,
@@ -2152,6 +2186,7 @@
 				8E1DE99C28ACEA0100AB9A09 /* YLZMSBaseTableViewPresenter.m in Sources */,
 				8E67D0E52692996A00BF476D /* YLZPendingTableViewCell.m in Sources */,
 				8E5200E226FDCCEA000EBCEB /* YLZQrcodeHelper.m in Sources */,
+				8EC51A4A28BCA07A005C4078 /* YLZAcidCheckInfoCell.m in Sources */,
 				8E67D0E02692995300BF476D /* YLZPendingViewController.m in Sources */,
 				8E4243A7265CF04600E5A4A5 /* UIViewController+YLZChange.m in Sources */,
 				8E79CE97268F13F900E71F17 /* RTLManager.m in Sources */,
@@ -2209,6 +2244,7 @@
 				8E67D0F526929C0400BF476D /* YLZReviewingTableViewCell.m in Sources */,
 				8E4243CE265CF22400E5A4A5 /* YLZImageHelper.m in Sources */,
 				8E4243AB265CF04600E5A4A5 /* NSTimer+YLZPluto.m in Sources */,
+				8EC51A3B28BC8E23005C4078 /* YLZAcidCheckViewController.m in Sources */,
 				8E59B164269153B40043073C /* YLZSetNameViewController.m in Sources */,
 				8E424360265CEB2F00E5A4A5 /* AppDelegate+Tarbar.m in Sources */,
 				8E79CEB9268F13F900E71F17 /* JXCategoryBaseView.m in Sources */,

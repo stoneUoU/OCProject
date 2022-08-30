@@ -83,11 +83,11 @@
         _codeInfoView.frame = CGRectMake(0, 0, SCREENWIDTH - 48, 76);
         __weak typeof(self) weakSelf = self;
         _codeInfoView.handle = ^{
-            weakSelf.clickNum = weakSelf.clickNum+1;
-            if (weakSelf.clickNum>2) {
-                weakSelf.clickNum = 0;
-            }
-            weakSelf.codeView.clickNum = weakSelf.clickNum;
+//            weakSelf.clickNum = weakSelf.clickNum+1;
+//            if (weakSelf.clickNum>2) {
+//                weakSelf.clickNum = 0;
+//            }
+//            weakSelf.codeView.clickNum = weakSelf.clickNum;
         };
     }
     return _codeInfoView;
@@ -99,7 +99,7 @@
         _codeView.frame = CGRectMake(16, 76, SCREENWIDTH - (48+32), 380);
         __weak typeof(self) weakSelf = self;
         _codeView.logicHandle = ^(NSInteger index) {
-            !weakSelf.logicHandle ?: weakSelf.logicHandle(index);
+            !weakSelf.scanHandle ?: weakSelf.scanHandle();
         };
     }
     return _codeView;
@@ -109,6 +109,12 @@
     if (!_bottomView) {
         _bottomView = [[YLZRouteCodeCellBottomView alloc] init];
         _bottomView.frame = CGRectMake(0, 456, SCREENWIDTH - 48, 100);
+        _bottomView.userInteractionEnabled = YES;
+        __weak typeof(self) weakSelf = self;
+        UITapGestureRecognizer *ges = [[UITapGestureRecognizer alloc] initWithActionBlock:^(id  _Nonnull sender) {
+            !weakSelf.processHandle ?: weakSelf.processHandle();
+        }];
+        [_bottomView addGestureRecognizer:ges];
     }
     return _bottomView;
 }

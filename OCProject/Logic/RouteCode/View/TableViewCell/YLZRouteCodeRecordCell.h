@@ -11,6 +11,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface YLZRouteCodeRecordCell : UITableViewCell
 
+@property (nonatomic, copy) void(^clickHandle)(NSInteger index);
+
 @end
 
 NS_ASSUME_NONNULL_END

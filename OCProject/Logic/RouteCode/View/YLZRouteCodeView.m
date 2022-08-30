@@ -149,9 +149,19 @@
             viewCell = [[YLZRouteCodeCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:NSStringFromClass([YLZRouteCodeCell class])];
         }
         viewCell.selectionStyle = UITableViewCellSelectionStyleNone;
-        viewCell.logicHandle = ^(NSInteger index) {
-            if (self.delegate && [self.delegate respondsToSelector:@selector(toExcute:)]) {
-                [self.delegate toExcute:index];
+//        viewCell.logicHandle = ^(NSInteger index) {
+//            if (self.delegate && [self.delegate respondsToSelector:@selector(toExcute:)]) {
+//                [self.delegate toExcute:index];
+//            }
+//        };
+        viewCell.scanHandle = ^{
+            if (self.delegate && [self.delegate respondsToSelector:@selector(toScan)]) {
+                [self.delegate toScan];
+            }
+        };
+        viewCell.processHandle = ^{
+            if (self.delegate && [self.delegate respondsToSelector:@selector(toProcess)]) {
+                [self.delegate toProcess];
             }
         };
         return viewCell;
@@ -161,6 +171,11 @@
             viewCell = [[YLZRouteCodeRecordCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:NSStringFromClass([YLZRouteCodeRecordCell class])];
         }
         viewCell.selectionStyle = UITableViewCellSelectionStyleNone;
+        viewCell.clickHandle = ^(NSInteger index) {
+            if (self.delegate && [self.delegate respondsToSelector:@selector(toRecord:)]) {
+                [self.delegate toRecord:index];
+            }
+        };
         return viewCell;
     } else if (indexPath.section == 2 || indexPath.section == 3) {
         YLZRouteCodeInfoCell *viewCell = [tableView dequeueReusableCellWithIdentifier:NSStringFromClass([YLZRouteCodeInfoCell class])];

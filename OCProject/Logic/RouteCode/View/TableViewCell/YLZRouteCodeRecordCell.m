@@ -76,6 +76,7 @@
     [self.iconLeftImageView mas_makeConstraints:^(MASConstraintMaker *make) {
         make.bottom.equalTo(self.leftView.mas_bottom);
         make.right.equalTo(self.leftView.mas_right);
+        make.size.equalTo(@(CGSizeMake(76, 80)));
     }];
     
     [self.rightView mas_makeConstraints:^(MASConstraintMaker *make) {
@@ -119,9 +120,14 @@
 - (UIView *)leftView {
     if (!_leftView) {
         _leftView = [UIView new];
-        _leftView.backgroundColor = YLZColorWhite;
+        _leftView.backgroundColor = [UIColor colorWithHexString:@"#f1f4fa"];
         _leftView.layer.cornerRadius = 12.0;
         _leftView.layer.masksToBounds = YES;
+        _leftView.userInteractionEnabled = YES;
+        UITapGestureRecognizer *ges = [[UITapGestureRecognizer alloc] initWithActionBlock:^(id  _Nonnull sender) {
+            !self.clickHandle ?: self.clickHandle(0);
+        }];
+        [_leftView addGestureRecognizer:ges];
     }
     return _leftView;
 }
@@ -129,7 +135,7 @@
 - (UIImageView *)iconLeftImageView {
     if (!_iconLeftImageView) {
         _iconLeftImageView = [UIImageView new];
-        _iconLeftImageView.image = [UIImage imageNamed:@"ylz_record_fresh"];
+        _iconLeftImageView.image = [UIImage imageNamed:@"ylz_record_24"];
     }
     return _iconLeftImageView;
 }
@@ -139,7 +145,7 @@
         _titleLeftLabel = [UILabel new];
         _titleLeftLabel.font = [YLZFont medium:20];
         _titleLeftLabel.textColor = YLZColorTitleOne;
-        _titleLeftLabel.text = @"无14天内记录";
+        _titleLeftLabel.text = @"阴性";
     }
     return _titleLeftLabel;
 }
@@ -147,7 +153,7 @@
 - (UILabel *)subTitleLeftLabel {
     if (!_subTitleLeftLabel) {
         _subTitleLeftLabel = [UILabel new];
-        _subTitleLeftLabel.font = [YLZFont medium:16];
+        _subTitleLeftLabel.font = [YLZFont regular:16];
         _subTitleLeftLabel.textColor = YLZColorTitleOne;
         _subTitleLeftLabel.text = @"核酸检测";
     }
@@ -165,9 +171,14 @@
 - (UIView *)rightView {
     if (!_rightView) {
         _rightView = [UIView new];
-        _rightView.backgroundColor = YLZColorWhite;
+        _rightView.backgroundColor = [UIColor colorWithHexString:@"#f5faf5"];
         _rightView.layer.cornerRadius = 12.0;
         _rightView.layer.masksToBounds = YES;
+        _rightView.userInteractionEnabled = YES;
+        UITapGestureRecognizer *ges = [[UITapGestureRecognizer alloc] initWithActionBlock:^(id  _Nonnull sender) {
+            !self.clickHandle ?: self.clickHandle(1);
+        }];
+        [_rightView addGestureRecognizer:ges];
     }
     return _rightView;
 }
@@ -193,7 +204,7 @@
 - (UILabel *)subTitleRightLabel {
     if (!_subTitleRightLabel) {
         _subTitleRightLabel = [UILabel new];
-        _subTitleRightLabel.font = [YLZFont medium:16];
+        _subTitleRightLabel.font = [YLZFont regular:16];
         _subTitleRightLabel.textColor = YLZColorTitleOne;
         _subTitleRightLabel.text = @"疫苗接种";
     }
