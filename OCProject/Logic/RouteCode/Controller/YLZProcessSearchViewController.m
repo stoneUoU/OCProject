@@ -428,7 +428,7 @@
                 hud.label.text = @"加载中...";
                 dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(1.5 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
                     [hud hideAnimated:YES];
-                    [YLZProgressHUDHelper showSuccessSvg:@"发送成功!"];
+                    [YLZProgressHUDHelper showSuccessSvg:@"发送成功"];
                 });
             } else {
                 
