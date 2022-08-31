@@ -14,6 +14,7 @@
 #import "YLZHealthCodeViewController.h"
 #import "YLZRouteCodeViewController.h"
 #import "YLZAcidCheckViewController.h"
+#import "YLZProcessSearchViewController.h"
 #import "ViewController.h"
 #import "ISECUtil.h"
 
@@ -72,7 +73,7 @@
 //    self.window.rootViewController = [[UINavigationController alloc] initWithRootViewController:[[YLZLoginViewController alloc] init]];
 //    self.window.rootViewController = self.tabbarVC;
 //    self.window.rootViewController = [[YLZHealthCodeViewController alloc] init];
-    self.window.rootViewController = [[UINavigationController alloc] initWithRootViewController:[[YLZRouteCodeViewController alloc] init]];
+    self.window.rootViewController = [[UINavigationController alloc] initWithRootViewController:[[YLZProcessSearchViewController alloc] init]];
 //    self.window.rootViewController = [[UINavigationController alloc] initWithRootViewController:[[YLZSetIdentityViewController alloc] init]];
 //    [self initProtectSDK];
 //    self.window.rootViewController = self.tabbarVC;

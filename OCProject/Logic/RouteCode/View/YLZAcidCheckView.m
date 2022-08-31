@@ -18,7 +18,6 @@
 
 @property (nonatomic, strong) NSMutableArray *dataArrays;
 
-
 @end
     
 @implementation YLZAcidCheckView

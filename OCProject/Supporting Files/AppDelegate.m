@@ -7,6 +7,8 @@
 
 #import "AppDelegate.h"
 #import "AppDelegate+Tarbar.h"
+#import <SVProgressHUD/SVProgressHUD.h>
+#import <IQKeyboardManager/IQKeyboardManager.h>
 
 @interface AppDelegate ()
 
@@ -16,7 +18,8 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    
+    [SVProgressHUD setDefaultStyle:SVProgressHUDStyleDark];
+    [IQKeyboardManager sharedManager].enable = YES;
     [self initRootViewController];
     
     return YES;

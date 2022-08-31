@@ -16,6 +16,7 @@
 
 #import <HSAPlugin/HSAPlugin.h>
 #import "YLZAcidCheckViewController.h"
+#import "YLZProcessSearchViewController.h"
 
 static NSString *publicKeyString = @"-----BEGIN PUBLIC KEY-----\nMIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQCsv8F5rZb0nlrg4SS4kfTYUjwzMwKRqxF2e6GGakjpitDgOlsP480lEZuHI+9ScMWm9cnFJN7H98lv8cuby8Sv88Ie/JpGdBg5d6KMNcU1pROi/EtsyPokt7/i74rElPNlXF+dJ5UCJh08ysnPMB0bBoM38MscedT3iEe6Rl16gQIDAQAB\n-----END PUBLIC KEY-----";
 
@@ -70,7 +71,7 @@ static NSString *privateKeyString = @"-----BEGIN PRIVATE KEY-----\nMIICdwIBADANB
 //        hud.bezelView.backgroundColor = YLZColorTitleTwo;
     //设置提示标题
     hud.label.text = @"加载中...";
-    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(0.5 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(1.5 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
 //        [SVProgressHUD dismiss];
         [hud hideAnimated:YES];
         self.routeCodeView.isLoading = NO;
@@ -203,6 +204,8 @@ static NSString *privateKeyString = @"-----BEGIN PRIVATE KEY-----\nMIICdwIBADANB
 
 - (void)toProcess {
     YLZLOG(@"点击查询行程卡");
+    YLZProcessSearchViewController *vc = [[YLZProcessSearchViewController alloc] init];
+    [self.navigationController pushViewController:vc animated:YES];
 }
 
 - (void)toRecord:(NSInteger)index {
