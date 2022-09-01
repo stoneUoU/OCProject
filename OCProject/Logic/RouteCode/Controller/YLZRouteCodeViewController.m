@@ -15,6 +15,7 @@
 #import "YLZNetWork.h"
 
 #import <HSAPlugin/HSAPlugin.h>
+#import "YLZScanViewController.h"
 #import "YLZAcidCheckViewController.h"
 #import "YLZProcessSearchViewController.h"
 
@@ -200,6 +201,8 @@ static NSString *privateKeyString = @"-----BEGIN PRIVATE KEY-----\nMIICdwIBADANB
 
 - (void)toScan {
     YLZLOG(@"扫一扫");
+    YLZScanViewController *vc = [[YLZScanViewController alloc] init];
+    [self.navigationController pushViewController:vc animated:YES];
 }
 
 - (void)toProcess {

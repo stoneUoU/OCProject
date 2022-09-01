@@ -9,7 +9,8 @@
 #import "UIButton+YLZFixMultiClick.h"
 #import "UITextField+YLZExtension.h"
 #import "YLZEnlargeButton.h"
-#import <MBProgressHUD/MBProgressHUD.h>
+//#import <MBProgressHUD/MBProgressHUD.h>
+#import "YLZTimerHelper.h"
 
 @interface YLZProcessResultCardView() {
     
@@ -41,17 +42,11 @@
 
 @property (nonatomic, strong) UILabel *cityLabel;
 
+@property (copy, nonatomic) NSString *task;
+
 @end
 
 @implementation YLZProcessResultCardView
-
-/*
-// Only override drawRect: if you perform custom drawing.
-// An empty implementation adversely affects performance during animation.
-- (void)drawRect:(CGRect)rect {
-    // Drawing code
-}
-*/
 
 - (id)init {
     self = [super init];//当前对象self
@@ -106,7 +101,7 @@
     [self.fontView mas_makeConstraints:^(MASConstraintMaker *make) {
         make.top.equalTo(self.middleView.mas_top);
         make.centerX.equalTo(self);
-        make.size.equalTo(@(CGSizeMake(108, 14)));
+        make.size.equalTo(@(CGSizeMake(120, 14)));
     }];
     [self.fontLeftImageView mas_makeConstraints:^(MASConstraintMaker *make) {
         make.top.equalTo(self.middleView.mas_top);
@@ -151,13 +146,21 @@
         make.right.equalTo(self.bottomView.mas_right).offset(-16);
         make.centerY.equalTo(self.bottomView);
     }];
+    
+    self.task = [YLZTimerHelper execTask:self selector:@selector(doTask) start:0.0 interval:1.0 repeats:YES async:NO];
+    
+}
+
+- (void)doTask {
+    [UIView animateKeyframesWithDuration:1 delay:0 options:0 animations: ^{
+        self.arrowImageView.transform = CGAffineTransformMakeScale(0.6,0.6);
+        [UIView addKeyframeWithRelativeStartTime:0 relativeDuration:1 animations: ^{
+            self.arrowImageView.transform = CGAffineTransformMakeScale(1.2,1.2);
+        }];
+    } completion:nil];
 }
 
 - (void)toExcute:(UIButton *)sender {
-
-}
-
-- (void)btnAgreeMentClick {
 
 }
 
@@ -207,8 +210,8 @@
 - (UILabel *)titleLabel {
     if (!_titleLabel) {
         _titleLabel = [UILabel new];
-        _titleLabel.font = [YLZFont regular:12];
-        _titleLabel.textColor = YLZColorTitleTwo;
+        _titleLabel.font = [YLZFont medium:14];
+        _titleLabel.textColor = [UIColor colorWithHexString:@"#68a272"];
         _titleLabel.textAlignment = NSTextAlignmentCenter;
         _titleLabel.text = @"请收下绿色行程卡";
         _titleLabel.numberOfLines = 0;

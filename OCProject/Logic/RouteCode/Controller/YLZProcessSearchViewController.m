@@ -10,6 +10,7 @@
 #import "YLZProcessSearchViewController.h"
 #import "YLZProcessCardView.h"
 #import "YLZProgressHUDHelper.h"
+#import "YLZProcessResultViewController.h"
 //#import "UIView+YLZCore.h"
 
 @interface YLZProcessSearchViewController ()<UIScrollViewDelegate>
@@ -431,7 +432,16 @@
                     [YLZProgressHUDHelper showSuccessSvg:@"发送成功"];
                 });
             } else {
-                
+                MBProgressHUD *hud = [MBProgressHUD showHUDAddedTo:weakSelf.view animated:YES];
+                //纯文本模式
+                hud.mode = MBProgressHUDModeIndeterminate;
+                //设置提示标题
+                hud.label.text = @"加载中...";
+                dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(1.5 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+                    [hud hideAnimated:YES];
+                    YLZProcessResultViewController *vc = [[YLZProcessResultViewController alloc] init];
+                    [weakSelf.navigationController pushViewController:vc animated:YES];
+                });
             }
         };
     }

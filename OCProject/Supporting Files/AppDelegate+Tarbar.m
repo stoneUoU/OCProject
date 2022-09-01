@@ -74,7 +74,7 @@
 //    self.window.rootViewController = [[UINavigationController alloc] initWithRootViewController:[[YLZLoginViewController alloc] init]];
 //    self.window.rootViewController = self.tabbarVC;
 //    self.window.rootViewController = [[YLZHealthCodeViewController alloc] init];
-    self.window.rootViewController = [[UINavigationController alloc] initWithRootViewController:[[YLZProcessResultViewController alloc] init]];
+    self.window.rootViewController = [[UINavigationController alloc] initWithRootViewController:[[YLZRouteCodeViewController alloc] init]];
 //    self.window.rootViewController = [[UINavigationController alloc] initWithRootViewController:[[YLZSetIdentityViewController alloc] init]];
 //    [self initProtectSDK];
 //    self.window.rootViewController = self.tabbarVC;

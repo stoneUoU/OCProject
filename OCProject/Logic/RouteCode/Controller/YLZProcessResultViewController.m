@@ -10,6 +10,7 @@
 
 #import "YLZProcessResultCardView.h"
 #import "YLZProgressHUDHelper.h"
+#import "YLZTimerHelper.h"
 
 @interface YLZProcessResultViewController ()<UIScrollViewDelegate>
     
@@ -80,7 +81,7 @@
 
 - (void)dealloc
 {
-    NSLog(@"界面销毁");
+    YLZLOG(@"YLZProcessResultViewController————界面销毁");
 }
     
 - (instancetype)init  {

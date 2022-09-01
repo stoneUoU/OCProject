@@ -167,12 +167,7 @@
 }
 
 - (void)toExcute:(UIButton *)sender {
-    if (sender.tag == 0) {
-        !self.tapHandle ?: self.tapHandle(sender.tag);
-    } else {
-        
-    }
-    
+    !self.tapHandle ?: self.tapHandle(sender.tag);
 }
 
 - (void)btnAgreeMentClick {
