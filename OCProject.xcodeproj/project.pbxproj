@@ -17,6 +17,8 @@
 		8E29A1C328B898B30015C277 /* YLZ3DESEncryptHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E29A1BF28B898B20015C277 /* YLZ3DESEncryptHelper.m */; };
 		8E29A1C428B898B30015C277 /* GTMBase64.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E29A1C228B898B30015C277 /* GTMBase64.m */; };
 		8E29A1C728B8B4ED0015C277 /* YLZRSAHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E29A1C628B8B4ED0015C277 /* YLZRSAHelper.m */; };
+		8E377D5D28C04C69001E2CBA /* YLZProcessResultViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E377D5C28C04C69001E2CBA /* YLZProcessResultViewController.m */; };
+		8E377D6028C04C83001E2CBA /* YLZProcessResultCardView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E377D5F28C04C83001E2CBA /* YLZProcessResultCardView.m */; };
 		8E42431D265CA2F800E5A4A5 /* YLZMSTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E42431C265CA2F800E5A4A5 /* YLZMSTabBar.m */; };
 		8E424358265CEA1F00E5A4A5 /* YLZMSTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E424357265CEA1F00E5A4A5 /* YLZMSTabBarController.m */; };
 		8E424360265CEB2F00E5A4A5 /* AppDelegate+Tarbar.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E42435F265CEB2F00E5A4A5 /* AppDelegate+Tarbar.m */; };
@@ -235,6 +237,10 @@
 		8E29A1C228B898B30015C277 /* GTMBase64.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTMBase64.m; sourceTree = "<group>"; };
 		8E29A1C528B8B4ED0015C277 /* YLZRSAHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YLZRSAHelper.h; sourceTree = "<group>"; };
 		8E29A1C628B8B4ED0015C277 /* YLZRSAHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YLZRSAHelper.m; sourceTree = "<group>"; };
+		8E377D5B28C04C69001E2CBA /* YLZProcessResultViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YLZProcessResultViewController.h; sourceTree = "<group>"; };
+		8E377D5C28C04C69001E2CBA /* YLZProcessResultViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YLZProcessResultViewController.m; sourceTree = "<group>"; };
+		8E377D5E28C04C83001E2CBA /* YLZProcessResultCardView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YLZProcessResultCardView.h; sourceTree = "<group>"; };
+		8E377D5F28C04C83001E2CBA /* YLZProcessResultCardView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YLZProcessResultCardView.m; sourceTree = "<group>"; };
 		8E424303265C9C9D00E5A4A5 /* CommFiles.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CommFiles.pch; sourceTree = "<group>"; };
 		8E424304265C9CCA00E5A4A5 /* Macros.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Macros.h; sourceTree = "<group>"; };
 		8E42431B265CA2F800E5A4A5 /* YLZMSTabBar.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YLZMSTabBar.h; sourceTree = "<group>"; };
@@ -1833,6 +1839,8 @@
 				8EC51A3D28BC8EC9005C4078 /* YLZAcidCheckView.m */,
 				8E95983128BE0329005A2759 /* YLZProcessCardView.h */,
 				8E95983228BE0329005A2759 /* YLZProcessCardView.m */,
+				8E377D5E28C04C83001E2CBA /* YLZProcessResultCardView.h */,
+				8E377D5F28C04C83001E2CBA /* YLZProcessResultCardView.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -1846,6 +1854,8 @@
 				8EC51A3A28BC8E23005C4078 /* YLZAcidCheckViewController.m */,
 				8E95982E28BE02A1005A2759 /* YLZProcessSearchViewController.h */,
 				8E95982F28BE02A1005A2759 /* YLZProcessSearchViewController.m */,
+				8E377D5B28C04C69001E2CBA /* YLZProcessResultViewController.h */,
+				8E377D5C28C04C69001E2CBA /* YLZProcessResultViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -2091,6 +2101,7 @@
 				8E59B179269171910043073C /* YLZSetOrganizationAreaViewController.m in Sources */,
 				8E9DD45226906A3C00D13F09 /* YLZFeedBackViewController.m in Sources */,
 				8E0C587928B35C2F00259B67 /* YLZRunloopViewController.m in Sources */,
+				8E377D5D28C04C69001E2CBA /* YLZProcessResultViewController.m in Sources */,
 				8E9DD463269070E400D13F09 /* YLZChangePhoneViewController.m in Sources */,
 				8ECBC2B9281788AD00071F21 /* YLZRouteCodeCell.m in Sources */,
 				8E59B17126916D200043073C /* YLZSetCollegeCollectionViewCell.m in Sources */,
@@ -2221,6 +2232,7 @@
 				8E79CDED268EE97000E71F17 /* YLZBaseViewController.m in Sources */,
 				8E4243AA265CF04600E5A4A5 /* NSString+YLZExtension.m in Sources */,
 				8E5200DD26FDC636000EBCEB /* YLZTimerHelper.m in Sources */,
+				8E377D6028C04C83001E2CBA /* YLZProcessResultCardView.m in Sources */,
 				8E4243A9265CF04600E5A4A5 /* NSError+YLZMS.m in Sources */,
 				8E67D1382692FC7200BF476D /* JXCategoryIndicatorSpringBackgroundView.m in Sources */,
 				8E79CEB4268F13F900E71F17 /* JXCategoryCollectionView.m in Sources */,
