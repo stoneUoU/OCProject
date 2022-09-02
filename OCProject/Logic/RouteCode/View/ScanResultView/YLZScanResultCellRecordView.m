@@ -1,18 +1,14 @@
 //
-//  YLZRouteCodeCellBottomView.m
+//  YLZScanResultCellRecordView.m
 //  OCProject
 //
-//  Created by stone on 2022/4/26.
+//  Created by stone on 2022/9/2.
 //
 
-#import "YLZRouteCodeCellBottomView.h"
+#import "YLZScanResultCellRecordView.h"
 #import "YLZKitCategory.h"
 
-@interface YLZRouteCodeCellBottomView()
-
-@property (nonatomic, strong) UIImageView *leftIconImageView;
-
-@property (nonatomic, strong) UIImageView *rightIconImageView;
+@interface YLZScanResultCellRecordView()
 
 @property (nonatomic, strong) UIImageView *dashImageView;
 
@@ -26,7 +22,7 @@
 
 @end
 
-@implementation YLZRouteCodeCellBottomView
+@implementation YLZScanResultCellRecordView
 
 #pragma mark - LifeCycle
 #pragma mark -
@@ -49,27 +45,22 @@
 #pragma mark -
     
 - (void)setUI {
-    [self addSubview:self.leftIconImageView];
-    [self addSubview:self.rightIconImageView];
     [self addSubview:self.dashImageView];
     [self addSubview:self.searchLabel];
     [self addSubview:self.arrowIconImageView];
-    [self addSubview:self.infoLabel];
     [self addSubview:self.processImageView];
+    [self addSubview:self.infoLabel];
     [self setMas];
 }
     
  - (void)setMas {
-     [self.leftIconImageView mas_makeConstraints:^(MASConstraintMaker *make) {
-         make.top.equalTo(self.mas_top).offset(8);
-         make.left.equalTo(self.mas_left).offset(-4);
-     }];
-     [self.rightIconImageView mas_makeConstraints:^(MASConstraintMaker *make) {
-         make.top.equalTo(self.leftIconImageView.mas_top);
-         make.right.equalTo(self.mas_right).offset(4);
+     [self.dashImageView mas_makeConstraints:^(MASConstraintMaker *make) {
+         make.top.equalTo(self.mas_top).offset(12);
+         make.left.equalTo(self.mas_left).offset(16);
+         make.size.equalTo(@(CGSizeMake(SCREENWIDTH - (48+32), 0.5)));
      }];
      [self.searchLabel mas_makeConstraints:^(MASConstraintMaker *make) {
-         make.top.equalTo(self.leftIconImageView.mas_bottom).offset(6);
+         make.top.equalTo(self.dashImageView.mas_bottom).offset(12);
          make.left.equalTo(self.mas_left).offset(16);
      }];
      [self.arrowIconImageView mas_makeConstraints:^(MASConstraintMaker *make) {
@@ -83,7 +74,6 @@
      [self.processImageView mas_makeConstraints:^(MASConstraintMaker *make) {
          make.bottom.right.equalTo(self);
      }];
-     [YLZImageHelper drawLineByImageView:self.dashImageView withDashColor:YLZColorTitleThree];
 }
     
 #pragma mark - IB-Action
@@ -97,22 +87,6 @@
 
 #pragma mark - lazy load
 #pragma mark -
-
-- (UIImageView *)leftIconImageView {
-    if(_leftIconImageView == nil) {
-        _leftIconImageView = [[UIImageView alloc] init];
-        _leftIconImageView.image = [UIImage imageNamed:@"ylz_left_jiantou"];
-    }
-    return _leftIconImageView;
-}
-
-- (UIImageView *)rightIconImageView {
-    if(_rightIconImageView == nil) {
-        _rightIconImageView = [[UIImageView alloc] init];
-        _rightIconImageView.image = [UIImage imageNamed:@"ylz_right_jiantou"];
-    }
-    return _rightIconImageView;
-}
 
 - (UILabel *)searchLabel {
     if (!_searchLabel) {
@@ -152,10 +126,11 @@
 - (UIImageView *)dashImageView {
     if(_dashImageView == nil) {
         _dashImageView = [[UIImageView alloc] init];
-        _dashImageView.frame = CGRectMake(16, 16, SCREENWIDTH - (48+32), 2);
+        _dashImageView.backgroundColor = YLZColorPlace;
     }
     return _dashImageView;
 }
 
 @end
+
 

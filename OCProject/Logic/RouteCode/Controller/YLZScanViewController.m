@@ -45,10 +45,6 @@
 #pragma mark - LifeCycle
 #pragma mark -
 
-- (UIStatusBarStyle)preferredStatusBarStyle {
-    return UIStatusBarStyleLightContent;
-}
-
 - (void)dealloc {
     NSLog(@"二维码扫描界面已销毁");
     [self removeScanViewTimer];
@@ -186,6 +182,8 @@
 
 - (void)toScanResult:(NSString *)codeStr {
 //    YLZLOG(@"扫码成功！！！");
+    [self.navigationController popViewControllerAnimated:YES];
+    !self.scanHandle ?: self.scanHandle(codeStr);
 }
 
 - (void)removeScanViewTimer {

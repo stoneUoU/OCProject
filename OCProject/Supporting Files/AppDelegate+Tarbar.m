@@ -16,6 +16,7 @@
 #import "YLZAcidCheckViewController.h"
 #import "YLZProcessSearchViewController.h"
 #import "YLZProcessResultViewController.h"
+#import "YLZScanResultViewController.h"
 #import "ViewController.h"
 #import "ISECUtil.h"
 

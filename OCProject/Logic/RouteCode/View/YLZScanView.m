@@ -10,11 +10,16 @@
 #import "YLZScanViewController.h"
 
 @interface YLZScanView() {
+    
 }
+
+@property (nonatomic, strong) UIView *statusView;
 
 @property (nonatomic, strong) UIView *navigationView;
 
 @property (nonatomic, strong) UIButton *backButton;
+
+@property (nonatomic, strong) UIButton *albumButton;
 
 @property (nonatomic, strong) UILabel *titleLabel;
 
@@ -62,7 +67,12 @@
     [self addSubview:self.flashlightButton];
     [self addSubview:self.promptLabel];
     
+    self.statusView = [[UIView alloc] init];
+    self.statusView.backgroundColor = YLZColorWhite;
+    [self addSubview:self.statusView];
+    
     self.navigationView = [[UIView alloc] init];
+    self.navigationView.backgroundColor = YLZColorWhite;
     [self addSubview:self.navigationView];
     
     self.backButton = [[UIButton alloc] init];
@@ -71,11 +81,19 @@
     [self.backButton ylz_fitSizeToButton:CGSizeMake(30,0)];
     [self.navigationView addSubview:self.backButton];
     
+    self.albumButton = [[UIButton alloc] init];
+    self.albumButton.titleLabel.font = [YLZFont regular:16];
+    [self.albumButton setTitle:@"相册" forState:UIControlStateNormal];
+    [self.albumButton setTitleColor:YLZColorTitleOne forState:UIControlStateNormal];
+    [self.albumButton addTarget:self action:@selector(toAlbum)forControlEvents:UIControlEventTouchUpInside];
+    [self.navigationView addSubview:self.albumButton];
+    
+    
     self.titleLabel = [[UILabel alloc] init];
-    self.titleLabel.text = @"扫一扫";
-    self.titleLabel.font=[YLZFont regular:18];
+    self.titleLabel.text = @"扫描二维码";
+    self.titleLabel.font=[YLZFont medium:18];
     self.titleLabel.textAlignment = NSTextAlignmentCenter;
-    self.titleLabel.textColor = [UIColor whiteColor];
+    self.titleLabel.textColor = YLZColorTitleOne;
     [self.navigationView addSubview:self.titleLabel];
     
     [self setMas];
@@ -98,8 +116,14 @@
         make.bottom.equalTo(self.flashlightStrLabel.mas_top).offset(-5);
         make.centerX.equalTo(self);
     }];
+    [self.statusView mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.top.equalTo(self.mas_top);
+        make.left.equalTo(self);
+        make.width.mas_equalTo(SCREENWIDTH);
+        make.height.mas_equalTo(StatusBarHeight);
+    }];
     [self.navigationView mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.top.equalTo(self.mas_top).offset(StatusBarHeight);
+        make.top.equalTo(self.statusView.mas_bottom);
         make.left.equalTo(self);
         make.width.mas_equalTo(SCREENWIDTH);
         make.height.mas_equalTo(NavBarHeight);
@@ -109,6 +133,11 @@
         make.left.equalTo(self.navigationView.mas_left).offset(0);
         make.height.mas_equalTo(NavBarHeight);
     }];
+    [self.albumButton mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.centerY.equalTo(self.navigationView);
+        make.right.equalTo(self.navigationView.mas_right).offset(-16);
+        make.height.mas_equalTo(NavBarHeight);
+    }];
     [self.titleLabel mas_makeConstraints:^(MASConstraintMaker *make) {
         make.center.equalTo(self.navigationView);
     }];
@@ -116,6 +145,10 @@
 
 #pragma mark - IB-Action
 #pragma mark -
+
+- (void)toAlbum {
+    
+}
 
 - (void)toOpenFlashlight:(UIButton *)sender {
     if (_delegate && [_delegate respondsToSelector:@selector(toOpenFlashlight)]) {
@@ -161,9 +194,9 @@
         _promptLabel = [[UILabel alloc] init];
         _promptLabel.backgroundColor = [UIColor clearColor];
         _promptLabel.textAlignment = NSTextAlignmentCenter;
-        _promptLabel.font = [YLZFont regular:14];
-        _promptLabel.textColor = [[UIColor whiteColor] colorWithAlphaComponent:0.6];
-        _promptLabel.text = @"将二维码放入框内, 即可自动扫描";
+        _promptLabel.font = [YLZFont regular:16];
+        _promptLabel.textColor = YLZColorWhite;//[[UIColor whiteColor] colorWithAlphaComponent:0.6];
+        _promptLabel.text = @"请对准要扫描的二维码/条码";
     }
     return _promptLabel;
 }

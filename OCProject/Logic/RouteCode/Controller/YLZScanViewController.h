@@ -11,7 +11,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface YLZScanViewController : UIViewController
 
-@property (nonatomic, copy) BOOL (^callbackBlcok)(NSString *scanResult);
+@property (nonatomic, copy) void(^scanHandle)(NSString *scanResult);
 
 @end
 
