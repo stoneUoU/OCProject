@@ -8,6 +8,7 @@
 #import "YLZAcidCheckInfoCell.h"
 
 #import "YLZAcidCheckStatusCell.h"
+#import "YLZStringHelper.h"
 #import "YLZKitCategory.h"
 #import "YLZCategory.h"
 
@@ -68,6 +69,18 @@
     self.titleLabel.text = funcModel.functionName;
     self.infoLabel.text = funcModel.subName;
     self.separatorView.hidden = funcModel.bottomFillet;
+    if (![YLZStringHelper ylz_isNull:funcModel.functionNameColor]) {
+        self.titleLabel.textColor = [UIColor colorWithHexString:funcModel.functionNameColor];
+    } else {
+        self.titleLabel.textColor = [UIColor colorWithHexString:@"#2b2f37"];
+    }
+    if (funcModel.fontSize != 0) {
+        self.titleLabel.font = [YLZFont medium:funcModel.fontSize];
+        self.infoLabel.font = [YLZFont medium:funcModel.fontSize];
+    } else {
+        self.titleLabel.font = [YLZFont medium:16];
+        self.infoLabel.font = [YLZFont medium:16];
+    }
 }
 
 - (void)awakeFromNib {

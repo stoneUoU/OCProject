@@ -129,6 +129,8 @@
 - (UIView *)tableView:(UITableView *)tableView viewForFooterInSection:(NSInteger)section {
     if (section == self.dataArrays.count - 1) {
         YLZAcidCheckTableFooterView *footerView = [[YLZAcidCheckTableFooterView alloc] init];
+        footerView.supportLabel.text = @"1.本服务支持查询全国10天内核酸检测结果";
+        footerView.linkLabel.text = @"2.相关查询结果基于国家、福建省等卫生健康部门数据库，正在不断汇聚更新";
         return footerView;
     } else {
         UIView *footerView = [[UIView alloc] init];

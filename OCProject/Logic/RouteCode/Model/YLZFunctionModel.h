@@ -15,11 +15,15 @@ NS_ASSUME_NONNULL_BEGIN
 
 @property (nonatomic, assign) BOOL bottomFillet;
 
-@property (nonatomic, strong) NSString *iconName;
+@property (nonatomic, copy) NSString *iconName;
 
-@property (nonatomic, strong) NSString *functionName;
+@property (nonatomic, copy) NSString *functionName;
 
-@property (nonatomic, strong) NSString *subName;
+@property (nonatomic, copy) NSString *subName;
+
+@property (nonatomic, copy) NSString *functionNameColor;
+
+@property (nonatomic, assign) NSInteger fontSize;
 
 
 @end

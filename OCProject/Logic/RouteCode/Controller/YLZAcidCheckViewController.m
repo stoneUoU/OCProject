@@ -190,7 +190,7 @@
 - (UILabel *)titleLabel {
     if (!_titleLabel) {
         _titleLabel = [UILabel new];
-        _titleLabel.font = [YLZFont regular:18];
+        _titleLabel.font = [YLZFont medium:18];
         _titleLabel.textColor = YLZColorTitleOne;
         _titleLabel.text = @"核酸检测";
     }

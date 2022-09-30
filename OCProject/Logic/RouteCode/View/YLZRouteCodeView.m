@@ -89,7 +89,7 @@
         if (self.isLoading) {
             return 400;
         } else {
-            return 556;
+            return 562;
         }
     } else if (indexPath.section == 1) {
         return 96;
@@ -238,7 +238,7 @@
                         funcModel.functionName = @"添加和删除亲友健康码";
                     } else if (j == 3) {
                         funcModel.iconName = @"ylz_questions";
-                        funcModel.functionName = @"有疑问想得到解答";
+                        funcModel.functionName = @"有疑问想得到回答";
                     } else if (j == 4) {
                         funcModel.iconName = @"ylz_download_love_card";
                         funcModel.functionName = @"下载福码爱心卡";

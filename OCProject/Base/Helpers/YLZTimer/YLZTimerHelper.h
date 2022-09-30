@@ -24,6 +24,8 @@ NS_ASSUME_NONNULL_BEGIN
                  async:(BOOL)async;
 + (void)cancelTask:(NSString *)name;
 
++ (NSString *)fetchCurrentTimeString;
+
 @end
 
 NS_ASSUME_NONNULL_END

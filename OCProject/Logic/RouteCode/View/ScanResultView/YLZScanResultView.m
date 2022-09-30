@@ -10,12 +10,17 @@
 #import "YLZRouteCodeRecordCell.h"
 #import "YLZScanResultAreaCell.h"
 #import "YLZFunctionModel.h"
+#import "YLZAreaModel.h"
 
 @interface YLZScanResultView()<UITableViewDelegate,UITableViewDataSource> {
     
 }
 
 @property (nonatomic, strong) NSMutableArray *dataArrays;
+
+@property (nonatomic, strong) YLZAreaModel *areaModel;
+
+@property (nonatomic, assign) BOOL flag;
 
 @end
     
@@ -27,6 +32,7 @@
 - (id)init {
     self = [super init];//当前对象self
     if (self !=nil) {
+        self.flag = NO;
         [self setUI];
     }
     return self;//返回一个已经初始化完毕的对象；
@@ -111,6 +117,7 @@
             viewCell = [[YLZScanResultAreaCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:NSStringFromClass([YLZScanResultAreaCell class])];
         }
         viewCell.selectionStyle = UITableViewCellSelectionStyleNone;
+        viewCell.areaModel = self.areaModel;
         return viewCell;
     } else if (indexPath.section == 1) {
         YLZScanResultStatusCell *viewCell = [tableView dequeueReusableCellWithIdentifier:NSStringFromClass([YLZScanResultStatusCell class])];
@@ -122,6 +129,18 @@
             if (self.delegate && [self.delegate respondsToSelector:@selector(toProcess)]) {
                 [self.delegate toProcess];
             }
+        };
+        viewCell.statusHandle = ^{
+            YLZLOG(@"刷新");
+            self.flag = !self.flag;
+            if (self.flag) {
+                self.areaModel.areaName = @"殿前站";
+                self.areaModel.areaSite = @"福建省厦门市湖里区殿前（地铁站）";
+            } else {
+                self.areaModel.areaName = @"厦门地铁2号线岭兜站";
+                self.areaModel.areaSite = @"福建省厦门市思明区岭兜（地铁站）";
+            }
+            [self.tableView reloadData];
         };
         return viewCell;
     } else if (indexPath.section == 2) {
@@ -172,6 +191,16 @@
         [_dataArrays addObject:@[]];
     }
     return _dataArrays;
+}
+
+- (YLZAreaModel *)areaModel
+{
+    if (!_areaModel) {
+        _areaModel = [[YLZAreaModel alloc] init];
+        _areaModel.areaName = @"厦门地铁2号线岭兜站";
+        _areaModel.areaSite = @"福建省厦门市思明区岭兜（地铁站）";
+    }
+    return _areaModel;
 }
       
 @end

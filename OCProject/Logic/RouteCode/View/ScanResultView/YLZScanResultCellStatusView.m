@@ -50,7 +50,7 @@
      }];
      [self.statusLabel mas_makeConstraints:^(MASConstraintMaker *make) {
          make.top.equalTo(self.logoImageView.mas_bottom).offset(16);
-         make.left.equalTo(self.mas_left).offset(16);
+         make.centerX.equalTo(self);
      }];
 }
     
@@ -77,7 +77,7 @@
 - (UILabel *)statusLabel {
     if (!_statusLabel) {
         _statusLabel = [UILabel new];
-        _statusLabel.font = [YLZFont medium:18];
+        _statusLabel.font = [YLZFont medium:20];
         _statusLabel.textColor = [UIColor colorWithHexString:@"#63a379"];
         _statusLabel.text = @"绿码：健康状态为低风险";
     }

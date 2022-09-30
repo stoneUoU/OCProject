@@ -165,6 +165,7 @@
 - (void)toBack {
     YLZScanViewController *scanView = (YLZScanViewController *)self.delegate;
     [scanView.navigationController popViewControllerAnimated:YES];
+    !scanView.scanHandle ?: scanView.scanHandle(@"");
 }
 
 #pragma mark - Notice

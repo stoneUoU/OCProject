@@ -8,6 +8,7 @@
 #import "YLZScanResultAreaCell.h"
 #import "YLZKitCategory.h"
 #import "YLZCategory.h"
+#import "YLZTimerHelper.h"
 
 @interface YLZScanResultAreaCell()
 
@@ -30,6 +31,13 @@
         [self setUI];
     }
     return self;
+}
+
+- (void)setAreaModel:(YLZAreaModel *)areaModel {
+    _areaModel = areaModel;
+    self.titleLabel.text = areaModel.areaName;
+    self.areaLabel.text = areaModel.areaSite;
+    self.timeLabel.text = [YLZTimerHelper fetchCurrentTimeString];
 }
 
 - (void)setUI {
@@ -117,7 +125,6 @@
         _titleLabel = [UILabel new];
         _titleLabel.font = [YLZFont medium:20];
         _titleLabel.textColor = YLZColorTitleOne;
-        _titleLabel.text = @"软件园二期";
     }
     return _titleLabel;
 }
@@ -153,11 +160,6 @@
         _timeLabel = [UILabel new];
         _timeLabel.font = [YLZFont regular:16];
         _timeLabel.textColor = YLZColorTitleOne;
-        NSDate *nowDate = [NSDate date];
-        NSDateFormatter *formatter = [[NSDateFormatter alloc] init];
-        [formatter setDateFormat:@"YYYY-MM-dd HH:mm:ss"];
-        NSString *currentTimeString = [formatter stringFromDate:nowDate];
-        _timeLabel.text = [NSString stringWithFormat:@"%@",currentTimeString];
         _timeLabel.numberOfLines = 0;
         _timeLabel.textAlignment = NSTextAlignmentLeft;
     }
@@ -177,7 +179,6 @@
         _areaLabel = [UILabel new];
         _areaLabel.font = [YLZFont regular:16];
         _areaLabel.textColor = YLZColorTitleOne;
-        _areaLabel.text = @"福建省厦门市思明区厦门市软件园";
         _areaLabel.numberOfLines = 0;
         _areaLabel.textAlignment = NSTextAlignmentLeft;
     }
@@ -185,9 +186,3 @@
 }
 
 @end
-
-
-
-
-
-

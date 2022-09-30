@@ -331,9 +331,9 @@
 - (UILabel *)titleLabel {
     if (!_titleLabel) {
         _titleLabel = [UILabel new];
-        _titleLabel.font = [YLZFont regular:18];
+        _titleLabel.font = [YLZFont medium:18];
         _titleLabel.textColor = YLZColorTitleOne;
-        _titleLabel.text = @"福建健康码";
+        _titleLabel.text = @"通信大数据行程卡";
     }
     return _titleLabel;
 }

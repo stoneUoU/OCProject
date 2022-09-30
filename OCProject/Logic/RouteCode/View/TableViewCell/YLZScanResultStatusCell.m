@@ -88,6 +88,12 @@
     if (!_statusView) {
         _statusView = [[YLZScanResultCellStatusView alloc] init];
         _statusView.frame = CGRectMake(16, 76, SCREENWIDTH - (48+32), 210);
+        _statusView.userInteractionEnabled = YES;
+        __weak typeof(self) weakSelf = self;
+        UITapGestureRecognizer *ges = [[UITapGestureRecognizer alloc] initWithActionBlock:^(id  _Nonnull sender) {
+            !weakSelf.statusHandle ?: weakSelf.statusHandle();
+        }];
+        [_statusView addGestureRecognizer:ges];
     }
     return _statusView;
 }

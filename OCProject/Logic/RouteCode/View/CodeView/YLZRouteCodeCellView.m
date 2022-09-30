@@ -157,7 +157,7 @@
      [self.scanButton mas_makeConstraints:^(MASConstraintMaker *make) {
          make.centerX.equalTo(self);
          make.top.equalTo(self.stateLabel.mas_bottom).offset(13);
-         make.size.equalTo(@(CGSizeMake(SCREENWIDTH - 120, 44)));
+         make.size.equalTo(@(CGSizeMake(240, 50)));
      }];
      
      [self.codeGradientView layoutIfNeeded];
@@ -171,8 +171,9 @@
 
 - (void)setClickNum:(NSInteger)clickNum {
     if (clickNum == 0) {
-        [self formatWithString:@"绿码：健康状态为低风险" location:0 fontColor:[UIColor colorWithHexString:@"#609f6c"]];
-        self.qrCodeImageView.image = [ZSGenerateCodeUtil zs_QRCode:[NSString ylz_randomStringWithLength:100] size:CGSizeMake(228, 228) color:[UIColor colorWithHexString:@"#609f6c"] backgroudColor:YLZColorWhite];
+//        [self formatWithString:@"绿码：健康状态为低风险" location:0 fontColor:[UIColor colorWithHexString:@"#63a379"]];
+        [self formatWithString:@"绿码" location:0 fontColor:[UIColor colorWithHexString:@"#63a379"]];
+        self.qrCodeImageView.image = [ZSGenerateCodeUtil zs_QRCode:[NSString ylz_randomStringWithLength:100] size:CGSizeMake(228, 228) color:[UIColor colorWithHexString:@"#63a379"] backgroudColor:YLZColorWhite];
     } else if (clickNum == 1) {
         [self formatWithString:@"黄码：健康状态为中风险" location:0 fontColor:[UIColor colorWithHexString:@"#F7ce44"]];
         self.qrCodeImageView.image = [ZSGenerateCodeUtil zs_QRCode:[NSString ylz_randomStringWithLength:100] size:CGSizeMake(228, 228) color:[UIColor colorWithHexString:@"#F7ce44"] backgroudColor:YLZColorWhite];
@@ -343,7 +344,7 @@
     if (!_brightLabel) {
         _brightLabel = [UILabel new];
         _brightLabel.font = [YLZFont regular:12];
-        _brightLabel.textColor = YLZColorTitleOne;
+        _brightLabel.textColor = YLZColorCodeBlue;
         _brightLabel.text = @"亮码";
     }
     return _brightLabel;
@@ -408,7 +409,7 @@
         [_scanButton setTitleColor:YLZColorWhite forState:UIControlStateNormal];
         _scanButton.tag = 0;
         [_scanButton setTitle:@"扫一扫" forState:UIControlStateNormal];
-        _scanButton.layer.cornerRadius = 22;
+        _scanButton.layer.cornerRadius = 25;
         _scanButton.layer.shadowColor = [YLZColorCodeBlue CGColor];
         _scanButton.layer.shadowOffset = CGSizeMake(0, 6);
         _scanButton.layer.shadowOpacity = 1;

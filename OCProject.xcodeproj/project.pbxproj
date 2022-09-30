@@ -80,6 +80,11 @@
 		8E59B179269171910043073C /* YLZSetOrganizationAreaViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E59B178269171910043073C /* YLZSetOrganizationAreaViewController.m */; };
 		8E59B17D26919B190043073C /* YLZCollegeAreaPickerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E59B17C26919B190043073C /* YLZCollegeAreaPickerView.m */; };
 		8E59B1812691A2A60043073C /* YLZAlertForceView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E59B1802691A2A60043073C /* YLZAlertForceView.m */; };
+		8E5E424828E6932900DC19AB /* YLZAreaModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E5E424728E6932900DC19AB /* YLZAreaModel.m */; };
+		8E5E424D28E6BC2400DC19AB /* YLZVaccineFetchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E5E424C28E6BC2400DC19AB /* YLZVaccineFetchViewController.m */; };
+		8E5E425028E6BD3400DC19AB /* YLZVaccineFetchView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E5E424F28E6BD3400DC19AB /* YLZVaccineFetchView.m */; };
+		8E5E425428E6C0D800DC19AB /* YLZStringHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E5E425328E6C0D800DC19AB /* YLZStringHelper.m */; };
+		8E5E425728E6C2CA00DC19AB /* YLZVaccineFetchTableHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E5E425628E6C2CA00DC19AB /* YLZVaccineFetchTableHeaderView.m */; };
 		8E67D0D4269291BD00BF476D /* YLZMomentFourPhotoTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E67D0D3269291BD00BF476D /* YLZMomentFourPhotoTableViewCell.m */; };
 		8E67D0D8269292D900BF476D /* YLZMomentPicCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E67D0D7269292D900BF476D /* YLZMomentPicCollectionViewCell.m */; };
 		8E67D0E02692995300BF476D /* YLZPendingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E67D0DF2692995300BF476D /* YLZPendingViewController.m */; };
@@ -381,6 +386,16 @@
 		8E59B17C26919B190043073C /* YLZCollegeAreaPickerView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YLZCollegeAreaPickerView.m; sourceTree = "<group>"; };
 		8E59B17F2691A2A60043073C /* YLZAlertForceView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YLZAlertForceView.h; sourceTree = "<group>"; };
 		8E59B1802691A2A60043073C /* YLZAlertForceView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YLZAlertForceView.m; sourceTree = "<group>"; };
+		8E5E424628E6932900DC19AB /* YLZAreaModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YLZAreaModel.h; sourceTree = "<group>"; };
+		8E5E424728E6932900DC19AB /* YLZAreaModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YLZAreaModel.m; sourceTree = "<group>"; };
+		8E5E424B28E6BC2400DC19AB /* YLZVaccineFetchViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YLZVaccineFetchViewController.h; sourceTree = "<group>"; };
+		8E5E424C28E6BC2400DC19AB /* YLZVaccineFetchViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YLZVaccineFetchViewController.m; sourceTree = "<group>"; };
+		8E5E424E28E6BD3400DC19AB /* YLZVaccineFetchView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YLZVaccineFetchView.h; sourceTree = "<group>"; };
+		8E5E424F28E6BD3400DC19AB /* YLZVaccineFetchView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YLZVaccineFetchView.m; sourceTree = "<group>"; };
+		8E5E425228E6C0D800DC19AB /* YLZStringHelper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YLZStringHelper.h; sourceTree = "<group>"; };
+		8E5E425328E6C0D800DC19AB /* YLZStringHelper.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YLZStringHelper.m; sourceTree = "<group>"; };
+		8E5E425528E6C2CA00DC19AB /* YLZVaccineFetchTableHeaderView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YLZVaccineFetchTableHeaderView.h; sourceTree = "<group>"; };
+		8E5E425628E6C2CA00DC19AB /* YLZVaccineFetchTableHeaderView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YLZVaccineFetchTableHeaderView.m; sourceTree = "<group>"; };
 		8E67D0D2269291BD00BF476D /* YLZMomentFourPhotoTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YLZMomentFourPhotoTableViewCell.h; sourceTree = "<group>"; };
 		8E67D0D3269291BD00BF476D /* YLZMomentFourPhotoTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YLZMomentFourPhotoTableViewCell.m; sourceTree = "<group>"; };
 		8E67D0D6269292D900BF476D /* YLZMomentPicCollectionViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YLZMomentPicCollectionViewCell.h; sourceTree = "<group>"; };
@@ -837,6 +852,7 @@
 				8ED8524F288CE2720036E99F /* HSAExampleHelper.h */,
 				8ED85250288CE2720036E99F /* HSAExampleHelper.m */,
 				8ED85252288CE5310036E99F /* HSAExampleHelper.swift */,
+				8E5E425128E6C0BC00DC19AB /* YLZString */,
 				8E97D91C283C7E4A004850C7 /* YLZRegExp */,
 				8E97D91B283C7C28004850C7 /* YLZFormat */,
 				8E150BDC27B502EC00CBD777 /* YLZFile */,
@@ -1180,6 +1196,15 @@
 				8E59B178269171910043073C /* YLZSetOrganizationAreaViewController.m */,
 			);
 			path = Controller;
+			sourceTree = "<group>";
+		};
+		8E5E425128E6C0BC00DC19AB /* YLZString */ = {
+			isa = PBXGroup;
+			children = (
+				8E5E425228E6C0D800DC19AB /* YLZStringHelper.h */,
+				8E5E425328E6C0D800DC19AB /* YLZStringHelper.m */,
+			);
+			path = YLZString;
 			sourceTree = "<group>";
 		};
 		8E67D0DA2692990800BF476D /* Pending(待处理) */ = {
@@ -1891,6 +1916,8 @@
 				8ECBC2C128178AA800071F21 /* YLZFunctionModel.m */,
 				8EC51A3628BC88B1005C4078 /* YLZPluginModel.h */,
 				8EC51A3728BC88B1005C4078 /* YLZPluginModel.m */,
+				8E5E424628E6932900DC19AB /* YLZAreaModel.h */,
+				8E5E424728E6932900DC19AB /* YLZAreaModel.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -1907,6 +1934,8 @@
 				8ECBC2AC2817883F00071F21 /* YLZRouteCodeView.m */,
 				8EC51A3C28BC8EC9005C4078 /* YLZAcidCheckView.h */,
 				8EC51A3D28BC8EC9005C4078 /* YLZAcidCheckView.m */,
+				8E5E424E28E6BD3400DC19AB /* YLZVaccineFetchView.h */,
+				8E5E424F28E6BD3400DC19AB /* YLZVaccineFetchView.m */,
 				8E377D6F28C086C6001E2CBA /* YLZScanView.h */,
 				8E377D7028C086C6001E2CBA /* YLZScanView.m */,
 				8E95983128BE0329005A2759 /* YLZProcessCardView.h */,
@@ -1924,6 +1953,8 @@
 				8ECBC2A82817882900071F21 /* YLZRouteCodeViewController.m */,
 				8EC51A3928BC8E23005C4078 /* YLZAcidCheckViewController.h */,
 				8EC51A3A28BC8E23005C4078 /* YLZAcidCheckViewController.m */,
+				8E5E424B28E6BC2400DC19AB /* YLZVaccineFetchViewController.h */,
+				8E5E424C28E6BC2400DC19AB /* YLZVaccineFetchViewController.m */,
 				8E95982E28BE02A1005A2759 /* YLZProcessSearchViewController.h */,
 				8E95982F28BE02A1005A2759 /* YLZProcessSearchViewController.m */,
 				8E377D5B28C04C69001E2CBA /* YLZProcessResultViewController.h */,
@@ -1966,6 +1997,8 @@
 				8ECBC2BE281789AC00071F21 /* YLZRouteCodeTableHeaderView.m */,
 				8EC51A3F28BC8FAA005C4078 /* YLZAcidCheckTableHeaderView.h */,
 				8EC51A4028BC8FAA005C4078 /* YLZAcidCheckTableHeaderView.m */,
+				8E5E425528E6C2CA00DC19AB /* YLZVaccineFetchTableHeaderView.h */,
+				8E5E425628E6C2CA00DC19AB /* YLZVaccineFetchTableHeaderView.m */,
 			);
 			path = HeaderView;
 			sourceTree = "<group>";
@@ -2197,6 +2230,7 @@
 				8E5200D626FDAC71000EBCEB /* YLZHealthCodeTableViewCell.m in Sources */,
 				8E67D0D4269291BD00BF476D /* YLZMomentFourPhotoTableViewCell.m in Sources */,
 				8E9DD437269056D400D13F09 /* YLZSwitchAccountViewController.m in Sources */,
+				8E5E424828E6932900DC19AB /* YLZAreaModel.m in Sources */,
 				8E4243CB265CF22400E5A4A5 /* YLZEnlargeButton.m in Sources */,
 				8E4243E1265CF7BF00E5A4A5 /* YLZFormatHelper.m in Sources */,
 				8E42439A265CF04600E5A4A5 /* UIImage+YLZChange.m in Sources */,
@@ -2245,6 +2279,8 @@
 				8E79CDF7268EF21B00E71F17 /* YLZMediator.m in Sources */,
 				8E9DD4172690436100D13F09 /* YLZSecretSettingTableViewCell.m in Sources */,
 				8E1DE99128ACE79B00AB9A09 /* YLZMSBasePresenter.m in Sources */,
+				8E5E425028E6BD3400DC19AB /* YLZVaccineFetchView.m in Sources */,
+				8E5E425728E6C2CA00DC19AB /* YLZVaccineFetchTableHeaderView.m in Sources */,
 				8E9DD4412690580F00D13F09 /* YLZAccountTableViewCell.m in Sources */,
 				8EC792C928C1D1E6006B7F78 /* YLZScanResultViewController.m in Sources */,
 				8E79CDE7268EE84000E71F17 /* YLZUserBaseInfo.m in Sources */,
@@ -2254,6 +2290,7 @@
 				8E424358265CEA1F00E5A4A5 /* YLZMSTabBarController.m in Sources */,
 				8E79CE94268F13F900E71F17 /* JXCategoryTitleVerticalZoomCellModel.m in Sources */,
 				8E59B160269151D70043073C /* YLZSetGenderViewController.m in Sources */,
+				8E5E425428E6C0D800DC19AB /* YLZStringHelper.m in Sources */,
 				8E8482002691E33A005CCA34 /* YLZOperateModel.m in Sources */,
 				8E79CEA7268F13F900E71F17 /* JXCategoryTitleImageCell.m in Sources */,
 				8E9DD4672690774500D13F09 /* YLZLoginViewController.m in Sources */,
@@ -2279,6 +2316,7 @@
 				8E79CEAA268F13F900E71F17 /* JXCategoryTitleCell.m in Sources */,
 				8E1DE99928ACE8CF00AB9A09 /* YLZMSBaseTableViewCell.m in Sources */,
 				8EC51A4428BC93FE005C4078 /* YLZAcidCheckTableFooterView.m in Sources */,
+				8E5E424D28E6BC2400DC19AB /* YLZVaccineFetchViewController.m in Sources */,
 				8E67D11C2692E21D00BF476D /* YLZMineBaseTableView.m in Sources */,
 				8E9DD4272690497900D13F09 /* YLZBlacklistTableViewCell.m in Sources */,
 				8E84820C2691FD21005CCA34 /* YLZMomentOnePhotoTableViewCell.m in Sources */,

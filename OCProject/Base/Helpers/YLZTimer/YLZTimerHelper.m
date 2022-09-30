@@ -71,4 +71,12 @@ dispatch_semaphore_t semaphore_;
     dispatch_semaphore_signal(semaphore_);
 }
 
++ (NSString *)fetchCurrentTimeString {
+    NSDate *nowDate = [NSDate date];
+    NSDateFormatter *formatter = [[NSDateFormatter alloc] init];
+    [formatter setDateFormat:@"YYYY-MM-dd HH:mm:ss"];
+    NSString *currentTimeString = [formatter stringFromDate:nowDate];
+    return [NSString stringWithFormat:@"%@",currentTimeString];
+};
+
 @end

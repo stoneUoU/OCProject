@@ -11,6 +11,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface YLZScanResultStatusCell : UITableViewCell
 
+@property (nonatomic, copy) void(^statusHandle)(void);
+
 @property (nonatomic, copy) void(^processHandle)(void);
 
 @end

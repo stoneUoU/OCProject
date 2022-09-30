@@ -17,6 +17,7 @@
 #import <HSAPlugin/HSAPlugin.h>
 #import "YLZScanViewController.h"
 #import "YLZAcidCheckViewController.h"
+#import "YLZVaccineFetchViewController.h"
 #import "YLZProcessSearchViewController.h"
 #import "YLZScanResultViewController.h"
 
@@ -230,7 +231,8 @@ static NSString *privateKeyString = @"-----BEGIN PRIVATE KEY-----\nMIICdwIBADANB
         YLZAcidCheckViewController *vc = [[YLZAcidCheckViewController alloc] init];
         [self.navigationController pushViewController:vc animated:YES];
     } else {
-        YLZLOG(@"疫苗接种");
+        YLZVaccineFetchViewController *vc = [[YLZVaccineFetchViewController alloc] init];
+        [self.navigationController pushViewController:vc animated:YES];
     }
 }
     
@@ -256,9 +258,9 @@ static NSString *privateKeyString = @"-----BEGIN PRIVATE KEY-----\nMIICdwIBADANB
 - (UILabel *)titleLabel {
     if (!_titleLabel) {
         _titleLabel = [UILabel new];
-        _titleLabel.font = [YLZFont regular:18];
+        _titleLabel.font = [YLZFont medium:18];
         _titleLabel.textColor = YLZColorTitleOne;
-        _titleLabel.text = @"福建八闽健康码";
+        _titleLabel.text = @"福建健康码";
     }
     return _titleLabel;
 }

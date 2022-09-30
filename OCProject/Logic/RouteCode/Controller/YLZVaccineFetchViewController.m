@@ -1,33 +1,22 @@
 //
-//  YLZScanResultViewController.m
+//  YLZVaccineFetchViewController.m
 //  OCProject
 //
-//  Created by stone on 2022/9/2.
+//  Created by stone on 2022/9/30.
 //
-
-#import "YLZScanResultView.h"
-#import "YLZScanResultViewController.h"
 #import <MBProgressHUD/MBProgressHUD.h>
+#import "YLZVaccineFetchViewController.h"
+#import "YLZVaccineFetchView.h"
 
-#import "YLZ3DESEncryptHelper.h"
-#import "YLZPluginModel.h"
-#import "YLZRSAHelper.h"
-#import "YLZNetWork.h"
-
-#import <HSAPlugin/HSAPlugin.h>
-#import "YLZScanViewController.h"
-#import "YLZAcidCheckViewController.h"
-#import "YLZProcessSearchViewController.h"
-
-@interface YLZScanResultViewController () <YLZScanResultViewDelegate>
+@interface YLZVaccineFetchViewController () <YLZVaccineFetchViewDelegate>
     
 @property (nonatomic, strong) UIView *statusView;
 
 @property (nonatomic, strong) UIView *navigationView;
 
-@property (nonatomic, strong) UIButton *backButton;
-
 @property (nonatomic, strong) UILabel *titleLabel;
+
+@property (nonatomic, strong) UIButton *backButton;
 
 @property (nonatomic, strong) UIView *operateView;
 
@@ -37,11 +26,11 @@
 
 @property (nonatomic, strong) UIButton *shutButton;
 
-@property (nonatomic, strong) YLZScanResultView *scanResultView;
+@property (nonatomic, strong) YLZVaccineFetchView *vaccineFetchView;
 
 @end
 
-@implementation YLZScanResultViewController
+@implementation YLZVaccineFetchViewController
     
 #pragma mark - LifeCycle
 #pragma mark-
@@ -52,7 +41,7 @@
 }
     
 - (instancetype)init  {
-    self = [super init ];//当前对象self
+    self = [super init];//当前对象self
     if (self !=nil) {//如果对象初始化成功，才有必要进行接下来的初始化
     }
     return self;//返回一个已经初始化完毕的对象；
@@ -61,7 +50,15 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     [self setUI];
-    [self.scanResultView.tableView reloadData];
+    MBProgressHUD *hud = [MBProgressHUD showHUDAddedTo:self.view animated:YES];
+    //纯文本模式
+    hud.mode = MBProgressHUDModeIndeterminate;
+    //设置提示标题
+    hud.label.text = @"加载中...";
+    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(0.5 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+        [hud hideAnimated:YES];
+        [self.vaccineFetchView.tableView reloadData];
+    });
 }
     
 - (void)viewWillAppear:(BOOL)animated {
@@ -92,7 +89,7 @@
     [self.operateView addSubview:self.separatorView];
     [self.operateView addSubview:self.shutButton];
     
-    [self.view addSubview:self.scanResultView];
+    [self.view addSubview:self.vaccineFetchView];
     
     [self setMas];
 }
@@ -133,7 +130,7 @@
         make.centerY.equalTo(self.navigationView);
         make.left.equalTo(self.separatorView.mas_right).offset(8);
     }];
-    [self.scanResultView mas_makeConstraints:^(MASConstraintMaker *make) {
+    [self.vaccineFetchView mas_makeConstraints:^(MASConstraintMaker *make) {
         make.top.equalTo(self.navigationView.mas_bottom);
         make.left.equalTo(self.view);
         make.size.equalTo(@(CGSizeMake(SCREENWIDTH, SCREENHEIGHT - (StatusBarHeight+NavBarHeight))));
@@ -158,71 +155,6 @@
 #pragma mark -
 
 - (void)toExcute:(NSInteger )index {
-    
-//    NSString *modelStr = [@{@"isOpen":@(YES),@"modelName":@"iOS开发工程师"} modelToJSONString];
-//
-//    NSString *encryptStr = [YLZRSAHelper encryptString:modelStr privateKey:privateKeyString];
-//
-//    NSString *decryptStr = [YLZRSAHelper decryptString:encryptStr publicKey:publicKeyString];
-//
-//    YLZLOG(@"加密_____%@",encryptStr);
-//
-//    YLZLOG(@"解密_____%@",decryptStr);
-//
-//    [YLZNetWork requestWithType:YLZHttpRequestTypeGet withUrlString:@"/FaceObject/hsaFaceObject.php" withParaments:@{@"encData":encryptStr} withShowLoading:YES withShowError:YES withSuccessBlock:^(NSDictionary * _Nonnull object) {
-//        YLZLOG(@"object______%@",[object modelToJSONString]);
-//
-//        NSString *decryptStr = [YLZRSAHelper decryptString:[object objectForKey:@"encData"] publicKey:publicKeyString];
-//
-//        YLZLOG(@"decryptStr______%@",decryptStr);
-//
-//    } withFailureBlock:^(NSError * _Nonnull error) {
-//    }];
-    
-//    [HSAPlugins fetchSwitch:^(BOOL isSwitch) {
-//
-//    }];
-    
-//    [HSAPlugins excuteURL:^(NSString * _Nonnull str) {
-//
-//        YLZPluginModel *model = [YLZPluginModel modelWithJSON:str];
-//
-//        YLZLOG(@"str_____%d",model.isOpen);
-//        YLZLOG(@"str_____%@",model.modelName);
-//    }];
-
-}
-
-- (void)toScan {
-    YLZLOG(@"扫一扫");
-    YLZScanViewController *vc = [[YLZScanViewController alloc] init];
-    vc.scanHandle = ^(NSString * _Nonnull scanResult) {
-        YLZLOG(@"扫码成功_____%@",scanResult);
-        MBProgressHUD *hud = [MBProgressHUD showHUDAddedTo:self.view animated:YES];
-        //纯文本模式
-        hud.mode = MBProgressHUDModeIndeterminate;
-        //设置提示标题
-        hud.label.text = @"加载中...";
-        dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(1.5 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
-            [hud hideAnimated:YES];
-        });
-    };
-    [self.navigationController pushViewController:vc animated:YES];
-}
-
-- (void)toProcess {
-    YLZLOG(@"点击查询行程卡");
-    YLZProcessSearchViewController *vc = [[YLZProcessSearchViewController alloc] init];
-    [self.navigationController pushViewController:vc animated:YES];
-}
-
-- (void)toRecord:(NSInteger)index {
-    if (index == 0) {
-        YLZAcidCheckViewController *vc = [[YLZAcidCheckViewController alloc] init];
-        [self.navigationController pushViewController:vc animated:YES];
-    } else {
-        YLZLOG(@"疫苗接种");
-    }
 }
     
 #pragma mark - lazy load
@@ -258,7 +190,7 @@
         _titleLabel = [UILabel new];
         _titleLabel.font = [YLZFont medium:18];
         _titleLabel.textColor = YLZColorTitleOne;
-        _titleLabel.text = @"张贴码";
+        _titleLabel.text = @"疫苗接种详情";
     }
     return _titleLabel;
 }
@@ -304,13 +236,12 @@
     return _shutButton;
 }
 
-- (YLZScanResultView *)scanResultView {
-    if (!_scanResultView){
-        _scanResultView = [[YLZScanResultView alloc] init];
-        _scanResultView.delegate = self; //将YLZScanResultViewController自己的实例作为委托对象
+- (YLZVaccineFetchView *)vaccineFetchView {
+    if (!_vaccineFetchView){
+        _vaccineFetchView = [[YLZVaccineFetchView alloc] init];
+        _vaccineFetchView.delegate = self; //将YLZVaccineFetchViewController自己的实例作为委托对象
     }
-    return _scanResultView;
+    return _vaccineFetchView;
 }
     
 @end
-

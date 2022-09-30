@@ -89,7 +89,7 @@
      }];
      [self.sourceRightLabel mas_makeConstraints:^(MASConstraintMaker *make) {
          make.top.equalTo(self.titleLabel.mas_bottom).offset(8);
-         make.left.equalTo(self.mas_left).offset(96);
+         make.left.equalTo(self.mas_left).offset(104);
          make.right.equalTo(self.mas_right).offset(-24);
      }];
      [self.mindLeftLabel mas_makeConstraints:^(MASConstraintMaker *make) {
@@ -98,7 +98,7 @@
      }];
      [self.mindRightLabel mas_makeConstraints:^(MASConstraintMaker *make) {
          make.top.equalTo(self.sourceRightLabel.mas_bottom).offset(8);
-         make.left.equalTo(self.mas_left).offset(96);
+         make.left.equalTo(self.mas_left).offset(104);
          make.right.equalTo(self.mas_right).offset(-24);
      }];
      [self.rangeLeftLabel mas_makeConstraints:^(MASConstraintMaker *make) {
@@ -107,7 +107,7 @@
      }];
      [self.rangeRightLabel mas_makeConstraints:^(MASConstraintMaker *make) {
          make.top.equalTo(self.mindRightLabel.mas_bottom).offset(8);
-         make.left.equalTo(self.mas_left).offset(96);
+         make.left.equalTo(self.mas_left).offset(104);
          make.right.equalTo(self.mas_right).offset(-24);
      }];
      
@@ -117,7 +117,7 @@
      }];
      [self.telRightLabel mas_makeConstraints:^(MASConstraintMaker *make) {
          make.top.equalTo(self.rangeRightLabel.mas_bottom).offset(8);
-         make.left.equalTo(self.mas_left).offset(96);
+         make.left.equalTo(self.mas_left).offset(104);
          make.right.equalTo(self.mas_right).offset(-24);
      }];
      [self.mainOrgLeftLabel mas_makeConstraints:^(MASConstraintMaker *make) {
@@ -126,7 +126,7 @@
      }];
      [self.mainOrgRightLabel mas_makeConstraints:^(MASConstraintMaker *make) {
          make.top.equalTo(self.telRightLabel.mas_bottom).offset(8);
-         make.left.equalTo(self.mas_left).offset(96);
+         make.left.equalTo(self.mas_left).offset(104);
          make.right.equalTo(self.mas_right).offset(-24);
      }];
      [self.subOrgLeftLabel mas_makeConstraints:^(MASConstraintMaker *make) {
@@ -135,7 +135,7 @@
      }];
      [self.subOrgRightLabel mas_makeConstraints:^(MASConstraintMaker *make) {
          make.top.equalTo(self.mainOrgRightLabel.mas_bottom).offset(8);
-         make.left.equalTo(self.mas_left).offset(96);
+         make.left.equalTo(self.mas_left).offset(104);
          make.right.equalTo(self.mas_right).offset(-24);
          make.bottom.equalTo(self.mas_bottom).offset(-24);
      }];
@@ -168,7 +168,7 @@
 - (UILabel *)sourceLeftLabel {
     if (!_sourceLeftLabel) {
         _sourceLeftLabel = [UILabel new];
-        _sourceLeftLabel.font = [YLZFont regular:14];
+        _sourceLeftLabel.font = [YLZFont regular:16];
         _sourceLeftLabel.numberOfLines = 0;
         _sourceLeftLabel.textAlignment = NSTextAlignmentLeft;
         _sourceLeftLabel.textColor = YLZColorTitleTwo;
@@ -180,11 +180,11 @@
 - (UILabel *)sourceRightLabel {
     if (!_sourceRightLabel) {
         _sourceRightLabel = [UILabel new];
-        _sourceRightLabel.font = [YLZFont regular:14];
+        _sourceRightLabel.font = [YLZFont regular:16];
         _sourceRightLabel.numberOfLines = 0;
         _sourceRightLabel.textAlignment = NSTextAlignmentLeft;
         _sourceRightLabel.textColor = YLZColorTitleTwo;
-        _sourceRightLabel.text = @"国家政务服务平台和福建省相关部门";
+        _sourceRightLabel.text = @"全国一体化政务服务平台和福建省相关部门";
     }
     return _sourceRightLabel;
 }
@@ -192,7 +192,7 @@
 - (UILabel *)mindLeftLabel {
     if (!_mindLeftLabel) {
         _mindLeftLabel = [UILabel new];
-        _mindLeftLabel.font = [YLZFont regular:14];
+        _mindLeftLabel.font = [YLZFont regular:16];
         _mindLeftLabel.numberOfLines = 0;
         _mindLeftLabel.textAlignment = NSTextAlignmentLeft;
         _mindLeftLabel.textColor = YLZColorTitleTwo;
@@ -204,7 +204,7 @@
 - (UILabel *)mindRightLabel {
     if (!_mindRightLabel) {
         _mindRightLabel = [UILabel new];
-        _mindRightLabel.font = [YLZFont regular:14];
+        _mindRightLabel.font = [YLZFont regular:16];
         _mindRightLabel.numberOfLines = 0;
         _mindRightLabel.textAlignment = NSTextAlignmentLeft;
         _mindRightLabel.textColor = YLZColorTitleTwo;
@@ -216,7 +216,7 @@
 - (UILabel *)rangeLeftLabel {
     if (!_rangeLeftLabel) {
         _rangeLeftLabel = [UILabel new];
-        _rangeLeftLabel.font = [YLZFont regular:14];
+        _rangeLeftLabel.font = [YLZFont regular:16];
         _rangeLeftLabel.numberOfLines = 0;
         _rangeLeftLabel.textAlignment = NSTextAlignmentLeft;
         _rangeLeftLabel.textColor = YLZColorTitleTwo;
@@ -232,7 +232,7 @@
         _rangeRightLabel.numberOfLines = 0;
         _rangeRightLabel.textAlignment = NSTextAlignmentLeft;
         _rangeRightLabel.textColor = YLZColorTitleTwo;
-        _rangeRightLabel.text = @"依托国家政务服务平台，实现跨省（区、市）数据共享和互通互认";
+        _rangeRightLabel.text = @"依托全国一体化政务政务服务平台，实现跨省（区、市）数据共享和互通互认";
     }
     return _rangeRightLabel;
 }
@@ -240,7 +240,7 @@
 - (UILabel *)telLeftLabel {
     if (!_telLeftLabel) {
         _telLeftLabel = [UILabel new];
-        _telLeftLabel.font = [YLZFont regular:14];
+        _telLeftLabel.font = [YLZFont regular:16];
         _telLeftLabel.numberOfLines = 0;
         _telLeftLabel.textAlignment = NSTextAlignmentLeft;
         _telLeftLabel.textColor = YLZColorTitleTwo;
@@ -252,7 +252,7 @@
 - (UILabel *)telRightLabel {
     if (!_telRightLabel) {
         _telRightLabel = [UILabel new];
-        _telRightLabel.font = [YLZFont regular:14];
+        _telRightLabel.font = [YLZFont regular:16];
         _telRightLabel.numberOfLines = 0;
         _telRightLabel.textAlignment = NSTextAlignmentLeft;
         _telRightLabel.textColor = YLZColorTitleTwo;
@@ -264,7 +264,7 @@
 - (UILabel *)mainOrgLeftLabel {
     if (!_mainOrgLeftLabel) {
         _mainOrgLeftLabel = [UILabel new];
-        _mainOrgLeftLabel.font = [YLZFont regular:14];
+        _mainOrgLeftLabel.font = [YLZFont regular:16];
         _mainOrgLeftLabel.numberOfLines = 0;
         _mainOrgLeftLabel.textAlignment = NSTextAlignmentLeft;
         _mainOrgLeftLabel.textColor = YLZColorTitleTwo;
@@ -276,7 +276,7 @@
 - (UILabel *)mainOrgRightLabel {
     if (!_mainOrgRightLabel) {
         _mainOrgRightLabel = [UILabel new];
-        _mainOrgRightLabel.font = [YLZFont regular:14];
+        _mainOrgRightLabel.font = [YLZFont regular:16];
         _mainOrgRightLabel.numberOfLines = 0;
         _mainOrgRightLabel.textAlignment = NSTextAlignmentLeft;
         _mainOrgRightLabel.textColor = YLZColorTitleTwo;
@@ -288,7 +288,7 @@
 - (UILabel *)subOrgLeftLabel {
     if (!_subOrgLeftLabel) {
         _subOrgLeftLabel = [UILabel new];
-        _subOrgLeftLabel.font = [YLZFont regular:14];
+        _subOrgLeftLabel.font = [YLZFont regular:16];
         _subOrgLeftLabel.numberOfLines = 0;
         _subOrgLeftLabel.textAlignment = NSTextAlignmentLeft;
         _subOrgLeftLabel.textColor = YLZColorTitleTwo;
@@ -300,11 +300,11 @@
 - (UILabel *)subOrgRightLabel {
     if (!_subOrgRightLabel) {
         _subOrgRightLabel = [UILabel new];
-        _subOrgRightLabel.font = [YLZFont regular:14];
+        _subOrgRightLabel.font = [YLZFont regular:16];
         _subOrgRightLabel.numberOfLines = 0;
         _subOrgRightLabel.textAlignment = NSTextAlignmentLeft;
         _subOrgRightLabel.textColor = YLZColorTitleTwo;
-        _subOrgRightLabel.text = @"福建省大数据有限公司";
+        _subOrgRightLabel.text = @"福建省大数据集团有限公司";
     }
     return _subOrgRightLabel;
 }

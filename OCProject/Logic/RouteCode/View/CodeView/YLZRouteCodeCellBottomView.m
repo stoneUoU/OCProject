@@ -6,6 +6,7 @@
 //
 
 #import "YLZRouteCodeCellBottomView.h"
+#import <SDWebImage/SDWebImage.h>
 #import "YLZKitCategory.h"
 
 @interface YLZRouteCodeCellBottomView()
@@ -35,6 +36,9 @@
     self = [super init];//当前对象self
     if (self !=nil) {
         [self setUI];
+        NSString *picString = @"https://fjjkm3.nebulabd.cn/res/ZTkfjJA0IO/index/travel-card@2x.png";
+        [self.processImageView sd_setImageWithURL:[NSURL URLWithString:picString]
+                             placeholderImage:[UIImage imageNamed:@""]];
     }
     return self;//返回一个已经初始化完毕的对象；
 }
@@ -127,7 +131,7 @@
 - (UILabel *)infoLabel {
     if (!_infoLabel) {
         _infoLabel = [UILabel new];
-        _infoLabel.font = [YLZFont regular:14];
+        _infoLabel.font = [YLZFont regular:16];
         _infoLabel.textColor = YLZColorTitleThree;
         _infoLabel.text = @"查询本人在疫情期间7天内到访地信息";
     }
@@ -144,7 +148,7 @@
 - (UIImageView *)processImageView {
     if(_processImageView == nil) {
         _processImageView = [[UIImageView alloc] init];
-        _processImageView.image = [UIImage imageNamed:@"ylz_process"];
+//        _processImageView.image = [UIImage imageNamed:@"ylz_process"];
     }
     return _processImageView;
 }

@@ -11,10 +11,6 @@
 
 @property (nonatomic, strong) UILabel *titleLabel;
 
-@property (nonatomic, strong) UILabel *supportLabel;
-
-@property (nonatomic, strong) UILabel *linkLabel;
-
 @end
 
 @implementation YLZAcidCheckTableFooterView
@@ -96,7 +92,6 @@
         _supportLabel.numberOfLines = 0;
         _supportLabel.textAlignment = NSTextAlignmentLeft;
         _supportLabel.textColor = YLZColorTitleTwo;
-        _supportLabel.text = @"1.本服务支持查询全国10天内核酸检测结果";
     }
     return _supportLabel;
 }
@@ -108,7 +103,6 @@
         _linkLabel.numberOfLines = 0;
         _linkLabel.textAlignment = NSTextAlignmentLeft;
         _linkLabel.textColor = YLZColorTitleTwo;
-        _linkLabel.text = @"2.相关查询结果基于国家、福建省等卫生健康部门数据库，正在不断汇聚更新";
     }
     return _linkLabel;
 }
