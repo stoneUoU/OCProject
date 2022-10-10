@@ -4,6 +4,8 @@
 <dict>
 	<key>CFBundleDevelopmentRegion</key>
 	<string>$(DEVELOPMENT_LANGUAGE)</string>
+	<key>CFBundleDisplayName</key>
+	<string>OCProject</string>
 	<key>CFBundleExecutable</key>
 	<string>$(EXECUTABLE_NAME)</string>
 	<key>CFBundleIdentifier</key>
@@ -20,8 +22,8 @@
 	<string>1</string>
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
-    <key>NSCameraUsageDescription</key>
-    <string>App需要使用您的相机扫描二维码信息或拍摄头像</string>
+	<key>NSCameraUsageDescription</key>
+	<string>App需要使用您的相机扫描二维码信息或拍摄头像</string>
 	<key>NSPhotoLibraryAddUsageDescription</key>
 	<string>App访问你的相册，用于保存图片资料</string>
 	<key>NSPhotoLibraryUsageDescription</key>

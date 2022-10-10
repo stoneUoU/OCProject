@@ -18,6 +18,7 @@
 #import "YLZScanViewController.h"
 #import "YLZAcidCheckViewController.h"
 #import "YLZProcessSearchViewController.h"
+#import "YLZVaccineFetchViewController.h"
 
 @interface YLZScanResultViewController () <YLZScanResultViewDelegate>
     
@@ -221,7 +222,9 @@
         YLZAcidCheckViewController *vc = [[YLZAcidCheckViewController alloc] init];
         [self.navigationController pushViewController:vc animated:YES];
     } else {
-        YLZLOG(@"疫苗接种");
+//        YLZLOG(@"疫苗接种");
+        YLZVaccineFetchViewController *vc = [[YLZVaccineFetchViewController alloc] init];
+        [self.navigationController pushViewController:vc animated:YES];
     }
 }
     
