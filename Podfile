@@ -1,7 +1,7 @@
 # Uncomment the next line to define a global platform for your project
 # platform :ios, '9.0'
 source 'https://github.com/CocoaPods/Specs.git'
-source 'http://muweng.nat300.top/hsa-ios/HSARepo.git'
+source 'https://i58yaw.edtsoft.com/gjybfwpt/hsa-ios/HSARepo.git'
 
 target 'OCProject' do
   # Comment the next line if you don't want to use dynamic frameworks

@@ -746,13 +746,6 @@
 			path = Protocol;
 			sourceTree = "<group>";
 		};
-		8E1DE99D28ACEBAC00AB9A09 /* Tool */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Tool;
-			sourceTree = "<group>";
-		};
 		8E29A1BD28B898860015C277 /* YLZEncrypt */ = {
 			isa = PBXGroup;
 			children = (
@@ -2050,7 +2043,6 @@
 		8EFB12B3265BB44F007D9FE1 /* OCProject */ = {
 			isa = PBXGroup;
 			children = (
-				8E1DE99D28ACEBAC00AB9A09 /* Tool */,
 				8E79CE34268F13E500E71F17 /* ExtraPart */,
 				8E4242EF265C9AE800E5A4A5 /* Base */,
 				8E79CDC1268ED12B00E71F17 /* Logic */,
