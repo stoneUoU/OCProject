@@ -223,6 +223,12 @@
 		8ECBC2CE28179EA900071F21 /* YLZRouteCodeCellView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8ECBC2CD28179EA900071F21 /* YLZRouteCodeCellView.m */; };
 		8ED85251288CE2720036E99F /* HSAExampleHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 8ED85250288CE2720036E99F /* HSAExampleHelper.m */; };
 		8ED85253288CE5310036E99F /* HSAExampleHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ED85252288CE5310036E99F /* HSAExampleHelper.swift */; };
+		8EF7C59F2B1079750043DC1D /* EPSAudioRecorderUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EF7C5962B1079750043DC1D /* EPSAudioRecorderUtil.m */; };
+		8EF7C5A02B1079750043DC1D /* EPSAppHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EF7C5982B1079750043DC1D /* EPSAppHelper.m */; };
+		8EF7C5A12B1079750043DC1D /* EPSpectrumView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EF7C5992B1079750043DC1D /* EPSpectrumView.m */; };
+		8EF7C5A22B1079750043DC1D /* EPSpeechRecognizer.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EF7C59A2B1079750043DC1D /* EPSpeechRecognizer.m */; };
+		8EF7C5A32B1079750043DC1D /* EPSpeekHelpBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EF7C59B2B1079750043DC1D /* EPSpeekHelpBar.m */; };
+		8EF7C5A62B107AB50043DC1D /* UIView+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EF7C5A52B107AB50043DC1D /* UIView+Extension.m */; };
 		8EFB12B6265BB44F007D9FE1 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EFB12B5265BB44F007D9FE1 /* AppDelegate.m */; };
 		8EFB12BC265BB44F007D9FE1 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EFB12BB265BB44F007D9FE1 /* ViewController.m */; };
 		8EFB12C1265BB450007D9FE1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8EFB12C0265BB450007D9FE1 /* Assets.xcassets */; };
@@ -672,6 +678,18 @@
 		8ED8524F288CE2720036E99F /* HSAExampleHelper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HSAExampleHelper.h; sourceTree = "<group>"; };
 		8ED85250288CE2720036E99F /* HSAExampleHelper.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HSAExampleHelper.m; sourceTree = "<group>"; };
 		8ED85252288CE5310036E99F /* HSAExampleHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HSAExampleHelper.swift; sourceTree = "<group>"; };
+		8EF7C5952B1079750043DC1D /* EPSpeechRecognizer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EPSpeechRecognizer.h; sourceTree = "<group>"; };
+		8EF7C5962B1079750043DC1D /* EPSAudioRecorderUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EPSAudioRecorderUtil.m; sourceTree = "<group>"; };
+		8EF7C5972B1079750043DC1D /* EPSpeekHelpBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EPSpeekHelpBar.h; sourceTree = "<group>"; };
+		8EF7C5982B1079750043DC1D /* EPSAppHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EPSAppHelper.m; sourceTree = "<group>"; };
+		8EF7C5992B1079750043DC1D /* EPSpectrumView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EPSpectrumView.m; sourceTree = "<group>"; };
+		8EF7C59A2B1079750043DC1D /* EPSpeechRecognizer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EPSpeechRecognizer.m; sourceTree = "<group>"; };
+		8EF7C59B2B1079750043DC1D /* EPSpeekHelpBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EPSpeekHelpBar.m; sourceTree = "<group>"; };
+		8EF7C59C2B1079750043DC1D /* EPSAudioRecorderUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EPSAudioRecorderUtil.h; sourceTree = "<group>"; };
+		8EF7C59D2B1079750043DC1D /* EPSpectrumView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EPSpectrumView.h; sourceTree = "<group>"; };
+		8EF7C59E2B1079750043DC1D /* EPSAppHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EPSAppHelper.h; sourceTree = "<group>"; };
+		8EF7C5A42B107AB50043DC1D /* UIView+Extension.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIView+Extension.h"; sourceTree = "<group>"; };
+		8EF7C5A52B107AB50043DC1D /* UIView+Extension.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIView+Extension.m"; sourceTree = "<group>"; };
 		8EFB12B1265BB44F007D9FE1 /* OCProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OCProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8EFB12B4265BB44F007D9FE1 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		8EFB12B5265BB44F007D9FE1 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -941,6 +959,8 @@
 				8E424381265CF04600E5A4A5 /* UIView+YLZChange.m */,
 				8E424380265CF04600E5A4A5 /* UIView+YLZCore.h */,
 				8E424382265CF04600E5A4A5 /* UIView+YLZCore.m */,
+				8EF7C5A42B107AB50043DC1D /* UIView+Extension.h */,
+				8EF7C5A52B107AB50043DC1D /* UIView+Extension.m */,
 			);
 			path = UIView;
 			sourceTree = "<group>";
@@ -1086,7 +1106,6 @@
 		8E5200C526FD7716000EBCEB /* HealthCode */ = {
 			isa = PBXGroup;
 			children = (
-				8E5200C826FD773B000EBCEB /* Model */,
 				8E5200C726FD7734000EBCEB /* View */,
 				8E5200C626FD772B000EBCEB /* Controller */,
 			);
@@ -1123,13 +1142,6 @@
 				8E5200EB26FDF4AD000EBCEB /* YLZHealthCodeSourceTableViewCell.m */,
 			);
 			path = View;
-			sourceTree = "<group>";
-		};
-		8E5200C826FD773B000EBCEB /* Model */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Model;
 			sourceTree = "<group>";
 		};
 		8E5200DE26FDCCB1000EBCEB /* YLZTimer */ = {
@@ -1315,8 +1327,7 @@
 		8E79CDC2268ED13600E71F17 /* Login */ = {
 			isa = PBXGroup;
 			children = (
-				8E79CDC6268ED15F00E71F17 /* Model */,
-				8E79CDC4268ED14A00E71F17 /* View */,
+				8EF7C5932B1078470043DC1D /* View */,
 				8E79CDC5268ED15400E71F17 /* Controller */,
 			);
 			path = Login;
@@ -1330,13 +1341,6 @@
 			path = Mine;
 			sourceTree = "<group>";
 		};
-		8E79CDC4268ED14A00E71F17 /* View */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = View;
-			sourceTree = "<group>";
-		};
 		8E79CDC5268ED15400E71F17 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
@@ -1348,13 +1352,6 @@
 				8E59B153269149E00043073C /* YLZForgetPasswordViewController.m */,
 			);
 			path = Controller;
-			sourceTree = "<group>";
-		};
-		8E79CDC6268ED15F00E71F17 /* Model */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Model;
 			sourceTree = "<group>";
 		};
 		8E79CDD6268EE59F00E71F17 /* YLZStore */ = {
@@ -1387,17 +1384,10 @@
 			isa = PBXGroup;
 			children = (
 				8E79CE05268EF52E00E71F17 /* Model */,
-				8E79CE03268EF52300E71F17 /* View */,
+				8EF7C5922B1078270043DC1D /* View */,
 				8E79CE04268EF52800E71F17 /* Controller */,
 			);
 			path = Home;
-			sourceTree = "<group>";
-		};
-		8E79CE03268EF52300E71F17 /* View */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = View;
 			sourceTree = "<group>";
 		};
 		8E79CE04268EF52800E71F17 /* Controller */ = {
@@ -1483,6 +1473,7 @@
 		8E79CE34268F13E500E71F17 /* ExtraPart */ = {
 			isa = PBXGroup;
 			children = (
+				8EF7C5942B1079750043DC1D /* Speech */,
 				8EC51A1E28BC55A3005C4078 /* Framework */,
 				8E1C89AA288A9C14000C253F /* SafeSDK */,
 				8E79CE35268F13F900E71F17 /* JXCategoryView */,
@@ -2022,6 +2013,37 @@
 			path = CodeView;
 			sourceTree = "<group>";
 		};
+		8EF7C5922B1078270043DC1D /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		8EF7C5932B1078470043DC1D /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		8EF7C5942B1079750043DC1D /* Speech */ = {
+			isa = PBXGroup;
+			children = (
+				8EF7C5952B1079750043DC1D /* EPSpeechRecognizer.h */,
+				8EF7C5962B1079750043DC1D /* EPSAudioRecorderUtil.m */,
+				8EF7C5972B1079750043DC1D /* EPSpeekHelpBar.h */,
+				8EF7C5982B1079750043DC1D /* EPSAppHelper.m */,
+				8EF7C5992B1079750043DC1D /* EPSpectrumView.m */,
+				8EF7C59A2B1079750043DC1D /* EPSpeechRecognizer.m */,
+				8EF7C59B2B1079750043DC1D /* EPSpeekHelpBar.m */,
+				8EF7C59C2B1079750043DC1D /* EPSAudioRecorderUtil.h */,
+				8EF7C59D2B1079750043DC1D /* EPSpectrumView.h */,
+				8EF7C59E2B1079750043DC1D /* EPSAppHelper.h */,
+			);
+			path = Speech;
+			sourceTree = "<group>";
+		};
 		8EFB12A8265BB44F007D9FE1 = {
 			isa = PBXGroup;
 			children = (
@@ -2215,6 +2237,7 @@
 				8E8481E32691DC00005CCA34 /* YLZMomentViewController.m in Sources */,
 				8E59B154269149E00043073C /* YLZForgetPasswordViewController.m in Sources */,
 				8E79CDFF268EF34300E71F17 /* UIViewController+YLZMediator.m in Sources */,
+				8EF7C5A12B1079750043DC1D /* EPSpectrumView.m in Sources */,
 				8E79CE96268F13F900E71F17 /* JXCategoryTitleVerticalZoomView.m in Sources */,
 				8ECBC2C82817972100071F21 /* YLZRouteCodeCellBottomView.m in Sources */,
 				8EA74C1B28C1E333003AB0B2 /* YLZScanResultCellInfoView.m in Sources */,
@@ -2235,6 +2258,7 @@
 				8E4243A4265CF04600E5A4A5 /* UIView+YLZChange.m in Sources */,
 				8E79CDDF268EE67E00E71F17 /* YLZLocalData.m in Sources */,
 				8EFB12BC265BB44F007D9FE1 /* ViewController.m in Sources */,
+				8EF7C5A32B1079750043DC1D /* EPSpeekHelpBar.m in Sources */,
 				8E29A1C328B898B30015C277 /* YLZ3DESEncryptHelper.m in Sources */,
 				8E79CEAF268F13F900E71F17 /* JXCategoryNumberView.m in Sources */,
 				8E8481FC2691DE74005CCA34 /* YLZMessageModel.m in Sources */,
@@ -2286,6 +2310,7 @@
 				8E8482002691E33A005CCA34 /* YLZOperateModel.m in Sources */,
 				8E79CEA7268F13F900E71F17 /* JXCategoryTitleImageCell.m in Sources */,
 				8E9DD4672690774500D13F09 /* YLZLoginViewController.m in Sources */,
+				8EF7C5A62B107AB50043DC1D /* UIView+Extension.m in Sources */,
 				8E67D0FD2692A50F00BF476D /* YLZInvitedModel.m in Sources */,
 				8E9DD45D2690709D00D13F09 /* YLZBindPhoneViewController.m in Sources */,
 				8E29A1C728B8B4ED0015C277 /* YLZRSAHelper.m in Sources */,
@@ -2309,6 +2334,7 @@
 				8E1DE99928ACE8CF00AB9A09 /* YLZMSBaseTableViewCell.m in Sources */,
 				8EC51A4428BC93FE005C4078 /* YLZAcidCheckTableFooterView.m in Sources */,
 				8E5E424D28E6BC2400DC19AB /* YLZVaccineFetchViewController.m in Sources */,
+				8EF7C5A22B1079750043DC1D /* EPSpeechRecognizer.m in Sources */,
 				8E67D11C2692E21D00BF476D /* YLZMineBaseTableView.m in Sources */,
 				8E9DD4272690497900D13F09 /* YLZBlacklistTableViewCell.m in Sources */,
 				8E84820C2691FD21005CCA34 /* YLZMomentOnePhotoTableViewCell.m in Sources */,
@@ -2337,6 +2363,7 @@
 				8E4243CC265CF22400E5A4A5 /* YLZPaddingLabel.m in Sources */,
 				8E79CEA5268F13F900E71F17 /* JXCategoryDotCellModel.m in Sources */,
 				8E59B175269171750043073C /* YLZSetOrganizationNameViewController.m in Sources */,
+				8EF7C59F2B1079750043DC1D /* EPSAudioRecorderUtil.m in Sources */,
 				8E377D6D28C08662001E2CBA /* HSAQRCodeScanView.m in Sources */,
 				8E59B17D26919B190043073C /* YLZCollegeAreaPickerView.m in Sources */,
 				8E377D7128C086C6001E2CBA /* YLZScanView.m in Sources */,
@@ -2375,6 +2402,7 @@
 				8E9DD404269035CB00D13F09 /* YLZSettingModel.m in Sources */,
 				8E79CE95268F13F900E71F17 /* JXCategoryTitleVerticalZoomCell.m in Sources */,
 				8E42431D265CA2F800E5A4A5 /* YLZMSTabBar.m in Sources */,
+				8EF7C5A02B1079750043DC1D /* EPSAppHelper.m in Sources */,
 				8E67D0D8269292D900BF476D /* YLZMomentPicCollectionViewCell.m in Sources */,
 				8E67D1092692A83500BF476D /* YLZNewFollowViewController.m in Sources */,
 				8E67D0F126929BF000BF476D /* YLZReviewingModel.m in Sources */,

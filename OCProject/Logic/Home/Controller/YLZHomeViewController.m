@@ -26,6 +26,8 @@
 #import "YLZKitCategory.h"
 #import "YLZNetWork.h"
 
+#import "EPSpeekHelpBar.h"
+
 @interface YLZHomeViewController ()
 
 @property (nonatomic, strong) NSMutableArray *homeModelArrays;
@@ -33,6 +35,9 @@
 @property (nonatomic, strong) UIButton *btnOk;
 
 @property (nonatomic, strong) dispatch_semaphore_t sem;
+
+@property (nonatomic, strong) EPSpeekHelpBar *bar;
+
 
 @end
 
@@ -78,6 +83,7 @@
 
 - (void)setUI {
     [self.view addSubview:self.btnOk];
+    [self.view addSubview:self.bar];
     [self setMas];
 }
 
@@ -85,6 +91,11 @@
     [self.btnOk mas_makeConstraints:^(MASConstraintMaker *make) {
         make.center.equalTo(self.view);
         make.size.equalTo(@(CGSizeMake(SCREENWIDTH - 64, 40)));
+    }];
+    [self.bar mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.top.equalTo(self.btnOk.mas_bottom).offset(54);
+        make.centerX.equalTo(self.view);
+        make.size.equalTo(@(CGSizeMake([UIScreen mainScreen].bounds.size.width, 80)));
     }];
 }
 
@@ -221,6 +232,17 @@
         [_btnOk addTarget:self action:@selector(btnOKClick) forControlEvents:UIControlEventTouchUpInside];
     }
     return _btnOk;
+}
+
+- (EPSpeekHelpBar *)bar {
+    if (!_bar) {
+        _bar = [[EPSpeekHelpBar alloc] initWithVC:self];
+        __weak typeof(self) weakSelf = self;
+        _bar.successBlock = ^(NSString * _Nonnull result) {
+            YLZLOG(@"result____%@",result);
+        };
+    }
+    return _bar;
 }
 
 

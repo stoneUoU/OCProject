@@ -28,6 +28,10 @@
 	<string>App访问你的相册，用于保存图片资料</string>
 	<key>NSPhotoLibraryUsageDescription</key>
 	<string>App访问你的相册，用于图片资料的上传</string>
+    <key>NSMicrophoneUsageDescription</key>
+    <string>获取您的语音用于语音输入或识别</string>
+    <key>NSSpeechRecognitionUsageDescription</key>
+    <string>用于语音识别输入，允许吗？</string>
 	<key>UIApplicationSupportsIndirectInputEvents</key>
 	<true/>
 	<key>UILaunchStoryboardName</key>

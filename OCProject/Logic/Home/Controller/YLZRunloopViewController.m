@@ -87,7 +87,7 @@ static void callBack(CFRunLoopObserverRef observer, CFRunLoopActivity activity, 
 #pragma mark -
 
 - (void)doSomething {
-    YLZLOG(@"正在执行中...");
+//    YLZLOG(@"正在执行中...");
 }
 
 // 添加runloop观察者

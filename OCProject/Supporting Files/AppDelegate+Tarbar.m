@@ -59,7 +59,7 @@
     self.tabbarVC = [[YLZMSTabBarController alloc] init];
     self.tabbarVC.tabbarDelegate = self;
     
-    UIViewController *homeVC =  [[YLZRunloopViewController alloc] init];
+    UIViewController *homeVC =  [[YLZHomeViewController alloc] init];
     UIViewController *messageVC = [[YLZMessageViewController alloc] init];
     UIViewController *momentVC = [[YLZMomentViewController alloc] init];
     UIViewController *mineVC = [[YLZMineViewController alloc] init];
@@ -75,11 +75,11 @@
 //    self.window.rootViewController = [[UINavigationController alloc] initWithRootViewController:[[YLZLoginViewController alloc] init]];
 //    self.window.rootViewController = self.tabbarVC;
 //    self.window.rootViewController = [[YLZHealthCodeViewController alloc] init];
-    self.window.rootViewController = [[UINavigationController alloc] initWithRootViewController:[[YLZRouteCodeViewController alloc] init]];
+//    self.window.rootViewController = [[UINavigationController alloc] initWithRootViewController:[[YLZRouteCodeViewController alloc] init]];
 //    self.window.rootViewController = [[UINavigationController alloc] initWithRootViewController:[[YLZScanResultViewController alloc] init]];
 //    self.window.rootViewController = [[UINavigationController alloc] initWithRootViewController:[[YLZSetIdentityViewController alloc] init]];
 //    [self initProtectSDK];
-//    self.window.rootViewController = self.tabbarVC;
+    self.window.rootViewController = self.tabbarVC;
 }
 
 
