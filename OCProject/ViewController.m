@@ -240,10 +240,24 @@ typedef void(^HSAExcuteHandle)(BOOL isSucc);
 - (void)btnOKClick {
     YLZLOG(@"YYYYYYYYY_____%@",[@{@"homeModel":@"stone"} mj_JSONString]);
 //    self.view.backgroundColor = [UIColor redColor];
+    [self requestWithParams:@{} withSuccessBlock:^(NSDictionary *object) {
+        NSLog(@"Success");
+    } withFailureBlock:^(NSError *error) {
+        NSLog(@"Failure");
+    }];
 }
 
 - (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
 //    self.view.backgroundColor = [UIColor greenColor];
+}
+
+- (void)requestWithParams:(id)params withSuccessBlock:(void(^)( NSDictionary * object))successBlock withFailureBlock:(void(^)( NSError *error))failureBlock {
+    BOOL  isSucc = YES;
+    if (isSucc) {
+        !successBlock ?: successBlock(@{});
+    } else {
+        !failureBlock ?: failureBlock([[NSError alloc] init]);
+    }
 }
 
 #pragma mark - Notice
