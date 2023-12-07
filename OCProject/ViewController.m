@@ -10,10 +10,13 @@
 #import "YLZKitCategory.h"
 #import <Flutter/Flutter.h>
 #import <MJExtension/MJExtension.h>
+#import "YLZRouteCodeViewController.h"
 
 typedef void(^HSAExcuteHandle)(BOOL isSucc);
 
-@interface ViewController ()
+@interface ViewController ()<FlutterStreamHandler>
+
+@property (nonatomic, copy) FlutterEventSink eventSink;
 
 @property (nonatomic, strong) NSMutableArray *homeModelArrays;
 
@@ -111,7 +114,7 @@ typedef void(^HSAExcuteHandle)(BOOL isSucc);
     
 //    [self excuteSerialQueue];
     
-    [self excuteQueueGroup];
+//    [self excuteQueueGroup];
 }
 
 - (void)funcWithHandle:(void(^)(NSString *handleStr))handle {
@@ -251,7 +254,36 @@ typedef void(^HSAExcuteHandle)(BOOL isSucc);
             ((AppDelegate *)UIApplication.sharedApplication.delegate).flutterEngine;
     FlutterViewController *flutterViewController =
         [[FlutterViewController alloc] initWithEngine:flutterEngine nibName:nil bundle:nil];
-    [self presentViewController:flutterViewController animated:YES completion:nil];
+    __weak __typeof(self) weakSelf = self;
+    
+    NSString *channelName = @"hi_flutter_module_flutter_to_iOS";
+    NSString *eventChannelName = @"hi_flutter_module_iOS_to_flutter";
+    
+    //FlutterMethodChannel是flutter页面主动交互iOS页面
+    FlutterMethodChannel *methodChannel = [FlutterMethodChannel methodChannelWithName:channelName binaryMessenger:flutterViewController.binaryMessenger];
+    FlutterEventChannel *eventChannel = [FlutterEventChannel eventChannelWithName:eventChannelName binaryMessenger:flutterViewController.binaryMessenger];
+    [eventChannel setStreamHandler:self];
+    [methodChannel setMethodCallHandler:^(FlutterMethodCall * _Nonnull call, FlutterResult  _Nonnull result) {
+        // call.method 获取 flutter 给回到的方法名，要匹配到 channelName 对应的多个 发送方法名，一般需要判断区分
+        // call.arguments 获取到 flutter 给到的参数，（比如跳转到另一个页面所需要参数）
+        // result 是给flutter的回调， 该回调只能使用一次
+        YLZLOG(@"call.method=%@ \n call.arguments = %@", call.method, [call.arguments mj_JSONString]);
+        //iOS给flutter返回值:
+        if ([call.method isEqualToString:@"flutterIOSMethod"]) {
+            if (result) {
+                result(@{@"name": @"iOS 林磊 原生开发", @"age":@(27), @"certNo":@"362324199610016010"});
+            }
+        }
+        if ([call.method isEqualToString:@"backToViewController"]) {
+            [weakSelf.navigationController popViewControllerAnimated:YES];
+        }
+        if ([call.method isEqualToString:@"iOSFlutterMethodToPage"]) {
+            YLZRouteCodeViewController *vc = [[YLZRouteCodeViewController alloc] init];
+            [self.navigationController pushViewController:vc animated:YES];
+        }
+    }];
+    [self.navigationController pushViewController:flutterViewController animated:YES];
+//    [self presentViewController:flutterViewController animated:YES completion:nil];
 }
 
 - (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
@@ -273,6 +305,20 @@ typedef void(^HSAExcuteHandle)(BOOL isSucc);
 
 #pragma mark - Delegate
 #pragma mark -
+
+//这个onListen是Flutter端开始监听这个channel时的回调，第二个参数 EventSink是用来传数据的载体。
+- (FlutterError *)onListenWithArguments:(id)arguments eventSink:(FlutterEventSink)events {
+    if (events) {
+        self.eventSink  = events;
+        self.eventSink(@"原生push到flutter页面,传给flutter的值");
+    }
+    return nil;
+}
+
+// flutter不再接收
+- (FlutterError* _Nullable)onCancelWithArguments:(id _Nullable)arguments {
+    return nil;
+}
 
 #pragma mark - lazy load
 #pragma mark -

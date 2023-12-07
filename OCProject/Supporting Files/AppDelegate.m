@@ -26,6 +26,7 @@
     [self initRootViewControllerZero];
     // Runs the default Dart entrypoint with a default Flutter route.
     [self.flutterEngine run];
+    [GeneratedPluginRegistrant registerWithRegistry:self.flutterEngine];
     return YES;
 }
 
