@@ -5,8 +5,10 @@
 //  Created by stone on 2021/5/24.
 //
 
+#import "AppDelegate.h"
 #import "ViewController.h"
 #import "YLZKitCategory.h"
+#import <Flutter/Flutter.h>
 #import <MJExtension/MJExtension.h>
 
 typedef void(^HSAExcuteHandle)(BOOL isSucc);
@@ -74,32 +76,32 @@ typedef void(^HSAExcuteHandle)(BOOL isSucc);
 #pragma mark -
 
 - (void)setUI {
-//    [self.view addSubview:self.btnOk];
-    [self.view addSubview:self.iconImageView];
-    [self.view addSubview:self.productLabel];
-    [self.view addSubview:self.bottomLabel];
+    [self.view addSubview:self.btnOk];
+//    [self.view addSubview:self.iconImageView];
+//    [self.view addSubview:self.productLabel];
+//    [self.view addSubview:self.bottomLabel];
     [self setMas];
 }
 
 - (void)setMas {
-//    [self.btnOk mas_makeConstraints:^(MASConstraintMaker *make) {
-//        make.center.equalTo(self.view);
-//        make.size.equalTo(@(CGSizeMake(SCREENWIDTH - 64, 40)));
-//    }];
+    [self.btnOk mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.center.equalTo(self.view);
+        make.size.equalTo(@(CGSizeMake(SCREENWIDTH - 64, 40)));
+    }];
     
-    [self.iconImageView mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.centerX.equalTo(self.view);
-        make.centerY.equalTo(self.view).offset(-64);
-        make.size.equalTo(@(CGSizeMake(64, 64)));
-    }];
-    [self.productLabel mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.centerX.equalTo(self.view);
-        make.top.equalTo(self.iconImageView.mas_bottom).offset(32);
-    }];
-    [self.bottomLabel mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.centerX.equalTo(self.view);
-        make.bottom.equalTo(self.view.mas_bottom).offset(-(BottomDangerAreaHeight+16));
-    }];
+//    [self.iconImageView mas_makeConstraints:^(MASConstraintMaker *make) {
+//        make.centerX.equalTo(self.view);
+//        make.centerY.equalTo(self.view).offset(-64);
+//        make.size.equalTo(@(CGSizeMake(64, 64)));
+//    }];
+//    [self.productLabel mas_makeConstraints:^(MASConstraintMaker *make) {
+//        make.centerX.equalTo(self.view);
+//        make.top.equalTo(self.iconImageView.mas_bottom).offset(32);
+//    }];
+//    [self.bottomLabel mas_makeConstraints:^(MASConstraintMaker *make) {
+//        make.centerX.equalTo(self.view);
+//        make.bottom.equalTo(self.view.mas_bottom).offset(-(BottomDangerAreaHeight+16));
+//    }];
     
 //    [self funcWithHandle:^(NSString *handleStr) {
 //        YLZLOG(@"_____%@",handleStr);
@@ -238,13 +240,18 @@ typedef void(^HSAExcuteHandle)(BOOL isSucc);
 #pragma mark -
 
 - (void)btnOKClick {
-    YLZLOG(@"YYYYYYYYY_____%@",[@{@"homeModel":@"stone"} mj_JSONString]);
+//    YLZLOG(@"YYYYYYYYY_____%@",[@{@"homeModel":@"stone"} mj_JSONString]);
 //    self.view.backgroundColor = [UIColor redColor];
-    [self requestWithParams:@{} withSuccessBlock:^(NSDictionary *object) {
-        NSLog(@"Success");
-    } withFailureBlock:^(NSError *error) {
-        NSLog(@"Failure");
-    }];
+//    [self requestWithParams:@{} withSuccessBlock:^(NSDictionary *object) {
+//        NSLog(@"Success");
+//    } withFailureBlock:^(NSError *error) {
+//        NSLog(@"Failure");
+//    }];
+    FlutterEngine *flutterEngine =
+            ((AppDelegate *)UIApplication.sharedApplication.delegate).flutterEngine;
+    FlutterViewController *flutterViewController =
+        [[FlutterViewController alloc] initWithEngine:flutterEngine nibName:nil bundle:nil];
+    [self presentViewController:flutterViewController animated:YES completion:nil];
 }
 
 - (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {

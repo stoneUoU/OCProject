@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 54;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -2095,11 +2095,13 @@
 			buildConfigurationList = 8EFB12CA265BB450007D9FE1 /* Build configuration list for PBXNativeTarget "OCProject" */;
 			buildPhases = (
 				B5FFA97D08D8884FCFDC17E8 /* [CP] Check Pods Manifest.lock */,
+				23DAC7CC9D6E5BBA7C702640 /* [CP-User] Run Flutter Build hi_flutter_module Script */,
 				8EFB12AD265BB44F007D9FE1 /* Sources */,
 				8EFB12AE265BB44F007D9FE1 /* Frameworks */,
 				8EFB12AF265BB44F007D9FE1 /* Resources */,
 				D52CFC8D5C26A7A328026842 /* [CP] Embed Pods Frameworks */,
 				4F5D92EF10E3064943A22F84 /* [CP] Copy Pods Resources */,
+				B3292B9666640EA418051AEF /* [CP-User] Embed Flutter Build hi_flutter_module Script */,
 			);
 			buildRules = (
 			);
@@ -2157,6 +2159,16 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		23DAC7CC9D6E5BBA7C702640 /* [CP-User] Run Flutter Build hi_flutter_module Script */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			name = "[CP-User] Run Flutter Build hi_flutter_module Script";
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "set -e\nset -u\nsource \"${SRCROOT}/../hi_flutter_module/.ios/Flutter/flutter_export_environment.sh\"\nexport VERBOSE_SCRIPT_LOGGING=1 && \"$FLUTTER_ROOT\"/packages/flutter_tools/bin/xcode_backend.sh build";
+		};
 		4F5D92EF10E3064943A22F84 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -2173,6 +2185,16 @@
 			shellPath = /bin/sh;
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-OCProject/Pods-OCProject-resources.sh\"\n";
 			showEnvVarsInLog = 0;
+		};
+		B3292B9666640EA418051AEF /* [CP-User] Embed Flutter Build hi_flutter_module Script */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			name = "[CP-User] Embed Flutter Build hi_flutter_module Script";
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "set -e\nset -u\nsource \"${SRCROOT}/../hi_flutter_module/.ios/Flutter/flutter_export_environment.sh\"\nexport VERBOSE_SCRIPT_LOGGING=1 && \"$FLUTTER_ROOT\"/packages/flutter_tools/bin/xcode_backend.sh embed_and_thin";
 		};
 		B5FFA97D08D8884FCFDC17E8 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -2580,7 +2602,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 2SRTBWK6P4;
 				ENABLE_BITCODE = NO;
-				EXCLUDED_ARCHS = arm64;
+				EXCLUDED_ARCHS = "";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/OCProject/ExtraPart/Framework",
@@ -2616,7 +2638,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 2SRTBWK6P4;
 				ENABLE_BITCODE = NO;
-				EXCLUDED_ARCHS = arm64;
+				EXCLUDED_ARCHS = "";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/OCProject/ExtraPart/Framework",

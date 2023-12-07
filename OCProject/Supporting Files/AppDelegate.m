@@ -9,6 +9,7 @@
 #import "AppDelegate+Tarbar.h"
 #import <SVProgressHUD/SVProgressHUD.h>
 #import <IQKeyboardManager/IQKeyboardManager.h>
+#import <FlutterPluginRegistrant/GeneratedPluginRegistrant.h>
 
 @interface AppDelegate ()
 
@@ -18,10 +19,13 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
+    
+    self.flutterEngine = [[FlutterEngine alloc] initWithName:@"hi_flutter_engine"];
     [SVProgressHUD setDefaultStyle:SVProgressHUDStyleDark];
     [IQKeyboardManager sharedManager].enable = YES;
-    [self initRootViewController];
-    
+    [self initRootViewControllerZero];
+    // Runs the default Dart entrypoint with a default Flutter route.
+    [self.flutterEngine run];
     return YES;
 }
 
