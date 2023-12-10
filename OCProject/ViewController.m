@@ -334,7 +334,7 @@ typedef void(^HSAExcuteHandle)(BOOL isSucc);
 {
     if (!_btnOk) {
         _btnOk = [UIButton buttonWithType:UIButtonTypeCustom];
-        [_btnOk setTitle:@"我知道" forState:UIControlStateNormal];
+        [_btnOk setTitle:@"Objective-C 项目" forState:UIControlStateNormal];
         [_btnOk setTitleColor:YLZColorTitleOne forState:UIControlStateNormal];
         _btnOk.titleLabel.font = [YLZFont medium:16.f];
         _btnOk.layer.cornerRadius = 20.f;
