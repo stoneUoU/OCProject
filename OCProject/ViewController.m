@@ -256,8 +256,8 @@ typedef void(^HSAExcuteHandle)(BOOL isSucc);
         [[FlutterViewController alloc] initWithEngine:flutterEngine nibName:nil bundle:nil];
     __weak __typeof(self) weakSelf = self;
     
-    NSString *channelName = @"hi_flutter_module_flutter_to_iOS";
-    NSString *eventChannelName = @"hi_flutter_module_iOS_to_flutter";
+    NSString *channelName = @"EVENT_FLUTTER_SEND_MESSAGE_IOS";
+    NSString *eventChannelName = @"EVENT_IOS_SEND_MESSAGE_FLUTTER";
     
     //FlutterMethodChannel是flutter页面主动交互iOS页面
     FlutterMethodChannel *methodChannel = [FlutterMethodChannel methodChannelWithName:channelName binaryMessenger:flutterViewController.binaryMessenger];
