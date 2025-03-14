@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 51;
+	objectVersion = 54;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -169,6 +169,7 @@
 		8E84820C2691FD21005CCA34 /* YLZMomentOnePhotoTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E84820B2691FD21005CCA34 /* YLZMomentOnePhotoTableViewCell.m */; };
 		8E95983028BE02A1005A2759 /* YLZProcessSearchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E95982F28BE02A1005A2759 /* YLZProcessSearchViewController.m */; };
 		8E95983328BE0329005A2759 /* YLZProcessCardView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E95983228BE0329005A2759 /* YLZProcessCardView.m */; };
+		8E95E6A62D803427005FF900 /* member_plus.svg in Resources */ = {isa = PBXBuildFile; fileRef = 8E95E6A52D803427005FF900 /* member_plus.svg */; };
 		8E97D91A283C7AD8004850C7 /* YLZBaseModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E97D919283C7AD8004850C7 /* YLZBaseModel.m */; };
 		8E9DD3FE2690359900D13F09 /* YLZSettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E9DD3FD2690359900D13F09 /* YLZSettingViewController.m */; };
 		8E9DD404269035CB00D13F09 /* YLZSettingModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E9DD403269035CB00D13F09 /* YLZSettingModel.m */; };
@@ -572,6 +573,7 @@
 		8E95982F28BE02A1005A2759 /* YLZProcessSearchViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YLZProcessSearchViewController.m; sourceTree = "<group>"; };
 		8E95983128BE0329005A2759 /* YLZProcessCardView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YLZProcessCardView.h; sourceTree = "<group>"; };
 		8E95983228BE0329005A2759 /* YLZProcessCardView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YLZProcessCardView.m; sourceTree = "<group>"; };
+		8E95E6A52D803427005FF900 /* member_plus.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = member_plus.svg; sourceTree = "<group>"; };
 		8E97D918283C7AD8004850C7 /* YLZBaseModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YLZBaseModel.h; sourceTree = "<group>"; };
 		8E97D919283C7AD8004850C7 /* YLZBaseModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YLZBaseModel.m; sourceTree = "<group>"; };
 		8E9DD3FC2690359900D13F09 /* YLZSettingViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YLZSettingViewController.h; sourceTree = "<group>"; };
@@ -810,6 +812,7 @@
 		8E4242F0265C9AF200E5A4A5 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				8E95E6A42D80340A005FF900 /* svgs */,
 				8EFB12B4265BB44F007D9FE1 /* AppDelegate.h */,
 				8EFB12B5265BB44F007D9FE1 /* AppDelegate.m */,
 				8E42435E265CEB2F00E5A4A5 /* AppDelegate+Tarbar.h */,
@@ -1750,6 +1753,14 @@
 			path = Controller;
 			sourceTree = "<group>";
 		};
+		8E95E6A42D80340A005FF900 /* svgs */ = {
+			isa = PBXGroup;
+			children = (
+				8E95E6A52D803427005FF900 /* member_plus.svg */,
+			);
+			path = svgs;
+			sourceTree = "<group>";
+		};
 		8E97D91B283C7C28004850C7 /* YLZFormat */ = {
 			isa = PBXGroup;
 			children = (
@@ -2149,6 +2160,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8E95E6A62D803427005FF900 /* member_plus.svg in Resources */,
 				8E79CE27268EF7E700E71F17 /* YLZLoading.json in Resources */,
 				8EFB12C4265BB450007D9FE1 /* LaunchScreen.storyboard in Resources */,
 				8EFB12C1265BB450007D9FE1 /* Assets.xcassets in Resources */,

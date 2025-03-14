@@ -11,6 +11,7 @@
 #import <Flutter/Flutter.h>
 #import <MJExtension/MJExtension.h>
 #import "YLZRouteCodeViewController.h"
+#import "PocketSVG.h"
 
 typedef void(^HSAExcuteHandle)(BOOL isSucc);
 
@@ -33,6 +34,8 @@ typedef void(^HSAExcuteHandle)(BOOL isSucc);
 @property (nonatomic, copy) HSAExcuteHandle hsaHandle;
 
 @property (nonatomic, copy) void(^resultHandle)(BOOL isSucc);
+
+@property (nonatomic, strong) SVGImageView *svgKLayeredImageView;
 
 @end
 
@@ -80,6 +83,7 @@ typedef void(^HSAExcuteHandle)(BOOL isSucc);
 
 - (void)setUI {
     [self.view addSubview:self.btnOk];
+    [self.view addSubview:self.svgKLayeredImageView];
 //    [self.view addSubview:self.iconImageView];
 //    [self.view addSubview:self.productLabel];
 //    [self.view addSubview:self.bottomLabel];
@@ -90,6 +94,11 @@ typedef void(^HSAExcuteHandle)(BOOL isSucc);
     [self.btnOk mas_makeConstraints:^(MASConstraintMaker *make) {
         make.center.equalTo(self.view);
         make.size.equalTo(@(CGSizeMake(SCREENWIDTH - 64, 40)));
+    }];
+    [self.svgKLayeredImageView mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.centerX.equalTo(self.view);
+        make.top.equalTo(self.btnOk.mas_bottom).offset(54);
+        make.size.equalTo(@(CGSizeMake(120, 120)));
     }];
     
 //    [self.iconImageView mas_makeConstraints:^(MASConstraintMaker *make) {
@@ -375,6 +384,13 @@ typedef void(^HSAExcuteHandle)(BOOL isSucc);
         _bottomLabel.text = @"Power By 许久_";
     }
     return _bottomLabel;
+}
+
+- (SVGImageView *)svgKLayeredImageView {
+    if(_svgKLayeredImageView == nil) {
+        _svgKLayeredImageView = [[SVGImageView alloc] initWithContentsOfURL:[[NSBundle mainBundle] URLForResource:@"member_plus" withExtension:@"svg"]];
+    }
+    return _svgKLayeredImageView;
 }
 
 @end
