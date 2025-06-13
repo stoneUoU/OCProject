@@ -20,5 +20,17 @@
     return NO;
 }
 
++ (NSDictionary *)dictionaryWithJsonString:(NSString *)jsonString {
+    NSData *jsonData = [jsonString dataUsingEncoding:NSUTF8StringEncoding];
+    NSError *err;
+    NSDictionary *dic = [NSJSONSerialization JSONObjectWithData:jsonData
+                                                        options:NSJSONReadingMutableContainers error:&err];
+    if (err) {
+        NSLog(@"JSON解析失败：%@",err);
+        return nil;
+    }
+    return dic;
+}
+
 
 @end

@@ -14,6 +14,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 + (BOOL)ylz_isNull:(NSString *)str;
 
++ (NSDictionary *)dictionaryWithJsonString:(NSString *)jsonString;
+
 @end
 
 NS_ASSUME_NONNULL_END

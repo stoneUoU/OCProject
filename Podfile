@@ -37,6 +37,7 @@ target 'OCProject' do
   #打正式包得把下面三个库给注释：  若adhoc包中包含Reveal-SDK，则不要勾选Rebuild from Bitcode
   pod 'Reveal-SDK','~>4', :configurations => ['Debug']
   pod 'PocketSVG', '~> 2.6'
+  pod 'Ads-CN-Beta', '6.9.0.1'
   
 #  pod 'RongCloudOpenSource/IMKit','5.0.0'           # IMKit
 #  pod 'RongCloudOpenSource/Sight','5.0.0'           # 小视频

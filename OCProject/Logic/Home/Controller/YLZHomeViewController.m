@@ -27,6 +27,7 @@
 #import "YLZNetWork.h"
 
 #import "EPSpeekHelpBar.h"
+#import <YYKit/YYKit.h>
 
 @interface YLZHomeViewController ()
 
@@ -193,8 +194,28 @@
 //    [[YLZPageHelper sharedInstance] pushExistingViewController:vc];
     
     //新增关注：
-    YLZNewFollowViewController *vc = [[YLZNewFollowViewController alloc] init];
-    [[YLZPageHelper sharedInstance] pushExistingViewController:vc];
+//    YLZNewFollowViewController *vc = [[YLZNewFollowViewController alloc] init];
+//    [[YLZPageHelper sharedInstance] pushExistingViewController:vc];
+    
+    NSString *originalString = @"iosamap://path?sourceApplication=陕西医保&dlat=34.239675&dlon=108.93015&dname=陕西省人民医院&dev=0&t=1";
+    NSURLComponents *components = [[NSURLComponents alloc] init];
+    components.percentEncodedQuery = [originalString stringByAddingPercentEncodingWithAllowedCharacters:NSCharacterSet.URLQueryAllowedCharacterSet];
+    NSString *mapUrl = components.percentEncodedQuery;
+    YLZLOG(@"Encoded String: %@", mapUrl);
+    NSString *appStoreDownloadUrl = @"https://apps.apple.com/cn/app/id461703208";
+    if ([[UIApplication sharedApplication] canOpenURL:[NSURL URLWithString:mapUrl]]) {
+        if (@available(iOS 10.0, *)) {
+            [[UIApplication sharedApplication] openURL:[NSURL URLWithString:mapUrl] options:@{} completionHandler:nil];
+        } else {
+            // Fallback on earlier versions
+        }
+    } else {
+        if (@available(iOS 10.0, *)) {
+            [[UIApplication sharedApplication] openURL:[NSURL URLWithString:appStoreDownloadUrl] options:@{} completionHandler:nil];
+        } else {
+            // Fallback on earlier versions
+        }
+    }
 }
 
 - (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {

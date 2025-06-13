@@ -2612,7 +2612,7 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 2SRTBWK6P4;
+				DEVELOPMENT_TEAM = NZP64V26FR;
 				ENABLE_BITCODE = NO;
 				EXCLUDED_ARCHS = "";
 				FRAMEWORK_SEARCH_PATHS = (
@@ -2630,7 +2630,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/OCProject/ExtraPart/SafeSDK",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = cn.hsa.OCProject;
+				PRODUCT_BUNDLE_IDENTIFIER = com.neusoft.ihrss.jx.OCProject;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -2648,7 +2648,7 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 2SRTBWK6P4;
+				DEVELOPMENT_TEAM = NZP64V26FR;
 				ENABLE_BITCODE = NO;
 				EXCLUDED_ARCHS = "";
 				FRAMEWORK_SEARCH_PATHS = (
@@ -2666,7 +2666,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/OCProject/ExtraPart/SafeSDK",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = cn.hsa.OCProject;
+				PRODUCT_BUNDLE_IDENTIFIER = com.neusoft.ihrss.jx.OCProject;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;

@@ -23,7 +23,7 @@
     self.flutterEngine = [[FlutterEngine alloc] initWithName:@"hi_flutter_engine"];
     [SVProgressHUD setDefaultStyle:SVProgressHUDStyleDark];
     [IQKeyboardManager sharedManager].enable = YES;
-    [self initRootViewControllerZero];
+    [self initRootViewController];
     // Runs the default Dart entrypoint with a default Flutter route.
     [self.flutterEngine run];
     [GeneratedPluginRegistrant registerWithRegistry:self.flutterEngine];
