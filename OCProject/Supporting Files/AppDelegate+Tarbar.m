@@ -44,6 +44,8 @@
     [self.window makeKeyAndVisible];
     
     UINavigationController *vc = [[UINavigationController alloc] initWithRootViewController:[[ViewController alloc] init]];
+    ViewController *viewController = [[ViewController alloc] init];
+//    [viewController createPageViewControllerWithString:@"" relativeToURL:[NSURL URLWithString:@""]];
     self.window.rootViewController = vc;
 }
 

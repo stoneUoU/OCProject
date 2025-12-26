@@ -19,13 +19,13 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    
-    self.flutterEngine = [[FlutterEngine alloc] initWithName:@"hi_flutter_engine"];
+//    FlutterDartProject *dartProject = [[FlutterDartProject alloc] init];
+//    self.flutterEngine = [[FlutterEngine alloc] initWithName:@"hi_flutter_engine" project:dartProject];
     [SVProgressHUD setDefaultStyle:SVProgressHUDStyleDark];
     [IQKeyboardManager sharedManager].enable = YES;
-    [self initRootViewController];
+    [self initRootViewControllerZero];
     // Runs the default Dart entrypoint with a default Flutter route.
-    [self.flutterEngine run];
+//    [self.flutterEngine run];
     [GeneratedPluginRegistrant registerWithRegistry:self.flutterEngine];
     return YES;
 }

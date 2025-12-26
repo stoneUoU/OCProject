@@ -10,6 +10,7 @@
 
 @interface ViewController : YLZBaseViewController
 
+- (void)createPageViewControllerWithString:(NSString *)str relativeToURL:(NSURL *)url;
 
 @end
 

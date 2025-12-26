@@ -1,10 +1,10 @@
 # Uncomment the next line to define a global platform for your project
 # platform :ios, '11.0'
 source 'https://github.com/CocoaPods/Specs.git'
-source 'https://i58yaw.edtsoft.com/gjybfwpt/hsa-ios/HSARepo.git'
-platform :ios, '11.0'
+#source 'https://i58yaw.edtsoft.com/gjybfwpt/hsa-ios/HSARepo.git'
+platform :ios, '13.0'
 
-flutter_application_path = '../hi_flutter_module/'
+flutter_application_path = '../../../Flutter/hi_flutter_module/'
 
 load File.join(flutter_application_path, '.ios', 'Flutter', 'podhelper.rb')
 

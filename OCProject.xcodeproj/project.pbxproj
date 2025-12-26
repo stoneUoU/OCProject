@@ -224,6 +224,7 @@
 		8ECBC2CE28179EA900071F21 /* YLZRouteCodeCellView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8ECBC2CD28179EA900071F21 /* YLZRouteCodeCellView.m */; };
 		8ED85251288CE2720036E99F /* HSAExampleHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 8ED85250288CE2720036E99F /* HSAExampleHelper.m */; };
 		8ED85253288CE5310036E99F /* HSAExampleHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ED85252288CE5310036E99F /* HSAExampleHelper.swift */; };
+		8ED9C8AF2EFE841A00D9D2D0 /* HSAViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8ED9C8AE2EFE841A00D9D2D0 /* HSAViewController.m */; };
 		8EF7C59F2B1079750043DC1D /* EPSAudioRecorderUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EF7C5962B1079750043DC1D /* EPSAudioRecorderUtil.m */; };
 		8EF7C5A02B1079750043DC1D /* EPSAppHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EF7C5982B1079750043DC1D /* EPSAppHelper.m */; };
 		8EF7C5A12B1079750043DC1D /* EPSpectrumView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EF7C5992B1079750043DC1D /* EPSpectrumView.m */; };
@@ -680,6 +681,8 @@
 		8ED8524F288CE2720036E99F /* HSAExampleHelper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HSAExampleHelper.h; sourceTree = "<group>"; };
 		8ED85250288CE2720036E99F /* HSAExampleHelper.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HSAExampleHelper.m; sourceTree = "<group>"; };
 		8ED85252288CE5310036E99F /* HSAExampleHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HSAExampleHelper.swift; sourceTree = "<group>"; };
+		8ED9C8AD2EFE841A00D9D2D0 /* HSAViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HSAViewController.h; sourceTree = "<group>"; };
+		8ED9C8AE2EFE841A00D9D2D0 /* HSAViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HSAViewController.m; sourceTree = "<group>"; };
 		8EF7C5952B1079750043DC1D /* EPSpeechRecognizer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EPSpeechRecognizer.h; sourceTree = "<group>"; };
 		8EF7C5962B1079750043DC1D /* EPSAudioRecorderUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EPSAudioRecorderUtil.m; sourceTree = "<group>"; };
 		8EF7C5972B1079750043DC1D /* EPSpeekHelpBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EPSpeekHelpBar.h; sourceTree = "<group>"; };
@@ -2085,6 +2088,8 @@
 				8EFB12C0265BB450007D9FE1 /* Assets.xcassets */,
 				8EFB12C2265BB450007D9FE1 /* LaunchScreen.storyboard */,
 				8E377D7228C088AE001E2CBA /* scanSound.caf */,
+				8ED9C8AD2EFE841A00D9D2D0 /* HSAViewController.h */,
+				8ED9C8AE2EFE841A00D9D2D0 /* HSAViewController.m */,
 			);
 			path = OCProject;
 			sourceTree = "<group>";
@@ -2176,10 +2181,14 @@
 			buildActionMask = 2147483647;
 			files = (
 			);
+			inputPaths = (
+			);
 			name = "[CP-User] Run Flutter Build hi_flutter_module Script";
+			outputPaths = (
+			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "set -e\nset -u\nsource \"${SRCROOT}/../hi_flutter_module/.ios/Flutter/flutter_export_environment.sh\"\nexport VERBOSE_SCRIPT_LOGGING=1 && \"$FLUTTER_ROOT\"/packages/flutter_tools/bin/xcode_backend.sh build";
+			shellScript = "set -e\nset -u\nsource \"${SRCROOT}/../../../Flutter/hi_flutter_module/.ios/Flutter/flutter_export_environment.sh\"\nexport VERBOSE_SCRIPT_LOGGING=1 && \"$FLUTTER_ROOT\"/packages/flutter_tools/bin/xcode_backend.sh build";
 		};
 		4F5D92EF10E3064943A22F84 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -2189,9 +2198,13 @@
 			inputFileListPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-OCProject/Pods-OCProject-resources-${CONFIGURATION}-input-files.xcfilelist",
 			);
+			inputPaths = (
+			);
 			name = "[CP] Copy Pods Resources";
 			outputFileListPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-OCProject/Pods-OCProject-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -2203,10 +2216,14 @@
 			buildActionMask = 2147483647;
 			files = (
 			);
+			inputPaths = (
+			);
 			name = "[CP-User] Embed Flutter Build hi_flutter_module Script";
+			outputPaths = (
+			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "set -e\nset -u\nsource \"${SRCROOT}/../hi_flutter_module/.ios/Flutter/flutter_export_environment.sh\"\nexport VERBOSE_SCRIPT_LOGGING=1 && \"$FLUTTER_ROOT\"/packages/flutter_tools/bin/xcode_backend.sh embed_and_thin";
+			shellScript = "set -e\nset -u\nsource \"${SRCROOT}/../../../Flutter/hi_flutter_module/.ios/Flutter/flutter_export_environment.sh\"\nexport VERBOSE_SCRIPT_LOGGING=1 && \"$FLUTTER_ROOT\"/packages/flutter_tools/bin/xcode_backend.sh embed_and_thin";
 		};
 		B5FFA97D08D8884FCFDC17E8 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -2238,9 +2255,13 @@
 			inputFileListPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-OCProject/Pods-OCProject-frameworks-${CONFIGURATION}-input-files.xcfilelist",
 			);
+			inputPaths = (
+			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-OCProject/Pods-OCProject-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -2336,6 +2357,7 @@
 				8E79CDE7268EE84000E71F17 /* YLZUserBaseInfo.m in Sources */,
 				8E8481E82691DC0E005CCA34 /* YLZMomentView.m in Sources */,
 				8ECBC2BF281789AC00071F21 /* YLZRouteCodeTableHeaderView.m in Sources */,
+				8ED9C8AF2EFE841A00D9D2D0 /* HSAViewController.m in Sources */,
 				8EC51A4728BCA066005C4078 /* YLZAcidCheckStatusCell.m in Sources */,
 				8E424358265CEA1F00E5A4A5 /* YLZMSTabBarController.m in Sources */,
 				8E79CE94268F13F900E71F17 /* JXCategoryTitleVerticalZoomCellModel.m in Sources */,
