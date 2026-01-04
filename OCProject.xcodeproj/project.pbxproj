@@ -225,6 +225,8 @@
 		8ED85251288CE2720036E99F /* HSAExampleHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 8ED85250288CE2720036E99F /* HSAExampleHelper.m */; };
 		8ED85253288CE5310036E99F /* HSAExampleHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ED85252288CE5310036E99F /* HSAExampleHelper.swift */; };
 		8ED9C8AF2EFE841A00D9D2D0 /* HSAViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8ED9C8AE2EFE841A00D9D2D0 /* HSAViewController.m */; };
+		8ED9C8B32EFE851B00D9D2D0 /* TraeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8ED9C8B22EFE851B00D9D2D0 /* TraeViewController.m */; };
+		8ED9C8B62EFE899F00D9D2D0 /* TraeFootprintViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8ED9C8B52EFE899F00D9D2D0 /* TraeFootprintViewController.m */; };
 		8EF7C59F2B1079750043DC1D /* EPSAudioRecorderUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EF7C5962B1079750043DC1D /* EPSAudioRecorderUtil.m */; };
 		8EF7C5A02B1079750043DC1D /* EPSAppHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EF7C5982B1079750043DC1D /* EPSAppHelper.m */; };
 		8EF7C5A12B1079750043DC1D /* EPSpectrumView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EF7C5992B1079750043DC1D /* EPSpectrumView.m */; };
@@ -683,6 +685,10 @@
 		8ED85252288CE5310036E99F /* HSAExampleHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HSAExampleHelper.swift; sourceTree = "<group>"; };
 		8ED9C8AD2EFE841A00D9D2D0 /* HSAViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HSAViewController.h; sourceTree = "<group>"; };
 		8ED9C8AE2EFE841A00D9D2D0 /* HSAViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HSAViewController.m; sourceTree = "<group>"; };
+		8ED9C8B12EFE851B00D9D2D0 /* TraeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TraeViewController.h; sourceTree = "<group>"; };
+		8ED9C8B22EFE851B00D9D2D0 /* TraeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TraeViewController.m; sourceTree = "<group>"; };
+		8ED9C8B42EFE899F00D9D2D0 /* TraeFootprintViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TraeFootprintViewController.h; sourceTree = "<group>"; };
+		8ED9C8B52EFE899F00D9D2D0 /* TraeFootprintViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TraeFootprintViewController.m; sourceTree = "<group>"; };
 		8EF7C5952B1079750043DC1D /* EPSpeechRecognizer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EPSpeechRecognizer.h; sourceTree = "<group>"; };
 		8EF7C5962B1079750043DC1D /* EPSAudioRecorderUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EPSAudioRecorderUtil.m; sourceTree = "<group>"; };
 		8EF7C5972B1079750043DC1D /* EPSpeekHelpBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EPSpeekHelpBar.h; sourceTree = "<group>"; };
@@ -1318,6 +1324,7 @@
 		8E79CDC1268ED12B00E71F17 /* Logic */ = {
 			isa = PBXGroup;
 			children = (
+				8ED9C8B02EFE850100D9D2D0 /* Trae */,
 				8ECBC2A3281787E400071F21 /* RouteCode */,
 				8E5200C526FD7716000EBCEB /* HealthCode */,
 				8E8481F02691DE20005CCA34 /* Message */,
@@ -2027,6 +2034,17 @@
 			path = CodeView;
 			sourceTree = "<group>";
 		};
+		8ED9C8B02EFE850100D9D2D0 /* Trae */ = {
+			isa = PBXGroup;
+			children = (
+				8ED9C8B42EFE899F00D9D2D0 /* TraeFootprintViewController.h */,
+				8ED9C8B52EFE899F00D9D2D0 /* TraeFootprintViewController.m */,
+				8ED9C8B12EFE851B00D9D2D0 /* TraeViewController.h */,
+				8ED9C8B22EFE851B00D9D2D0 /* TraeViewController.m */,
+			);
+			path = Trae;
+			sourceTree = "<group>";
+		};
 		8EF7C5922B1078270043DC1D /* View */ = {
 			isa = PBXGroup;
 			children = (
@@ -2373,6 +2391,7 @@
 				8E5200D326FDA502000EBCEB /* YLZHealthCodeInfoTableViewCell.m in Sources */,
 				8E79CE9C268F13F900E71F17 /* JXCategoryIndicatorBallView.m in Sources */,
 				8EC51A3E28BC8EC9005C4078 /* YLZAcidCheckView.m in Sources */,
+				8ED9C8B32EFE851B00D9D2D0 /* TraeViewController.m in Sources */,
 				8ECBC2C228178AA800071F21 /* YLZFunctionModel.m in Sources */,
 				8E79CEAE268F13F900E71F17 /* JXCategoryImageCellModel.m in Sources */,
 				8E79CE9D268F13F900E71F17 /* JXCategoryIndicatorComponentView.m in Sources */,
@@ -2397,6 +2416,7 @@
 				8E150BDF27B5031F00CBD777 /* YLZFile.m in Sources */,
 				8E79CE0B268EF57000E71F17 /* YLZMineViewController.m in Sources */,
 				8E79CEB5268F13F900E71F17 /* JXCategoryIndicatorParamsModel.m in Sources */,
+				8ED9C8B62EFE899F00D9D2D0 /* TraeFootprintViewController.m in Sources */,
 				8E79CE9F268F13F900E71F17 /* JXCategoryIndicatorBackgroundView.m in Sources */,
 				8E79CEA9268F13F900E71F17 /* JXCategoryTitleCellModel.m in Sources */,
 				8E59B15B26914ABE0043073C /* YLZSetIdentityViewController.m in Sources */,

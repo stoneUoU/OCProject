@@ -24,6 +24,7 @@
 
 #import "YLZLoginViewController.h"
 #import "YLZSetIdentityViewController.h"
+#import "TraeFootprintViewController.h"
 
 @interface AppDelegate () <YLZMSTabBarControllerDelegate>
 
@@ -43,8 +44,8 @@
     [self.window.layer addAnimation:animate forKey:nil];
     [self.window makeKeyAndVisible];
     
-    UINavigationController *vc = [[UINavigationController alloc] initWithRootViewController:[[ViewController alloc] init]];
-    ViewController *viewController = [[ViewController alloc] init];
+    UINavigationController *vc = [[UINavigationController alloc] initWithRootViewController:[[TraeFootprintViewController alloc] init]];
+//    HSAViewController *viewController = [[HSAViewController alloc] init];
 //    [viewController createPageViewControllerWithString:@"" relativeToURL:[NSURL URLWithString:@""]];
     self.window.rootViewController = vc;
 }
