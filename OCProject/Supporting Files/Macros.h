@@ -78,6 +78,12 @@ return __singleton__; \
 #define SCREEN_12_MINI_INCH_WIDTH  360.0f // 适配iPhone12 mini
 #define SCREEN_12_MINI_INCH_HEIGHT 780.0f
 
+#define SCREEN_14_MINI_INCH_WIDTH  393.0f // 适配iPhone14 Pro
+#define SCREEN_14_MINI_INCH_HEIGHT 852.0f
+
+#define SCREEN_14_Max_MINI_INCH_WIDTH  430.0f // 适配iPhone14 Pro Max
+#define SCREEN_14_Max_MINI_INCH_HEIGHT 932.0f
+
 #define IS_SCREEN_3_5_INCH (([UIScreen mainScreen].bounds.size.height == SCREEN_3_5_INCH_HEIGHT && [UIScreen mainScreen].bounds.size.width == SCREEN_3_5_INCH_WIDTH)||([UIScreen mainScreen].bounds.size.height == SCREEN_3_5_INCH_WIDTH && [UIScreen mainScreen].bounds.size.width == SCREEN_3_5_INCH_HEIGHT))
 #define IS_SCREEN_4_INCH   (([UIScreen mainScreen].bounds.size.height == SCREEN_4_INCH_HEIGHT && [UIScreen mainScreen].bounds.size.width == SCREEN_4_INCH_WIDTH)||([UIScreen mainScreen].bounds.size.height == SCREEN_4_INCH_WIDTH && [UIScreen mainScreen].bounds.size.width == SCREEN_4_INCH_HEIGHT))
 #define IS_SCREEN_4_7_INCH (([UIScreen mainScreen].bounds.size.height == SCREEN_4_7_INCH_HEIGHT && [UIScreen mainScreen].bounds.size.width == SCREEN_4_7_INCH_WIDTH)||([UIScreen mainScreen].bounds.size.height == SCREEN_4_7_INCH_WIDTH && [UIScreen mainScreen].bounds.size.width == SCREEN_4_7_INCH_HEIGHT))
@@ -90,7 +96,12 @@ return __singleton__; \
 
 #define IS_SCREEN_12_MINI_INCH (([UIScreen mainScreen].bounds.size.height == SCREEN_12_MINI_INCH_HEIGHT && [UIScreen mainScreen].bounds.size.width == SCREEN_12_MINI_INCH_WIDTH)||([UIScreen mainScreen].bounds.size.height == SCREEN_12_MINI_INCH_WIDTH && [UIScreen mainScreen].bounds.size.width == SCREEN_12_MINI_INCH_HEIGHT))
 
-#define IS_IPHONEX (IS_SCREEN_6_5_INCH || IS_SCREEN_5_8_INCH || IS_SCREEN_6_7_INCH || IS_SCREEN_12_MINI_INCH || IS_SCREEN_12_PRO_INCH)
+#define IS_SCREEN_14_PRO_INCH (([UIScreen mainScreen].bounds.size.height == SCREEN_14_MINI_INCH_HEIGHT && [UIScreen mainScreen].bounds.size.width == SCREEN_14_MINI_INCH_WIDTH)||([UIScreen mainScreen].bounds.size.height == SCREEN_14_MINI_INCH_WIDTH && [UIScreen mainScreen].bounds.size.width == SCREEN_14_MINI_INCH_HEIGHT))
+
+#define IS_SCREEN_14_PRO_Max_INCH (([UIScreen mainScreen].bounds.size.height == SCREEN_14_Max_MINI_INCH_HEIGHT && [UIScreen mainScreen].bounds.size.width == SCREEN_14_Max_MINI_INCH_WIDTH)||([UIScreen mainScreen].bounds.size.height == SCREEN_14_Max_MINI_INCH_WIDTH && [UIScreen mainScreen].bounds.size.width == SCREEN_14_Max_MINI_INCH_HEIGHT))
+
+#define IS_IPHONEX (IS_SCREEN_6_5_INCH || IS_SCREEN_5_8_INCH || IS_SCREEN_6_7_INCH || IS_SCREEN_12_MINI_INCH || IS_SCREEN_12_PRO_INCH || IS_SCREEN_14_PRO_INCH || IS_SCREEN_14_PRO_Max_INCH)
+
 
 /******************************    UI      ***********************************/
 #define SCREENHEIGHT  ([UIScreen mainScreen].bounds.size.height)
