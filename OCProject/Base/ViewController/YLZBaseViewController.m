@@ -41,7 +41,12 @@
     pan.delegate = self;
     [self.view addGestureRecognizer:pan];
     self.navigationController.interactivePopGestureRecognizer.enabled = YES;
-    
+    CGFloat statusHeight = [UIApplication sharedApplication].statusBarFrame.size.height;
+    //导航栏高度
+    CGFloat barHeight = self.navigationController.navigationBar.bounds.size.height;
+    YLZLOG(@"statusHeight________%f",statusHeight);
+    YLZLOG(@"barHeight________%f",barHeight);
+    YLZLOG(@"barBounds.size.height________%f",statusHeight + barHeight);
     [self setBaseUI];
 }
 

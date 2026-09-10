@@ -30,6 +30,13 @@
     
     [self setBaseUI:YLZColorWhite withTitleString:@"待处理" withTitleColor:YLZColorTitleOne withLeftImageViewString:@"ylz_back_circle" withRightString:@"" withRightColor:YLZColorWhite withRightFontSize:14];
     [self setUI];
+    
+    CGFloat statusHeight = [UIApplication sharedApplication].statusBarFrame.size.height;
+    //导航栏高度
+    CGFloat barHeight = self.navigationController.navigationBar.bounds.size.height;
+    YLZLOG(@"statusHeight________%f",statusHeight);
+    YLZLOG(@"barHeight________%f",barHeight);
+    YLZLOG(@"barBounds.size.height________%f",statusHeight + barHeight);
 }
 
 #pragma mark - Public Method
